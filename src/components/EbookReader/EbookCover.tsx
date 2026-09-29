@@ -1,4 +1,5 @@
 import React from 'react';
+import { EBOOK_PAGES } from '../../data/ebookContent';
 import { OrnamentalDivider } from '../OrnamentalDivider';
 import {
   OrnamentalCorner,
@@ -175,11 +176,11 @@ export const EbookCover: React.FC = () => {
         {/* Footer Editorial Metadata (Zero interactive buttons) */}
         <div className="pt-4 border-t border-[#aa8032]/30 flex flex-col sm:flex-row justify-between items-center text-xs font-mono text-[#aa8032] gap-3">
           <div className="text-center sm:text-left">
-            <span>EDICIÓN CRÍTICA ILUSTRADA • MANUSCRITO COMPLETO</span>
+            <span>MANUAL ILUSTRADO DE ESTUDIO</span>
           </div>
 
           <div className="text-center">
-            <span className="text-[#d4af37]">✦ 26 FOLIOS DE ESTUDIO ✦</span>
+            <span className="text-[#d4af37]">✦ {EBOOK_PAGES.length} FOLIOS DE ESTUDIO ✦</span>
           </div>
 
           <div className="text-center sm:text-right">

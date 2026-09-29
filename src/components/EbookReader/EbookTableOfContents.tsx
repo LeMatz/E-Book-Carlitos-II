@@ -36,7 +36,7 @@ export const EbookTableOfContents: React.FC = () => {
           </h2>
           
           <p className="font-cormorant italic text-sm sm:text-base text-[#5a4022] max-w-xl mx-auto font-semibold">
-            "Mi Amigo Carlitos II" — 26 Folios de Arquetipos Profundos, Sueños, Sincronicidades y el Oráculo del I Ching
+            "Mi Amigo Carlitos II" — {EBOOK_PAGES.length} Folios de Arquetipos Profundos, Sueños, Sincronicidades y el Oráculo del I Ching
           </p>
 
           <OrnamentalDivider variant="stars" className="my-3" />
@@ -102,7 +102,7 @@ export const EbookTableOfContents: React.FC = () => {
           <OrnamentalDivider variant="double" className="my-2" />
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs font-mono text-[#7a5820]">
             <span>COLECCIÓN DE MITOLOGÍA PERSONAL • EDICIÓN ESPECIAL 2026</span>
-            <span>TEXTO ÍNTEGRO • 26 FOLIOS • BITÁCORA ALQUÍMICA INCLUIDA</span>
+            <span>TEXTO ÍNTEGRO • {EBOOK_PAGES.length} FOLIOS • BITÁCORA ALQUÍMICA INCLUIDA</span>
           </div>
         </div>
 

@@ -35,6 +35,7 @@ export interface IChingHexagramData {
   image: string;
   psychologicalMeaning: string;
   brushImage?: string;
+  plateImage?: string;
 }
 
 export interface TrigramData {
@@ -91,8 +92,8 @@ export interface FootnoteData {
 }
 
 export interface EbookPageData {
-  pageNumber: number; // 1 to 26
-  chapterId: number; // 0 for Intro/Bio, 1, 2, 3, 4, 5
+  pageNumber: number; // 1 to EBOOK_PAGES.length (currently 27)
+  chapterId: number; // 0 for Intro/Bio, 1, 2, 3, 4, 5, 6 for Apéndice
   sectionTitle: string;
   pageTitle: string;
   subtitle?: string;

@@ -485,7 +485,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           <div className="my-6 p-4 bg-[#ebdcb9] border-l-4 border-[#8f6e28] font-mono text-xs sm:text-sm text-[#17120d] space-y-2 shadow-sm border border-[#5a4022]/20">
             <div className="font-bold uppercase tracking-widest text-[#8f6e28] mb-2 flex items-center gap-2">
               <BookOpen className="w-4 h-4 text-[#8f6e28]" />
-              <span>Hitos Históricos Documentados</span>
+              <span>Hitos biográficos (síntesis)</span>
             </div>
             <ul className="list-disc list-inside space-y-1.5 font-old-standard text-xs sm:text-sm">
               {pageData.historicalNotes.map((note, idx) => (
@@ -636,9 +636,9 @@ export const EbookPage: React.FC<EbookPageProps> = ({
             <table className="w-full text-left font-old-standard text-xs sm:text-sm border-collapse">
               <thead>
                 <tr className="bg-[#17120d] text-[#ebdcb8] font-playfair uppercase tracking-wider text-xs border-b border-[#aa8032]">
-                  <th className="p-3 border-r border-[#aa8032]/30 w-1/4">Patrón Sincrónico</th>
-                  <th className="p-3 border-r border-[#aa8032]/30 w-1/3">Manifestación Fáctica</th>
-                  <th className="p-3 w-5/12">Protocolo de Integración Psíquica</th>
+                  <th className="p-3 border-r border-[#aa8032]/30 w-1/4">Patrón</th>
+                  <th className="p-3 border-r border-[#aa8032]/30 w-1/3">Manifestaciones</th>
+                  <th className="p-3 w-5/12">Lectura y riesgo</th>
                 </tr>
               </thead>
               <tbody>
@@ -720,23 +720,6 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               </p>
             </div>
 
-            {/* Printed Ruled Lines for Personal Reflection (Journal Layout for PDF) */}
-            <div className="pt-3 border-t border-[#5a4022]/30 space-y-2">
-              <span className="font-playfair font-bold text-xs uppercase tracking-wider text-[#17120d] block">
-                {pageData.exerciseData.closurePrompt || 'Pauta de Registro para el Lector:'}
-              </span>
-              <div className="p-4 bg-[#f4e8cf] border border-[#5a4022]/40 rounded-xs space-y-4 shadow-inner">
-                <div className="border-b border-dashed border-[#aa8032]/70 h-5" />
-                <div className="border-b border-dashed border-[#aa8032]/70 h-5" />
-                <div className="border-b border-dashed border-[#aa8032]/70 h-5" />
-                <div className="border-b border-dashed border-[#aa8032]/70 h-5" />
-                <div className="flex justify-between items-center text-[10px] font-mono text-[#8f6e28] pt-1">
-                  <span>✦ Espacio reservado para anotaciones del practicante</span>
-                  <span>Bitácora Alquímica • Folio {pageData.pageNumber}</span>
-                </div>
-              </div>
-            </div>
-
           </div>
         )}
 
@@ -756,6 +739,13 @@ export const EbookPage: React.FC<EbookPageProps> = ({
                 </div>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* Post-Jungian Clarification Note if any keyTerm contains † */}
+        {pageData.keyTerms?.some((k) => k.includes('†')) && (
+          <div className="pt-2 mt-4 text-[11px] font-mono italic text-[#7a5820] border-t border-[#aa8032]/30">
+            † Formulación de la tradición junguiana posterior, no de Jung.
           </div>
         )}
       </div>

@@ -53,7 +53,7 @@ export const EbookBackCover: React.FC = () => {
           </div>
           
           <p className="font-old-standard text-xs sm:text-sm text-[#17120d] leading-relaxed text-justify">
-            Tras ordenar el mapa básico en el primer volumen, <strong className="font-semibold text-[#8f6e28]">"Mi amigo Carlitos II"</strong> se interna en los territorios más profundos, misteriosos y fecundos del legado de Carl Gustav Jung. En este segundo manual, el autor comparte charlas íntimas de mate con Carlitos para develar las dinámicas secretas del alma: el rescate de la <em>Sombra Dorada</em> sepultada bajo el fango del ego, la danza amorosa del <em>Ánima y el Ánimus</em> en las relaciones humanas, la tensión eterna entre el anciano <em>Senex</em> y el joven <em>Puer</em>, y la medicina salvadora del <em>Trickster</em> frente a la soberbia del Héroe.
+            Tras ordenar el mapa básico en el primer volumen, <strong className="font-semibold text-[#8f6e28]">"Mi amigo Carlitos II"</strong> se interna en los territorios más fecundos del legado de Carl Gustav Jung. En este segundo manual ilustrado, el autor comparte charlas de mate con Carlitos para recorrer un panorama integrador de las figuras arquetípicas (Sombra Dorada, Ánima y Ánimus, Senex-Puer) y profundizar en el eje rector: la escala de distancia Yo-arquetipo, la anatomía de la inflación psíquica y la dimensión psicoide que une mente y materia.
           </p>
           
           <p className="font-old-standard text-xs sm:text-sm text-[#17120d] leading-relaxed text-justify">
@@ -129,10 +129,10 @@ export const EbookBackCover: React.FC = () => {
         {/* 3. TAGLINE / FRASE DE CIERRE */}
         <div className="px-5 py-3.5 bg-[#ebdcb8] border-2 border-[#aa8032] rounded-xs text-center my-2 shadow-xs">
           <p className="font-cormorant italic text-base sm:text-xl text-[#17120d] font-bold tracking-wide">
-            "El privilegio de una vida es convertirse en quien verdaderamente se es."
+            "Quien mira hacia afuera sueña; quien mira hacia adentro despierta."
           </p>
           <span className="text-[10px] font-mono text-[#8f6e28] block mt-0.5">
-            — C. G. Jung • Bollingen
+            — C. G. Jung • Carta a Fanny Bowditch, 1916
           </span>
         </div>
 
@@ -147,7 +147,7 @@ export const EbookBackCover: React.FC = () => {
           </div>
 
           <div className="text-center sm:text-right">
-            <span>PUBLICACIÓN REGISTRADA • TODOS LOS DERECHOS RESERVADOS</span>
+            <span>MANUAL ILUSTRADO DE ESTUDIO • TODOS LOS DERECHOS RESERVADOS</span>
           </div>
         </div>
 

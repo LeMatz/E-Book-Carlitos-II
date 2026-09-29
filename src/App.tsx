@@ -26,7 +26,7 @@ export default function App() {
             </span>
             <span className="text-[#aa8032] hidden sm:inline">•</span>
             <span className="text-[#ebdcb8]/70 hidden sm:inline">
-              Edición de Archivo Lista para Exportación a PDF (26 Folios Completos)
+              Edición de Archivo Lista para Exportación a PDF ({EBOOK_PAGES.length} Folios Completos)
             </span>
           </div>
 

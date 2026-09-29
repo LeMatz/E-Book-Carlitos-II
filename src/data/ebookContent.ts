@@ -1,4 +1,5 @@
 import { EbookPageData, ChapterMeta } from '../types/ebook';
+import { IMAGE_MANIFEST } from './imageManifest';
 
 export class ChaptersMetaData {
   static chapters: ChapterMeta[] = [
@@ -28,7 +29,7 @@ export class ChaptersMetaData {
     },
     {
       chapterId: 3,
-      title: 'Capítulo 3 — Sincronicidad: El Principio Acasual',
+      title: 'Capítulo 3 — Sincronicidad: El Principio Acausal',
       subtitle: 'El escarabajo dorado de Küsnacht, el tiempo cualitativo y las señales del camino',
       startPage: 14,
       endPage: 17,
@@ -45,10 +46,18 @@ export class ChaptersMetaData {
     {
       chapterId: 5,
       title: 'Capítulo 5 — Cuaderno de Trabajo & Bitácora Alquímica',
-      subtitle: 'Protocolos autoadministrables de sueños, sincronías y consulta existencial al oráculo',
+      subtitle: 'Protocolos de sueños, sincronías y consulta existencial al oráculo',
       startPage: 23,
       endPage: 26,
       iconName: 'edit-3',
+    },
+    {
+      chapterId: 6,
+      title: 'Apéndice — Fuentes y Lecturas',
+      subtitle: 'Obras de referencia, correspondencia y aparato documental',
+      startPage: 27,
+      endPage: 27,
+      iconName: 'bookmark',
     },
   ];
 }
@@ -66,22 +75,28 @@ export const EBOOK_PAGES: EbookPageData[] = [
     contentType: 'introduction',
     keyTerms: ['Segundo Umbral', 'Mente Objetiva', 'Sincronía', 'Oráculo Viviente'],
     illustrationImage: {
-      src: '/src/assets/images/carlitos_antique_study_library_1790692376845.jpg',
+      src: IMAGE_MANIFEST.studyLibrary,
       alt: 'Estudio de Carlitos en Küsnacht con libros antiguos y mate',
-      caption: 'El estudio de Carlitos: donde los infolios alquímicos, la leña encendida y el mate argentino abren el diálogo con la mente profunda.',
-      credit: 'Archivo de Mitología Personal • Edición Especial 2026',
+      caption: 'El estudio de Carlitos: donde los infolios, la leña encendida y el mate argentino abren el diálogo con la mente profunda.',
+      credit: 'Ilustración',
       aspect: 'portrait',
     },
     paragraphs: [
       'Entrar en el segundo volumen de esta travesía es cruzar un umbral mucho más íntimo y desafiante. En el primer tomo ordenamos el mapa de superficie: las diferencias entre Freud y Jung, la arquitectura elemental de la máscara y la sombra, y los conceptos fundacionales que nos permitieron dejar de temerle al inconsciente. Pero Carlitos no escribió miles de páginas para que nos quedáramos cómodamente sentados en la orilla describiendo el mar desde lejos.',
       'Imaginate por un instante entrar a su estudio a orillas del lago de Zúrich en Küsnacht. Hay olor a madera de roble, tabaco aromático de pipa y papel de lino envejecido por décadas de estudio. En una pequeña mesa de té, al lado de los manuscritos del *Liber Novus*, humea un mate argentino con su bombilla de plata brillante. Carlitos me mira por encima de sus anteojos redondos, sonríe con esa ironía bondadosa que desarmaba a los intelectuales más arrogantes de Europa, y me dice: "Bueno, che... ya terminamos con los preliminares. Ahora decime con qué soñaste anoche y qué coincidencia inexplicable te dio un escalofrío esta semana".',
-      'Este manual está dedicado precisamente a lo que la academia tradicional suele esquivar por pudor o por temor al ridículo: los Arquetipos avanzados en su danza de relaciones (la Sombra Dorada, el Ánima y el Ánimus en el amor, el conflicto entre el viejo sabio Senex y el eterno muchacho Puer Aeternus), la mecánica viva de los sueños como brújula compensatoria, la sincronicidad como puente donde la mente y la materia se dan la mano, y el milenario oráculo chino del *I Ching*, al que Jung dedicó décadas de estudio riguroso.',
-      'No leas este libro como quien estudia para rendir un examen. Léelo como quien descifra una carta escrita con tinta invisible que sólo se revela ante el calor del fuego interior. Si estás dispuesto a sostener la mirada de tus propios símbolos, Carlitos ya tiene el mate servido para empezar a charlar.'
+      'Este manual está dedicado a recorrer un panorama integrador de los Arquetipos avanzados en su danza de relaciones (la Sombra Dorada, el Ánima y el Ánimus en el amor, el conflicto entre el viejo sabio Senex y el eterno muchacho Puer Aeternus), la mecánica viva de los sueños como brújula compensatoria, la sincronicidad como puente entre la mente y la materia, y el milenario oráculo chino del *I Ching*, al que Jung dedicó décadas de estudio.',
+      'No leas este libro como quien estudia para rendir un examen. Leelo como quien descifra una carta escrita con tinta invisible que sólo se revela ante el calor del fuego interior. Si estás dispuesto a sostener la mirada de tus propios símbolos, Carlitos ya tiene el mate servido para empezar a charlar.'
     ],
     carlitosCallout: {
       id: 'carlitos-intro-1',
       title: 'Carlitos dice junto al fuego:',
       text: 'Quien entra al segundo territorio de la mente debe abandonar dos muletas: el escepticismo burlón de los que temen al asombro, y la credulidad infantil de los que confunden la magia con la evasión de la realidad. El alma es una realidad empírica rigurosa; tratala con el respeto que le tendrías a un océano.'
+    },
+    secondaryCallout: {
+      id: 'carlitos-intro-author-note',
+      title: 'Nota del autor:',
+      variant: 'context_note',
+      text: 'Carlitos es un personaje literario y las charlas narradas son imaginadas con fines de divulgación y coaching. Los textos expresamente rotulados como «Cita» pertenecen a la obra histórica de C. G. Jung y cuentan con fuente verificable; el resto constituye una lectura e interpretación del autor.',
     }
   },
   {
@@ -93,17 +108,17 @@ export const EBOOK_PAGES: EbookPageData[] = [
     contentType: 'introduction',
     keyTerms: ['Realidad Psíquica', 'Unus Mundus', 'Materia y Psique', 'Microcosmos'],
     clippedPhoto: {
-      imageUrl: '/src/assets/images/vintage_mate_journal_snapshot_1790695120216.jpg',
-      caption: 'El mate y el diario de apuntes en Küsnacht',
+      imageUrl: IMAGE_MANIFEST.mateJournal,
+      caption: 'El mate y el cuaderno de notas en Küsnacht',
       rotationDeg: 2.2,
       side: 'right',
       altText: 'Mate y cuaderno de notas de Carlitos',
     },
     paragraphs: [
-      'Uno de los aportes más revolucionarios y menos comprendidos de Carl Gustav Jung es el concepto de *realidad psíquica* (*psychische Realität*). Para el hombre contemporáneo, educado en el materialismo cartesiano, sólo "existe" aquello que puede pesarse en una balanza, medirse con una regla o fotografiarse con una lente óptica. Si algo ocurre en el interior del ser humano —un terror súbito, una intuición certera, un sueño premonitorio—, la ciencia reduccionista se apresura a etiquetarlo como "pura imaginación", "ilusión" o un mero desbalance neuroquímico.',
+      'Uno de los aportes más revolucionarios y menos comprendidos de Carl Gustav Jung es el concepto de *realidad psíquica* (*psychische Realität*). Para el hombre contemporáneo, educado en el materialismo científico, sólo "existe" aquello que puede pesarse en una balanza, medirse con una regla o fotografiarse con una lente óptica. Si algo ocurre en el interior del ser humano —un terror súbito, una intuición certera, un sueño premonitorio—, la ciencia reduccionista se apresura a etiquetarlo como "pura imaginación", "ilusión" o un mero desbalance neuroquímico.',
       'Carlitos invertía por completo esa soberbia metodológica. Una idea que mueve a una persona a arriesgar su vida, un símbolo que transforma una depresión paralizante en una obra de arte, o un complejo inconsciente que sabotea sistemáticamente una vocación, son hechos con un peso y una eficacia causal tan tangibles como una roca en el camino. Para la experiencia humana, la psique es la única realidad inmediata: todo lo que sabemos del mundo físico exterior entra filtrado a través de nuestra conciencia psíquica.',
-      'Avanzando en su madurez, Jung rescató de la filosofía medieval y la alquimia el concepto de *Unus Mundus* ("Mundo Uno"). El Unus Mundus plantea que en el estrato más profundo de la existencia, por debajo del velo de las apariencias sensibles, la materia física y la energía psíquica no son dos sustancias separadas y antagónicas, sino dos aspectos complementarios de una misma realidad unitaria.',
-      'Cuando un suceso exterior (como la aparición de un animal o el encuentro casual con una persona clave) coincide de forma asombrosa con un estado interior cargado de significado, no estamos ante una causalidad física ni ante una simple fantasía: estamos presenciando una grieta temporal en el tejido de la realidad donde el *Unus Mundus* se deja ver.'
+      'Avanzando en su madurez, Jung rescató de la alquimia renacentista (Gerhard Dorn) el concepto de *Unus Mundus* ("Mundo Uno"). El Unus Mundus plantea que en el estrato más profundo de la existencia, por debajo del velo de las apariencias sensibles, la materia física y la energía psíquica no son dos sustancias separadas y antagónicas, sino dos aspectos complementarios de una misma realidad unitaria.',
+      'Cuando un suceso exterior (como la aparición de un animal o el encuentro casual con una persona clave) coincide de forma asombrosa con un estado interior cargado de significado, no estamos ante una causalidad física ni ante una simple fantasía: Jung lo pensó como una manifestación del *Unus Mundus*, donde el orden físico y el anímico se muestran como dos aspectos complementarios de una misma realidad profunda.'
     ],
     carlitosCallout: {
       id: 'carlitos-intro-2',
@@ -115,7 +130,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
       id: 'unus-mundus-glossary',
       title: 'Glosario:',
       variant: 'glossary',
-      text: 'Unus Mundus: Concepto hermético recuperado por Jung para designar la unidad potencial subyacente entre el mundo físico y el reino psíquico.'
+      text: 'Unus Mundus: Concepto recuperado por Jung a partir de la alquimia de Gerhard Dorn para designar la unidad potencial subyacente entre el mundo físico y el reino psíquico.'
     }
   },
   {
@@ -134,14 +149,14 @@ export const EBOOK_PAGES: EbookPageData[] = [
     ],
     paragraphs: [
       'Para entender la psicología profunda de Carlitos es imposible quedarse en su consultorio médico de Küsnacht. Hay que viajar unos kilómetros al este, hacia las orillas solitarias del lago superior de Zúrich, donde a partir de 1923 Jung comenzó a edificar con sus propias manos la famosa *Torre de Bollingen*.',
-      'Bollingen no era una casa de fin de semana ni una villa de descanso aristocrático. Era un útero de piedra bruta, carente de electricidad, agua corriente o teléfono. Jung cortaba su propia leña con hacha, cocinaba en una pequeña estufa de hierro, sacaba agua de un pozo con balde y alumbraba sus noches con lámparas de aceite. "En Bollingen me encuentro en mi verdadero ser —escribió en sus memorias—; allí soy el hijo de mi madre, el anciano campesino y el alquimista medieval que conversa con las raíces de los árboles".',
+      'Bollingen no era una casa de fin de semana ni una villa de descanso aristocrático. Era un útero de piedra bruta, carente de electricidad, agua corriente o teléfono. Jung cortaba su propia leña con hacha, cocinaba en una pequeña estufa de hierro, sacaba agua de un pozo con balde y alumbraba sus noches con lámparas de aceite. En Bollingen, Carlitos sentía que volvía a ser él mismo en el sentido más hondo: allí se reencontraba con la sencillez del campesino y con la paciencia silenciosa de quien trabaja con la piedra y el fuego.',
       'En sus muros, Carlitos pintó frescos con el Ouroboros, el Sol Niger y figuras del *Liber Novus*. En el patio talló con cincel y maza una enorme piedra cúbica con el rostro de Telesforo, el duendecillo sanador de Esculapio, y versos alquímicos que recordaban que "lo despreciado por el mundo se convertirá en la piedra angular del templo".',
       'Bollingen nos enseña que el trabajo con los arquetipos, los sueños y el oráculo requiere un espacio físico y mental desacelerado. No se puede escuchar la voz tenue del inconsciente en medio del zumbido frenético de las notificaciones digitales. Hacen falta piedras, fuego y silencio.'
     ],
     carlitosCallout: {
       id: 'carlitos-bio-bollingen',
       title: 'Carlitos dice desde Bollingen:',
-      text: 'A veces me siento como un trozo de madera flotando en un río que no veo. Cuando amasas tu propio pan, enciendes tu propio fuego y miras las olas del lago sin un reloj en la muñeca, de pronto te das cuenta de que el alma nunca tuvo prisa por llegar a ninguna parte.'
+      text: 'A veces me siento como un trozo de madera flotando en un río que no veo. Cuando amasás tu propio pan, encendés tu propio fuego y mirás las olas del lago sin un reloj en la muñeca, de pronto te das cuenta de que el alma nunca tuvo prisa por llegar a ninguna parte.'
     }
   },
   {
@@ -162,13 +177,13 @@ export const EBOOK_PAGES: EbookPageData[] = [
       'Uno de los argumentos más repetidos por los detractores de Jung consiste en acusarlo de "esoterismo" o "misticismo acientífico". Nada derriba con mayor contundencia esa calumnia que examinar la profunda amistad intelectual de más de veinticinco años que unió a Carlitos con *Wolfgang Pauli*, uno de los padres indiscutidos de la mecánica cuántica y Premio Nobel de Física.',
       'Pauli llegó a la consulta de Jung en 1932, atravesando un severo colapso nervioso tras un divorcio traumático y una crisis de sentido científico. Jung intuyó de inmediato la extraordinaria potencia intelectual de su paciente y derivó su análisis cotidiano a su discípula Erna Rosenbaum, reservándose la supervisión general. A lo largo de los años, Jung recopiló y analizó minuciosamente más de 400 sueños y visiones de Pauli (que posteriormente constituyeron el material clínico central de su monumental obra *Psicología y alquimia*).',
       'El intercambio epistolar entre ambos fue un auténtico laboratorio donde colisionaron los dos extremos del conocimiento humano: Pauli aportaba el rigor matemático, la física atómica y la noción de complementariedad de Niels Bohr; Jung aportaba la fenomenología arquetípica, la alquimia y el inconsciente colectivo.',
-      'De esta colaboración titánica nació la formulación definitiva de la *Sincronicidad*: el concepto de que el universo no sólo se rige por la causalidad lineal (A empuja a B en el espacio-tiempo), sino también por un principio acasual de conexión por sentido o significado. Pauli y Jung demostraron que la física cuántica y la psicología profunda estaban explorando dos túneles que desembocaban en la misma caverna.'
+      'De esta colaboración titánica nació la formulación de la *Sincronicidad*: la hipótesis de que el universo no sólo se rige por la causalidad lineal (A empuja a B en el espacio-tiempo), sino también por un principio acausal de conexión por sentido o significado. Pauli y Jung exploraron la convergencia entre la física cuántica y la psicología profunda.'
     ],
     carlitosCallout: {
       id: 'carlitos-bio-pauli',
-      title: 'Cita Histórica (Carta de Wolfgang Pauli a C. G. Jung, 1948):',
-      variant: 'historical_quote',
-      text: 'La física cuántica ha demostrado que el observador no puede ser separado del fenómeno observado. La psique y la materia obedecen a un orden arquetípico común que ninguna fórmula mecanicista puede agotar.'
+      title: 'Carlitos recuerda sus charlas con Pauli:',
+      variant: 'carlitos',
+      text: 'Wolfgang me repetía a menudo que la física cuántica había llegado al mismo límite que nosotros: el observador y lo observado están entrelazados. La mente y la materia responden a un orden común que ninguna fórmula puramente mecánica puede agotar.'
     }
   },
 
@@ -182,9 +197,9 @@ export const EBOOK_PAGES: EbookPageData[] = [
     pageTitle: 'Las Figuras Arquetípicas: Sombra, Vínculos y Polaridades',
     subtitle: 'Sombra colectiva y dorada, la imagen del alma y el eje Senex-Puer en síntesis',
     contentType: 'text',
-    keyTerms: ['Sombra Dorada', 'Sombra Colectiva', 'Ánima y Ánimus', 'Senex-Puer', 'Mapa Interior'],
+    keyTerms: ['Sombra Dorada†', 'Sombra Colectiva', 'Ánima y Ánimus', 'Senex-Puer', 'Mapa Interior'],
     clippedPhoto: {
-      imageUrl: '/src/assets/images/vintage_carlitos_lake_snapshot_1790695023385.jpg',
+      imageUrl: IMAGE_MANIFEST.carlitosLake,
       caption: 'Carlitos junto al lago de Zúrich: observando las mareas del mundo interior',
       rotationDeg: -2.2,
       side: 'left',
@@ -211,7 +226,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     subtitle: 'De la proyección a la posesión: la escala de absorción entre la conciencia y la fuerza numinosa',
     contentType: 'text',
     keyTerms: [
-      'Continuo Yo-Arquetipo',
+      'Continuo Yo-Arquetipo†',
       'Proyección',
       'Identificación / Inflación',
       'Posesión',
@@ -219,8 +234,8 @@ export const EBOOK_PAGES: EbookPageData[] = [
       'Literalización',
     ],
     clippedPhoto: {
-      imageUrl: '/src/assets/images/vintage_mate_journal_snapshot_1790695120216.jpg',
-      caption: 'Cuaderno y mate en el estudio: calibrando la distancia con lucidez',
+      imageUrl: IMAGE_MANIFEST.mateJournal,
+      caption: 'Cuaderno de notas y mate en el estudio: calibrando la distancia con lucidez',
       rotationDeg: 2.4,
       side: 'right',
       altText: 'Apuntes de Carlitos sobre la distancia arquetípica',
@@ -228,9 +243,9 @@ export const EBOOK_PAGES: EbookPageData[] = [
     paragraphs: [
       'Uno de los mapas más reveladores y prácticos que Carlitos nos legó para entender qué nos ocurre cuando una fuerza profunda nos conmueve es el *continuo de pérdida de distancia Yo-arquetipo*. Frente a la energía viva de un arquetipo, nuestro Yo no se queda quieto: se mueve a lo largo de una escala según cuánta distancia y lucidez logre sostener. Este continuo se organiza en torno a tres puntos de referencia fundamentales:',
       '**1. Proyección (Distancia máxima):** En este primer punto de referencia, el contenido se deposita afuera; el Yo queda intacto. Vemos la cualidad arquetípica encarnada en otra persona o circunstancia (el líder perfecto, el rival monstruoso, el salvador providencial o el amor idealizado). Aunque nuestra percepción del otro queda teñida por esa imagen, nuestro Yo conserva su capacidad de pensar y su identidad habitual separada.',
-      '**2. Identificación / Inflación (Pérdida intermedia de distancia):** Aquí el contenido se funde con el Yo, colapsando en un solo bloque lo que antes eran dos fenómenos separados en la exposición técnica. Al identificarse con el arquetipo, el Yo se atribuye a su pequeña persona facultades, dones o misiones grandiosas (creerse el Salvador indispensable, el Sabio supremo o el Mártir incomprendido). Se borra la frontera entre nuestra imperfección humana y la magnitud del arquetipo, gestando una embriaguez de grandeza que anticipa el colapso.',
+      '**2. Identificación / Inflación (Pérdida intermedia de distancia):** Aquí el contenido se funde con el Yo, colapsando en un solo bloque lo que antes eran dos fenómenos separados. Al identificarse con el arquetipo, el Yo se atribuye a su pequeña persona facultades, dones o misiones grandiosas (creerse el Salvador indispensable, el Sabio supremo o el Mártir incomprendido). Se borra la frontera entre nuestra imperfección humana y la magnitud del arquetipo, gestando una embriaguez de grandeza que anticipa el colapso.',
       '**3. Posesión (Colapso total de distancia):** Es el punto extremo del camino. En la posesión, el Yo pierde por completo la función decisoria; el arquetipo opera sin mediación alguna. La voluntad consciente queda a un costado o anulada. Ya no decidimos nosotros: somos hablados y actuados por la fuerza arquetípica que nos tomó por asalto, desde los fanatismos colectivos hasta los arranques viscerales donde "no éramos nosotros mismos".',
-      'Para cuidar nuestro equilibrio y crecer en sabiduría, necesitamos reconocer en qué punto de este continuo nos encontramos ante cada crisis. En los momentos de mayor soberbia o inflación heroica, figuras como el *Trickster* (el Embaucador) irrumpen oportunamente con un tropiezo, un fallo cómico o una ironía de la vida para desarmar la fusión antes de que sea tarde.'
+      'Para cuidar nuestro equilibrio y crecer en sabiduría, necesitamos reconocer en qué punto de este continuo nos encontramos ante cada crisis, evitando tanto la disociación [1] como la literalización [2] del símbolo vivo. En los momentos de mayor soberbia o inflación heroica, figuras como el *Trickster* (el Embaucador) irrumpen oportunamente con un tropiezo, un fallo cómico o una ironía de la vida para desarmar la fusión antes de que sea tarde.'
     ],
     footnotes: [
       {
@@ -247,7 +262,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     carlitosCallout: {
       id: 'carlitos-cap1-distancia',
       title: 'Carlitos dice con gravedad:',
-      text: 'Tratar con un arquetipo es como pararse frente a una fogata en la noche del bosque. Si te quedas demasiado lejos proyectando tu calor en las sombras, te congelas de frío; pero si das un paso de más y te tiras de cabeza al fuego creyendo que eres la llama, te conviertes en ceniza. La sabiduría consiste en sentarte a una distancia justa: la suficiente para abrigar tu alma sin quemar tu humanidad.'
+      text: 'Tratar con un arquetipo es como pararse frente a una fogata en la noche del bosque. Si te quedás demasiado lejos proyectando tu calor en las sombras, te congelás de frío; pero si das un paso de más y te tirás de cabeza al fuego creyendo que sos la llama, te convertís en ceniza. La sabiduría consiste en sentarte a una distancia justa: la suficiente para abrigar tu alma sin quemar tu humanidad.'
     },
   },
   {
@@ -265,7 +280,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
       'Distancia Justa',
     ],
     clippedPhoto: {
-      imageUrl: '/src/assets/images/vintage_bollingen_stone_snapshot_1790695102166.jpg',
+      imageUrl: IMAGE_MANIFEST.bollingenStone,
       caption: 'La roca de Bollingen: anclando la sobriedad terrenal frente a la inflación',
       rotationDeg: -2.1,
       side: 'left',
@@ -292,22 +307,22 @@ export const EBOOK_PAGES: EbookPageData[] = [
     contentType: 'text',
     keyTerms: [
       'Arquetipo Psicoide',
-      'Espectro Bipolar',
+      'Espectro instinto–imagen',
       'Instinto Biológico',
       'Unus Mundus',
       'Raíz de la Sincronía',
     ],
     clippedPhoto: {
-      imageUrl: '/src/assets/images/golden_scarab_alchemical_relic_1790692388946.jpg',
+      imageUrl: IMAGE_MANIFEST.goldenScarab,
       caption: 'Reliquia del escarabajo dorado: cuando el arquetipo toma cuerpo físico',
       rotationDeg: 2.6,
       side: 'right',
       altText: 'Escarabajo dorado sobre manuscrito antiguo',
     },
     paragraphs: [
-      'Uno de los errores más comunes consiste en imaginar que los arquetipos son meras "ideas en la cabeza", fantasías poéticas o esquemas abstractos guardados en los lóbulos cerebrales. En sus años de madurez —y gracias al fecundo diálogo que mantuvo con el físico cuántico Wolfgang Pauli—, Carlitos demostró que el arquetipo en su raíz más honda no es puramente mental: es *psicoide* (*psychoid*).',
+      'Uno de los errores más comunes consiste en imaginar que los arquetipos son meras "ideas en la cabeza", fantasías poéticas o esquemas abstractos guardados en los lóbulos cerebrales. En sus años de madurez —y gracias al fecundo diálogo que mantuvo con el físico cuántico Wolfgang Pauli—, Jung propuso que el arquetipo en su raíz más honda no es puramente mental: posee una naturaleza *psicoide* (*psychoid*).',
       '¿Qué significa exactamente que sea "psicoide"? El término alude a una realidad que es "semejante al alma", pero que trasciende los límites de lo psíquico consciente e inconsciente. El arquetipo se comporta como un espectro lumínico continuo con dos polos inseparables: en su extremo superior (el polo imaginativo y espiritual), el arquetipo se viste de metáforas, relatos míticos, sueños numinosos y anhelos de sentido. Pero en su extremo inferior (el polo somático y físico), el arquetipo se ancla de forma directa en los procesos biológicos, el instinto animal, la química celular y la materia inorgánica.',
-      'Basta observar la naturaleza para constatar este orden inteligente en acción: las aves migratorias que recorren continentes sin compás ni mapas de papel, las colonias de hormigas que construyen ciudades ventiladas sin un ingeniero a cargo, o el latido cardíaco fetal que se organiza en el vientre materno. Ninguna de estas maravillas depende de un intelecto calculador; son arquetipos psicoides operando como patrones vivos organizadores de la propia materia.',
+      'Carlitos habría dicho que basta observar la naturaleza para encontrar analogías vivas de este orden: las aves migratorias que recorren continentes sin compás ni mapas de papel, las colonias de hormigas que construyen ciudades ventiladas sin un ingeniero a cargo, o el latido cardíaco que se organiza en el cuerpo en formación. Para él, estas dinámicas ilustran cómo ciertos patrones ordenadores parecen operar en el tejido biológico mucho antes de que intervenga la razón consciente.',
       'Esta naturaleza psicoide es el cimiento silencioso sobre el cual reposa el fenómeno de la *Sincronicidad*. Cuando un estado interior cargado de significado coincide de forma asombrosa con un hecho físico exterior (como aquel célebre escarabajo dorado que golpeó la ventana del consultorio de Küsnacht), no es que la mente haya movido la materia por telequinesis. Lo que ocurre es que psique y materia son dos caras de una misma moneda arquetípica activada simultáneamente en el tejido del *Unus Mundus*.',
       'Comprender la dimensión psicoide nos rescata de dos trampas: el materialismo reduccionista que niega el significado del cosmos, y la superstición mágica que cree controlar el mundo con el pensamiento. La naturaleza y el alma respiran al unísono.'
     ],
@@ -325,7 +340,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     pageTitle: 'El Self / Sí-Mismo y la Distancia Justa',
     subtitle: 'La cuadratura del círculo, el mandala de la totalidad y la reconciliación del Eje Yo-Self',
     contentType: 'text',
-    keyTerms: ['Self / Sí-Mismo', 'Eje Yo-Self', 'Distancia Justa', 'Mandala', 'Lapis Philosophorum'],
+    keyTerms: ['Self / Sí-Mismo', 'Eje Yo-Self†', 'Distancia Justa', 'Mandala', 'Lapis Philosophorum'],
     paragraphs: [
       'Llegamos a la cumbre integradora de este primer capítulo: el arquetipo del *Self* (el Sí-Mismo). Habiendo comprendido los riesgos de la inflación y la posesión, el Self aparece precisamente como la fuente y el custodio de la *distancia justa*. Para Carlitos, el Self no compite con el Yo ni busca anularlo; representa el centro coordinador, la brújula orientadora y la totalidad que abraza tanto nuestra luz consciente como nuestra noche profunda.',
       'El drama de la cultura contemporánea ha sido la fractura del *Eje Yo-Self*. El ser humano moderno vive como si su pequeño intelecto fuera el dueño absoluto de la realidad. Cuando esta desconexión se agrava, sobreviene la neurosis, el vacío de propósito y la sensación de sequedad espiritual. El Self responde enviando síntomas, crisis de vida o sueños intensos para obligar al Yo a detener su carrera desenfrenada y reorientarse hacia lo esencial.',
@@ -365,7 +380,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap2-compensacion',
-      title: 'Cita Histórica de C. G. Jung (Obras Completas, Vol. 8):',
+      title: 'Cita Histórica de C. G. Jung (Obras Completas, vol. 10, §304):',
       variant: 'historical_quote',
       text: 'El sueño es la pequeña puerta escondida en el santuario más íntimo y secreto del alma, que se abre hacia esa noche cósmica que era psique mucho antes de que existiera el Yo consciente, y que seguirá siendo psique mucho después de que este haya desaparecido.'
     }
@@ -381,7 +396,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     paragraphs: [
       'Una de las preguntas más habituales que le hacían a Carlitos en sus seminarios era: "¿Qué significa soñar con serpientes, con agua turbia o con la muerte de un pariente?". Y la respuesta de Carlitos era invariablemente una sonrisa paciente seguida de una repregunta: "¿Quién eres tú, qué hiciste ayer y qué significa para ti esa serpiente?".',
       'Aquí radica una diferencia fundamental para entender el lenguaje de los sueños: la distinción entre un *signo* y un *símbolo*. Un signo es una convención arbitraria que representa algo ya conocido por el intelecto consciente: una señal de tránsito con una raya roja significa "no pasar"; el dibujo de un tenedor y un cuchillo significa "restaurante". Los signos son estáticos, unívocos y pueden recopilarse en un diccionario.',
-      'Un verdadero *símbolo*, en cambio, es la mejor formulación posible de una realidad viviente que la razón todavía no alcanza a comprender cabalmente. El símbolo es polisémico, numinoso y cambia según la biografía del soñador. Para un biólogo especialista en reptiles, la serpiente evoca asombro por la adaptación evolutiva; para una persona con una fobia infantil, terror visceral; para un iniciado en la tradición hermética, la energía de la Kundalini o el renacimiento dérmico. Ningún diccionario puede contemplar esa singularidad.',
+      'Un verdadero *símbolo*, en cambio, es la mejor formulación posible de una realidad viviente que la razón todavía no alcanza a comprender cabalmente. El símbolo es polisémico, numinoso y cambia según la biografía del soñador. Para un biólogo especialista en reptiles, la serpiente evoca asombro por la adaptación evolutiva; para una persona con una fobia infantil, terror visceral; para un iniciado en la tradición yóguica y tántrica, la energía de la Kundalini o el renacimiento dérmico. Ningún diccionario puede contemplar esa singularidad.',
       'El método junguiano para descifrar el mensaje onírico es la *Amplificación*. Se parte de las asociaciones íntimas y personales del sujeto ("¿A qué me recuerda esto en mi momento actual?"), para luego enriquecer la imagen con los paralelos arquetípicos de los mitos, el arte y los cuentos de hadas universales.'
     ],
     carlitosCallout: {
@@ -425,23 +440,35 @@ export const EBOOK_PAGES: EbookPageData[] = [
     pageTitle: 'El Arte de la Imaginación Activa',
     subtitle: 'El diálogo despierto de igual a igual con las figuras del inconsciente',
     contentType: 'text',
-    keyTerms: ['Imaginación Activa', 'Liber Novus', 'Diálogo Interior', 'Confrontación Ética'],
+    keyTerms: [
+      'Imaginación Activa',
+      'Liber Novus',
+      'Diálogo Interior',
+      'Confrontación Ética',
+      'Principios de Imaginación Activa†'
+    ],
     paragraphs: [
-      'Entre 1913 y 1919, tras su dolorosa ruptura con Freud y el estallido de la Primera Guerra Mundial, Jung atravesó un periodo de profunda desorientación que denominó su "confrontación con el inconsciente". En lugar de recurrir a la medicación o huir de sus visiones interiores, decidió hacer algo radical: inventó la técnica de la *Imaginación Activa*.',
+      'Entre 1913 y c. 1917, tras su dolorosa ruptura con Freud y el estallido de la Primera Guerra Mundial, Jung atravesó un período de profunda desorientación que denominó su «confrontación con el inconsciente». En lugar de eludir sus visiones interiores, decidió hacer algo radical: desarrolló la técnica de la *Imaginación Activa*.',
       'La Imaginación Activa no es una ensoñación pasiva ni una fantasía dirigida de autoayuda donde el ego se imagina en una playa paradisíaca recibiendo elogios. Muy por el contrario, consiste en apaciguar el murmullo de la razón consciente, convocar una figura o símbolo onírico cargado de afecto, otorgarle *completa autonomía dramática* y entablar con ella una conversación despierta de igual a igual.',
-      'Las reglas de oro que Carlitos nos dejó para esta práctica son sagradas: 1. *No manipules a la figura*: si la figura del sueño es un anciano hosco, un animal salvaje o un rival irritante, dejá que hable con sus propias palabras sin dictarle las respuestas. 2. *No te disuelvas en la fantasía*: el Yo debe mantener su juicio crítico, sus valores éticos y su perspectiva humana. Podés debatir, discrepar, pedir aclaraciones o negarte a cumplir pedidos absurdos.',
-      'Jung dialogó durante años con figuras como *Filemón* (el anciano sabio pagano con alas de martín pescador) y *Salomé*, volcando sus diálogos e ilustraciones en los folios de cuero rojo del *Liber Novus*. La Imaginación Activa transforma la energía reprimida en conciencia viva.'
+      'Los principios de la práctica junguiana formulados para este diálogo establecen: 1. *No manipules a la figura*: si la figura del sueño es un anciano hosco, un animal salvaje o un rival irritante, dejá que hable con sus propias palabras sin dictarle las respuestas. 2. *No te disuelvas en la fantasía*: el Yo debe mantener su juicio crítico, sus valores éticos y su perspectiva humana. Podés debatir, discrepar, pedir aclaraciones o negarte a cumplir pedidos absurdos.',
+      'Jung dialogó durante años con figuras como *Filemón* (el anciano sabio pagano con alas de martín pescador y cuernos de toro) y *Salomé*, volcando sus diálogos e ilustraciones en los folios de cuero rojo del *Liber Novus*. La Imaginación Activa transforma la energía reprimida en conciencia viva.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap2-imaginacion',
       title: 'Nota de Advertencia de Carlitos:',
       variant: 'alchemical',
       text: 'La Imaginación Activa no es un juego de salón para pasar el rato. Si convocas a los dioses de tu abismo interior, hazlo con la seriedad con la que invitarías a un embajador extranjero a tu casa: con respeto absoluto, pero sin renunciar a tu soberanía.'
+    },
+    secondaryCallout: {
+      id: 'carlitos-prudencia-f13',
+      title: 'Nota de prudencia de Carlitos:',
+      variant: 'context_note',
+      text: 'Una aclaración ética indispensable: la imaginación activa, las sincronías y el oráculo son herramientas de autoconocimiento, jamás un sustituto de la psicoterapia o la atención médica. Si experimentás voces intrusivas, desrealización, disociación o pensamientos de daño, no te pongas a experimentar solo: consultá de inmediato a un profesional de la salud mental.'
     }
   },
 
   // ==========================================
-  // CAPÍTULO 3 — SINCRONICIDAD: EL PRINCIPIO ACASUAL (PÁGINAS 14 A 17)
+  // CAPÍTULO 3 — SINCRONICIDAD: EL PRINCIPIO ACAUSAL (PÁGINAS 14 A 17)
   // ==========================================
   {
     pageNumber: 14,
@@ -804,9 +831,6 @@ export const EBOOK_PAGES: EbookPageData[] = [
         },
       ],
       applicationExample: 'Ejemplo Real: Mateo soñó que conducía a 200 km/h por una autopista lujosa pero sin frenos (Exposición/Desarrollo). En el último segundo, un viejo guardabosques con farol (Senex) le cortaba el paso con una rama verde y el auto se apagaba (Peripeteia/Lysis). Comprendió que su sobreexigencia laboral estaba al borde de provocarle un infarto. Su acción concreta fue cancelar dos compromisos innecesarios y tomarse una tarde de caminata en silencio.',
-      closurePrompt: 'Registro Personal del Sueño en Cuatro Actos:',
-      inputFieldKey: 'workbook_dream_4acts',
-      inputPlaceholder: 'Escribí aquí tu análisis del sueño: 1. Escenario inicial... 2. Nudo... 3. Clímax... 4. Lysis compensatoria... 5. Mi acción concreta para hoy...',
     },
     paragraphs: [
       'El trabajo con los sueños es la piedra angular del autoconocimiento y la escucha interior. Dedicarle veinte minutos a la semana a este protocolo te otorga una lucidez sobre tus verdaderas motivaciones que ningún libro teórico puede reemplazar.'
@@ -857,9 +881,6 @@ export const EBOOK_PAGES: EbookPageData[] = [
         },
       ],
       applicationExample: 'Ejemplo Documentado: Clara dudaba entre abandonar una carrera bancaria opresiva para dedicarse a la restauración de arte. Mientras lloraba en una plaza preguntándose si estaba loca, una anciana desconocida se sentó a su lado, abrió un sobre manchado y le pidió que le leyera una carta porque no tenía sus anteojos. La carta comenzaba: "Nunca temas a empezar de nuevo cuando el arte es la sangre de tus venas". Clara renunció la semana siguiente.',
-      closurePrompt: 'Bitácora de Sincronicidad Personal:',
-      inputFieldKey: 'workbook_synchronicity_entry',
-      inputPlaceholder: 'Anotá aquí: 1. Qué sentías en tu interior... 2. Qué ocurrió en el exterior... 3. Cuál es el puente de sentido... 4. Qué decisión consciente tomas a partir de esto...',
     },
     paragraphs: [
       'Llevar un cuaderno de sincronías es como afinar un instrumento de cuerda: al principio parece que el universo está callado, pero a medida que afinas tu atención, comienzas a escuchar la sinfonía de conexiones en la que estás inmerso.'
@@ -910,9 +931,6 @@ export const EBOOK_PAGES: EbookPageData[] = [
         },
       ],
       applicationExample: 'Ejemplo de Consulta: Un terapeuta dudaba si confrontar a un alumno deshonesto. Preguntó: "¿Cuál debe ser mi postura ética ante este conflicto?". Obtuvo el Hexagrama 21, Shih Ho (Morder a Través): el juicio describe la necesidad de aplicar la ley con claridad y firmeza para que la comunidad no se pudra. Comprendió que su complacencia era miedo a la desaprobación y no bondad real.',
-      closurePrompt: 'Registro de la Consulta al I Ching:',
-      inputFieldKey: 'workbook_iching_consultation',
-      inputPlaceholder: 'Anotá aquí: 1. Mi pregunta esencial de sentido... 2. Resultado de las 6 tiradas... 3. Hexagrama primario y secundario... 4. Mensaje arquetípico... 5. Mi resolución ética...',
     },
     paragraphs: [
       'El I Ching no juzga desde afuera: revela la constelación que tú mismo estás creando con tus elecciones inconscientes. Tratado con reverencia, se convierte en el más lúcido consejero de tu vida.'
