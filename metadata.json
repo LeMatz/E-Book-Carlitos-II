@@ -1,0 +1,8 @@
+{
+  "name": "Mi amigo Carlitos II - E-book",
+  "description": "Edición especial de archivo para el manual de Carl Jung: Arquetipos II, sueños, sincronicidades y el oráculo del I Ching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
