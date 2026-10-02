@@ -304,7 +304,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
   );
 
   return (
-    <article className="w-full max-w-4xl mx-auto my-6 sm:my-10 p-5 sm:p-10 paper-card rounded-sm shadow-2xl relative transition-all min-h-[1100px] sm:min-h-[1280px] flex flex-col justify-between print-page-sheet overflow-hidden select-none">
+    <article className="w-full max-w-4xl mx-auto my-6 sm:my-10 p-5 sm:p-10 paper-card rounded-sm shadow-2xl relative transition-all flex flex-col justify-between print-page-sheet overflow-hidden">
       {/* Decorative Ornamental Corners */}
       <div className="absolute top-2 left-2">
         <OrnamentalCorner position="top-left" color="#aa8032" />
@@ -340,7 +340,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
 
       {/* Chapter Marker Banner if beginning a chapter */}
       {chapterStartMeta && (
-        <div className="mb-6 text-center space-y-2 animate-fadeIn">
+        <div className="mb-6 text-center space-y-2">
           <div className="inline-flex items-center justify-center gap-3 px-5 py-1.5 bg-[#17120d] text-[#d4af37] border-2 border-[#8f6e28] shadow-md rounded-xs">
             <SolAndLunaIcon className="w-4 h-4 text-[#d4af37] shrink-0" />
             <span className="font-playfair font-black text-xs sm:text-sm uppercase tracking-[0.25em] text-[#f2e6cb]">

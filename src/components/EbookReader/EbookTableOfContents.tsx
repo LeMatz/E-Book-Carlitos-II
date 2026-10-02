@@ -5,7 +5,7 @@ import { OrnamentalCorner } from '../VintageSvgIcons';
 
 export const EbookTableOfContents: React.FC = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto my-6 sm:my-10 p-5 sm:p-10 paper-card border-2 border-[#5a4022] rounded-sm shadow-2xl print-page-sheet min-h-[1100px] sm:min-h-[1280px] flex flex-col justify-between relative overflow-hidden select-none">
+    <div className="w-full max-w-4xl mx-auto my-6 sm:my-10 p-5 sm:p-10 paper-card border-2 border-[#5a4022] rounded-sm shadow-2xl print-page-sheet flex flex-col justify-between relative overflow-hidden">
       
       {/* Decorative Corners */}
       <div className="absolute top-2 left-2">
@@ -21,7 +21,7 @@ export const EbookTableOfContents: React.FC = () => {
         <OrnamentalCorner position="bottom-right" color="#aa8032" />
       </div>
 
-      <div className="border-4 border-double border-[#aa8032] p-4 sm:p-8 relative bg-[#ebdcb8]/40 min-h-[1020px] sm:min-h-[1180px] flex-1 flex flex-col justify-between">
+      <div className="border-4 border-double border-[#aa8032] p-4 sm:p-8 relative bg-[#ebdcb8]/40 flex-1 flex flex-col justify-between">
         
         {/* Header Section */}
         <div className="text-center space-y-2 mb-4">

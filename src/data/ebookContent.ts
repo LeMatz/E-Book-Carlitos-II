@@ -369,7 +369,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
       src: '/src/assets/images/alchemical_dreams_mandala_1790692414590.jpg',
       alt: 'Mandala alquímico del inconsciente y los sueños',
       caption: 'El mandala del inconsciente: los sueños tejen en círculos de luz y sombra la compensación que el Yo diurno necesita para no extraviarse.',
-      credit: 'Grabado de Archivo • Manuscrito de Bollingen',
+      credit: 'Ilustración',
       aspect: 'square',
     },
     paragraphs: [
@@ -394,7 +394,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     contentType: 'text',
     keyTerms: ['Símbolo vs Signo', 'Diccionario de Sueños', 'Amplificación', 'Asociación Personal'],
     paragraphs: [
-      'Una de las preguntas más habituales que le hacían a Carlitos en sus seminarios era: "¿Qué significa soñar con serpientes, con agua turbia o con la muerte de un pariente?". Y la respuesta de Carlitos era invariablemente una sonrisa paciente seguida de una repregunta: "¿Quién eres tú, qué hiciste ayer y qué significa para ti esa serpiente?".',
+      'Una de las preguntas más habituales que le hacían a Carlitos en sus seminarios era: "¿Qué significa soñar con serpientes, con agua turbia o con la muerte de un pariente?". Y la respuesta de Carlitos era invariablemente una sonrisa paciente seguida de una repregunta: "¿Quién sos vos, qué hiciste ayer y qué significa para vos esa serpiente?".',
       'Aquí radica una diferencia fundamental para entender el lenguaje de los sueños: la distinción entre un *signo* y un *símbolo*. Un signo es una convención arbitraria que representa algo ya conocido por el intelecto consciente: una señal de tránsito con una raya roja significa "no pasar"; el dibujo de un tenedor y un cuchillo significa "restaurante". Los signos son estáticos, unívocos y pueden recopilarse en un diccionario.',
       'Un verdadero *símbolo*, en cambio, es la mejor formulación posible de una realidad viviente que la razón todavía no alcanza a comprender cabalmente. El símbolo es polisémico, numinoso y cambia según la biografía del soñador. Para un biólogo especialista en reptiles, la serpiente evoca asombro por la adaptación evolutiva; para una persona con una fobia infantil, terror visceral; para un iniciado en la tradición yóguica y tántrica, la energía de la Kundalini o el renacimiento dérmico. Ningún diccionario puede contemplar esa singularidad.',
       'El método junguiano para descifrar el mensaje onírico es la *Amplificación*. Se parte de las asociaciones íntimas y personales del sujeto ("¿A qué me recuerda esto en mi momento actual?"), para luego enriquecer la imagen con los paralelos arquetípicos de los mitos, el arte y los cuentos de hadas universales.'
@@ -430,7 +430,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     carlitosCallout: {
       id: 'carlitos-cap2-estructura',
       title: 'Consejo Práctico de Carlitos:',
-      text: 'Cuando anotes un sueño al despertar, no lo resumas con prisas. Separá en tu cuaderno: ¿Dónde empieza? ¿Cuál es el problema? ¿Dónde se complica todo? ¿Cómo termina? Si miras la Lysis con atención, ahí está la tarea que la vida te pone para hoy.'
+      text: 'Cuando anotes un sueño al despertar, no lo resumas con prisas. Separá en tu cuaderno: ¿Dónde empieza? ¿Cuál es el problema? ¿Dónde se complica todo? ¿Cómo termina? Si mirás la Lysis con atención, ahí está la tarea que la vida te pone para hoy.'
     }
   },
   {
@@ -457,7 +457,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
       id: 'carlitos-cap2-imaginacion',
       title: 'Nota de Advertencia de Carlitos:',
       variant: 'alchemical',
-      text: 'La Imaginación Activa no es un juego de salón para pasar el rato. Si convocas a los dioses de tu abismo interior, hazlo con la seriedad con la que invitarías a un embajador extranjero a tu casa: con respeto absoluto, pero sin renunciar a tu soberanía.'
+      text: 'La Imaginación Activa no es un juego de salón para pasar el rato. Si convocás a las figuras de tu abismo interior, hacelo con la seriedad con la que invitarías a un embajador extranjero a tu casa: con respeto absoluto, pero sin renunciar a tu soberanía.'
     },
     secondaryCallout: {
       id: 'carlitos-prudencia-f13',
@@ -482,14 +482,14 @@ export const EBOOK_PAGES: EbookPageData[] = [
       src: '/src/assets/images/golden_scarab_alchemical_relic_1790692388946.jpg',
       alt: 'El amuleto del escarabajo dorado de Jung',
       caption: 'El escarabajo verde-dorado (*Cetonia aurata*) de Küsnacht: el instante milagroso donde el símbolo onírico y la realidad física tocaron a la ventana del consultorio.',
-      credit: 'Archivo Histórico de Sincronicidades • Zúrich',
+      credit: 'Ilustración',
       aspect: 'square',
     },
     paragraphs: [
       'Existe una anécdota clínica célebre en la historia de la psicología moderna que Carlitos solía relatar con una mezcla de picardía y devoción: el caso de la joven paciente suiza y el *escarabajo dorado*.',
       'Se trataba de una mujer de elevada cultura y brillante formación académica, pero cuya actitud psicológica estaba completamente acorazada por un racionalismo cartesiano impenetrable. Cada interpretación, cada intento de aproximación terapéutica era desarmado de inmediato por su intelecto implacable. El análisis se encontraba en un callejón sin salida; la mente de la paciente era como una fortaleza de hormigón donde nada numinoso podía penetrar.',
       'Una tarde primaveral, sentada frente a Carlitos en su consultorio de Küsnacht, la mujer comenzó a relatar un sueño que había tenido la noche previa: alguien le regalaba un costoso broche de oro con la figura de un escarabajo joya egipcio. En el momento exacto en que pronunciaba esas palabras, Jung escuchó un golpecito suave y rítmico en el cristal de la ventana que daba al jardín.',
-      'Carlitos se levantó en silencio, abrió la ventana y atrapó al vuelo en el aire a un insecto grande: era un *Cetonia aurata* (el escarabajo verde-oro o escarabajo de las rosas), pariente biológico directo del escarabajo sagrado egipcio, cuya presencia en esa época del año y en esa latitud era sumamente infrecuente. Jung se acercó a la paciente, abrió su mano y con una sonrisa le dijo suavemente: "Aquí tiene a su escarabajo". La coraza racionalista de la paciente se quebró al instante en lágrimas de conmoción; la terapia despegó hacia su sanación definitiva.'
+      'Carlitos se levantó en silencio, abrió la ventana y atrapó al vuelo en el aire a un insecto grande: era un *Cetonia aurata* (el escarabajo verde-oro o escarabajo de las rosas), primo europeo del escarabajo sagrado egipcio, un insecto que, contra sus costumbres, entró volando a un cuarto en penumbra. Jung se acercó a la paciente, abrió su mano y con una sonrisa le dijo suavemente: "Aquí tiene a su escarabajo". La coraza racionalista de la paciente se quebró al instante en lágrimas de conmoción; el racionalismo cedió y la terapia pudo avanzar.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-escarabajo',
@@ -504,18 +504,18 @@ export const EBOOK_PAGES: EbookPageData[] = [
     pageTitle: 'Causalidad vs. Sincronicidad: El Tiempo Cualitativo',
     subtitle: 'De Chronos a Kairos: la diferencia entre la causa mecánica y la coincidencia de sentido',
     contentType: 'text',
-    keyTerms: ['Chronos vs Kairos', 'Causalidad Clásica', 'Conexión Acasual', 'Tiempo Cualitativo'],
+    keyTerms: ['Chronos vs Kairos†', 'Causalidad Clásica', 'Conexión Acausal', 'Tiempo Cualitativo'],
     paragraphs: [
-      'Para formalizar este fenómeno ante la comunidad científica, Jung formuló en 1952 su célebre tratado *Sincronicidad como principio de conexiones acasuales*. ¿Qué es exactamente una sincronicidad? Es la coincidencia temporal de dos o más acontecimientos que no están vinculados por una relación de causa y efecto mecánicos, pero cuyo enlace revela un *significado compartido* y profundamente conmovedor para el sujeto.',
+      'Para formalizar este fenómeno ante la comunidad científica, Jung formuló en 1952 su célebre tratado *La sincronicidad como principio de conexiones acausales*. ¿Qué es exactamente una sincronicidad? Es la coincidencia temporal de dos o más acontecimientos que no están vinculados por una relación de causa y efecto mecánicos, pero cuyo enlace revela un *significado compartido* y profundamente conmovedor para el sujeto.',
       'La ciencia de Newton se basa en *Chronos*: el tiempo cuantitativo del reloj, medido en segundos y minutos homogéneos e indiferentes. En Chronos, si una piedra cae al suelo es porque la gravedad la atrajo; si una bola de billar choca contra otra, le transfiere su momento cinético. Todo se explica mirando hacia el pasado.',
       'La sincronicidad, en cambio, opera en la dimensión de *Kairos*: el tiempo del momento propicio, el tiempo cualitativo de los griegos donde el universo se carga de sentido. Jung clasificó las sincronías en tres categorías operativas: 1. Coincidencia entre un estado mental interior (pensamiento, emoción intensa) y un suceso material exterior simultáneo; 2. Coincidencia entre un estado mental y un suceso exterior distante en el espacio que luego se verifica; 3. Coincidencia entre un estado mental y un suceso futuro que todavía no ha tenido lugar.',
       'Comprender la sincronicidad no nos lleva a una superstición ingenua donde vemos señales en cada semáforo rojo, sino a una reverencia atenta: la realidad está viva, nos escucha y dialoga con nosotros cuando nos encontramos en un cruce de caminos decisivo.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-definicion',
-      title: 'Definición Técnica de C. G. Jung (1952):',
+      title: 'Definición Técnica de C. G. Jung (OC 8, §849–850):',
       variant: 'historical_quote',
-      text: 'Llamo sincronicidad a la coincidencia temporal de dos o más sucesos no vinculados causalmente, que tienen el mismo o semejante significado. Es un principio de ordenación que se sitúa en pie de igualdad con la causalidad.'
+      text: '«...la coincidencia temporal de dos o más sucesos no vinculados causalmente, que tienen el mismo o semejante significado». Jung propuso este fenómeno como un principio de ordenación acausal que se sitúa en pie de igualdad con la causalidad clásica.'
     }
   },
   {
@@ -535,14 +535,14 @@ export const EBOOK_PAGES: EbookPageData[] = [
     },
     paragraphs: [
       '¿Cuándo aparecen las sincronicidades en la vida de una persona? No se presentan de forma caprichosa ni constante; se *constelan* prioritariamente en momentos de máxima turbulencia psíquica: durante una crisis vocacional profunda, en el duelo por la pérdida de un ser amado, al inicio de un enamoramiento apasionado, o durante la llamada "crisis del ecuador de la vida" (los 40 años), cuando el mapa del ego ya no sirve para transitar la segunda mitad de la existencia.',
-      'En esos instantes límite, la tensión entre los opuestos en el interior del individuo se vuelve tan insoportable que la energía psíquica trasciende las fronteras del cráneo biológico y polariza el campo material exterior. De pronto, un libro cae de una estantería abriéndose exactamente en la página que resuelve una duda crucial; te cruzas en la parada de un autobús con una persona que no veías hace diez años y que te ofrece el trabajo que necesitabas; o un sueño nocturno se refleja al día siguiente en las noticias matutinas.',
+      'En esos instantes límite, Jung observaba que estas coincidencias se agrupan en momentos de fuerte carga afectiva y de encrucijada existencial. De pronto, un libro cae de una estantería abriéndose exactamente en la página que resuelve una duda crucial; te cruzás en la parada de un colectivo con una persona que no veías hace diez años y que te ofrece el trabajo que necesitabas; o un sueño nocturno se refleja al día siguiente en una noticia inesperada.',
       'En el coaching y el autoconocimiento, aprender a registrar las sincronicidades no tiene nada que ver con delegar la responsabilidad de tus decisiones en "el universo". Muy por el contrario: la sincronicidad es un *espejo amplificador* del Self. Te indica si estás caminando en consonancia con tu proceso de individuación o si estás forzando una puerta falsa por pura terquedad del ego.',
       'La clave ética para trabajar con las sincronías consiste en guardar silencio, abstenerse de inflarse creyéndose "un elegido del destino" y preguntarse: "¿Qué acción concreta y valiente me está exigiendo esta coincidencia en mi vida de hoy?".'
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-brujula',
       title: 'Carlitos dice:',
-      text: 'Cuando el camino por el que vas es el correcto para tu alma, el mundo te envía señales de confirmación; cuando te empeñas en seguir por donde manda tu vanidad, las sincronías se transforman en piedras que te hacen tropezar para que mires el mapa otra vez.'
+      text: 'No sé si el mundo responde; sé que vos respondés al mundo. Cuando estás alineado con lo profundo, cada coincidencia parece iluminar el camino; cuando te empecinás en forzar las cosas por vanidad, los tropiezos te recuerdan que frenes y vuelvas a mirar el mapa.'
     }
   },
   {
@@ -550,7 +550,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     chapterId: 3,
     sectionTitle: 'Capítulo 3 — Sincronicidad',
     pageTitle: 'Tabla Comparativa de Sincronicidades Cotidianas',
-    subtitle: 'Fenómenos documentados, significado arquetípico y protocolos de integración',
+    subtitle: 'Patrones frecuentes (clasificación del autor)',
     contentType: 'table',
     tableData: [
       {
@@ -575,13 +575,13 @@ export const EBOOK_PAGES: EbookPageData[] = [
       },
     ],
     paragraphs: [
-      'Esta tabla resume los cuatro patrones más frecuentes de fenómenos sincrónicos registrados en los archivos de Küsnacht y en la práctica de acompañamiento personal. Cada evento reúne una perturbación interior, un hecho físico exterior coincidente y un llamado ético a la transformación.'
+      'Esta tabla resume cuatro patrones frecuentes de fenómenos sincrónicos (clasificación del autor) y de la práctica de acompañamiento personal. Cada evento reúne una perturbación interior, un hecho físico exterior coincidente y un llamado ético a la transformación.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-tabla',
       title: 'Regla Metodológica de Carlitos:',
       variant: 'marginalia',
-      text: 'Nunca fuerces una sincronicidad. Si tienes que retorcer la lógica para justificar que algo "es una señal", no lo es. La verdadera sincronicidad se reconoce por su huella numinosa: te deja mudo, con la piel de gallina y con la certeza íntima de que no estás solo en tu camino.'
+      text: 'Nunca fuerces una sincronicidad. Si tenés que retorcer la lógica para justificar que algo "es una señal", no lo es. La verdadera sincronicidad se reconoce por su huella numinosa: te deja mudo, con la piel de gallina y con la certeza íntima de que no estás solo en tu camino.'
     }
   },
 
@@ -600,7 +600,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
       src: '/src/assets/images/iching_bronze_coins_consultation_1790692401314.jpg',
       alt: 'Monedas de bronce y manuscrito del I Ching',
       caption: 'Las tres monedas de bronce y el Libro de las Mutaciones: el método milenario que Jung consultaba en su jardín de Küsnacht para dialogar con el momento presente.',
-      credit: 'Archivo de Estudios Orientales • Zúrich 1949',
+      credit: 'Ilustración',
       aspect: 'landscape',
     },
     paragraphs: [
@@ -611,9 +611,9 @@ export const EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap4-prologo',
-      title: 'Cita Histórica (Prólogo de C. G. Jung al I Ching, 1949):',
-      variant: 'historical_quote',
-      text: 'Para la mente occidental, la causalidad lo es todo. Para la mente china del I Ching, el punto de partida es la sincronicidad: el cuadro de la totalidad que se manifiesta en el momento exacto en que caen las monedas. El oráculo no halaga ni adivina el futuro: juzga la disposición presente de tu corazón.'
+      title: 'Sobre el Prólogo de Jung al I Ching (1949):',
+      variant: 'carlitos',
+      text: 'Para Jung, mientras la mente occidental se apoya en la causalidad, la tradición del I Ching parte de la sincronicidad: el cuadro de la totalidad que se hace visible en el momento exacto en que caen las monedas. El oráculo no pretende adivinar el porvenir, sino reflejar la cualidad psicológica del instante presente.'
     }
   },
   {
@@ -626,14 +626,14 @@ export const EBOOK_PAGES: EbookPageData[] = [
     keyTerms: ['Hexagrama', 'Líneas Yang y Yin', 'Líneas Mutantes', 'Método de las Tres Monedas'],
     paragraphs: [
       'Para acercarnos al I Ching con hondura, lucidez y sin caer en supersticiones vacías, es indispensable comprender cómo se forma un *hexagrama* (*Kua*). Un hexagrama es una figura compuesta por seis líneas horizontales apiladas verticalmente, que se leen y construyen siempre *de abajo hacia arriba*, desde la línea 1 (la base o raíz en la tierra) hasta la línea 6 (la cima o cielo).',
-      'Cada una de las líneas puede ser de dos polaridades fundamentales: una línea continua `------` (*Yang*, principio activo, luminoso, firme y consciente) o una línea quebrada `-- --` (*Yin*, principio receptivo, oscuro, fértil e inconsciente). Al combinar seis líneas se obtienen exactamente las $2^6 = 64$ configuraciones posibles que componen el libro.',
+      'Cada una de las líneas puede ser de dos polaridades fundamentales: una línea continua (Yang, principio activo, luminoso, firme y consciente) o una línea quebrada (Yin, principio receptivo, oscuro, fértil e inconsciente). Al combinar seis líneas se obtienen exactamente las 64 configuraciones posibles que componen el libro.',
       'El método más accesible y tradicional en Occidente para generar un hexagrama es el *lanzamiento de las tres monedas de bronce*. Se toman tres monedas idénticas (preferentemente réplicas de monedas chinas antiguas con un orificio cuadrado en el centro). Se asigna convencionalmente a cada cara el valor numérico 3 (Yang) y a cada cruz el valor 2 (Yin).',
-      'Al arrojar las tres monedas juntas, la suma de sus valores solo puede arrojar cuatro resultados posibles: **6** ($2+2+2$): Yin viejo o *Línea Mutante* quebrada que se transformará en Yang; **7** ($3+2+2$): Yang joven o firme; **8** ($3+3+2$): Yin joven o receptivo; y **9** ($3+3+3$): Yang viejo o *Línea Mutante* continua que se transformará en Yin. Las líneas mutantes indican los puntos exactos de máxima tensión psíquica donde el presente está a punto de convertirse en su opuesto (*enantiodromía*).'
+      'Al arrojar las tres monedas juntas, la suma de sus valores solo puede arrojar cuatro resultados posibles: **6** (tres cruces, 2+2+2): Yin mutante que se transformará en Yang; **7** (una cara y dos cruces, 3+2+2): Yang firme; **8** (dos caras y una cruz, 3+3+2): Yin receptivo; y **9** (tres caras, 3+3+3): Yang mutante que se transformará en Yin. Las líneas mutantes indican los puntos exactos de máxima tensión psíquica donde el presente está a punto de convertirse en su opuesto (*enantiodromía*).'
     ],
     carlitosCallout: {
       id: 'carlitos-cap4-monedas',
       title: 'Carlitos dice con una sonrisa:',
-      text: 'Cuando tirás las tres monedas, tus dedos no están haciendo un truco de magia. En ese instante fugaz en que las monedas giran por el aire, tu mente inconsciente y la física del mundo están bailando la misma música. Por eso el resultado nunca es una casualidad vacía.'
+      text: 'Cuando tirás las tres monedas, tus dedos no están haciendo un truco de magia. En ese instante fugaz en que las monedas giran por el aire, tu mente inconsciente y la física del mundo están bailando la misma música. Por eso, para Jung, ese instante nunca es una casualidad vacía.'
     }
   },
   {
@@ -643,6 +643,12 @@ export const EBOOK_PAGES: EbookPageData[] = [
     pageTitle: 'Los Ocho Trigramas Fundamentales (Ba Gua)',
     subtitle: 'La matriz elemental de la naturaleza y sus funciones arquetípicas en la psique',
     contentType: 'table',
+    keyTerms: [
+      'Ba Gua / Trigramas',
+      'Cielo y Tierra',
+      'Correspondencia Psicológica†',
+      'Rey Wen',
+    ],
     iChingTrigrams: [
       {
         name: "Ch'ien",
@@ -675,7 +681,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
         name: "K'an",
         chinese: "坎",
         symbol: "☵",
-        element: "Agua / Abismo",
+        element: "Agua / Hijo Medio",
         direction: "Norte",
         archetypalQuality: "El peligro fértil, las profundidades del abismo, fluidez insustancial.",
         psychologicalFunction: "La Sombra y la Noche Oscura del Alma / El coraje de atravesar el abismo.",
@@ -693,7 +699,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
         name: "Sun",
         chinese: "巽",
         symbol: "☴",
-        element: "Viento / Madera",
+        element: "Viento / Hija Mayor",
         direction: "Sureste",
         archetypalQuality: "Penetración suave y constante, flexibilidad, influencia invisible.",
         psychologicalFunction: "El Ánima mediadora / Transformación sutil que desgasta la rigidez.",
@@ -702,7 +708,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
         name: "Li",
         chinese: "離",
         symbol: "☲",
-        element: "Fuego / Sol",
+        element: "Fuego / Hija Media",
         direction: "Sur",
         archetypalQuality: "Claridad lúcida, calor que une, iluminación intelectual, apego.",
         psychologicalFunction: "La Luz de la Conciencia / Discernimiento claro sin fanatismo ciego.",
@@ -711,20 +717,20 @@ export const EBOOK_PAGES: EbookPageData[] = [
         name: "Tui",
         chinese: "兌",
         symbol: "☱",
-        element: "Lago / Niebla",
+        element: "Lago / Hija Menor",
         direction: "Oeste",
         archetypalQuality: "Alegría serena, celebración compartida, apertura comunicativa.",
         psychologicalFunction: "La Celebración de la Completitud / La risa que cura la gravedad del ego.",
       },
     ],
     paragraphs: [
-      'Todo hexagrama del I Ching está compuesto por la interacción viva de dos *trigramas* (*Ba Gua*): el trigrama inferior (la realidad interior, el estado psicológico oculto) y el trigrama superior (la manifestación exterior, la situación relacional o cósmica). Comprender los 8 trigramas elementales es dominar el alfabeto con el que el oráculo describe la condición humana.'
+      'Todo hexagrama del I Ching está compuesto por la interacción viva de dos *trigramas* (*Ba Gua*): el trigrama inferior (la realidad interior, el estado psicológico oculto) y el trigrama superior (la manifestación exterior, la situación relacional o cósmica). Comprender los 8 trigramas elementales es dominar el alfabeto con el que el oráculo describe la condición humana. Nota: Las direcciones y correspondencias familiares corresponden a la secuencia del Cielo Posterior (Rey Wen).'
     ],
     carlitosCallout: {
       id: 'carlitos-cap4-trigramas',
       title: 'Anotación de Carlitos:',
       variant: 'alchemical',
-      text: 'Cuando el Fuego (Li) está sobre la Tierra (K\'un), el sol brilla e ilumina a todos; cuando el Fuego cae debajo del Agua (K\'an), la nave se sumerge en el abismo. Los trigramas son los humores de la naturaleza viva dentro de ti.'
+      text: 'Cuando el Agua (K\'an) está sobre el Fuego (Li), tenemos el hexagrama 63, Después de la Consumación: la marmita sobre el fuego, el orden logrado donde todo está en su sitio y por eso mismo hay que vigilar el inicio de la decadencia. Cuando el Fuego está sobre el Agua (hexagrama 64, Antes de la Consumación), el ciclo vuelve a abrirse. Los trigramas son los humores de la naturaleza viva dentro de vos.'
     }
   },
   {
@@ -742,9 +748,9 @@ export const EBOOK_PAGES: EbookPageData[] = [
       upperTrigram: 'Li (Fuego)',
       lowerTrigram: 'Sun (Viento / Madera)',
       lines: ['yang', 'yin', 'yang', 'yang', 'yang', 'yin'],
-      judgment: 'El Caldero: Suprema ventura. Éxito. La madera penetra debajo del fuego para cocinar el alimento sagrado ofrecido a los antepasados y a los dioses.',
-      image: 'Fuego sobre madera: la imagen del Caldero. Así el noble consolida su destino poniendo en orden su vida interior y nutriendo a los hombres sabios.',
-      psychologicalMeaning: 'El Hexagrama 50 es el símbolo supremo de la Alquimia de Carlitos: el crisol (*vas Hermetis*) donde los contenidos brutos de la vida cotidiana son transmutados por el fuego de la conciencia en alimento espiritual y sabiduría para el alma colectiva.',
+      judgment: 'El Caldero (trípode ritual): la madera alimenta el fuego; se cocina el alimento para ofrecer a lo sagrado y a los sabios. Fortuna y consolidación.',
+      image: 'Fuego sobre madera: la imagen del Caldero. Así el noble consolida su destino nutriendo a los sabios y honrando lo sagrado.',
+      psychologicalMeaning: 'El Hexagrama 50 simboliza la transformación alquímica en el caldero interior: los contenidos brutos de la vida cotidiana son transmutados por el fuego de la conciencia en alimento espiritual y sabiduría para la comunidad (como aquel vas Hermetis del que hablaba Carlitos).',
       brushImage: '/src/assets/images/hexagram_50_ting_ink_brush_1790694984643.jpg',
     },
     paragraphs: [
@@ -769,10 +775,10 @@ export const EBOOK_PAGES: EbookPageData[] = [
     contentType: 'text',
     keyTerms: ['Preguntas Esenciales', 'Espejo Proyectivo', 'Coaching Profundo', 'Ética de la Consulta'],
     paragraphs: [
-      'Cuando aplicamos el I Ching en el ámbito del coaching, la mentoría y el autoconocimiento, la primera regla innegociable consiste en erradicar cualquier tufillo a adivinación pasiva o fatalismo mágico. El oráculo no te dice si mañana vas a ganar la lotería o si tu pareja te va a engañar: esas son preguntas inmaduras del ego que busca eludir su propia responsabilidad existencial.',
+      'Cuando aplicamos el I Ching en el ámbito del coaching, la mentoría y el autoconocimiento, la primera regla innegociable consiste en erradicar la adivinación pasiva o el fatalismo mágico. Podés hacer preguntas concretas sobre una encrucijada práctica o un conflicto vincular —Jung mismo le preguntó al oráculo sobre la publicación de su prólogo—; lo decisivo es no delegar en las monedas la responsabilidad de tu decisión ni esperar predicciones mágicas.',
       'El I Ching opera como el más formidable *espejo proyectivo* que la humanidad haya concebido. Es una trampa de luz donde el inconsciente se refleja a sí mismo. Por consiguiente, la calidad de la respuesta dependerá enteramente de la profundidad ética de la pregunta formulada.',
-      'En lugar de preguntar: "¿Me conviene cambiar de trabajo el mes que viene?", una persona despierta formula una *pregunta esencial de sentido*: "¿Cuál es la naturaleza de la encrucijada en la que me encuentro y qué energía interior debo cultivar para no actuar desde el miedo?". En lugar de preguntar: "¿Por qué fulano no me llama?", nos preguntamos: "¿Qué parte de mi propia sombra estoy proyectando en este conflicto vincular?".',
-      'Al recibir el hexagrama, no te limites a leer las frases como un decreto dogmático: léelo como quien desmenuza un sueño lúcido. Escucha la imagen del trigrama, mira las líneas mutantes que señalan tu tensión viva, y toma una decisión libre y consciente. El oráculo no decide por ti: te devuelve la mirada para que decidas con el corazón despierto.'
+      'Al consultar sobre una situación concreta (por ejemplo, un cambio de trabajo o una conversación difícil), conviene enfocar la mirada en la actitud interior: "¿Cuál es la naturaleza de la encrucijada en la que me encuentro y qué energía debo cultivar para no actuar desde el miedo?". En lugar de buscar culpables afuera, nos preguntamos: "¿Qué parte de mi propia sombra estoy proyectando en este conflicto vincular?".',
+      'Al recibir el hexagrama, no te limites a leer las frases como un decreto dogmático: leelo como quien desmenuza un sueño lúcido. Escuchá la imagen del trigrama, mirá las líneas mutantes que señalan tu tensión viva, y tomá una decisión libre y consciente. El oráculo no decide por vos: te devuelve la mirada para que decidas con el corazón despierto.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap4-coaching',
@@ -817,12 +823,12 @@ export const EBOOK_PAGES: EbookPageData[] = [
         {
           stepNumber: 3,
           title: 'Acto III: Peripeteia (El Clímax)',
-          instruction: 'Identificá el instante exacto de máxima tensión emocional o sorpresa simbólica. ¿Apareció una figura numinosa, un animal, un objeto extraño? No juzgues la imagen: descríbela con detalle.',
+          instruction: 'Identificá el instante exacto de máxima tensión emocional o sorpresa simbólica. ¿Apareció una figura numinosa, un animal, un objeto extraño? No juzgues la imagen: describila con detalle.',
         },
         {
           stepNumber: 4,
           title: 'Acto IV: Lysis (El Desenlace Compensatorio)',
-          instruction: 'Registrá cómo termina la escena o cómo despertaste. ¿Qué respuesta o advertencia te deja la lysis? Formúlala en una sola frase contundente: "Mi alma me pide que..."',
+          instruction: 'Registrá cómo termina la escena o cómo despertaste. ¿Qué respuesta o advertencia te deja la lysis? Formulala en una sola frase contundente: "Mi alma me pide que..."',
         },
         {
           stepNumber: 5,
@@ -830,7 +836,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
           instruction: 'El sueño muere si se queda en el papel. Definí una acción material mínima para las próximas 24 horas (una carta, una conversación, un cambio de hábito, un dibujo) que ancle la lección en la realidad.',
         },
       ],
-      applicationExample: 'Ejemplo Real: Mateo soñó que conducía a 200 km/h por una autopista lujosa pero sin frenos (Exposición/Desarrollo). En el último segundo, un viejo guardabosques con farol (Senex) le cortaba el paso con una rama verde y el auto se apagaba (Peripeteia/Lysis). Comprendió que su sobreexigencia laboral estaba al borde de provocarle un infarto. Su acción concreta fue cancelar dos compromisos innecesarios y tomarse una tarde de caminata en silencio.',
+      applicationExample: 'Escena ilustrativa (personaje compuesto): Mateo soñó que conducía a 200 km/h por una autopista lujosa pero sin frenos (Exposición/Desarrollo). En el último segundo, un viejo guardabosques con farol (Senex) le cortaba el paso con una rama verde y el auto se apagaba (Peripeteia/Lysis). Comprendió que su sobreexigencia laboral estaba al borde de provocarle un agotamiento severo. Su acción concreta fue cancelar dos compromisos innecesarios y tomarse una tarde de caminata en silencio.',
     },
     paragraphs: [
       'El trabajo con los sueños es la piedra angular del autoconocimiento y la escucha interior. Dedicarle veinte minutos a la semana a este protocolo te otorga una lucidez sobre tus verdaderas motivaciones que ningún libro teórico puede reemplazar.'
@@ -839,7 +845,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
       id: 'carlitos-cap5-suenos',
       title: 'Carlitos dice con un mate en la mano:',
       variant: 'marginalia',
-      text: 'Tu inconsciente es el único consejero que no te cobra un solo centavo y que trabaja mientras duermes. El único problema es que no sabe hablar en prosa de oficina: tenle la paciencia de aprender a leer sus jeroglíficos.'
+      text: 'Tu inconsciente es el único consejero que no te cobra un solo centavo y que trabaja mientras dormís. El único problema es que no sabe hablar en prosa de oficina: tenele paciencia para aprender a leer sus jeroglíficos.'
     }
   },
   {
@@ -852,7 +858,7 @@ export const EBOOK_PAGES: EbookPageData[] = [
     exerciseData: {
       id: 'ex-synchronicity-audit',
       title: 'Protocolo 2 — Registro de Sincronicidades Cotidianas',
-      objective: 'Entrenar el ojo para reconocer, documentar y descifrar las coincidencias acasuales que se constelan a tu alrededor, evitando tanto la ceguera escéptica como la paranoia mágica.',
+      objective: 'Entrenar el ojo para reconocer, documentar y descifrar las coincidencias acausales que se constelan a tu alrededor, evitando tanto la ceguera escéptica como la paranoia mágica.',
       steps: [
         {
           stepNumber: 1,
@@ -872,24 +878,24 @@ export const EBOOK_PAGES: EbookPageData[] = [
         {
           stepNumber: 4,
           title: 'Paso 4: Auditoría Crítica (Filtro Anti-ilusión)',
-          instruction: 'Preguntate: ¿Es esto una coincidencia trivial que estoy forzando con mi deseo, o hubo un impacto objetivo que me sacudió? Si el hecho es genuino, pasa al paso 5.',
+          instruction: 'Aplicá tres criterios de auditoría: 1) ¿Habrías notado este suceso sin el estado emocional previo? 2) ¿Existe una explicación causal trivial o inmediata? 3) ¿Cuántas veces pensaste en algo similar sin que ocurriera nada exterior? Si tras este filtro el impacto de sentido se sostiene, pasá al paso 5.',
         },
         {
           stepNumber: 5,
           title: 'Paso 5: La Respuesta Ética',
-          instruction: '¿Qué te pide hacer este acontecimiento? La sincronicidad no es para vanagloriarse: es una confirmación de rumbo o un llamado de atención urgente. ¿Qué paso vas a dar hoy?',
+          instruction: '¿Qué actitud o reflexión pide este acontecimiento? Regla fundamental: jamás tomes decisiones irreversibles basadas únicamente en una sincronía. Esperá a que baje la marea emocional y conversá lo ocurrido con alguien de confianza antes de actuar.',
         },
       ],
-      applicationExample: 'Ejemplo Documentado: Clara dudaba entre abandonar una carrera bancaria opresiva para dedicarse a la restauración de arte. Mientras lloraba en una plaza preguntándose si estaba loca, una anciana desconocida se sentó a su lado, abrió un sobre manchado y le pidió que le leyera una carta porque no tenía sus anteojos. La carta comenzaba: "Nunca temas a empezar de nuevo cuando el arte es la sangre de tus venas". Clara renunció la semana siguiente.',
+      applicationExample: 'Escena ilustrativa (personaje compuesto): Clara dudaba entre permanecer en una rutina bancaria o explorar su vocación por el arte. Mientras caminaba por una plaza preguntándose si estaba loca, una anciana desconocida se sentó a su lado, abrió un sobre manchado y le pidió que le leyera una carta porque no tenía sus anteojos. La carta comenzaba: "Nunca temas a empezar de nuevo cuando el arte es la sangre de tus venas". Clara se anotó en un taller nocturno de restauración para explorar el camino paso a paso.',
     },
     paragraphs: [
-      'Llevar un cuaderno de sincronías es como afinar un instrumento de cuerda: al principio parece que el universo está callado, pero a medida que afinas tu atención, comienzas a escuchar la sinfonía de conexiones en la que estás inmerso.'
+      'Llevar un cuaderno de sincronías es como afinar un instrumento de cuerda: al principio parece que el universo está callado, pero a medida que afinás tu atención, comenzás a escuchar la sinfonía de conexiones en la que estás inmerso.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap5-radar',
       title: 'Carlitos dice con mirada pícara:',
       variant: 'marginalia',
-      text: 'Cuando el escarabajo golpeó la ventana de mi consultorio, no me puse a aplaudir a los espíritus: abrí la ventana, lo agarré y se lo di a mi paciente para que sanara. La magia del mundo solo sirve si la conviertes en medicina terrenal.'
+      text: 'Cuando el escarabajo golpeó la ventana de mi consultorio, no me puse a aplaudir a los espíritus: abrí la ventana, lo agarré y se lo di a mi paciente para que sanara. La magia del mundo solo sirve si la convertís en medicina terrenal.'
     }
   },
   {
@@ -906,13 +912,13 @@ export const EBOOK_PAGES: EbookPageData[] = [
       steps: [
         {
           stepNumber: 1,
-          title: 'Paso 1: Formulación de la Pregunta Esencial de Sentido',
-          instruction: 'Evitá preguntas cerradas o adivinatorias ("¿Me va a ir bien?"). Escribí una pregunta existencial abierta: "¿Qué energía interior requiere mi situación actual frente a...?" o "¿Cuál es mi punto ciego en este momento?".',
+          title: 'Paso 1: Formulación de la Consulta',
+          instruction: 'Formulá tu consulta con claridad. Se admiten preguntas concretas sobre encrucijadas prácticas o preguntas abiertas de sentido ("¿Cuál es la actitud psicológica más prudente frente a este conflicto?"). Lo decisivo es consultar con respeto y no delegar tu libre albedrío.',
         },
         {
           stepNumber: 2,
           title: 'Paso 2: Lanzamiento de las Tres Monedas (6 Tiradas)',
-          instruction: 'Tomá tres monedas idénticas. Arrójalas seis veces sobre un paño o mesa de madera, anotando el resultado de abajo hacia arriba (Línea 1 a Línea 6). Cara=3, Cruz=2. Suma: 6 (Yin mutante --x--), 7 (Yang firme ------), 8 (Yin receptivo -- --), 9 (Yang mutante ---o---).',
+          instruction: 'Tomá tres monedas idénticas. Tiralas seis veces sobre un paño o mesa de madera, anotando el resultado de abajo hacia arriba (Línea 1 a Línea 6). Cara=3, Cruz=2. Suma: 6 (Yin mutante), 7 (Yang firme), 8 (Yin receptivo), 9 (Yang mutante).',
         },
         {
           stepNumber: 3,
@@ -930,16 +936,16 @@ export const EBOOK_PAGES: EbookPageData[] = [
           instruction: 'Cerrá los ojos y preguntate: "¿En qué punto exacto de mi vida estoy actuando con la terquedad que el oráculo describe?". Anotá una resolución íntima que guíe tus pasos esta semana.',
         },
       ],
-      applicationExample: 'Ejemplo de Consulta: Un terapeuta dudaba si confrontar a un alumno deshonesto. Preguntó: "¿Cuál debe ser mi postura ética ante este conflicto?". Obtuvo el Hexagrama 21, Shih Ho (Morder a Través): el juicio describe la necesidad de aplicar la ley con claridad y firmeza para que la comunidad no se pudra. Comprendió que su complacencia era miedo a la desaprobación y no bondad real.',
+      applicationExample: 'Escena ilustrativa (personaje compuesto): Un terapeuta dudaba si confrontar a un alumno deshonesto. Preguntó: "¿Cuál debe ser mi postura ética ante este conflicto?". Obtuvo el Hexagrama 21, Shih Ho (Morder a Través): el juicio describe la necesidad de aplicar la ley con claridad y firmeza para que la comunidad no se pudra. Comprendió que su complacencia era miedo a la desaprobación y no bondad real.',
     },
     paragraphs: [
-      'El I Ching no juzga desde afuera: revela la constelación que tú mismo estás creando con tus elecciones inconscientes. Tratado con reverencia, se convierte en el más lúcido consejero de tu vida.'
+      'El I Ching no juzga desde afuera: revela la constelación que vos mismo estás creando con tus elecciones inconscientes. Tratado con reverencia, se convierte en el más lúcido consejero de tu vida.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap5-iching',
       title: 'Nota de Práctica de Carlitos:',
       variant: 'alchemical',
-      text: 'No consultes al I Ching dos veces por la misma pregunta porque no te gustó la respuesta. El oráculo castiga la impertinencia con el silencio o con el ridículo. Escucha a la primera y ponte a trabajar.'
+      text: 'No consultes al I Ching dos veces por la misma pregunta porque no te gustó la respuesta. El oráculo responde con confusión al capricho. Escuchá a la primera y ponete a trabajar.'
     }
   },
   {
@@ -951,17 +957,17 @@ export const EBOOK_PAGES: EbookPageData[] = [
     contentType: 'conclusion',
     keyTerms: ['Ganzheit / Completitud', 'Coniunctio Oppositorum', 'Lapis Philosophorum', 'El Fuego y el Mate'],
     paragraphs: [
-      'Hemos recorrido veintiséis páginas por el fascinante segundo territorio de la mente profunda y las enseñanzas de Carlitos. Hemos descendido a los abismos de la Sombra Dorada, navegado las metamorfosis del Ánima y el Ánimus, presenciado el baile eterno entre el viejo Senex y el muchacho Puer, y aprendido a escuchar el teatro de cuatro actos de nuestros sueños nocturnos.',
+      'Hemos recorrido las páginas de este manual por el fascinante segundo territorio de la mente profunda y las enseñanzas de Carlitos. Hemos recorrido un panorama de la Sombra Dorada, el Ánima y el Ánimus, la tensión entre el viejo Senex y el muchacho Puer, y aprendido a escuchar el teatro de cuatro actos de nuestros sueños nocturnos.',
       'Asimismo, nos atrevimos a abrir la ventana al escarabajo de la sincronicidad y arrojamos las tres monedas de bronce del I Ching para que el oráculo nos devolviera la verdad desnuda de nuestro corazón en el momento presente.',
       'Ahora, la puerta del estudio de Küsnacht vuelve a quedar en silencio. El fuego de la chimenea crepita suavemente en la penumbra. Carlitos toma su pipa de brezo, le da una última cebada al mate argentino y te mira a los ojos con esa intensidad serena que solo tienen aquellos que han mirado a la muerte y al alma sin pestañear.',
       '"Recordá siempre esto —te dice con voz tranquila—: la meta de tu existencia humana jamás fue la perfección. La perfección es una trampa estéril del ego que busca escapar del sufrimiento. Tu verdadera meta es la *completitud* (*Ganzheit*). Completitud significa abrazar tu luz y tu barro, sostener la tensión entre tus opuestos sin quebrarte, y tener el coraje de caminar tu propio mito con la cabeza erguida."',
-      'El viaje no termina aquí; apenas está comenzando. Que los símbolos de tus sueños sean tus antorchas, que las sincronías sean las piedras de tu puente, y que el recuerdo de Carlitos sea ese compañero entrañable que te susurra en la noche: *Despierta, camina y sé quien verdaderamente eres*.'
+      'El viaje no termina aquí; apenas está comenzando. Que los símbolos de tus sueños sean tus antorchas, que las sincronías sean las piedras de tu puente, y que el recuerdo de Carlitos sea ese compañero entrañable que te susurra en la noche: *Despertá, caminá y sé quien verdaderamente sos*.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap5-cierre',
-      title: 'Últimas palabras de C. G. Jung:',
+      title: 'Jung a Fanny Bowditch, carta del 22 de octubre de 1916:',
       variant: 'historical_quote',
-      text: 'Tu visión se aclarará solamente cuando puedas mirar dentro de tu propio corazón. Quien mira hacia afuera, sueña; quien mira hacia adentro, despierta. El privilegio de una vida es convertirse en quien realmente se es.'
+      text: 'Tu visión se aclarará solamente cuando puedas mirar dentro de tu propio corazón. Quien mira hacia afuera sueña; quien mira hacia adentro despierta.'
     },
     secondaryCallout: {
       id: 'carlitos-mate-final',
@@ -970,4 +976,28 @@ export const EBOOK_PAGES: EbookPageData[] = [
       text: 'Te dejo el mate servido, che. No dejes que se enfríe. La próxima charla la escribís vos con las decisiones que tomes a partir de mañana.'
     }
   },
+  {
+    pageNumber: 27,
+    chapterId: 6,
+    sectionTitle: 'Apéndice Documental',
+    pageTitle: 'Fuentes, Lecturas y Aparato Crítico',
+    subtitle: 'Obras de referencia, correspondencia y bibliografía recomendada',
+    contentType: 'text',
+    keyTerms: ['Obras Completas', 'Recuerdos, Sueños, Pensamientos', 'Liber Novus', 'Wilhelm y Pauli'],
+    paragraphs: [
+      'Este manual reúne conceptos y analogías del pensamiento maduro de C. G. Jung organizados pedagógicamente para el estudio contemporáneo. Para profundizar en las fuentes documentales primarias, recomendamos consultar:',
+      '1. **La sincronicidad como principio de conexiones acausales (1952):** Publicado originalmente junto con un ensayo de Wolfgang Pauli en *Naturerklärung und Psyche*, e integrado en el volumen 8 de las *Obras Completas* (La dinámica de lo inconsciente, §816–968). Incluye la descripción clínica del caso del escarabajo dorado y el intercambio epistolar y conceptual con Pauli.',
+      '2. **Recuerdos, sueños, pensamientos (1961):** Obra autobiográfica compilada y editada por Aniela Jaffé, donde Jung relata la construcción de la Torre de Bollingen, sus visiones y su concepción de la realidad psíquica y la muerte.',
+      '3. **Liber Novus (El Libro Rojo, 1913–c. 1930 / publicado en 2009):** Registro manuscrito e iluminado de su confrontación con el inconsciente, donde surgen las figuras de Filemón, Ka y Salomé, y donde se germinó la técnica de la Imaginación Activa.',
+      '4. **Correspondencia Wolfgang Pauli – C. G. Jung (1932–1958):** Compilación epistolar que documenta el diálogo entre la física cuántica (el principio de complementariedad) y la psicología analítica en torno al *Unus Mundus*.',
+      '5. **Prólogo al I Ching (1949):** Ensayo introductorio para la traducción alemana de Richard Wilhelm vertida al inglés por Cary F. Baynes, publicado también en *Obras Completas, vol. 11*. Jung documenta su método de consulta y el hexagrama 50 (Ting, El Caldero).',
+      '6. **Cartas (vol. I, 1906–1950):** Incluye la carta a Fanny Bowditch del 22 de octubre de 1916 (p. 33) sobre la mirada interior.'
+    ],
+    carlitosCallout: {
+      id: 'carlitos-apendice-cierre',
+      title: 'Carlitos se despide:',
+      variant: 'carlitos',
+      text: 'Los libros señalan la luna, pero la luna está en el cielo nocturno y en el reflejo del agua. Andá a las fuentes, leé con rigor, pero no te olvides de mirar tu propia vida: ahí es donde los símbolos están vivos.'
+    }
+  }
 ];

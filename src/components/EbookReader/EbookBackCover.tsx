@@ -5,7 +5,7 @@ import { Globe, Mail, Instagram, MessageCircle, BookOpen } from 'lucide-react';
 
 export const EbookBackCover: React.FC = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto my-6 sm:my-10 p-5 sm:p-10 paper-card border-2 border-[#5a4022] rounded-sm shadow-2xl print-page-sheet min-h-[1100px] sm:min-h-[1280px] flex flex-col justify-between relative overflow-hidden select-none">
+    <div className="w-full max-w-4xl mx-auto my-6 sm:my-10 p-5 sm:p-10 paper-card border-2 border-[#5a4022] rounded-sm shadow-2xl print-page-sheet flex flex-col justify-between relative overflow-hidden">
       
       {/* Decorative Corners */}
       <div className="absolute top-2 left-2">
@@ -21,11 +21,11 @@ export const EbookBackCover: React.FC = () => {
         <OrnamentalCorner position="bottom-right" color="#aa8032" />
       </div>
 
-      <div className="border-4 border-double border-[#aa8032] p-5 sm:p-8 relative bg-[#ebdcb8]/40 text-center min-h-[1020px] sm:min-h-[1180px] flex-1 flex flex-col justify-between">
+      <div className="border-4 border-double border-[#aa8032] p-5 sm:p-8 relative bg-[#ebdcb8]/40 text-center flex-1 flex flex-col justify-between">
         
         {/* Header Title */}
         <div className="text-center space-y-2">
-          <div className="flex items-center justify-center gap-2 text-xs tracking-[0.25em] font-mono uppercase text-[#aa8032] font-bold">
+          <div className="flex items-center justify-center gap-2 text-xs tracking-[0.25em] font-mono uppercase text-[#8f6e28] font-bold">
             <span>✦</span>
             <span>CONTRAPORTADA DE ARCHIVO • VOLUMEN II</span>
             <span>✦</span>
@@ -49,7 +49,7 @@ export const EbookBackCover: React.FC = () => {
               <BookOpen className="w-4 h-4 text-[#8f6e28]" />
               Sinopsis de la Obra
             </span>
-            <span className="text-xs font-mono text-[#aa8032] italic font-semibold">Texto Íntegro</span>
+            <span className="text-xs font-mono text-[#8f6e28] italic font-semibold">Texto Íntegro</span>
           </div>
           
           <p className="font-old-standard text-xs sm:text-sm text-[#17120d] leading-relaxed text-justify">
@@ -57,7 +57,7 @@ export const EbookBackCover: React.FC = () => {
           </p>
           
           <p className="font-old-standard text-xs sm:text-sm text-[#17120d] leading-relaxed text-justify">
-            Asimismo, la obra ofrece una guía operativa para descifrar los <em>sueños en cuatro actos</em> (exposición, nudo, peripeteia y lysis), el principio de las <em>sincronicidades</em> y su puente entre mente y materia (*Unus Mundus*), y el oráculo milenario del <em>I Ching</em> mediante el lanzamiento ritual de las tres monedas de bronce. Una experiencia viva, artesanal e indispensable para coaches, terapeutas y buscadores de su propio centro.
+            Asimismo, la obra ofrece una guía operativa para descifrar los <em>sueños en cuatro actos</em> (exposición, nudo, peripeteia y lysis), el principio de las <em>sincronicidades</em> y su puente entre mente y materia (<em>Unus Mundus</em>), y el oráculo milenario del <em>I Ching</em> mediante el lanzamiento ritual de las tres monedas de bronce. Una experiencia viva, artesanal e indispensable para coaches, terapeutas y buscadores de su propio centro.
           </p>
         </div>
 

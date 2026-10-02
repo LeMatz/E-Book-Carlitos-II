@@ -41,7 +41,7 @@ export default function App() {
         </div>
       </aside>
 
-      {/* Main Continuous Document Flow (Cover -> Index -> Pages 1 to 26 -> Backcover) */}
+      {/* Main Continuous Document Flow (Cover -> Index -> Pages -> Backcover) */}
       <main className="flex-1 px-2 sm:px-4 py-6 max-w-7xl mx-auto w-full space-y-12 sm:space-y-16">
         
         {/* 1. PORTADA MONUMENTAL */}
@@ -54,7 +54,7 @@ export default function App() {
           <EbookTableOfContents />
         </section>
 
-        {/* 3. LOS 26 FOLIOS DE CONTENIDO */}
+        {/* 3. LOS FOLIOS DE CONTENIDO */}
         {EBOOK_PAGES.map((page) => (
           <section
             key={page.pageNumber}
