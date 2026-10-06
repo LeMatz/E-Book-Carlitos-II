@@ -149,7 +149,7 @@ export const EbookCover: React.FC = () => {
           </div>
 
           {/* Author and Publishing Seal */}
-          <div className="pt-4 space-y-3 flex flex-col items-center">
+          <div className="pt-4 flex flex-col items-center">
             <div className="text-center">
               <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#aa8032] font-semibold block">
                 TEXTO & INVESTIGACIÓN
@@ -158,20 +158,20 @@ export const EbookCover: React.FC = () => {
                 Matías Pérez Rojas
               </h3>
             </div>
-
-            {/* Antique Editorial Postage Stamp (Sello postal en color vino tinto con 🌀) */}
-            <div className="pt-2">
-              <AntiquePostageStamp
-                denomination="25 CTS"
-                region="MDQ"
-                title="Heroísmo Cosmogónico"
-                subtitle="SELLO EDITORIAL"
-                theme="vino_tinto"
-                className="w-24 h-34 sm:w-28 sm:h-40 transform -rotate-1 shadow-2xl"
-              />
-            </div>
           </div>
 
+        </div>
+
+        {/* Sello postal flotando en la esquina inferior derecha (no pegado al margen, imagen fija sin animaciones) */}
+        <div className="absolute bottom-20 right-5 sm:bottom-14 sm:right-8 z-20 pointer-events-none select-none transition-none">
+          <AntiquePostageStamp
+            denomination="25 CTS"
+            region="MDQ"
+            title="Heroísmo Cosmogónico"
+            subtitle="SELLO EDITORIAL"
+            theme="vino_tinto"
+            className="w-24 h-34 sm:w-28 sm:h-40 transform -rotate-2 shadow-2xl transition-none"
+          />
         </div>
 
         {/* Footer Editorial Metadata (Zero interactive buttons) */}

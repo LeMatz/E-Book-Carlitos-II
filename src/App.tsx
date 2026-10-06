@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { EBOOK_PAGES } from './data/ebookContent';
-import { INDICE_TITULOS } from './data/tableOfContentsData';
+import { INDICE_TITULOS } from './data/tableOfContents';
 import { EbookCover } from './components/EbookReader/EbookCover';
 import { EbookTableOfContents } from './components/EbookReader/EbookTableOfContents';
 import { EbookPage } from './components/EbookReader/EbookPage';

@@ -39,7 +39,6 @@ export const INDICE_TITULOS: Record<number, string> = {
   24: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
   25: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
   26: 'La Gran Coniunctio y el Compromiso Ético',
-  27: 'Fuentes, Lecturas y Aparato Crítico',
 };
 
 /**

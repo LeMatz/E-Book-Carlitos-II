@@ -54,14 +54,6 @@ export class ChaptersMetaData {
       endPage: 26,
       iconName: 'edit-3',
     },
-    {
-      chapterId: 6,
-      title: 'Apéndice — Fuentes y Lecturas',
-      subtitle: 'Obras de referencia, correspondencia y aparato documental',
-      startPage: 27,
-      endPage: 27,
-      iconName: 'bookmark',
-    },
   ];
 }
 
@@ -979,30 +971,6 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       title: 'Dedicatoria de Carlitos:',
       variant: 'carlitos',
       text: 'Te dejo el mate servido, che. No dejes que se enfríe. La próxima charla la escribís vos con las decisiones que tomes a partir de mañana.'
-    }
-  },
-  {
-    pageNumber: 27,
-    chapterId: 6,
-    sectionTitle: 'Apéndice Documental',
-    pageTitle: 'Fuentes, Lecturas y Aparato Crítico',
-    subtitle: 'Obras de referencia, correspondencia y bibliografía recomendada',
-    contentType: 'text',
-    keyTerms: ['Obras Completas', 'Recuerdos, Sueños, Pensamientos', 'Liber Novus', 'Wilhelm y Pauli'],
-    paragraphs: [
-      'Este manual reúne conceptos y analogías del pensamiento maduro de C. G. Jung organizados pedagógicamente para el estudio contemporáneo. Para profundizar en las fuentes documentales primarias, recomendamos consultar:',
-      '1. **La sincronicidad como principio de conexiones acausales (1952):** Publicado originalmente junto con un ensayo de Wolfgang Pauli en *Naturerklärung und Psyche*, e integrado en el volumen 8 de las *Obras Completas* (La dinámica de lo inconsciente, §816–968). Incluye la descripción clínica del caso del escarabajo dorado y el intercambio epistolar y conceptual con Pauli.',
-      '2. **Recuerdos, sueños, pensamientos (1961):** Obra autobiográfica compilada y editada por Aniela Jaffé, donde Jung relata la construcción de la Torre de Bollingen, sus visiones y su concepción de la realidad psíquica y la muerte.',
-      '3. **Liber Novus (El Libro Rojo, 1913–c. 1930 / publicado en 2009):** Registro manuscrito e iluminado de su confrontación con el inconsciente, donde surgen las figuras de Filemón, Ka y Salomé, y donde se germinó la técnica de la Imaginación Activa.',
-      '4. **Correspondencia Wolfgang Pauli – C. G. Jung (1932–1958):** Compilación epistolar que documenta el diálogo entre la física cuántica (el principio de complementariedad) y la psicología analítica en torno al *Unus Mundus*.',
-      '5. **Prólogo al I Ching (1949):** Ensayo introductorio para la traducción alemana de Richard Wilhelm vertida al inglés por Cary F. Baynes, publicado también en *Obras Completas, vol. 11*. Jung documenta su método de consulta y el hexagrama 50 (Ting, El Caldero).',
-      '6. **Cartas (vol. I, 1906–1950):** Incluye la carta a Fanny Bowditch del 22 de octubre de 1916 (p. 33) sobre la mirada interior.'
-    ],
-    carlitosCallout: {
-      id: 'carlitos-apendice-cierre',
-      title: 'Carlitos se despide:',
-      variant: 'carlitos',
-      text: 'Los libros señalan la luna, pero la luna está en el cielo nocturno y en el reflejo del agua. Andá a las fuentes, leé con rigor, pero no te olvides de mirar tu propia vida: ahí es donde los símbolos están vivos.'
     }
   }
 ];

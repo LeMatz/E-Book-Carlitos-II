@@ -54,11 +54,11 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           </strong>
         );
       }
-      return part;
+      return <React.Fragment key={i}>{part}</React.Fragment>;
     });
   };
 
-  const renderDropCapParagraph = (pText: string) => {
+  const renderDropCapParagraph = (pText: string, key?: React.Key) => {
     const trimmed = pText.trim();
     if (!trimmed) return null;
 
@@ -73,7 +73,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
         const isBold = asterisks === '**';
 
         return (
-          <p className="text-justify leading-relaxed">
+          <p key={key} className="text-justify leading-relaxed">
             <span className="font-playfair float-left text-[3.4rem] sm:text-[3.8rem] leading-[0.8] pt-1 pr-3 pb-0.5 font-black text-[#17120d] select-none inline-block drop-shadow-xs">
               {firstLetter}
             </span>
@@ -92,7 +92,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
 
     if (!match) {
       return (
-        <p className="text-justify leading-relaxed">
+        <p key={key} className="text-justify leading-relaxed">
           {renderFormattedText(pText)}
         </p>
       );
@@ -101,7 +101,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
     const [, leadingSymbols, firstLetter, restOfText] = match;
 
     return (
-      <p className="text-justify leading-relaxed">
+      <p key={key} className="text-justify leading-relaxed">
         {leadingSymbols}
         <span className="font-playfair float-left text-[3.4rem] sm:text-[3.8rem] leading-[0.8] pt-1 pr-3 pb-0.5 font-black text-[#17120d] select-none inline-block drop-shadow-xs">
           {firstLetter}
@@ -303,7 +303,11 @@ export const EbookPage: React.FC<EbookPageProps> = ({
     (c) => c.startPage === pageData.pageNumber
   );
 
-  const SPLIT_PAGES = new Set([1, 6, 8, 10, 14, 18, 20, 21, 23, 24, 25]);
+  // Split pages: all extensive theoretical & practical topics (Folios 1 to 16, and 18 to 26)
+  // Folio 17 is a single-sheet synthetic comparison table.
+  const SPLIT_PAGES = new Set([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+  ]);
   const isSplit = SPLIT_PAGES.has(pageData.pageNumber);
 
   // Common Sheet Shell for Legal Size (8.5in x 14in)
@@ -355,7 +359,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
         </header>
 
         {/* Content Body */}
-        <div className="flex-1 flex flex-col justify-between overflow-hidden">
+        <div className="flex-1 flex flex-col justify-between">
           {content}
         </div>
 
@@ -476,7 +480,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           <div className={`space-y-3.5 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
             {pageData.paragraphs.slice(0, 2).map((pText, idx) => (
               <React.Fragment key={idx}>
-                {idx === 0 ? renderDropCapParagraph(pText) : (
+                {idx === 0 ? renderDropCapParagraph(pText, `dropcap-${idx}`) : (
                   <p className="text-justify leading-relaxed">
                     {renderFormattedText(pText)}
                   </p>
@@ -652,7 +656,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           )}
 
           <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.map((pText, idx) => renderDropCapParagraph(pText))}
+            {pageData.paragraphs.map((pText, idx) => renderDropCapParagraph(pText, idx))}
           </div>
 
           <div className="my-3 overflow-x-auto border-2 border-[#5a4022] bg-[#ebdcb8] shadow-md">
@@ -812,10 +816,49 @@ export const EbookPage: React.FC<EbookPageProps> = ({
       );
     }
 
-    // Case 5: Folios 6 & 8 (Long Theoretical Pages)
+    // Case 5: All other split theoretical folios
     else {
+      const hasPhoto = !!pageData.clippedPhoto;
+      const hasHistoricalNotes = !!pageData.historicalNotes && pageData.historicalNotes.length > 0;
+      const hasSecondaryCallout = !!pageData.secondaryCallout;
+
+      // Determine balanced split point for paragraphs
+      let splitIdx: number;
+      if (hasPhoto) {
+        splitIdx = Math.min(2, Math.max(1, pageData.paragraphs.length - 2));
+      } else if (hasHistoricalNotes || hasSecondaryCallout) {
+        splitIdx = Math.min(2, Math.max(1, Math.floor(pageData.paragraphs.length / 2)));
+      } else {
+        splitIdx = Math.ceil(pageData.paragraphs.length / 2);
+      }
+
+      const pSlice1 = pageData.paragraphs.slice(0, splitIdx);
+      const pSlice2 = pageData.paragraphs.slice(splitIdx);
+
+      // Distribute secondary boxes to keep both sheets balanced
+      const putNotesOnSheet1 = hasHistoricalNotes && !hasPhoto;
+      const putSecCalloutOnSheet1 = hasSecondaryCallout && !hasPhoto && !hasHistoricalNotes;
+
       sheet1Content = (
         <div className="space-y-4">
+          {chapterStartMeta && (
+            <div className="mb-3 text-center space-y-1">
+              <div className="inline-flex items-center justify-center gap-2 px-4 py-1 bg-[#17120d] text-[#d4af37] border-2 border-[#8f6e28] shadow-md rounded-xs">
+                <SolAndLunaIcon className="w-3.5 h-3.5 text-[#d4af37] shrink-0" />
+                <span className="font-playfair font-black text-xs uppercase tracking-[0.2em] text-[#f2e6cb]">
+                  {chapterStartMeta.chapterId === 0
+                    ? '— INTRODUCCIÓN —'
+                    : `— CAPÍTULO ${chapterStartMeta.chapterId} —`}
+                </span>
+                <SolAndLunaIcon className="w-3.5 h-3.5 text-[#d4af37] shrink-0" />
+              </div>
+              <p className="font-playfair italic text-xs sm:text-sm text-[#5a4022] font-semibold max-w-xl mx-auto">
+                {chapterStartMeta.title}
+              </p>
+              <OrnamentalDivider variant="stars" className="my-1.5" />
+            </div>
+          )}
+
           <div className="text-center space-y-1 mb-3">
             <h1 className="font-playfair text-xl sm:text-3xl font-black text-[#17120d] tracking-tight uppercase ink-text">
               {pageData.pageTitle}
@@ -850,9 +893,9 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           )}
 
           <div className={`space-y-3.5 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(0, 3).map((pText, idx) => (
+            {pSlice1.map((pText, idx) => (
               <React.Fragment key={idx}>
-                {idx === 0 ? renderDropCapParagraph(pText) : (
+                {idx === 0 ? renderDropCapParagraph(pText, `dropcap-${idx}`) : (
                   <p className="text-justify leading-relaxed">
                     {renderFormattedText(pText)}
                   </p>
@@ -860,23 +903,110 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               </React.Fragment>
             ))}
           </div>
+
+          {putNotesOnSheet1 && pageData.historicalNotes && (
+            <div className="my-3 p-3.5 bg-[#ebdcb9] border-l-4 border-[#8f6e28] font-mono text-xs text-[#17120d] space-y-1 shadow-xs border border-[#5a4022]/20">
+              <div className="font-bold uppercase tracking-widest text-[#8f6e28] mb-1 flex items-center gap-2">
+                <BookOpen className="w-4 h-4 text-[#8f6e28]" />
+                <span>Hitos documentados (síntesis de archivo)</span>
+              </div>
+              <ul className="list-disc list-inside space-y-1 font-old-standard text-xs">
+                {pageData.historicalNotes.map((note, idx) => (
+                  <li key={idx}>{renderFormattedText(note)}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {putSecCalloutOnSheet1 && pageData.secondaryCallout && (
+            renderCalloutBox(pageData.secondaryCallout)
+          )}
         </div>
       );
 
       sheet2Content = (
         <div className="space-y-4">
-          {renderContinuationHeader('Segunda Parte: Profundización Clínica')}
+          {renderContinuationHeader('Segunda Parte: Desarrollo e Integración')}
 
           <div className={`space-y-3.5 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(3).map((pText, idx) => (
+            {pSlice2.map((pText, idx) => (
               <p key={idx} className="text-justify leading-relaxed">
                 {renderFormattedText(pText)}
               </p>
             ))}
           </div>
 
+          {!putSecCalloutOnSheet1 && pageData.secondaryCallout && (
+            renderCalloutBox(pageData.secondaryCallout)
+          )}
+
           {pageData.carlitosCallout && renderCalloutBox(pageData.carlitosCallout)}
-          {pageData.secondaryCallout && renderCalloutBox(pageData.secondaryCallout)}
+
+          {!putNotesOnSheet1 && pageData.historicalNotes && pageData.historicalNotes.length > 0 && (
+            <div className="my-3 p-3.5 bg-[#ebdcb9] border-l-4 border-[#8f6e28] font-mono text-xs text-[#17120d] space-y-1 shadow-xs border border-[#5a4022]/20">
+              <div className="font-bold uppercase tracking-widest text-[#8f6e28] mb-1 flex items-center gap-2">
+                <BookOpen className="w-4 h-4 text-[#8f6e28]" />
+                <span>Hitos documentados (síntesis de archivo)</span>
+              </div>
+              <ul className="list-disc list-inside space-y-1 font-old-standard text-xs">
+                {pageData.historicalNotes.map((note, idx) => (
+                  <li key={idx}>{renderFormattedText(note)}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {pageData.tableData && pageData.tableData.length > 0 && (
+            <div className="my-4 overflow-x-auto border-2 border-[#5a4022] bg-[#ebdcb8] shadow-md">
+              <table className="w-full text-left font-old-standard text-xs border-collapse">
+                <thead>
+                  <tr className="bg-[#17120d] text-[#ebdcb8] font-playfair uppercase tracking-wider text-xs border-b border-[#aa8032]">
+                    <th className="p-2.5 border-r border-[#aa8032]/30 w-1/4">Patrón</th>
+                    <th className="p-2.5 border-r border-[#aa8032]/30 w-1/3">Manifestaciones</th>
+                    <th className="p-2.5 w-5/12">Lectura y riesgo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {pageData.tableData.map((row, idx) => (
+                    <tr
+                      key={idx}
+                      className={`border-b border-[#5a4022]/30 ${
+                        idx % 2 === 0 ? 'bg-[#dfcea6]/40' : 'bg-[#ebdcb9]/60'
+                      }`}
+                    >
+                      <td className="p-2.5 font-bold font-playfair text-[#17120d] border-r border-[#5a4022]/30 align-top">
+                        {renderFormattedText(row.archetype)}
+                      </td>
+                      <td className="p-2.5 border-r border-[#5a4022]/30 align-top">
+                        {renderFormattedText(row.symbols)}
+                      </td>
+                      <td className="p-2.5 align-top text-[#2b1f16]">
+                        {renderFormattedText(row.distortion)}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          {pageData.footnotes && pageData.footnotes.length > 0 && (
+            <div className="pt-3 mt-4 border-t border-[#5a4022]/40 space-y-1.5 font-old-standard text-xs text-[#2b1f16]">
+              <span className="font-playfair font-bold text-[11px] uppercase tracking-wider text-[#8f6e28] block">
+                Notas de Aparato Crítico:
+              </span>
+              <div className="space-y-1 pl-2 border-l-2 border-[#aa8032]/40">
+                {pageData.footnotes.map((fn) => (
+                  <div key={fn.number} className="leading-snug">
+                    <span className="font-mono font-bold text-[#8f6e28] mr-1 text-[11px]">
+                      [{fn.number}] {fn.term}:
+                    </span>
+                    <span className="italic text-[#17120d]">{fn.note}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {pageData.keyTerms?.some((k) => k.includes('†')) && (
             <div className="pt-2 mt-4 text-[11px] font-mono italic text-[#7a5820] border-t border-[#aa8032]/30">
@@ -988,7 +1118,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
                 idx === secondaryTargetIdx &&
                 renderCalloutBox(pageData.secondaryCallout!)}
               {idx === 0 ? (
-                renderDropCapParagraph(pText)
+                renderDropCapParagraph(pText, `dropcap-${idx}`)
               ) : (
                 <p className="text-justify leading-relaxed">
                   {renderFormattedText(pText)}

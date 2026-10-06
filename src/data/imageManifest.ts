@@ -11,7 +11,6 @@ import ichingCoinsImg from '../assets/images/iching_bronze_coins_consultation_17
 import hexagram50BrushImg from '../assets/images/hexagram_50_ting_ink_brush_1790694984643.jpg';
 import fourHexagramsPlateImg from '../assets/images/four_hexagrams_ink_brush_plate_1790695005198.jpg';
 import authorPortraitImg from '../assets/images/author_portrait_1786398073343.jpg';
-import postageStampHeroImg from '../assets/images/vintage_postage_stamp_hero_1790695039239.jpg';
 
 export const IMAGE_MANIFEST = {
   studyLibrary: studyLibraryImg,
@@ -24,7 +23,6 @@ export const IMAGE_MANIFEST = {
   hexagram50Brush: hexagram50BrushImg,
   fourHexagramsPlate: fourHexagramsPlateImg,
   authorPortrait: authorPortraitImg,
-  postageStampHero: postageStampHeroImg,
 } as const;
 
 export type ImageManifestKey = keyof typeof IMAGE_MANIFEST;

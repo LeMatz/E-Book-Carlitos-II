@@ -205,8 +205,7 @@ html {
 
 @media (min-width: 860px) {
   .legal-sheet {
-    height: 1344px;
-    max-height: 1344px;
+    min-height: 1344px;
   }
 }
 
