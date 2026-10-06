@@ -195,10 +195,25 @@ html {
   background: #aa8032;
 }
 
-/* PDF & Print Styles */
+/* Legal Size (8.5in x 14in) Screen Styles */
+.legal-sheet {
+  width: 100%;
+  max-width: 816px;
+  min-height: 1344px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 860px) {
+  .legal-sheet {
+    height: 1344px;
+    max-height: 1344px;
+  }
+}
+
+/* PDF & Print Styles — Formato Legal (8.5in x 14in) */
 @media print {
   @page {
-    size: A4 portrait;
+    size: 8.5in 14in portrait;
     margin: 0;
   }
 
@@ -245,13 +260,13 @@ html {
   }
 
   .print-page-sheet {
-    width: 210mm !important;
-    max-width: 210mm !important;
-    height: 297mm !important;
-    min-height: 297mm !important;
-    max-height: 297mm !important;
+    width: 8.5in !important;
+    max-width: 8.5in !important;
+    height: 14in !important;
+    min-height: 14in !important;
+    max-height: 14in !important;
     margin: 0 auto !important;
-    padding: 10mm 12mm !important;
+    padding: 0.45in 0.55in !important;
     box-sizing: border-box !important;
     page-break-after: always !important;
     break-after: page !important;

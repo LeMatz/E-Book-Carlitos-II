@@ -12,10 +12,10 @@ import {
 
 export const EbookCover: React.FC = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto my-6 sm:my-10 p-5 sm:p-10 paper-dark-leather rounded-sm shadow-2xl relative overflow-hidden transition-all duration-300 print-page-sheet flex flex-col justify-between">
+    <div className="w-full max-w-[816px] mx-auto my-6 p-4 sm:p-6 paper-dark-leather rounded-sm shadow-2xl relative overflow-hidden transition-all duration-300 print-page-sheet legal-sheet flex flex-col justify-between">
       
       {/* Outer Monumental Ornamental Gold Frame */}
-      <div className="border-4 border-double border-[#aa8032] p-5 sm:p-10 relative bg-[#1c150f]/90 flex-1 flex flex-col justify-between shadow-2xl overflow-hidden">
+      <div className="border-4 border-double border-[#aa8032] p-4 sm:p-6 relative bg-[#1c150f]/90 flex-1 flex flex-col justify-between shadow-2xl overflow-hidden">
         
         {/* Four Antique Ornamental Filigree Corners */}
         <div className="absolute top-2 left-2">

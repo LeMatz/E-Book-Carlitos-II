@@ -1,8 +1,8 @@
 import { EbookPageData, ChapterMeta } from '../types/ebook';
 import { IMAGE_MANIFEST } from './imageManifest';
-import { INDICE_TITULOS, getFolioTitle } from './tableOfContentsData';
+import { INDICE_TITULOS, INDICE_SUBTITULOS } from './tableOfContents';
 
-export { INDICE_TITULOS, getFolioTitle } from './tableOfContentsData';
+export { INDICE_TITULOS, INDICE_SUBTITULOS, getIndiceTitle } from './tableOfContents';
 
 export class ChaptersMetaData {
   static chapters: ChapterMeta[] = [
@@ -1009,6 +1009,6 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
 
 export const EBOOK_PAGES: EbookPageData[] = RAW_EBOOK_PAGES.map((page) => ({
   ...page,
-  pageTitle: getFolioTitle(page.pageNumber),
+  pageTitle: INDICE_TITULOS[page.pageNumber] ?? page.pageTitle,
+  subtitle: INDICE_SUBTITULOS[page.pageNumber] ?? page.subtitle,
 }));
-
