@@ -48,3 +48,14 @@ Se añadió la señalización `†` en `keyTerms` y una nota funcional en la bas
 ## 4. Nuevo Folio 27: Apéndice Documental
 
 Se incorporó el **Folio 27** (*Apéndice: Fuentes y Lecturas de Referencia*) como cierre de la obra, detallando las ediciones de consulta autorizadas, la correspondencia epistolar relevante y los criterios editoriales empleados.
+
+---
+
+## 5. Actualización Protocolo 3: El Juego del Tao (Folio 25)
+
+A pedido del autor, el **Protocolo 3** del Capítulo 5 sustituyó la tirada del I Ching por el **Juego del Tao**:
+- **Objetivo:** Entrenar la atención abierta y receptiva a la alineación espontánea de acontecimientos fortuitos en la vida cotidiana sin forzar sincronicidades ni manipular la realidad.
+- **Mecánica Central:** Se fundamenta en una «regla autoimpuesta» que conecta lúdicamente una acción cotidiana propia con un evento enteramente aleatorio o fuera de control voluntario, delimitando el marco de observación.
+- **Ejemplo Real de Matías:** Caminar por la ciudad a paso natural y observar que el semáforo peatonal cambie a verde en el instante exacto en que uno de los pies toca la calle, sin acelerar ni demorar el paso, entrenando la sintonía somática y la no-intervención del ego.
+- **Enfoque:** Se basa en el principio taoísta del *Wu Wei* (no-forzamiento, desapego del ego y del control) y el registro en bitácora para cultivar la presencia en el tiempo cualitativo (*Kairos*).
+

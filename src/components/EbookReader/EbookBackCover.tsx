@@ -68,7 +68,7 @@ export const EbookBackCover: React.FC = () => {
             <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-xs border-2 border-[#5a4022] p-1 bg-[#ebdcb8] shadow-md overflow-hidden relative">
               <img
                 src="/src/assets/images/author_portrait_1786398073343.jpg"
-                alt="Matías Pérez Rojas"
+                alt="Matías P. Rojas"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src =

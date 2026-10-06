@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { EBOOK_PAGES } from './data/ebookContent';
+import { INDICE_TITULOS } from './data/tableOfContentsData';
 import { EbookCover } from './components/EbookReader/EbookCover';
 import { EbookTableOfContents } from './components/EbookReader/EbookTableOfContents';
 import { EbookPage } from './components/EbookReader/EbookPage';
@@ -7,6 +8,39 @@ import { EbookBackCover } from './components/EbookReader/EbookBackCover';
 import { Printer } from 'lucide-react';
 
 export default function App() {
+  const [pageTitles, setPageTitles] = useState<Record<number, string>>(() => {
+    try {
+      const saved = localStorage.getItem('carlitos_ebook_titles');
+      if (saved) {
+        return { ...INDICE_TITULOS, ...JSON.parse(saved) };
+      }
+    } catch (e) {
+      console.error(e);
+    }
+    return INDICE_TITULOS;
+  });
+
+  const handleUpdateTitle = (pageNumber: number, newTitle: string) => {
+    setPageTitles((prev) => {
+      const updated = { ...prev, [pageNumber]: newTitle.trim() };
+      try {
+        localStorage.setItem('carlitos_ebook_titles', JSON.stringify(updated));
+      } catch (e) {
+        console.error(e);
+      }
+      return updated;
+    });
+  };
+
+  const handleResetTitles = () => {
+    try {
+      localStorage.removeItem('carlitos_ebook_titles');
+    } catch (e) {
+      console.error(e);
+    }
+    setPageTitles(INDICE_TITULOS);
+  };
+
   const handlePrintPdf = () => {
     window.print();
   };
@@ -49,21 +83,33 @@ export default function App() {
           <EbookCover />
         </section>
 
-        {/* 2. ÍNDICE DE CONTENIDOS */}
+        {/* 2. ÍNDICE DE CONTENIDOS (Con sincronización directa a los folios) */}
         <section id="folio-indice" aria-label="Índice de materias">
-          <EbookTableOfContents />
+          <EbookTableOfContents
+            pageTitles={pageTitles}
+            onUpdateTitle={handleUpdateTitle}
+            onResetTitles={handleResetTitles}
+          />
         </section>
 
-        {/* 3. LOS FOLIOS DE CONTENIDO */}
-        {EBOOK_PAGES.map((page) => (
-          <section
-            key={page.pageNumber}
-            id={`folio-${page.pageNumber}`}
-            aria-label={`Folio ${page.pageNumber}: ${page.pageTitle}`}
-          >
-            <EbookPage pageData={page} fontSize="md" fontFamily="old-standard" />
-          </section>
-        ))}
+        {/* 3. LOS FOLIOS DE CONTENIDO (Títulos sincronizados en tiempo real) */}
+        {EBOOK_PAGES.map((page) => {
+          const currentTitle = pageTitles[page.pageNumber] || page.pageTitle;
+          const pageDataWithSyncedTitle = {
+            ...page,
+            pageTitle: currentTitle,
+          };
+
+          return (
+            <section
+              key={page.pageNumber}
+              id={`folio-${page.pageNumber}`}
+              aria-label={`Folio ${page.pageNumber}: ${currentTitle}`}
+            >
+              <EbookPage pageData={pageDataWithSyncedTitle} fontSize="md" fontFamily="old-standard" />
+            </section>
+          );
+        })}
 
         {/* 4. CONTRAPORTADA DE ARCHIVO */}
         <section id="folio-contraportada" aria-label="Contraportada del libro">
@@ -75,3 +121,4 @@ export default function App() {
     </div>
   );
 }
+

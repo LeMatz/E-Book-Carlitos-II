@@ -433,61 +433,143 @@ export const VintageClippedPhoto: React.FC<{
   );
 };
 
-// Antique Postage Stamp for Book Cover (Replacing modern wax seal)
+// Cosmic Spiral Icon (🌀 Vortex / Whirlpool / Spiral)
+export const CosmicSpiralIcon: React.FC<{ className?: string; color?: string }> = ({
+  className = 'w-8 h-8',
+  color = '#d4af37',
+}) => (
+  <svg viewBox="0 0 100 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Concentric cosmic orbital dashed guides */}
+    <circle cx="50" cy="50" r="45" stroke={color} strokeWidth="1" strokeDasharray="3 3" opacity="0.35" />
+    <circle cx="50" cy="50" r="33" stroke={color} strokeWidth="0.8" opacity="0.3" />
+    
+    {/* Swirling Vortex Spiral Arms matching the 🌀 glyph */}
+    <path
+      d="M50 50 C46 41, 54 33, 63 35 C75 39, 78 59, 65 72 C49 87, 21 77, 15 54 C9 26, 31 6, 57 4 C86 2, 97 27, 93 56 C89 83, 62 95, 37 94"
+      stroke={color}
+      strokeWidth="3.4"
+      strokeLinecap="round"
+      fill="none"
+    />
+    <path
+      d="M50 50 C54 59, 46 67, 37 65 C25 61, 23 40, 36 27 C53 12, 79 23, 85 46 C91 73, 69 93, 43 92"
+      stroke={color}
+      strokeWidth="2.4"
+      strokeLinecap="round"
+      fill="none"
+      opacity="0.85"
+    />
+    <path
+      d="M50 50 C43 45, 45 37, 54 37 C64 37, 69 50, 60 59 C49 69, 35 63, 31 49"
+      stroke={color}
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      fill="none"
+      opacity="0.9"
+    />
+    
+    {/* Center Eye of the Vortex */}
+    <circle cx="50" cy="50" r="4.2" fill={color} />
+    
+    {/* Subtle Star Points */}
+    <circle cx="23" cy="22" r="1.5" fill={color} opacity="0.75" />
+    <circle cx="78" cy="24" r="1.5" fill={color} opacity="0.75" />
+    <circle cx="77" cy="77" r="1.5" fill={color} opacity="0.75" />
+    <circle cx="22" cy="74" r="1.5" fill={color} opacity="0.75" />
+  </svg>
+);
+
+// Antique Postage Stamp for Book Cover (Vino Tinto & Cosmic Spiral 🌀)
 export const AntiquePostageStamp: React.FC<{
   className?: string;
   denomination?: string;
   region?: string;
   title?: string;
   subtitle?: string;
+  theme?: 'vino_tinto' | 'vintage';
 }> = ({
-  className = 'w-36 h-48 sm:w-44 sm:h-56',
+  className = 'w-24 h-34 sm:w-28 sm:h-40',
   denomination = '25 CTS',
   region = 'HELVETIA',
-  title = 'ARCHIVO CARLITOS',
+  title = 'Heroísmo Cosmogónico',
   subtitle = 'SELLO EDITORIAL',
+  theme = 'vino_tinto',
 }) => {
+  const isVinoTinto = theme === 'vino_tinto';
+
   return (
     <div
-      className={`relative p-2 bg-[#dfd3ba] text-[#1c150f] shadow-[0_10px_25px_rgba(0,0,0,0.7)] select-none stamp-perforated-border flex flex-col justify-between overflow-hidden border border-[#8f6e28] ${className}`}
+      className={`relative p-1.5 ${
+        isVinoTinto ? 'bg-[#4a121a] text-[#f5e6cf] border border-[#2b070f]' : 'bg-[#dfd3ba] text-[#1c150f] border border-[#8f6e28]'
+      } shadow-[0_8px_20px_rgba(0,0,0,0.7)] select-none stamp-perforated-border flex flex-col justify-between overflow-hidden ${className}`}
       style={{
-        backgroundImage: 'radial-gradient(circle at center, #ece3cf 0%, #dfd3ba 100%)',
+        backgroundImage: isVinoTinto
+          ? 'radial-gradient(circle at center, #5d1522 0%, #440d17 70%, #2a070e 100%)'
+          : 'radial-gradient(circle at center, #ece3cf 0%, #dfd3ba 100%)',
       }}
     >
       {/* Inner Engraved Stamp Border */}
-      <div className="border border-[#7a5820]/70 p-2 bg-[#f6efe0]/80 flex flex-col items-center justify-between h-full relative">
-        
+      <div
+        className={`border ${
+          isVinoTinto ? 'border-[#aa8032]/80 bg-[#380b13]/90' : 'border-[#7a5820]/70 bg-[#f6efe0]/80'
+        } p-1.5 flex flex-col items-center justify-between h-full relative`}
+      >
         {/* Top Postal Header */}
-        <div className="w-full flex items-center justify-between text-[10px] font-mono font-bold text-[#563814] px-1 border-b border-[#aa8032]/40 pb-1">
+        <div
+          className={`w-full flex items-center justify-between text-[8px] sm:text-[9px] font-mono font-bold ${
+            isVinoTinto ? 'text-[#e6c280] border-[#aa8032]/40' : 'text-[#563814] border-[#aa8032]/40'
+          } px-0.5 border-b pb-0.5`}
+        >
           <span className="tracking-widest">{region}</span>
-          <span className="bg-[#563814] text-[#ebdcb8] px-1.5 py-0.2 rounded-2xs font-mono text-[9px] shadow-xs">
+          <span
+            className={`${
+              isVinoTinto ? 'bg-[#220409] text-[#e8cfa0] border border-[#aa8032]/50' : 'bg-[#563814] text-[#ebdcb8]'
+            } px-1 py-0.2 rounded-2xs font-mono text-[7px] sm:text-[8px] shadow-xs`}
+          >
             {denomination}
           </span>
         </div>
 
-        {/* Central Archival Engraving */}
-        <div className="my-auto py-2 flex flex-col items-center text-center">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-[#8f6e28] flex items-center justify-center bg-[#1e1610] p-2 shadow-inner my-1">
-            <GoldenScarabIcon className="w-12 h-12 sm:w-14 sm:h-14 text-[#d4af37]" color="#d4af37" />
+        {/* Central Archival Engraving: Fixed Cosmic Spiral 🌀 */}
+        <div className="my-auto py-1 flex flex-col items-center text-center">
+          <div
+            className={`w-11 h-11 sm:w-13 sm:h-13 rounded-full border-2 ${
+              isVinoTinto ? 'border-[#d4af37] bg-[#1d0408]' : 'border-[#8f6e28] bg-[#1e1610]'
+            } flex items-center justify-center p-1 shadow-inner my-0.5`}
+            title="Símbolo cosmogónico 🌀"
+          >
+            <CosmicSpiralIcon className="w-8 h-8 sm:w-9 sm:h-9 text-[#d4af37]" color="#d4af37" />
           </div>
-          <span className="font-playfair text-xs sm:text-sm font-black uppercase tracking-wider text-[#17120d] leading-tight mt-1.5">
+          <span
+            className={`font-playfair text-[8.5px] sm:text-[9.5px] font-black uppercase tracking-wider ${
+              isVinoTinto ? 'text-[#f5e6cf]' : 'text-[#17120d]'
+            } leading-tight mt-1 max-w-[105px] text-center`}
+          >
             {title}
           </span>
-          <span className="font-mono text-[8px] tracking-[0.2em] text-[#7a5820] uppercase font-bold mt-0.5">
+          <span
+            className={`font-mono text-[6.5px] sm:text-[7.5px] tracking-[0.16em] ${
+              isVinoTinto ? 'text-[#d4af37]' : 'text-[#7a5820]'
+            } uppercase font-bold mt-0.5`}
+          >
             {subtitle} • VOL. II
           </span>
         </div>
 
         {/* Bottom Location & Year */}
-        <div className="w-full flex items-center justify-between text-[8px] sm:text-[9px] font-mono text-[#563814] px-1 border-t border-[#aa8032]/40 pt-1 font-semibold">
+        <div
+          className={`w-full flex items-center justify-between text-[7px] sm:text-[8px] font-mono ${
+            isVinoTinto ? 'text-[#d8b068] border-[#aa8032]/40' : 'text-[#563814] border-[#aa8032]/40'
+          } px-0.5 border-t pt-0.5 font-semibold`}
+        >
           <span>KÜSNACHT</span>
           <span>✦ 1930 ✦</span>
           <span>ZÜRICH</span>
         </div>
 
-        {/* Tilted Postal Cancellation Ink Stamp */}
-        <div className="absolute -top-2 -right-3 w-32 h-32 pointer-events-none transform -rotate-18 opacity-70">
-          <svg viewBox="0 0 100 100" className="w-full h-full text-[#2c1d12]">
+        {/* Tilted Postal Cancellation Ink Stamp - Static image with zero animation */}
+        <div className="absolute -top-1 -right-2 w-24 h-24 pointer-events-none transform -rotate-18 opacity-50">
+          <svg viewBox="0 0 100 100" className={`w-full h-full ${isVinoTinto ? 'text-[#120306]' : 'text-[#2c1d12]'}`}>
             <circle cx="50" cy="50" r="38" stroke="currentColor" strokeWidth="1.6" fill="none" />
             <circle cx="50" cy="50" r="30" stroke="currentColor" strokeWidth="0.8" fill="none" />
             <text x="50" y="32" fontSize="6.5" fontFamily="monospace" textAnchor="middle" fill="currentColor" fontWeight="bold">
@@ -503,7 +585,6 @@ export const AntiquePostageStamp: React.FC<{
             <line x1="80" y1="50" x2="94" y2="50" stroke="currentColor" strokeWidth="1.6" />
           </svg>
         </div>
-
       </div>
     </div>
   );

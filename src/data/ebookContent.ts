@@ -1,5 +1,8 @@
 import { EbookPageData, ChapterMeta } from '../types/ebook';
 import { IMAGE_MANIFEST } from './imageManifest';
+import { INDICE_TITULOS, getFolioTitle } from './tableOfContentsData';
+
+export { INDICE_TITULOS, getFolioTitle } from './tableOfContentsData';
 
 export class ChaptersMetaData {
   static chapters: ChapterMeta[] = [
@@ -46,7 +49,7 @@ export class ChaptersMetaData {
     {
       chapterId: 5,
       title: 'Capítulo 5 — Cuaderno de Trabajo & Bitácora Alquímica',
-      subtitle: 'Protocolos de sueños, sincronías y consulta existencial al oráculo',
+      subtitle: 'Protocolos de sueños, sincronías y el Juego del Tao',
       startPage: 23,
       endPage: 26,
       iconName: 'edit-3',
@@ -62,7 +65,7 @@ export class ChaptersMetaData {
   ];
 }
 
-export const EBOOK_PAGES: EbookPageData[] = [
+const RAW_EBOOK_PAGES: EbookPageData[] = [
   // ==========================================
   // INTRODUCCIÓN & SEGUNDO UMBRAL (PÁGINAS 1 A 4)
   // ==========================================
@@ -902,50 +905,52 @@ export const EBOOK_PAGES: EbookPageData[] = [
     pageNumber: 25,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
-    pageTitle: 'Protocolo 3: Consulta Existencial al I Ching',
-    subtitle: 'El paso a paso riguroso para interrogar al oráculo con las tres monedas y dialogar con el hexagrama',
+    pageTitle: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
+    subtitle: 'Entrenar la atención abierta a la alineación de eventos fortuitos sin forzar sincronicidades',
     contentType: 'exercise',
     exerciseData: {
-      id: 'ex-iching-consultation',
-      title: 'Protocolo 3 — Tirada Existencial del I Ching',
-      objective: 'Realizar una consulta seria, respetuosa y metodológicamente rigurosa al Libro de las Mutaciones utilizando las tres monedas de bronce para obtener un mapa proyectivo de tu momento actual.',
+      id: 'ex-juego-del-tao',
+      title: 'Protocolo 3 — El Juego del Tao: Atención a la Alineación de Eventos Azarosos',
+      objective: 'Ejercitar la presencia y la atención receptiva a través de una regla autoimpuesta que conecte una acción propia con un evento aleatorio cotidiano, observando cómo se alinean los hechos sin intentar manipularlos, forzarlos ni demandar sincronicidades al destino.',
       steps: [
         {
           stepNumber: 1,
-          title: 'Paso 1: Formulación de la Consulta',
-          instruction: 'Formulá tu consulta con claridad. Se admiten preguntas concretas sobre encrucijadas prácticas o preguntas abiertas de sentido ("¿Cuál es la actitud psicológica más prudente frente a este conflicto?"). Lo decisivo es consultar con respeto y no delegar tu libre albedrío.',
+          title: 'Paso 1: Establecer la Regla Autoimpuesta',
+          instruction: 'El Juego del Tao comienza cuando definís una «regla autoimpuesta» que conecte de forma lúdica una acción tuya cotidiana con un evento completamente aleatorio fuera de tu control voluntario. Vos fijás el punto de encuentro: por ejemplo, caminar a paso constante y chequear si el semáforo peatonal cambia a verde en el exacto instante en que uno de tus pies toca la calle; poner a calentar la pava para el mate y acercarte a chequearla por primera vez esperando que esté en la temperatura justa sin mirar el reloj; o circular en auto y que los semáforos se abran en verde justo antes de que tengas que frenar. La regla autoimpuesta no busca predecir el futuro, sino crear un marco lúdico de atención donde tu acción y el azar del mundo se encuentran.',
         },
         {
           stepNumber: 2,
-          title: 'Paso 2: Lanzamiento de las Tres Monedas (6 Tiradas)',
-          instruction: 'Tomá tres monedas idénticas. Tiralas seis veces sobre un paño o mesa de madera, anotando el resultado de abajo hacia arriba (Línea 1 a Línea 6). Cara=3, Cruz=2. Suma: 6 (Yin mutante), 7 (Yang firme), 8 (Yin receptivo), 9 (Yang mutante).',
+          title: 'Paso 2: Renuncia al Control y Wu Wei (No-Forzamiento)',
+          instruction: 'El objetivo cardinal no es "hacer magia" ni pretender forzar una sincronicidad doblando la realidad a tu favor. Si notás tensión muscular, urgencia de ganar o ansiedad por demostrar algo, frená: ese es el ego queriendo manipular el mundo. El principio rector es el Wu Wei taoísta: actuar sin forzar, soltar la expectativa del resultado y disponerte a contemplar lo que acontezca con serenidad.',
         },
         {
           stepNumber: 3,
-          title: 'Paso 3: Identificar los Dos Trigramas',
-          instruction: 'Identificá el trigrama inferior (las 3 líneas de abajo) y el trigrama superior (las 3 líneas de arriba). Buscá en la tabla de la página 20 qué fuerzas elementales están en danza (¿Fuego sobre Montaña? ¿Agua sobre Viento?).',
+          title: 'Paso 3: Sintonía y Presencia Somática',
+          instruction: 'Mientras el evento sigue su curso autónomo, habitá tu cuerpo en el presente. Sentí el contacto del volante o los pasos en el piso, escuchá el rumor incipiente del agua en la cocina, relajá los hombros y respirá con calma. El Juego del Tao entrena la transición de Chronos (la prisa cuantitativa) a Kairos (el momento cualitativo oportuno).',
         },
         {
           stepNumber: 4,
-          title: 'Paso 4: Lectura del Juicio y las Líneas Mutantes',
-          instruction: 'Leé el dictamen del hexagrama resultante. Si obtuviste líneas 6 o 9, esas líneas mutan en su polaridad opuesta, revelando el Hexagrama Secundario (hacia dónde se desplaza la energía si actúas).',
+          title: 'Paso 4: Observación del Desenlace sin Apego ni Juicio',
+          instruction: 'Llegó el momento del chequeo: ¿el semáforo abrió el paso en verde? ¿El agua estaba a 75°–80°C para cebar el mate? Si los hechos se alinearon con asombrosa precisión, disfrutá la caricia de fluidez y sintonía con el entorno sin inflarte de orgullo. Si el semáforo se puso rojo o el agua requirió más tiempo, sonreí con igual calma: el azar sigue su ley y el cosmos no trabaja como sirviente de tus caprichos.',
         },
         {
           stepNumber: 5,
-          title: 'Paso 5: La Integración Psicológica',
-          instruction: 'Cerrá los ojos y preguntate: "¿En qué punto exacto de mi vida estoy actuando con la terquedad que el oráculo describe?". Anotá una resolución íntima que guíe tus pasos esta semana.',
+          title: 'Paso 5: Registro Breve en la Bitácora',
+          instruction: 'Anotá en tu cuaderno qué evento elegiste, qué grado de tensión o soltura experimentaste en la espera y qué sentiste con el desenlace. ¿Descubriste qué tan a menudo vivís intentando empujar el río? Con la práctica reiterada, este ejercicio te devuelve una agudeza perceptiva sutil para reconocer cuándo la vida te invita a avanzar y cuándo te pide esperar.',
         },
       ],
-      applicationExample: 'Escena ilustrativa (personaje compuesto): Un terapeuta dudaba si confrontar a un alumno deshonesto. Preguntó: "¿Cuál debe ser mi postura ética ante este conflicto?". Obtuvo el Hexagrama 21, Shih Ho (Morder a Través): el juicio describe la necesidad de aplicar la ley con claridad y firmeza para que la comunidad no se pudra. Comprendió que su complacencia era miedo a la desaprobación y no bondad real.',
+      exampleLabel: 'Bitácora de Matías (Ejemplo Real):',
+      applicationExample: 'Mi propio "Juego del Tao" trata de que cuando salgo a caminar por la ciudad pongo a prueba esta sintonía con los semáforos: observar si el semáforo cambia a verde en el instante exacto en que uno de mis pies baja de la vereda y toca el asfalto de la calle. La única regla inviolable es no alterar el paso: no apurar la marcha con ansiedad para "llegar a tiempo", ni alargar o demorar la zancada para hacerla coincidir a la fuerza. Se trata de caminar con el cuerpo suelto, la respiración tranquila y la atención despierta. Cuando el pie toca la calle y la luz verde destella en ese preciso segundo sin haber intervenido en absoluto, no hay magia ni control mental sobre el tráfico: hay una silenciosa y reconfortante sensación de entrar en fase, de estar caminando en el compás exacto en el que el mundo se desenvuelve.',
     },
     paragraphs: [
-      'El I Ching no juzga desde afuera: revela la constelación que vos mismo estás creando con tus elecciones inconscientes. Tratado con reverencia, se convierte en el más lúcido consejero de tu vida.'
+      'El Tao no se impone: se atiende. En la tradición oriental que tanto cautivó a Carlitos Jung y a Richard Wilhelm, el sabio no forcejea contra las circunstancias; contempla la corriente y se acomoda a su pulso. El "Juego del Tao" no pretende convertirte en un hacedor de prodigios ni busca fabricar coincidencias artificiales: es una gimnasia cotidiana de la conciencia para aprender a notar cómo se ordenan los acontecimientos fortuitos cuando aflojás la obsesión de control.',
+      'Al quitarle al azar la carga de la superstición y al ego la ilusión de omnipotencia, la mente se vuelve receptiva y porosa. De repente, el mundo exterior deja de ser un obstáculo mecánico para convertirse en un paisaje vivo donde cada suceso —desde un semáforo que abre el paso justo al apoyar el pie en la calle hasta el agua del mate— te recuerda la silenciosa alineación del Unus Mundus.'
     ],
     carlitosCallout: {
-      id: 'carlitos-cap5-iching',
+      id: 'carlitos-cap5-tao',
       title: 'Nota de Práctica de Carlitos:',
       variant: 'alchemical',
-      text: 'No consultes al I Ching dos veces por la misma pregunta porque no te gustó la respuesta. El oráculo responde con confusión al capricho. Escuchá a la primera y ponete a trabajar.'
+      text: '¿Querés empujar el río para que corra más rápido, che? Te vas a cansar antes de que el agua llegue al lago. El Juego del Tao no es para que te creas un brujo que maneja los semáforos con el pensamiento; es para que te des cuenta de lo lindo que es caminar en sintonía con las cosas sin pretender mandonear al universo.'
     }
   },
   {
@@ -1001,3 +1006,9 @@ export const EBOOK_PAGES: EbookPageData[] = [
     }
   }
 ];
+
+export const EBOOK_PAGES: EbookPageData[] = RAW_EBOOK_PAGES.map((page) => ({
+  ...page,
+  pageTitle: getFolioTitle(page.pageNumber),
+}));
+

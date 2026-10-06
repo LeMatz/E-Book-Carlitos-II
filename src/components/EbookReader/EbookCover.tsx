@@ -35,12 +35,12 @@ export const EbookCover: React.FC = () => {
         <div className="text-center pt-2 sm:pt-4">
           <div className="flex items-center justify-center gap-3 text-xs tracking-[0.35em] font-mono text-[#d4af37] font-bold uppercase">
             <span>✦</span>
-            <span>MANUAL DE INVESTIGACIÓN PSÍQUICA & AUTOCONOCIMIENTO</span>
+            <span>MANUAL DE INVESTIGACIÓN</span>
             <span>✦</span>
           </div>
 
           <div className="mt-2 text-[10px] tracking-[0.25em] font-serif text-[#aa8032] uppercase">
-            BIBLIOTECA PRIVADA DE MITOLOGÍA PERSONAL • VOLUMEN II
+            MITOLOGÍA PERSONAL • VOLUMEN II
           </div>
 
           <div className="w-full my-4 flex items-center justify-center gap-4 text-[#d4af37]">
@@ -62,7 +62,7 @@ export const EbookCover: React.FC = () => {
           {/* Author Kicker */}
           <div className="space-y-1">
             <span className="font-signature text-3xl sm:text-4xl text-[#d4af37] block -mb-2">
-              Edición Magistral de Archivo
+              Edición personal de Archivo
             </span>
             <span className="text-xs font-mono uppercase tracking-[0.3em] text-[#aa8032] font-semibold block">
               GUIADO POR LA EXPERIENCIA DE CARL GUSTAV JUNG
@@ -75,14 +75,14 @@ export const EbookCover: React.FC = () => {
               Mi amigo Carlitos
             </h1>
             <div className="inline-block px-6 py-1 bg-[#231a12] border-y border-[#aa8032] text-[#d4af37] font-playfair font-black tracking-[0.4em] text-lg sm:text-2xl uppercase mt-1">
-              VOLUMEN II
+              EDICIÓN MÍSTICA
             </div>
           </div>
 
           {/* Subtitle in Classical Sloping Elegant Typography */}
           <div className="max-w-xl mx-auto space-y-2">
             <p className="font-cormorant italic text-xl sm:text-2xl md:text-3xl text-[#dfcea6] font-semibold leading-snug">
-              Arquetipos Profundos • El Teatro de los Sueños • Sincronicidades • El Oráculo del I Ching
+              Arquetipos II • El Teatro de los Sueños • Sincronicidades • El Oráculo del I Ching
             </p>
           </div>
 
@@ -115,7 +115,7 @@ export const EbookCover: React.FC = () => {
             {/* Subtle Latin Motto under Scarab */}
             <div className="z-10 mt-1">
               <span className="text-[9px] font-mono tracking-widest text-[#d4af37] uppercase font-bold">
-                UNUS MUNDUS • 1920-1961
+                UNUS MUNDUS • 1920-2026
               </span>
             </div>
           </div>
@@ -125,7 +125,7 @@ export const EbookCover: React.FC = () => {
             <div className="flex flex-col items-center gap-1">
               <AntiqueCompassIcon className="w-8 h-8 text-[#d4af37]" />
               <span className="text-[9px] font-mono uppercase tracking-widest text-[#aa8032]">
-                Brújula
+                Sueños
               </span>
             </div>
 
@@ -159,14 +159,15 @@ export const EbookCover: React.FC = () => {
               </h3>
             </div>
 
-            {/* Antique Editorial Postage Stamp (Sello postal de archivo) */}
+            {/* Antique Editorial Postage Stamp (Sello postal en color vino tinto con 🌀) */}
             <div className="pt-2">
               <AntiquePostageStamp
                 denomination="25 CTS"
-                region="HELVETIA"
-                title="ARCHIVO CARLITOS"
+                region="MDQ"
+                title="Heroísmo Cosmogónico"
                 subtitle="SELLO EDITORIAL"
-                className="w-36 h-48 sm:w-40 sm:h-52 transform -rotate-1 hover:rotate-0 transition-transform shadow-2xl"
+                theme="vino_tinto"
+                className="w-24 h-34 sm:w-28 sm:h-40 transform -rotate-1 shadow-2xl"
               />
             </div>
           </div>
@@ -180,11 +181,11 @@ export const EbookCover: React.FC = () => {
           </div>
 
           <div className="text-center">
-            <span className="text-[#d4af37]">✦ {EBOOK_PAGES.length} FOLIOS DE ESTUDIO ✦</span>
+            <span className="text-[#d4af37]">✦ 2026 - ∞ ✦</span>
           </div>
 
           <div className="text-center sm:text-right">
-            <span>ZÚRICH • KÜSNACHT • BOLLINGEN</span>
+            <span>MAR DEL PLATA • KÜSNACHT • BOLLINGEN</span>
           </div>
         </div>
 
