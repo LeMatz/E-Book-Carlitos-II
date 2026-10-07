@@ -46,14 +46,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen newspaper-bg text-[#17120d] font-old-standard flex flex-col justify-between selection:bg-[#aa8032] selection:text-[#17120d] overflow-x-hidden">
+    <div className="min-h-screen newspaper-bg text-[#17120d] font-old-standard flex flex-col justify-between selection:bg-[#aa8032] selection:text-[#17120d] overflow-x-hidden print:overflow-visible print:block print:h-auto print:min-h-0">
       
       {/* Discreet Publisher Utility Header (Excluded from Print/PDF via print:hidden) */}
       <aside
         aria-label="Controles de exportación"
         className="no-print print:hidden sticky top-0 z-50 bg-[#17120d]/95 backdrop-blur-sm border-b border-[#aa8032]/40 py-2.5 px-4 shadow-xl"
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 text-xs font-mono">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
           <div className="flex items-center gap-2 text-[#d4af37]">
             <span className="font-playfair font-black tracking-wider uppercase text-sm text-[#f3e8cf]">
               Mi amigo Carlitos II
@@ -64,27 +64,32 @@ export default function App() {
             </span>
           </div>
 
-          <button
-            onClick={handlePrintPdf}
-            className="px-4 py-2 bg-[#aa8032] hover:bg-[#d4af37] text-[#17120d] font-playfair font-bold text-xs uppercase tracking-wider flex items-center gap-2 rounded-xs shadow-md transition-all cursor-pointer"
-            title="Guardar o imprimir este libro completo como PDF"
-          >
-            <Printer className="w-4 h-4" />
-            <span>Guardar / Imprimir PDF</span>
-          </button>
+          <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
+            <span className="text-[#ebdcb8]/80 text-[11px] hidden sm:inline italic">
+              ✦ Tip para PDF: en la ventana de imprimir, selecciona Destino: <strong>Guardar como PDF</strong>, Tamaño: <strong>Legal</strong> y Márgenes: <strong>Ninguno</strong>
+            </span>
+            <button
+              onClick={handlePrintPdf}
+              className="px-4 py-2 bg-[#aa8032] hover:bg-[#d4af37] text-[#17120d] font-playfair font-bold text-xs uppercase tracking-wider flex items-center gap-2 rounded-xs shadow-md transition-all cursor-pointer"
+              title="Guardar o imprimir este libro completo como PDF en tamaño Legal"
+            >
+              <Printer className="w-4 h-4" />
+              <span>Guardar / Imprimir PDF</span>
+            </button>
+          </div>
         </div>
       </aside>
 
       {/* Main Continuous Document Flow (Cover -> Index -> Pages -> Backcover) */}
-      <main className="flex-1 px-2 sm:px-4 py-6 max-w-7xl mx-auto w-full space-y-12 sm:space-y-16">
+      <main className="flex-1 px-2 sm:px-4 py-6 max-w-7xl mx-auto w-full space-y-12 sm:space-y-16 print:p-0 print:m-0 print:space-y-0 print:w-full print:max-w-none print:block print:overflow-visible">
         
         {/* 1. PORTADA MONUMENTAL */}
-        <section id="folio-portada" aria-label="Portada del libro">
+        <section id="folio-portada" aria-label="Portada del libro" className="print:block print:p-0 print:m-0 print:w-full">
           <EbookCover />
         </section>
 
         {/* 2. ÍNDICE DE CONTENIDOS (Con sincronización directa a los folios) */}
-        <section id="folio-indice" aria-label="Índice de materias">
+        <section id="folio-indice" aria-label="Índice de materias" className="print:block print:p-0 print:m-0 print:w-full">
           <EbookTableOfContents
             pageTitles={pageTitles}
             onUpdateTitle={handleUpdateTitle}
@@ -105,6 +110,7 @@ export default function App() {
               key={page.pageNumber}
               id={`folio-${page.pageNumber}`}
               aria-label={`Folio ${page.pageNumber}: ${currentTitle}`}
+              className="print:block print:p-0 print:m-0 print:w-full"
             >
               <EbookPage pageData={pageDataWithSyncedTitle} fontSize="md" fontFamily="old-standard" />
             </section>
@@ -112,7 +118,7 @@ export default function App() {
         })}
 
         {/* 4. CONTRAPORTADA DE ARCHIVO */}
-        <section id="folio-contraportada" aria-label="Contraportada del libro">
+        <section id="folio-contraportada" aria-label="Contraportada del libro" className="print:block print:p-0 print:m-0 print:w-full">
           <EbookBackCover />
         </section>
 

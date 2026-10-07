@@ -212,22 +212,37 @@ html {
 /* PDF & Print Styles — Formato Legal (8.5in x 14in) */
 @media print {
   @page {
-    size: 8.5in 14in portrait;
+    size: 8.5in 14in;
     margin: 0;
   }
 
   *, *::before, *::after {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    box-sizing: border-box !important;
   }
 
   html, body {
-    background-color: #16120e !important;
-    color: #17120d !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
+    background-color: #16120e !important;
+    color: #17120d !important;
+    overflow: visible !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+  }
+
+  #root, .min-h-screen {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    overflow: visible !important;
   }
 
   .newspaper-bg {
@@ -241,39 +256,139 @@ html {
     max-width: none !important;
     width: 100% !important;
     display: block !important;
+    overflow: visible !important;
   }
 
+  /* Structural containers must be standard block boxes allowing clean page fragmentation */
   main > section {
     margin: 0 !important;
     padding: 0 !important;
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
+    border: none !important;
     display: block !important;
+    width: 100% !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  .split-sheets-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    display: block !important;
+    width: 100% !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
   }
 
   .paper-card, .paper-card-light, .paper-dark-leather {
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    box-shadow: none !important;
   }
 
+  /* Each sheet is an independent printed page that fits safely within 8.5in x 14in without clipping */
   .print-page-sheet {
-    width: 8.5in !important;
+    width: 100% !important;
     max-width: 8.5in !important;
-    height: 14in !important;
-    min-height: 14in !important;
-    max-height: 14in !important;
+    min-height: 12.8in !important;
+    height: auto !important;
+    max-height: none !important;
     margin: 0 auto !important;
-    padding: 0.45in 0.55in !important;
+    padding: 0.32in 0.45in !important;
     box-sizing: border-box !important;
+    page-break-before: auto !important;
     page-break-after: always !important;
     break-after: page !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
+    break-inside: avoid-page !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-    overflow: hidden !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    position: relative !important;
+  }
+
+  /* Prevent trailing empty page after the final back cover */
+  #folio-contraportada .print-page-sheet,
+  section:last-of-type .print-page-sheet:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+
+  /* Optimized book typography for 8.5in x 14in print to ensure nothing ever overflows */
+  .print-page-sheet p {
+    font-size: 13px !important;
+    line-height: 1.44 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .print-page-sheet h1 {
+    font-size: 24px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .print-page-sheet h2 {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .print-page-sheet h3 {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+
+  .print-page-sheet .space-y-4 > :not([hidden]) ~ :not([hidden]),
+  .print-page-sheet .space-y-3\.5 > :not([hidden]) ~ :not([hidden]),
+  .print-page-sheet .space-y-3 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 5px !important;
+  }
+
+  .print-page-sheet .font-playfair.float-left {
+    font-size: 2.5rem !important;
+    line-height: 0.8 !important;
+    padding-top: 2px !important;
+    padding-right: 8px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .print-page-sheet img {
+    max-height: 230px !important;
+    object-fit: contain !important;
+  }
+
+  .print-page-sheet figure {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    padding: 5px !important;
+  }
+
+  .print-page-sheet table {
+    font-size: 10px !important;
+  }
+
+  .print-page-sheet th,
+  .print-page-sheet td {
+    padding: 3.5px 5px !important;
+  }
+
+  .print-page-sheet header {
+    padding-bottom: 4px !important;
+    margin-bottom: 6px !important;
+    font-size: 10px !important;
+  }
+
+  .print-page-sheet footer {
+    padding-top: 4px !important;
+    font-size: 9.5px !important;
   }
 
   .no-print, .print\:hidden, button, input {

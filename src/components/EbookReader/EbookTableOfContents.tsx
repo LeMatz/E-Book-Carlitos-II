@@ -18,7 +18,7 @@ export { INDICE_TITULOS } from '../../data/tableOfContents';
 
 export const EbookTableOfContents: React.FC = () => {
   return (
-    <div className="w-full max-w-[816px] mx-auto my-6 p-4 sm:p-6 paper-card border-2 border-[#5a4022] rounded-sm shadow-2xl print-page-sheet legal-sheet flex flex-col justify-between relative overflow-hidden">
+    <div className="w-full max-w-[816px] mx-auto my-6 print:my-0 p-4 sm:p-6 print:p-0 paper-card border-2 border-[#5a4022] rounded-sm shadow-2xl print-page-sheet legal-sheet flex flex-col justify-between relative overflow-hidden print:overflow-visible">
       
       {/* Decorative Corners */}
       <div className="absolute top-2 left-2">
@@ -34,7 +34,7 @@ export const EbookTableOfContents: React.FC = () => {
         <OrnamentalCorner position="bottom-right" color="#aa8032" />
       </div>
 
-      <div className="border-4 border-double border-[#aa8032] p-3 sm:p-5 relative bg-[#ebdcb8]/40 flex-1 flex flex-col justify-between">
+      <div className="border-4 border-double border-[#aa8032] p-3 sm:p-5 print:p-3 relative bg-[#ebdcb8]/40 flex-1 flex flex-col justify-between print:overflow-visible">
         
         {/* Header Section */}
         <div className="text-center space-y-1 mb-2 sm:mb-3">

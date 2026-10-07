@@ -492,7 +492,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
     return (
       <article
         key={`folio-${pageData.pageNumber}-${keySuffix}`}
-        className="w-full max-w-[816px] mx-auto my-6 sm:my-8 p-4 sm:p-6 paper-card rounded-sm shadow-2xl relative transition-all flex flex-col justify-between print-page-sheet legal-sheet overflow-hidden"
+        className="w-full max-w-[816px] mx-auto my-6 sm:my-8 print:my-0 p-4 sm:p-6 print:p-0 paper-card rounded-sm shadow-2xl relative transition-all flex flex-col justify-between print-page-sheet legal-sheet overflow-hidden print:overflow-visible"
       >
         {/* Decorative Ornamental Corners */}
         <div className="absolute top-2 left-2">
@@ -996,7 +996,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
     }
 
     return (
-      <div className="space-y-8 sm:space-y-12">
+      <div className="split-sheets-container space-y-8 sm:space-y-12 print:space-y-0 print:block print:p-0 print:m-0">
         {renderSheetShell(sheet1Content, 'part1', 'parte-1')}
         {renderSheetShell(sheet2Content, 'part2', 'parte-2')}
       </div>
