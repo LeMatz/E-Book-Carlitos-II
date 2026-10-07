@@ -647,7 +647,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           </figure>
 
           <div className={`space-y-3.5 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(0, 2).map((pText, idx) => (
+            {pageData.paragraphs.slice(0, 3).map((pText, idx) => (
               <React.Fragment key={idx}>
                 {idx === 0 ? renderDropCapParagraph(pText, `dropcap-${idx}`) : (
                   <p className="text-justify leading-relaxed">
@@ -665,7 +665,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           {renderContinuationHeader('Segunda Parte: Desarrollo e Integración')}
 
           <div className={`space-y-3.5 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(2).map((pText, idx) => (
+            {pageData.paragraphs.slice(3).map((pText, idx) => (
               <p key={idx} className="text-justify leading-relaxed">
                 {renderFormattedText(pText)}
               </p>
@@ -753,7 +753,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           </div>
 
           <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(0, 2).map((pText, idx) => (
+            {pageData.paragraphs.slice(0, 4).map((pText, idx) => (
               <React.Fragment key={idx}>
                 {idx === 0 ? renderDropCapParagraph(pText, `dropcap-${idx}`) : (
                   <p className="text-justify leading-relaxed">
@@ -778,7 +778,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           </div>
 
           <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(2).map((pText, idx) => (
+            {pageData.paragraphs.slice(4).map((pText, idx) => (
               <p key={idx} className="text-justify leading-relaxed">
                 {renderFormattedText(pText)}
               </p>
@@ -798,15 +798,10 @@ export const EbookPage: React.FC<EbookPageProps> = ({
       const hasHistoricalNotes = !!pageData.historicalNotes && pageData.historicalNotes.length > 0;
       const hasSecondaryCallout = !!pageData.secondaryCallout;
 
-      // Determine balanced split point for paragraphs
-      let splitIdx: number;
-      if (hasPhoto) {
-        splitIdx = Math.min(2, Math.max(1, pageData.paragraphs.length - 2));
-      } else if (hasHistoricalNotes || hasSecondaryCallout) {
-        splitIdx = Math.min(2, Math.max(1, Math.floor(pageData.paragraphs.length / 2)));
-      } else {
-        splitIdx = Math.ceil(pageData.paragraphs.length / 2);
-      }
+      // Prioritize Sheet 1 being full and complete.
+      // If there is leftover space, let it be on Sheet 2 (the closing page of the topic).
+      const totalParas = pageData.paragraphs.length;
+      const splitIdx = totalParas <= 4 ? 3 : 4;
 
       const pSlice1 = pageData.paragraphs.slice(0, splitIdx);
       const pSlice2 = pageData.paragraphs.slice(splitIdx);

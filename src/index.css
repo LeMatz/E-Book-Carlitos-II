@@ -338,27 +338,23 @@ html {
     font-size: 15.5px !important;
     line-height: 1.62 !important;
     margin-bottom: 0.6rem !important;
-    color: #17120d !important;
   }
 
   .print-page-sheet h1 {
     font-size: 26px !important;
     line-height: 1.2 !important;
     margin-bottom: 0.4rem !important;
-    color: #17120d !important;
   }
 
   .print-page-sheet h2 {
     font-size: 20px !important;
     line-height: 1.25 !important;
     margin-bottom: 0.35rem !important;
-    color: #17120d !important;
   }
 
   .print-page-sheet h3 {
     font-size: 15.5px !important;
     line-height: 1.3 !important;
-    color: #17120d !important;
   }
 
   .print-page-sheet .space-y-4 > :not([hidden]) ~ :not([hidden]),
@@ -418,6 +414,71 @@ html {
 
   #folio-contraportada .print-page-sheet {
     padding: 0.35in 0.45in !important;
+  }
+
+  /* MANDATORY: All text inside dark brown, charcoal, or dark leather boxes MUST be crisp white */
+  .print-page-sheet [class*="bg-[#231a12]"],
+  .print-page-sheet [class*="bg-[#211811]"],
+  .print-page-sheet [class*="bg-[#2d2116]"],
+  .print-page-sheet [class*="bg-[#17120d]"],
+  .print-page-sheet [class*="bg-[#1c150f]"],
+  .print-page-sheet [class*="paper-dark-leather"],
+  .print-page-sheet .paper-dark-leather {
+    color: #ffffff !important;
+  }
+
+  .print-page-sheet [class*="bg-[#231a12]"] p,
+  .print-page-sheet [class*="bg-[#211811]"] p,
+  .print-page-sheet [class*="bg-[#2d2116]"] p,
+  .print-page-sheet [class*="bg-[#17120d]"] p,
+  .print-page-sheet [class*="bg-[#1c150f]"] p,
+  .print-page-sheet [class*="paper-dark-leather"] p,
+  .print-page-sheet .paper-dark-leather p,
+  .print-page-sheet figure[class*="bg-[#231a12]"] p,
+  .print-page-sheet figure[class*="bg-[#231a12]"] figcaption p {
+    color: #ffffff !important;
+  }
+
+  .print-page-sheet [class*="bg-[#231a12]"] h1,
+  .print-page-sheet [class*="bg-[#231a12]"] h2,
+  .print-page-sheet [class*="bg-[#231a12]"] h3,
+  .print-page-sheet [class*="bg-[#211811]"] h1,
+  .print-page-sheet [class*="bg-[#211811]"] h2,
+  .print-page-sheet [class*="bg-[#211811]"] h3,
+  .print-page-sheet [class*="bg-[#2d2116]"] h3,
+  .print-page-sheet [class*="paper-dark-leather"] h1,
+  .print-page-sheet [class*="paper-dark-leather"] h2,
+  .print-page-sheet [class*="paper-dark-leather"] h3,
+  .print-page-sheet .paper-dark-leather h1,
+  .print-page-sheet .paper-dark-leather h2,
+  .print-page-sheet .paper-dark-leather h3 {
+    color: #ffffff !important;
+  }
+
+  .print-page-sheet [class*="bg-[#231a12]"] span,
+  .print-page-sheet [class*="bg-[#211811]"] span,
+  .print-page-sheet [class*="bg-[#2d2116]"] span,
+  .print-page-sheet [class*="bg-[#17120d]"] span,
+  .print-page-sheet [class*="bg-[#1c150f]"] span,
+  .print-page-sheet [class*="paper-dark-leather"] span,
+  .print-page-sheet .paper-dark-leather span {
+    color: #f7eedb !important;
+  }
+
+  .print-page-sheet [class*="bg-[#231a12]"] [class*="text-[#d4af37]"],
+  .print-page-sheet [class*="bg-[#211811]"] [class*="text-[#d4af37]"],
+  .print-page-sheet [class*="bg-[#17120d]"] [class*="text-[#d4af37]"],
+  .print-page-sheet [class*="bg-[#1c150f]"] [class*="text-[#d4af37]"],
+  .print-page-sheet .paper-dark-leather [class*="text-[#d4af37]"] {
+    color: #f7d070 !important;
+  }
+
+  .print-page-sheet [class*="bg-[#231a12]"] [class*="text-[#aa8032]"],
+  .print-page-sheet [class*="bg-[#211811]"] [class*="text-[#aa8032]"],
+  .print-page-sheet [class*="bg-[#17120d]"] [class*="text-[#aa8032]"],
+  .print-page-sheet [class*="bg-[#1c150f]"] [class*="text-[#aa8032]"],
+  .print-page-sheet .paper-dark-leather [class*="text-[#aa8032]"] {
+    color: #e5b958 !important;
   }
 
   .no-print, .print\:hidden, button, input {
