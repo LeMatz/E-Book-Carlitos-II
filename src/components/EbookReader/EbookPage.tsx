@@ -21,6 +21,109 @@ interface EbookPageProps {
   fontFamily?: 'playfair' | 'baskerville' | 'cormorant' | 'old-standard';
 }
 
+interface FolioIntegrationData {
+  title: string;
+  quote?: string;
+  reflectionQuestion: string;
+  actionGuideline: string;
+}
+
+const FOLIO_INTEGRATIONS: Record<number, FolioIntegrationData> = {
+  1: {
+    title: 'Reflexión Alquímica • La Disposición al Segundo Viaje',
+    quote: '«Quien mira hacia afuera, sueña; quien mira hacia adentro, despierta.» — C.G. Jung',
+    reflectionQuestion: '¿Qué certezas del Yo estás dispuesto a soltar para permitir que el inconsciente te revele su sabiduría no planificada?',
+    actionGuideline: 'Registra en tu bitácora una situación reciente donde intentar controlarlo todo bloqueó la solución natural.',
+  },
+  2: {
+    title: 'Integración Operativa • La Realidad del Alma',
+    quote: '«La psique no es un derivado del cerebro; es un principio de realidad sui generis con su propia gravedad y leyes.»',
+    reflectionQuestion: '¿Tratas a tus sueños, intuiciones y vivencias simbólicas como meras fantasías o como hechos psíquicos con consecuencias reales?',
+    actionGuideline: 'Elige un símbolo recurrente en tu vida y trátalo hoy como un interlocutor autónomo, no como un invento de tu intelecto.',
+  },
+  5: {
+    title: 'Bitácora Interior • El Diálogo con las Figuras Internas',
+    quote: '«No nos iluminamos imaginando figuras de luz, sino haciendo consciente la oscuridad.» — C.G. Jung',
+    reflectionQuestion: '¿Qué cualidad que admiras o detestas profundamente en otro es en realidad un potencial oculto de tu propia psique (Sombra Dorada)?',
+    actionGuideline: 'Anota tres rasgos de una persona que te impacte fuertemente y pregúntate cómo operan esos mismos rasgos dentro de ti.',
+  },
+  6: {
+    title: 'Auditoría de Distancia Crítica • El Eje Yo-Self',
+    quote: '«El peligro no es el arquetipo, sino la pérdida de frontera que transforma la inspiración en fascinación o posesión.»',
+    reflectionQuestion: '¿En qué área de tu vida (vocación, ideología, rol) sientes que el arquetipo ha devorado tu juicio personal?',
+    actionGuideline: 'Practica hoy el desasimiento consciente: "Yo sirvo a esta vocación, pero yo no soy la causa ni la verdad absoluta".',
+  },
+  7: {
+    title: 'Antídoto a la Inflación • El Ancla de la Humildad',
+    quote: '«Cuanto más alta es la torre que el Yo edifica en el aire, más profunda debe ser la raíz que toque la tierra común.»',
+    reflectionQuestion: '¿Dónde te descubres hablando como si fueras infalible o invulnerable al error y a la sombra común?',
+    actionGuideline: 'Conversa con alguien de confianza y pídeles una mirada honesta sobre tus puntos ciegos sin intentar defenderte.',
+  },
+  8: {
+    title: 'Observación Fenomenológica • La Resonancia Psicosomática',
+    quote: '«En su nivel más profundo, la materia y la psique son dos caras de un mismo continuum que Jung denominó psicoid.»',
+    reflectionQuestion: '¿Qué síntomas corporales o sensaciones físicas preceden a tus mayores intuiciones o decisiones cruciales?',
+    actionGuideline: 'Deténte tres minutos durante el día para escuchar el lenguaje del cuerpo antes de que la mente arme su explicación.',
+  },
+  10: {
+    title: 'Protocolo de Recepción Onírica • La Actitud del Investigador',
+    quote: '«El sueño es una pequeña puerta oculta en el santuario más íntimo del alma.» — C.G. Jung',
+    reflectionQuestion: '¿Qué mensaje incómodo te ha traído un sueño recientemente que tu mente diurna prefirió desestimar?',
+    actionGuideline: 'Coloca tu libreta de sueños junto a la cama y anota las primeras impresiones sensoriales antes de poner los pies en el suelo.',
+  },
+  12: {
+    title: 'Práctica Dramática • El Cuarto Acto (Lysis)',
+    quote: '«Comprender un sueño es captar hacia dónde se mueve la trama: la catarsis o la compensación que el inconsciente busca.»',
+    reflectionQuestion: '¿Cómo termina la escena central de tu último sueño significativo? ¿Es una resolución, una advertencia o un llamado a la acción?',
+    actionGuideline: 'Divide una hoja en cuatro columnas (Exposición, Nudo, Peripecia, Lysis) y desglosa tu sueño más memorable.',
+  },
+  14: {
+    title: 'Atención a la Grieta de la Realidad • El Escarabajo Cotidiano',
+    quote: '«La sincronicidad no prueba una causa mágica; revela que el universo tiene un orden que trasciende la causalidad lineal.»',
+    reflectionQuestion: '¿Qué coincidencia aparentemente imposible te obligó a detenerte y replantearte el rumbo de una decisión?',
+    actionGuideline: 'Mantén una página especial en tu bitácora para registrar coincidencias significativas sin forzar interpretaciones prematuras.',
+  },
+  16: {
+    title: 'Orientación Arquetípica • Navegar con la Brújula Interior',
+    quote: '«El destino no está escrito en las estrellas, sino en el tejido sincrónico entre tu actitud consciente y el centro organizador.»',
+    reflectionQuestion: '¿Hacia qué dirección te apuntan las sincronicidades recurrentes de este último tiempo?',
+    actionGuideline: 'Identifica qué resistencias conscientes estás oponiendo a las señales que la vida te ha presentado de manera reiterada.',
+  },
+  18: {
+    title: 'La Actitud ante el Oráculo • El Respeto al Momento Presente',
+    quote: '«El I Ching no te dice lo que va a pasar; te dice en qué calidad de momento te encuentras para que actúes en armonía con el Tao.»',
+    reflectionQuestion: '¿Consultas las decisiones desde el deseo de control del Yo o desde la apertura a comprender el momento cósmico?',
+    actionGuideline: 'Antes de cualquier consulta oracular, respira profundamente y clarifica tu pregunta en una sola oración transparente.',
+  },
+  21: {
+    title: 'La Alquimia del Caldero (Ting) • Transformación Interior',
+    quote: '«En el caldero alquímico, las materias crudas del sufrimiento y la confusión se cocinan hasta transformarse en alimento espiritual.»',
+    reflectionQuestion: '¿Qué conflicto actual tuyo está pidiendo ser llevado al caldero interior en lugar de reaccionar impulsivamente hacia afuera?',
+    actionGuideline: 'Medita en la quietud del Caldero: sostener el calor de la tensión sin derramar el contenido antes de tiempo.',
+  },
+};
+
+const SINGLE_FOLIO_CLOSINGS: Record<number, FolioIntegrationData> = {
+  17: {
+    title: 'Síntesis de Archivo • Clave de Lectura de la Tabla',
+    quote: '«El evento sincrónico no es un milagro fortuito: es la irrupción momentánea del orden psicofísico fundamental.»',
+    reflectionQuestion: '¿En cuál de las tres categorías de la matriz reconoces tus experiencias sincrónicas más potentes?',
+    actionGuideline: 'Revisa tu historial personal y anota al menos un evento en cada fila de la matriz para verificar el patrón.',
+  },
+  20: {
+    title: 'Brújula del Ba Gua • Integración de los Ocho Vientos',
+    quote: '«Quien domina los ocho trigramas en su propia psique no teme el movimiento de las estaciones ni el cambio del destino.»',
+    reflectionQuestion: '¿Cuál de las ocho funciones arquetípicas está más desatendida en tu vida cotidiana actual?',
+    actionGuideline: 'Identifica el trigrama complementario a tu tendencia habitual y formula una acción concreta para integrarlo esta semana.',
+  },
+  24: {
+    title: 'Auditoría Sincrónica • Registro y Verificación',
+    quote: '«La coincidencia no se busca con avidez; se recibe con la serenidad de quien sabe que el significado ya está allí.»',
+    reflectionQuestion: '¿Qué sesgo de confirmación sueles proyectar sobre los eventos diarios y cómo puedes purificar tu registro?',
+    actionGuideline: 'Aplica el protocolo durante 7 días continuos antes de sacar conclusiones definitivas sobre tus sincronicidades.',
+  },
+};
+
 export const EbookPage: React.FC<EbookPageProps> = ({
   pageData,
   fontSize = 'md',
@@ -303,12 +406,78 @@ export const EbookPage: React.FC<EbookPageProps> = ({
     (c) => c.startPage === pageData.pageNumber
   );
 
-  // Split pages: all extensive theoretical & practical topics (Folios 1 to 16, and 18 to 26)
-  // Folio 17 is a single-sheet synthetic comparison table.
+  // Split pages: only the extensive topics that genuinely exceed a single Legal sheet
+  // (Folios 1, 2, 5, 6, 7, 8, 10, 12, 14, 16, 18, 21)
   const SPLIT_PAGES = new Set([
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+    1, 2, 5, 6, 7, 8, 10, 12, 14, 16, 18, 21,
   ]);
   const isSplit = SPLIT_PAGES.has(pageData.pageNumber);
+
+  const renderIntegrationBox = (folioNumber: number) => {
+    const data = FOLIO_INTEGRATIONS[folioNumber];
+    if (!data) return null;
+
+    return (
+      <div className="mt-3 sm:mt-4 p-3.5 sm:p-4 bg-[#dfcea6]/45 border-2 border-[#8f6e28]/70 rounded-xs shadow-xs space-y-2 text-left">
+        <div className="flex items-center justify-between border-b border-[#8f6e28]/30 pb-1 font-mono text-[11px] uppercase tracking-wider text-[#7a5820] font-bold">
+          <div className="flex items-center gap-2">
+            <QuillInkwellIcon className="w-3.5 h-3.5 text-[#8f6e28]" />
+            <span>{data.title}</span>
+          </div>
+          <span className="italic text-[#8f6e28] text-[10px]">Bitácora Interior</span>
+        </div>
+
+        {data.quote && (
+          <p className="font-cormorant italic text-xs sm:text-sm text-[#4a3622] leading-snug pl-2 border-l-2 border-[#aa8032]">
+            {data.quote}
+          </p>
+        )}
+
+        <div className="space-y-1 pt-0.5">
+          <p className="font-playfair text-xs sm:text-[13px] font-bold text-[#17120d] leading-snug">
+            {data.reflectionQuestion}
+          </p>
+          <p className="font-old-standard text-[11px] sm:text-xs text-[#2b1f16] leading-relaxed">
+            <strong className="font-mono uppercase text-[#7a5820] text-[10px] mr-1">Consigna práctica:</strong>
+            {data.actionGuideline}
+          </p>
+        </div>
+      </div>
+    );
+  };
+
+  const renderSingleClosingBox = (folioNumber: number) => {
+    const data = SINGLE_FOLIO_CLOSINGS[folioNumber];
+    if (!data) return null;
+
+    return (
+      <div className="mt-4 p-3.5 sm:p-4 bg-[#dfcea6]/50 border-2 border-[#8f6e28]/70 rounded-xs shadow-xs space-y-2 text-left">
+        <div className="flex items-center justify-between border-b border-[#8f6e28]/30 pb-1 font-mono text-[11px] uppercase tracking-wider text-[#7a5820] font-bold">
+          <div className="flex items-center gap-2">
+            <CompassStarIcon className="w-3.5 h-3.5 text-[#8f6e28]" />
+            <span>{data.title}</span>
+          </div>
+          <span className="italic text-[#8f6e28] text-[10px]">Síntesis Operativa</span>
+        </div>
+
+        {data.quote && (
+          <p className="font-cormorant italic text-xs sm:text-sm text-[#4a3622] leading-snug pl-2 border-l-2 border-[#aa8032]">
+            {data.quote}
+          </p>
+        )}
+
+        <div className="space-y-1 pt-0.5">
+          <p className="font-playfair text-xs sm:text-[13px] font-bold text-[#17120d] leading-snug">
+            {data.reflectionQuestion}
+          </p>
+          <p className="font-old-standard text-[11px] sm:text-xs text-[#2b1f16] leading-relaxed">
+            <strong className="font-mono uppercase text-[#7a5820] text-[10px] mr-1">Consigna práctica:</strong>
+            {data.actionGuideline}
+          </p>
+        </div>
+      </div>
+    );
+  };
 
   // Common Sheet Shell for Legal Size (8.5in x 14in)
   const renderSheetShell = (
@@ -359,7 +528,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
         </header>
 
         {/* Content Body */}
-        <div className="flex-1 flex flex-col justify-between">
+        <div className="flex-1 flex flex-col justify-between min-h-0">
           {content}
         </div>
 
@@ -412,7 +581,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
     let sheet1Content: React.ReactNode = null;
     let sheet2Content: React.ReactNode = null;
 
-    // Case 1: Pages with Illustration (1, 10, 14, 18)
+    // Case 1: Illustrated Chapter Starters (Folios 1, 10, 14, 18)
     if (pageData.illustrationImage) {
       sheet1Content = (
         <div className="space-y-4">
@@ -523,220 +692,13 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               </div>
             </div>
           )}
+
+          {renderIntegrationBox(pageData.pageNumber)}
         </div>
       );
     }
 
-    // Case 2: Pages with Exercise Protocol (23, 24, 25)
-    else if (pageData.exerciseData) {
-      sheet1Content = (
-        <div className="space-y-4">
-          {chapterStartMeta && (
-            <div className="mb-2 text-center space-y-1">
-              <div className="inline-flex items-center justify-center gap-2 px-4 py-0.5 bg-[#17120d] text-[#d4af37] border-2 border-[#8f6e28] shadow-md rounded-xs">
-                <SolAndLunaIcon className="w-3.5 h-3.5 text-[#d4af37] shrink-0" />
-                <span className="font-playfair font-black text-xs uppercase tracking-[0.2em] text-[#f2e6cb]">
-                  — CAPÍTULO {chapterStartMeta.chapterId} —
-                </span>
-                <SolAndLunaIcon className="w-3.5 h-3.5 text-[#d4af37] shrink-0" />
-              </div>
-            </div>
-          )}
-
-          <div className="text-center space-y-1 mb-3">
-            <h1 className="font-playfair text-xl sm:text-3xl font-black text-[#17120d] tracking-tight uppercase ink-text">
-              {pageData.pageTitle}
-            </h1>
-            {pageData.subtitle && (
-              <p className="font-cormorant italic text-base sm:text-lg text-[#3a281c] max-w-xl mx-auto font-semibold">
-                {renderFormattedText(pageData.subtitle)}
-              </p>
-            )}
-            <OrnamentalDivider variant="flourish" className="my-1.5" />
-          </div>
-
-          <div className="p-4 sm:p-5 bg-[#ebdcb8] border-2 border-[#5a4022] space-y-4 shadow-md rounded-xs">
-            <div className="border-b border-[#5a4022]/30 pb-2 space-y-1">
-              <div className="flex items-center gap-2 text-[11px] font-mono uppercase text-[#7a5820] font-bold">
-                <Edit3 className="w-3.5 h-3.5 text-[#7a5820]" />
-                <span>Protocolo de Bitácora Alquímica • Parte I: Método</span>
-              </div>
-              <h2 className="font-playfair text-lg sm:text-2xl font-extrabold text-[#17120d] uppercase">
-                {pageData.exerciseData.title}
-              </h2>
-              <p className="font-cormorant italic text-xs sm:text-sm text-[#3a281c] font-semibold leading-relaxed pt-1">
-                <strong className="text-[#17120d]">Objetivo Operativo:</strong>{' '}
-                {pageData.exerciseData.objective}
-              </p>
-            </div>
-
-            <div className="space-y-2.5">
-              <h3 className="font-playfair font-bold text-xs uppercase tracking-wider text-[#17120d] border-b border-[#5a4022]/20 pb-0.5">
-                Pasos de Ejecución ({pageData.exerciseData.steps.length} Pasos):
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 font-old-standard">
-                {pageData.exerciseData.steps.map((step) => (
-                  <div
-                    key={step.stepNumber}
-                    className="p-3 bg-[#dfcea6] border border-[#5a4022]/40 flex items-start gap-2.5 rounded-xs shadow-2xs"
-                  >
-                    <span className="font-playfair font-black text-xs text-[#ebdcb8] bg-[#17120d] border border-[#aa8032] w-5 h-5 flex items-center justify-center shrink-0 rounded-xs mt-0.5">
-                      {step.stepNumber}
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <h4 className="font-playfair font-bold text-[#17120d] text-xs leading-tight">
-                        {step.title}
-                      </h4>
-                      <p className="text-[#2b1f16] text-[11px] sm:text-xs leading-relaxed mt-1">
-                        {step.instruction}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-
-      sheet2Content = (
-        <div className="space-y-4">
-          {renderContinuationHeader('Parte II: Registro en Bitácora & Cierre')}
-
-          <div className="p-4 sm:p-5 font-old-standard text-xs sm:text-sm text-[#17120d] rounded-xs bg-[#d8c399]/60 border-l-4 border-[#8f6e28] shadow-xs">
-            <span className="font-bold font-playfair uppercase tracking-wider block mb-1.5 text-xs text-[#7a5820]">
-              {pageData.exerciseData.exampleLabel || 'Ejemplo Práctico Documentado:'}
-            </span>
-            <p className="italic text-[#2b1f16] text-xs sm:text-sm leading-relaxed text-justify">
-              {pageData.exerciseData.applicationExample}
-            </p>
-          </div>
-
-          <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.map((pText, idx) => (
-              <p key={idx} className="text-justify leading-relaxed">
-                {renderFormattedText(pText)}
-              </p>
-            ))}
-          </div>
-
-          {pageData.carlitosCallout && renderCalloutBox(pageData.carlitosCallout)}
-        </div>
-      );
-    }
-
-    // Case 3: Folio 20 (Ba Gua Trigrams Table)
-    else if (pageData.iChingTrigrams && pageData.iChingTrigrams.length > 0) {
-      const trigramsHalf1 = pageData.iChingTrigrams.slice(0, 4);
-      const trigramsHalf2 = pageData.iChingTrigrams.slice(4);
-
-      sheet1Content = (
-        <div className="space-y-4">
-          <div className="text-center space-y-1 mb-3">
-            <h1 className="font-playfair text-xl sm:text-3xl font-black text-[#17120d] tracking-tight uppercase ink-text">
-              {pageData.pageTitle}
-            </h1>
-            {pageData.subtitle && (
-              <p className="font-cormorant italic text-base sm:text-lg text-[#3a281c] max-w-xl mx-auto font-semibold">
-                {renderFormattedText(pageData.subtitle)}
-              </p>
-            )}
-            <OrnamentalDivider variant="flourish" className="my-1.5" />
-          </div>
-
-          {pageData.keyTerms && pageData.keyTerms.length > 0 && (
-            <div className="mb-3 flex flex-wrap items-center justify-center gap-2 border-y border-[#5a4022]/20 py-1 bg-[#d8c399]/30 text-xs font-mono text-[#5a4022]">
-              <span className="uppercase text-[#8f6e28] font-bold">Conceptos:</span>
-              {pageData.keyTerms.map((term, i) => (
-                <span key={i} className="text-[#17120d] font-serif italic text-xs">
-                  {renderFormattedText(term)}{i < pageData.keyTerms!.length - 1 ? ' ·' : ''}
-                </span>
-              ))}
-            </div>
-          )}
-
-          <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.map((pText, idx) => renderDropCapParagraph(pText, idx))}
-          </div>
-
-          <div className="my-3 overflow-x-auto border-2 border-[#5a4022] bg-[#ebdcb8] shadow-md">
-            <table className="w-full text-left font-old-standard text-xs border-collapse">
-              <thead>
-                <tr className="bg-[#17120d] text-[#ebdcb8] font-playfair uppercase tracking-wider text-xs border-b border-[#aa8032]">
-                  <th className="p-2.5 border-r border-[#aa8032]/30 w-1/6">Trigrama</th>
-                  <th className="p-2.5 border-r border-[#aa8032]/30 w-1/4">Elemento</th>
-                  <th className="p-2.5 border-r border-[#aa8032]/30 w-1/3">Cualidad Arquetípica</th>
-                  <th className="p-2.5 w-1/4">Función Psíquica</th>
-                </tr>
-              </thead>
-              <tbody>
-                {trigramsHalf1.map((row, idx) => (
-                  <tr key={idx} className={`border-b border-[#5a4022]/30 ${idx % 2 === 0 ? 'bg-[#dfcea6]/40' : 'bg-[#ebdcb9]/60'}`}>
-                    <td className="p-2.5 font-bold font-playfair text-[#17120d] border-r border-[#5a4022]/30">
-                      <div className="flex items-center gap-2">
-                        <span className="text-lg text-[#7a5820]">{row.symbol}</span>
-                        <div>
-                          <div className="font-bold">{row.name}</div>
-                          <div className="text-[10px] text-[#7a5820] font-serif">{row.chinese}</div>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="p-2.5 border-r border-[#5a4022]/30 font-semibold text-[#3a281c]">{row.element}</td>
-                    <td className="p-2.5 border-r border-[#5a4022]/30 text-[#17120d]">{renderFormattedText(row.archetypalQuality)}</td>
-                    <td className="p-2.5 italic text-[#5a4022]">{renderFormattedText(row.psychologicalFunction)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      );
-
-      sheet2Content = (
-        <div className="space-y-4">
-          {renderContinuationHeader('Trigramas 5 a 8 & Síntesis Psicológica')}
-
-          <div className="my-3 overflow-x-auto border-2 border-[#5a4022] bg-[#ebdcb8] shadow-md">
-            <table className="w-full text-left font-old-standard text-xs border-collapse">
-              <thead>
-                <tr className="bg-[#17120d] text-[#ebdcb8] font-playfair uppercase tracking-wider text-xs border-b border-[#aa8032]">
-                  <th className="p-2.5 border-r border-[#aa8032]/30 w-1/6">Trigrama</th>
-                  <th className="p-2.5 border-r border-[#aa8032]/30 w-1/4">Elemento</th>
-                  <th className="p-2.5 border-r border-[#aa8032]/30 w-1/3">Cualidad Arquetípica</th>
-                  <th className="p-2.5 w-1/4">Función Psíquica</th>
-                </tr>
-              </thead>
-              <tbody>
-                {trigramsHalf2.map((row, idx) => (
-                  <tr key={idx} className={`border-b border-[#5a4022]/30 ${idx % 2 === 0 ? 'bg-[#dfcea6]/40' : 'bg-[#ebdcb9]/60'}`}>
-                    <td className="p-2.5 font-bold font-playfair text-[#17120d] border-r border-[#5a4022]/30">
-                      <div className="flex items-center gap-2">
-                        <span className="text-lg text-[#7a5820]">{row.symbol}</span>
-                        <div>
-                          <div className="font-bold">{row.name}</div>
-                          <div className="text-[10px] text-[#7a5820] font-serif">{row.chinese}</div>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="p-2.5 border-r border-[#5a4022]/30 font-semibold text-[#3a281c]">{row.element}</td>
-                    <td className="p-2.5 border-r border-[#5a4022]/30 text-[#17120d]">{renderFormattedText(row.archetypalQuality)}</td>
-                    <td className="p-2.5 italic text-[#5a4022]">{renderFormattedText(row.psychologicalFunction)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {pageData.carlitosCallout && renderCalloutBox(pageData.carlitosCallout)}
-
-          <div className="pt-2 mt-4 text-[11px] font-mono italic text-[#7a5820] border-t border-[#aa8032]/30">
-            † Formulación de la correspondencia trigrama-función de la tradición junguiana posterior.
-          </div>
-        </div>
-      );
-    }
-
-    // Case 4: Folio 21 (Hexagram 50 + Mirror Table)
+    // Case 2: Hexagram 50 (Folio 21)
     else if (pageData.iChingHexagram) {
       sheet1Content = (
         <div className="space-y-4">
@@ -789,6 +751,18 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               <p className="italic text-[#ebdcb8]">"{pageData.iChingHexagram.image}"</p>
             </div>
           </div>
+
+          <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
+            {pageData.paragraphs.slice(0, 2).map((pText, idx) => (
+              <React.Fragment key={idx}>
+                {idx === 0 ? renderDropCapParagraph(pText, `dropcap-${idx}`) : (
+                  <p className="text-justify leading-relaxed">
+                    {renderFormattedText(pText)}
+                  </p>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
         </div>
       );
 
@@ -804,7 +778,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           </div>
 
           <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.map((pText, idx) => (
+            {pageData.paragraphs.slice(2).map((pText, idx) => (
               <p key={idx} className="text-justify leading-relaxed">
                 {renderFormattedText(pText)}
               </p>
@@ -812,11 +786,13 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           </div>
 
           {pageData.carlitosCallout && renderCalloutBox(pageData.carlitosCallout)}
+
+          {renderIntegrationBox(21)}
         </div>
       );
     }
 
-    // Case 5: All other split theoretical folios
+    // Case 3: All other split theoretical folios (Folios 2, 5, 6, 7, 8, 12, 16)
     else {
       const hasPhoto = !!pageData.clippedPhoto;
       const hasHistoricalNotes = !!pageData.historicalNotes && pageData.historicalNotes.length > 0;
@@ -1013,6 +989,8 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               † Formulación de la tradición junguiana posterior, no de Jung.
             </div>
           )}
+
+          {renderIntegrationBox(pageData.pageNumber)}
         </div>
       );
     }
@@ -1075,6 +1053,94 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               )}
             </React.Fragment>
           ))}
+        </div>
+      )}
+
+      {/* Exercise / Protocol (Folios 23, 24, 25) */}
+      {pageData.exerciseData && (
+        <div className="p-4 sm:p-5 bg-[#ebdcb8] border-2 border-[#5a4022] space-y-3.5 shadow-md rounded-xs">
+          <div className="border-b border-[#5a4022]/30 pb-2 space-y-1">
+            <div className="flex items-center gap-2 text-[11px] font-mono uppercase text-[#7a5820] font-bold">
+              <Edit3 className="w-3.5 h-3.5 text-[#7a5820]" />
+              <span>Protocolo de Bitácora Alquímica • Método Operativo</span>
+            </div>
+            <h2 className="font-playfair text-lg sm:text-2xl font-extrabold text-[#17120d] uppercase">
+              {pageData.exerciseData.title}
+            </h2>
+            <p className="font-cormorant italic text-xs sm:text-sm text-[#3a281c] font-semibold leading-relaxed pt-1">
+              <strong className="text-[#17120d]">Objetivo Operativo:</strong>{' '}
+              {pageData.exerciseData.objective}
+            </p>
+          </div>
+
+          <div className="space-y-2">
+            <h3 className="font-playfair font-bold text-xs uppercase tracking-wider text-[#17120d] border-b border-[#5a4022]/20 pb-0.5">
+              Pasos de Ejecución ({pageData.exerciseData.steps.length} Pasos):
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 font-old-standard">
+              {pageData.exerciseData.steps.map((step) => (
+                <div
+                  key={step.stepNumber}
+                  className="p-2.5 sm:p-3 bg-[#dfcea6] border border-[#5a4022]/40 flex items-start gap-2.5 rounded-xs shadow-2xs"
+                >
+                  <span className="font-playfair font-black text-xs text-[#ebdcb8] bg-[#17120d] border border-[#aa8032] w-5 h-5 flex items-center justify-center shrink-0 rounded-xs mt-0.5">
+                    {step.stepNumber}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <h4 className="font-playfair font-bold text-[#17120d] text-xs leading-tight">
+                      {step.title}
+                    </h4>
+                    <p className="text-[#2b1f16] text-[11px] sm:text-xs leading-relaxed mt-1">
+                      {step.instruction}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="p-3 sm:p-3.5 font-old-standard text-xs sm:text-sm text-[#17120d] rounded-xs bg-[#d8c399]/60 border-l-4 border-[#8f6e28] shadow-xs">
+            <span className="font-bold font-playfair uppercase tracking-wider block mb-1 text-xs text-[#7a5820]">
+              {pageData.exerciseData.exampleLabel || 'Ejemplo Práctico Documentado:'}
+            </span>
+            <p className="italic text-[#2b1f16] text-xs sm:text-sm leading-relaxed text-justify">
+              {pageData.exerciseData.applicationExample}
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Ba Gua Trigrams Complete Table (Folio 20) */}
+      {pageData.iChingTrigrams && pageData.iChingTrigrams.length > 0 && (
+        <div className="my-3 overflow-x-auto border-2 border-[#5a4022] bg-[#ebdcb8] shadow-md">
+          <table className="w-full text-left font-old-standard text-xs border-collapse">
+            <thead>
+              <tr className="bg-[#17120d] text-[#ebdcb8] font-playfair uppercase tracking-wider text-xs border-b border-[#aa8032]">
+                <th className="p-2.5 border-r border-[#aa8032]/30 w-1/6">Trigrama</th>
+                <th className="p-2.5 border-r border-[#aa8032]/30 w-1/4">Elemento</th>
+                <th className="p-2.5 border-r border-[#aa8032]/30 w-1/3">Cualidad Arquetípica</th>
+                <th className="p-2.5 w-1/4">Función Psíquica</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pageData.iChingTrigrams.map((row, idx) => (
+                <tr key={idx} className={`border-b border-[#5a4022]/30 ${idx % 2 === 0 ? 'bg-[#dfcea6]/40' : 'bg-[#ebdcb9]/60'}`}>
+                  <td className="p-2.5 font-bold font-playfair text-[#17120d] border-r border-[#5a4022]/30">
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg text-[#7a5820]">{row.symbol}</span>
+                      <div>
+                        <div className="font-bold">{row.name}</div>
+                        <div className="text-[10px] text-[#7a5820] font-serif">{row.chinese}</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="p-2.5 border-r border-[#5a4022]/30 font-semibold text-[#3a281c]">{row.element}</td>
+                  <td className="p-2.5 border-r border-[#5a4022]/30 text-[#17120d]">{renderFormattedText(row.archetypalQuality)}</td>
+                  <td className="p-2.5 italic text-[#5a4022]">{renderFormattedText(row.psychologicalFunction)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       )}
 
@@ -1215,6 +1281,8 @@ export const EbookPage: React.FC<EbookPageProps> = ({
             † Formulación de la tradición junguiana posterior, no de Jung.
           </div>
         )}
+
+        {renderSingleClosingBox(pageData.pageNumber)}
       </div>
     </div>
   );
