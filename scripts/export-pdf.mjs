@@ -56,10 +56,10 @@ async function exportPdf() {
     // Set media to print to apply @media print styles
     await page.emulateMedia({ media: 'print' });
 
-    console.log(`Generating A4 PDF to ${outputPath}...`);
+    console.log(`Generating Legal (8.5x14in) PDF to ${outputPath}...`);
     await page.pdf({
       path: outputPath,
-      format: 'A4',
+      format: 'Legal',
       printBackground: true,
       preferCSSPageSize: true,
       margin: {
