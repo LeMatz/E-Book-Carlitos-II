@@ -209,6 +209,67 @@ html {
   }
 }
 
+/* Universal styles for dark brown / dark leather boxes: text is always crisp white */
+[class*="bg-[#231a12]"],
+[class*="bg-[#211811]"],
+[class*="bg-[#2d2116]"],
+[class*="bg-[#1e1710]"],
+[class*="bg-[#17120d]"],
+[class*="bg-[#1c150f]"],
+[class*="bg-[#5a4022]"],
+[class*="bg-[#4a3622]"],
+[class*="bg-[#3a281c]"],
+[class*="paper-dark-leather"],
+.paper-dark-leather {
+  color: #ffffff;
+}
+
+[class*="bg-[#231a12]"] *,
+[class*="bg-[#211811]"] *,
+[class*="bg-[#2d2116]"] *,
+[class*="bg-[#1e1710]"] *,
+[class*="bg-[#17120d]"] *,
+[class*="bg-[#1c150f]"] *,
+[class*="paper-dark-leather"] * {
+  color: #ffffff;
+}
+
+[class*="bg-[#231a12]"] strong,
+[class*="bg-[#211811]"] strong,
+[class*="bg-[#2d2116]"] strong,
+[class*="bg-[#1e1710]"] strong,
+[class*="bg-[#17120d]"] strong,
+[class*="bg-[#1c150f]"] strong,
+[class*="bg-[#5a4022]"] strong,
+[class*="bg-[#4a3622]"] strong,
+[class*="paper-dark-leather"] strong {
+  color: #ffffff !important;
+}
+
+[class*="bg-[#231a12]"] p,
+[class*="bg-[#211811]"] p,
+[class*="bg-[#2d2116]"] p,
+[class*="bg-[#1e1710]"] p,
+[class*="paper-dark-leather"] p {
+  color: #ffffff !important;
+}
+
+[class*="bg-[#231a12]"] h1,
+[class*="bg-[#231a12]"] h2,
+[class*="bg-[#231a12]"] h3,
+[class*="bg-[#211811]"] h1,
+[class*="bg-[#211811]"] h2,
+[class*="bg-[#211811]"] h3 {
+  color: #ffffff !important;
+}
+
+[class*="bg-[#231a12]"] [class*="text-[#d4af37]"],
+[class*="bg-[#211811]"] [class*="text-[#d4af37]"],
+[class*="bg-[#231a12]"] [class*="text-[#ffd700]"],
+[class*="bg-[#211811]"] [class*="text-[#ffd700]"] {
+  color: #ffd700 !important;
+}
+
 /* PDF & Print Styles — Formato Legal (8.5in x 14in) */
 @media print {
   @page {
@@ -335,21 +396,21 @@ html {
 
   /* Elegant, dignified book typography matching the noble aesthetic of the manual */
   .print-page-sheet p {
-    font-size: 15.5px !important;
-    line-height: 1.62 !important;
-    margin-bottom: 0.6rem !important;
+    font-size: 16px !important;
+    line-height: 1.58 !important;
+    margin-bottom: 0.55rem !important;
   }
 
   .print-page-sheet h1 {
     font-size: 26px !important;
     line-height: 1.2 !important;
-    margin-bottom: 0.4rem !important;
+    margin-bottom: 0.35rem !important;
   }
 
   .print-page-sheet h2 {
     font-size: 20px !important;
     line-height: 1.25 !important;
-    margin-bottom: 0.35rem !important;
+    margin-bottom: 0.3rem !important;
   }
 
   .print-page-sheet h3 {
@@ -360,7 +421,7 @@ html {
   .print-page-sheet .space-y-4 > :not([hidden]) ~ :not([hidden]),
   .print-page-sheet .space-y-3\.5 > :not([hidden]) ~ :not([hidden]),
   .print-page-sheet .space-y-3 > :not([hidden]) ~ :not([hidden]) {
-    margin-top: 0.65rem !important;
+    margin-top: 0.45rem !important;
   }
 
   .print-page-sheet .font-playfair.float-left {
@@ -372,14 +433,14 @@ html {
   }
 
   .print-page-sheet img {
-    max-height: 270px !important;
+    max-height: 180px !important;
     object-fit: contain !important;
   }
 
   .print-page-sheet figure {
-    margin-top: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
-    padding: 0.4rem !important;
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+    padding: 0.25rem !important;
   }
 
   .print-page-sheet table {
@@ -389,17 +450,17 @@ html {
 
   .print-page-sheet th,
   .print-page-sheet td {
-    padding: 4.5px 7px !important;
+    padding: 4px 6.5px !important;
   }
 
   .print-page-sheet header {
-    padding-bottom: 5px !important;
-    margin-bottom: 8px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 6px !important;
     font-size: 11px !important;
   }
 
   .print-page-sheet footer {
-    padding-top: 5px !important;
+    padding-top: 4px !important;
     font-size: 10px !important;
   }
 
@@ -416,20 +477,36 @@ html {
     padding: 0.35in 0.45in !important;
   }
 
-  /* MANDATORY: All text inside dark brown, charcoal, or dark leather boxes MUST be crisp white */
-  .print-page-sheet [class*="bg-[#231a12]"],
-  .print-page-sheet [class*="bg-[#211811]"],
-  .print-page-sheet [class*="bg-[#2d2116]"],
-  .print-page-sheet [class*="bg-[#17120d]"],
-  .print-page-sheet [class*="bg-[#1c150f]"],
-  .print-page-sheet [class*="paper-dark-leather"],
-  .print-page-sheet .paper-dark-leather {
+  /* MANDATORY: All text inside dark brown, charcoal, or dark leather boxes MUST be crisp pure white */
+  .print-page-sheet [class*="bg-[#231a12]"] *,
+  .print-page-sheet [class*="bg-[#211811]"] *,
+  .print-page-sheet [class*="bg-[#2d2116]"] *,
+  .print-page-sheet [class*="bg-[#1e1710]"] *,
+  .print-page-sheet [class*="bg-[#17120d]"] *,
+  .print-page-sheet [class*="bg-[#1c150f]"] *,
+  .print-page-sheet [class*="bg-[#5a4022]"] *,
+  .print-page-sheet [class*="bg-[#4a3622]"] *,
+  .print-page-sheet [class*="bg-[#3a281c]"] *,
+  .print-page-sheet [class*="paper-dark-leather"] *,
+  .print-page-sheet .paper-dark-leather * {
+    color: #ffffff !important;
+  }
+
+  .print-page-sheet [class*="bg-[#231a12]"] strong,
+  .print-page-sheet [class*="bg-[#211811]"] strong,
+  .print-page-sheet [class*="bg-[#2d2116]"] strong,
+  .print-page-sheet [class*="bg-[#1e1710]"] strong,
+  .print-page-sheet [class*="bg-[#17120d]"] strong,
+  .print-page-sheet [class*="bg-[#1c150f]"] strong,
+  .print-page-sheet [class*="paper-dark-leather"] strong,
+  .print-page-sheet .paper-dark-leather strong {
     color: #ffffff !important;
   }
 
   .print-page-sheet [class*="bg-[#231a12]"] p,
   .print-page-sheet [class*="bg-[#211811]"] p,
   .print-page-sheet [class*="bg-[#2d2116]"] p,
+  .print-page-sheet [class*="bg-[#1e1710]"] p,
   .print-page-sheet [class*="bg-[#17120d]"] p,
   .print-page-sheet [class*="bg-[#1c150f]"] p,
   .print-page-sheet [class*="paper-dark-leather"] p,
@@ -445,6 +522,8 @@ html {
   .print-page-sheet [class*="bg-[#211811]"] h1,
   .print-page-sheet [class*="bg-[#211811]"] h2,
   .print-page-sheet [class*="bg-[#211811]"] h3,
+  .print-page-sheet [class*="bg-[#2d2116]"] h1,
+  .print-page-sheet [class*="bg-[#2d2116]"] h2,
   .print-page-sheet [class*="bg-[#2d2116]"] h3,
   .print-page-sheet [class*="paper-dark-leather"] h1,
   .print-page-sheet [class*="paper-dark-leather"] h2,
@@ -458,26 +537,28 @@ html {
   .print-page-sheet [class*="bg-[#231a12]"] span,
   .print-page-sheet [class*="bg-[#211811]"] span,
   .print-page-sheet [class*="bg-[#2d2116]"] span,
+  .print-page-sheet [class*="bg-[#1e1710]"] span,
   .print-page-sheet [class*="bg-[#17120d]"] span,
   .print-page-sheet [class*="bg-[#1c150f]"] span,
   .print-page-sheet [class*="paper-dark-leather"] span,
   .print-page-sheet .paper-dark-leather span {
-    color: #f7eedb !important;
+    color: #ffffff !important;
   }
 
   .print-page-sheet [class*="bg-[#231a12]"] [class*="text-[#d4af37]"],
   .print-page-sheet [class*="bg-[#211811]"] [class*="text-[#d4af37]"],
+  .print-page-sheet [class*="bg-[#2d2116]"] [class*="text-[#d4af37]"],
   .print-page-sheet [class*="bg-[#17120d]"] [class*="text-[#d4af37]"],
   .print-page-sheet [class*="bg-[#1c150f]"] [class*="text-[#d4af37]"],
-  .print-page-sheet .paper-dark-leather [class*="text-[#d4af37]"] {
-    color: #f7d070 !important;
+  .print-page-sheet [class*="paper-dark-leather"] [class*="text-[#d4af37]"] {
+    color: #ffd700 !important;
   }
 
   .print-page-sheet [class*="bg-[#231a12]"] [class*="text-[#aa8032]"],
   .print-page-sheet [class*="bg-[#211811]"] [class*="text-[#aa8032]"],
   .print-page-sheet [class*="bg-[#17120d]"] [class*="text-[#aa8032]"],
   .print-page-sheet [class*="bg-[#1c150f]"] [class*="text-[#aa8032]"],
-  .print-page-sheet .paper-dark-leather [class*="text-[#aa8032]"] {
+  .print-page-sheet [class*="paper-dark-leather"] [class*="text-[#aa8032]"] {
     color: #e5b958 !important;
   }
 

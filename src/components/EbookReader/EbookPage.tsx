@@ -152,7 +152,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
       if (part.startsWith('*') && part.endsWith('*')) {
         const cleanText = part.replace(/^\*{1,2}|\*{1,2}$/g, '');
         return (
-          <strong key={i} className="font-bold text-[#17120d]">
+          <strong key={i} className="font-bold text-inherit">
             {cleanText}
           </strong>
         );
@@ -316,7 +316,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
       return (
         <aside
           key={callout.id}
-          className="my-7 p-5 sm:p-7 bg-[#231a12] text-[#ebdcb8] border-2 border-[#aa8032] shadow-xl relative rounded-xs overflow-hidden"
+          className="my-7 p-5 sm:p-7 bg-[#231a12] text-white border-2 border-[#aa8032] shadow-xl relative rounded-xs overflow-hidden"
         >
           <div className="absolute top-0 right-0 p-3 opacity-15 pointer-events-none">
             <OuroborosIcon className="w-24 h-24 text-[#aa8032]" />
@@ -324,18 +324,18 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           <div className="flex items-center gap-3 mb-3 border-b border-[#aa8032]/30 pb-2">
             <SolAndLunaIcon className="w-7 h-7 text-[#d4af37] shrink-0" />
             <div>
-              <span className="font-signature text-lg text-[#d4af37] block -mb-1">
+              <span className="font-signature text-lg text-[#ffd700] block -mb-1">
                 Coniunctio & Misterio
               </span>
-              <h3 className="font-playfair text-sm sm:text-base font-bold text-[#f2e6cb] uppercase tracking-wider">
+              <h3 className="font-playfair text-sm sm:text-base font-bold text-white uppercase tracking-wider">
                 {callout.title || 'Paralelo Hermético & Alquímico:'}
               </h3>
             </div>
           </div>
-          <p className="font-cormorant italic text-lg sm:text-xl text-[#f3e8cf] leading-relaxed">
+          <p className="font-cormorant italic text-lg sm:text-xl text-white leading-relaxed">
             "{renderFormattedText(callout.text)}"
           </p>
-          <div className="mt-3 pt-2 text-[10px] font-mono text-right text-[#d4af37] border-t border-[#aa8032]/20">
+          <div className="mt-3 pt-2 text-[10px] font-mono text-right text-[#ffd700] border-t border-[#aa8032]/20">
             ✦ Mysterium Coniunctionis • C. G. Jung
           </div>
         </aside>
@@ -626,20 +626,20 @@ export const EbookPage: React.FC<EbookPageProps> = ({
             </div>
           )}
 
-          <figure className="my-3 p-2.5 sm:p-3 bg-[#231a12] border-2 border-[#aa8032] shadow-xl rounded-xs text-center">
+          <figure className="my-2.5 print:my-1.5 p-2 sm:p-2.5 print:p-1.5 bg-[#231a12] text-white border-2 border-[#aa8032] shadow-xl rounded-xs text-center">
             <div className="overflow-hidden border border-[#aa8032]/60 bg-[#17120d] relative">
               <img
                 src={pageData.illustrationImage.src}
                 alt={pageData.illustrationImage.alt}
-                className="w-full max-h-[340px] object-cover mx-auto sepia-vintage"
+                className="w-full max-h-[250px] sm:max-h-[270px] print:max-h-[135px] object-cover mx-auto sepia-vintage"
               />
             </div>
-            <figcaption className="mt-2 text-center space-y-0.5">
-              <p className="font-cormorant italic text-xs sm:text-sm text-[#f2e6cb] font-semibold leading-snug">
+            <figcaption className="mt-2 print:mt-1 text-center space-y-0.5">
+              <p className="font-cormorant italic text-xs sm:text-sm text-white font-semibold leading-snug">
                 {pageData.illustrationImage.caption}
               </p>
               {pageData.illustrationImage.credit && (
-                <span className="text-[9px] font-mono uppercase tracking-widest text-[#aa8032] block">
+                <span className="text-[9px] font-mono uppercase tracking-widest text-[#ffd700] block">
                   {pageData.illustrationImage.credit}
                 </span>
               )}
@@ -647,7 +647,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           </figure>
 
           <div className={`space-y-3.5 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(0, 3).map((pText, idx) => (
+            {pageData.paragraphs.slice(0, 2).map((pText, idx) => (
               <React.Fragment key={idx}>
                 {idx === 0 ? renderDropCapParagraph(pText, `dropcap-${idx}`) : (
                   <p className="text-justify leading-relaxed">
@@ -665,7 +665,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
           {renderContinuationHeader('Segunda Parte: Desarrollo e Integración')}
 
           <div className={`space-y-3.5 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(3).map((pText, idx) => (
+            {pageData.paragraphs.slice(2).map((pText, idx) => (
               <p key={idx} className="text-justify leading-relaxed">
                 {renderFormattedText(pText)}
               </p>
@@ -714,46 +714,46 @@ export const EbookPage: React.FC<EbookPageProps> = ({
             <OrnamentalDivider variant="flourish" className="my-1.5" />
           </div>
 
-          <div className="my-3 p-4 sm:p-5 bg-[#211811] text-[#ebdcb8] border-2 border-[#aa8032] shadow-xl rounded-xs space-y-3">
+          <div className="my-3 p-4 sm:p-5 bg-[#211811] text-white border-2 border-[#aa8032] shadow-xl rounded-xs space-y-3">
             <div className="flex items-center justify-between border-b border-[#aa8032]/40 pb-3">
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#d4af37] font-bold">
+                <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#ffd700] font-bold">
                   Hexagrama {pageData.iChingHexagram.number} • I Ching
                 </span>
-                <h3 className="font-playfair text-xl sm:text-2xl font-black text-[#f2e6cb]">
+                <h3 className="font-playfair text-xl sm:text-2xl font-black text-white">
                   {pageData.iChingHexagram.nameSpanish}
                 </h3>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-[#17120d] border-2 border-[#aa8032] flex items-center justify-center font-serif text-2xl text-[#d4af37]">
+                <div className="w-12 h-12 bg-[#17120d] border-2 border-[#aa8032] flex items-center justify-center font-serif text-2xl text-[#ffd700]">
                   {pageData.iChingHexagram.nameChinese}
                 </div>
-                <IChingCoinsIcon className="w-10 h-10 text-[#d4af37]" />
+                <IChingCoinsIcon className="w-10 h-10 text-[#ffd700]" />
               </div>
             </div>
 
-            <div className="my-2 max-w-xs mx-auto text-center">
+            <div className="my-2 print:my-1 max-w-xs mx-auto text-center">
               <div className="p-2 bg-[#1e1710] border border-[#aa8032] shadow-inner rounded-xs">
                 <img
                   src={pageData.iChingHexagram.brushImage || '/src/assets/images/hexagram_50_ting_ink_brush_1790694984643.jpg'}
                   alt="Hexagrama Ting"
-                  className="w-full max-h-[220px] object-contain mx-auto sepia-[0.22]"
+                  className="w-full max-h-[170px] print:max-h-[105px] object-contain mx-auto sepia-[0.22]"
                 />
               </div>
             </div>
 
-            <div className="p-3 bg-[#17120d] border-l-4 border-[#d4af37] text-xs">
-              <span className="font-playfair font-bold text-[11px] uppercase text-[#d4af37] block mb-0.5">El Juicio:</span>
-              <p className="italic text-[#ebdcb8]">"{pageData.iChingHexagram.judgment}"</p>
+            <div className="p-3 bg-[#17120d] border-l-4 border-[#d4af37] text-xs text-white">
+              <span className="font-playfair font-bold text-[11px] uppercase text-[#ffd700] block mb-0.5">El Juicio:</span>
+              <p className="italic text-white">"{pageData.iChingHexagram.judgment}"</p>
             </div>
-            <div className="p-3 bg-[#17120d] border-l-4 border-[#aa8032] text-xs">
-              <span className="font-playfair font-bold text-[11px] uppercase text-[#d4af37] block mb-0.5">La Imagen:</span>
-              <p className="italic text-[#ebdcb8]">"{pageData.iChingHexagram.image}"</p>
+            <div className="p-3 bg-[#17120d] border-l-4 border-[#aa8032] text-xs text-white">
+              <span className="font-playfair font-bold text-[11px] uppercase text-[#ffd700] block mb-0.5">La Imagen:</span>
+              <p className="italic text-white">"{pageData.iChingHexagram.image}"</p>
             </div>
           </div>
 
           <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(0, 4).map((pText, idx) => (
+            {pageData.paragraphs.slice(0, 2).map((pText, idx) => (
               <React.Fragment key={idx}>
                 {idx === 0 ? renderDropCapParagraph(pText, `dropcap-${idx}`) : (
                   <p className="text-justify leading-relaxed">
@@ -770,15 +770,15 @@ export const EbookPage: React.FC<EbookPageProps> = ({
         <div className="space-y-4">
           {renderContinuationHeader('Interpretación Psicológica & Cuatro Hexagramas Espejo')}
 
-          <div className="p-4 bg-[#2d2116] border border-[#aa8032]/50 text-xs sm:text-sm text-[#ebdcb8] leading-relaxed">
-            <span className="font-playfair font-bold text-xs uppercase text-[#f2e6cb] block mb-1">
+          <div className="p-4 bg-[#2d2116] border border-[#aa8032]/50 text-xs sm:text-sm text-white leading-relaxed">
+            <span className="font-playfair font-bold text-xs uppercase text-[#ffd700] block mb-1">
               Interpretación Psicológica Junguiana:
             </span>
-            <p>{pageData.iChingHexagram.psychologicalMeaning}</p>
+            <p className="text-white leading-relaxed">{pageData.iChingHexagram.psychologicalMeaning}</p>
           </div>
 
           <div className={`space-y-3 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
-            {pageData.paragraphs.slice(4).map((pText, idx) => (
+            {pageData.paragraphs.slice(2).map((pText, idx) => (
               <p key={idx} className="text-justify leading-relaxed">
                 {renderFormattedText(pText)}
               </p>
@@ -798,10 +798,15 @@ export const EbookPage: React.FC<EbookPageProps> = ({
       const hasHistoricalNotes = !!pageData.historicalNotes && pageData.historicalNotes.length > 0;
       const hasSecondaryCallout = !!pageData.secondaryCallout;
 
-      // Prioritize Sheet 1 being full and complete.
+      // Prioritize Sheet 1 being full and complete without overflow clipping.
       // If there is leftover space, let it be on Sheet 2 (the closing page of the topic).
       const totalParas = pageData.paragraphs.length;
-      const splitIdx = totalParas <= 4 ? 3 : 4;
+      let splitIdx = 2;
+      if (pageData.pageNumber === 12) {
+        splitIdx = 3; // Folio 12 has 5 very short paragraphs
+      } else if (!hasPhoto && !hasHistoricalNotes && totalParas >= 5) {
+        splitIdx = 3;
+      }
 
       const pSlice1 = pageData.paragraphs.slice(0, splitIdx);
       const pSlice2 = pageData.paragraphs.slice(splitIdx);

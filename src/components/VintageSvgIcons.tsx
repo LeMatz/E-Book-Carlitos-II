@@ -406,11 +406,11 @@ export const VintageClippedPhoto: React.FC<{
   return (
     <figure
       style={{ transform: `rotate(${rotationDeg}deg)` }}
-      className={`relative mx-auto my-4 sm:my-2 w-44 sm:w-52 p-2.5 bg-[#fbf5e6] border border-[#a48e6d] shadow-[0_8px_18px_rgba(20,15,10,0.38)] rounded-2xs transition-transform hover:rotate-0 select-none ${floatClass} ${className} z-10`}
+      className={`relative mx-auto my-4 sm:my-2 print:my-1.5 w-44 sm:w-52 print:w-36 p-2.5 print:p-1.5 bg-[#fbf5e6] border border-[#a48e6d] shadow-[0_8px_18px_rgba(20,15,10,0.38)] rounded-2xs transition-transform hover:rotate-0 select-none ${floatClass} ${className} z-10`}
     >
       {/* Antique Brass Clip holding photo */}
-      <div className="absolute -top-5 right-5 z-20 pointer-events-none transform rotate-3">
-        <VintagePaperClipIcon className="w-5 h-11" color="#cfa444" />
+      <div className="absolute -top-5 right-5 print:-top-3.5 print:right-3 z-20 pointer-events-none transform rotate-3">
+        <VintagePaperClipIcon className="w-5 h-11 print:w-4 print:h-8" color="#cfa444" />
       </div>
 
       {/* Snapshot Image with fine vintage border */}
@@ -418,14 +418,14 @@ export const VintageClippedPhoto: React.FC<{
         <img
           src={imageUrl}
           alt={altText}
-          className="w-full h-36 sm:h-40 object-cover sepia-[0.35] contrast-[1.08] brightness-[0.97]"
+          className="w-full h-36 sm:h-40 print:h-24 object-cover sepia-[0.35] contrast-[1.08] brightness-[0.97]"
           loading="lazy"
         />
       </div>
 
       {/* Handwritten Caption on aged photo border */}
       {caption && (
-        <figcaption className="pt-2 pb-0.5 px-1 font-cormorant italic text-[11px] sm:text-xs text-[#3a281c] text-center leading-tight tracking-tight font-semibold">
+        <figcaption className="pt-2 pb-0.5 px-1 print:pt-1 font-cormorant italic text-[11px] sm:text-xs print:text-[10px] text-[#3a281c] text-center leading-tight tracking-tight font-semibold">
           {caption}
         </figcaption>
       )}
