@@ -185,7 +185,7 @@ export const EbookCover: React.FC = () => {
           </div>
 
           <div className="text-center sm:text-right">
-            <span>MAR DEL PLATA • KÜSNACHT • BOLLINGEN</span>
+            <span>MAR DEL PLATA • BOLLINGEN</span>
           </div>
         </div>
 

@@ -20,6 +20,7 @@ export interface ClippedPhoto {
   side?: 'left' | 'right';
   altText?: string;
   handwrittenNote?: string;
+  objectFit?: 'cover' | 'contain';
 }
 
 export interface IChingHexagramData {

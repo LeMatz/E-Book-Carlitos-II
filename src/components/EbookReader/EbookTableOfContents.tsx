@@ -3,17 +3,6 @@ import { ChaptersMetaData, EBOOK_PAGES, INDICE_TITULOS } from '../../data/ebookC
 import { OrnamentalDivider } from '../OrnamentalDivider';
 import { OrnamentalCorner } from '../VintageSvgIcons';
 
-/**
- * =========================================================================
- * ÍNDICE DE CONTENIDOS (TABLA DE MATERIAS)
- * =========================================================================
- * Para cambiar el título de cualquier folio o punto del libro:
- * Modificalo directamente en: `src/data/tableOfContents.ts` (objeto INDICE_TITULOS).
- *
- * Al cambiarlo allí en el código del índice, se actualiza AUTOMÁTICAMENTE
- * tanto en esta Tabla de Contenidos como en el folio correspondiente del libro.
- * =========================================================================
- */
 export { INDICE_TITULOS } from '../../data/tableOfContents';
 
 export const EbookTableOfContents: React.FC = () => {

@@ -601,6 +601,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
             rotationDeg={pageData.clippedPhoto.rotationDeg}
             side={pageData.clippedPhoto.side}
             altText={pageData.clippedPhoto.altText}
+            objectFit={pageData.clippedPhoto.objectFit}
           />
         )}
 

@@ -393,6 +393,7 @@ export const VintageClippedPhoto: React.FC<{
   side?: 'left' | 'right';
   altText?: string;
   className?: string;
+  objectFit?: 'cover' | 'contain';
 }> = ({
   imageUrl,
   caption,
@@ -400,8 +401,10 @@ export const VintageClippedPhoto: React.FC<{
   side = 'right',
   altText = 'Fotografía histórica',
   className = '',
+  objectFit = 'cover',
 }) => {
   const floatClass = side === 'left' ? 'sm:float-left sm:mr-6 sm:mb-4' : 'sm:float-right sm:ml-6 sm:mb-4';
+  const fitClass = objectFit === 'contain' ? 'object-contain bg-[#1c150f]' : 'object-cover';
 
   return (
     <figure
@@ -418,7 +421,7 @@ export const VintageClippedPhoto: React.FC<{
         <img
           src={imageUrl}
           alt={altText}
-          className="w-full h-36 sm:h-40 print:h-24 object-cover sepia-[0.35] contrast-[1.08] brightness-[0.97]"
+          className={`w-full h-36 sm:h-40 print:h-24 ${fitClass} sepia-[0.35] contrast-[1.08] brightness-[0.97]`}
           loading="lazy"
         />
       </div>

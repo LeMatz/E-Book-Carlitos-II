@@ -5,7 +5,8 @@ import { EbookCover } from './components/EbookReader/EbookCover';
 import { EbookTableOfContents } from './components/EbookReader/EbookTableOfContents';
 import { EbookPage } from './components/EbookReader/EbookPage';
 import { EbookBackCover } from './components/EbookReader/EbookBackCover';
-import { Printer, FileText } from 'lucide-react';
+import { ImageExportModal } from './components/ImageExportModal';
+import { Printer, Image as ImageIcon } from 'lucide-react';
 
 export default function App() {
   const [pageTitles, setPageTitles] = useState<Record<number, string>>(() => {
@@ -19,6 +20,8 @@ export default function App() {
     }
     return INDICE_TITULOS;
   });
+
+  const [showImageExportModal, setShowImageExportModal] = useState(false);
 
   const handleUpdateTitle = (pageNumber: number, newTitle: string) => {
     setPageTitles((prev) => {
@@ -64,14 +67,23 @@ export default function App() {
             </span>
           </div>
 
-          <div className="flex items-center gap-2.5 w-full sm:w-auto justify-end">
+          <div className="flex items-center gap-2.5 w-full sm:w-auto justify-end flex-wrap sm:flex-nowrap">
             <button
               onClick={handlePrintPdf}
-              className="px-4 py-2 bg-[#aa8032] hover:bg-[#d4af37] text-[#17120d] font-playfair font-bold text-xs uppercase tracking-wider flex items-center gap-2 rounded-xs shadow-md transition-all cursor-pointer hover:shadow-lg"
+              className="px-3.5 py-2 bg-[#aa8032] hover:bg-[#d4af37] text-[#17120d] font-playfair font-bold text-xs uppercase tracking-wider flex items-center gap-2 rounded-xs shadow-md transition-all cursor-pointer hover:shadow-lg"
               title="Guardar como PDF o imprimir en tamaño Legal (8.5 × 14 in)"
             >
               <Printer className="w-4 h-4" />
-              <span>Guardar como PDF</span>
+              <span>Guardar PDF</span>
+            </button>
+
+            <button
+              onClick={() => setShowImageExportModal(true)}
+              className="px-3.5 py-2 bg-[#2a1e14] hover:bg-[#3d2a1c] text-[#ffd700] border border-[#aa8032] font-playfair font-bold text-xs uppercase tracking-wider flex items-center gap-2 rounded-xs shadow-md transition-all cursor-pointer hover:shadow-lg hover:border-[#ffd700]"
+              title="Descargar láminas en formato PNG o JPG (individualmente o todas al mismo tiempo en ZIP)"
+            >
+              <ImageIcon className="w-4 h-4 text-[#ffd700]" />
+              <span>Descargar Imágenes (PNG / JPG)</span>
             </button>
           </div>
         </div>
@@ -120,6 +132,13 @@ export default function App() {
         </section>
 
       </main>
+
+      {/* Modal para Descarga de Imágenes (PNG / JPG / ZIP) */}
+      <ImageExportModal
+        isOpen={showImageExportModal}
+        onClose={() => setShowImageExportModal(false)}
+        pageTitles={pageTitles}
+      />
 
     </div>
   );

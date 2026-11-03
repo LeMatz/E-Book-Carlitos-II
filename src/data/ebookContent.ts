@@ -619,6 +619,14 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     subtitle: 'Líneas Yang y Yin, líneas mutantes y el ritual de lanzamiento de las tres piezas de bronce',
     contentType: 'text',
     keyTerms: ['Hexagrama', 'Líneas Yang y Yin', 'Líneas Mutantes', 'Método de las Tres Monedas'],
+    clippedPhoto: {
+      imageUrl: IMAGE_MANIFEST.hexagram50Brush,
+      caption: 'Hexagrama: seis líneas trazadas con pincel y tinta china',
+      rotationDeg: -2.0,
+      side: 'right',
+      altText: 'Hexagrama del I Ching con líneas Yin y Yang en tinta china',
+      objectFit: 'contain',
+    },
     paragraphs: [
       'Para acercarnos al I Ching con hondura, lucidez y sin caer en supersticiones vacías, es indispensable comprender cómo se forma un *hexagrama* (*Kua*). Un hexagrama es una figura compuesta por seis líneas horizontales apiladas verticalmente, que se leen y construyen siempre *de abajo hacia arriba*, desde la línea 1 (la base o raíz en la tierra) hasta la línea 6 (la cima o cielo).',
       'Cada una de las líneas puede ser de dos polaridades fundamentales: una línea continua (Yang, principio activo, luminoso, firme y consciente) o una línea quebrada (Yin, principio receptivo, oscuro, fértil e inconsciente). Al combinar seis líneas se obtienen exactamente las 64 configuraciones posibles que componen el libro.',
