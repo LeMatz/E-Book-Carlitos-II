@@ -59,7 +59,7 @@ export const ImageExportModal: React.FC<ImageExportModalProps> = ({
     }),
     {
       id: 'folio-contraportada',
-      filename: '27-contraportada-de-archivo',
+      filename: `${String(EBOOK_PAGES.length + 1).padStart(2, '0')}-contraportada-de-archivo`,
       title: 'Contraportada de Archivo',
     },
   ];
@@ -253,7 +253,7 @@ export const ImageExportModal: React.FC<ImageExportModalProps> = ({
                 </span>
               </div>
               <p className="font-old-standard text-xs text-[#ebdcb8]/75 mb-3 leading-relaxed">
-                Descarga automáticamente todas las páginas (Portada, Índice, los 26 Folios y
+                Descarga automáticamente todas las páginas (Portada, Índice, los {EBOOK_PAGES.length} Folios y
                 Contraportada) empaquetadas en un único archivo <strong>.ZIP</strong> en formato{' '}
                 <strong>.{format.toUpperCase()}</strong>.
               </p>

@@ -35,8 +35,29 @@ export interface IChingHexagramData {
   judgment: string;
   image: string;
   psychologicalMeaning: string;
-  brushImage?: string;
-  plateImage?: string;
+}
+
+export interface HexagramFigureData {
+  // Lines 1 (bottom) to 6 (top), with values 6, 7, 8, 9
+  lines: (6 | 7 | 8 | 9)[];
+  showDerived?: boolean;
+  annotate?: 'positions' | 'trigrams' | 'both';
+  caption?: string;
+  primaryName?: string;
+  derivedName?: string;
+  highlightLines?: number[]; // 1-indexed (e.g. [2, 3])
+}
+
+export type TableCellContent =
+  | string
+  | { line: 6 | 7 | 8 | 9 }
+  | { trigram: string; name?: string; symbol?: string; lines?: ('yang' | 'yin')[] };
+
+export interface ReferenceTable {
+  title?: string;
+  headers: string[];
+  rows: TableCellContent[][];
+  footnote?: string;
 }
 
 export interface TrigramData {
@@ -63,6 +84,13 @@ export interface ExerciseStep {
   instruction: string;
 }
 
+export interface ExerciseField {
+  key: string;
+  label: string;
+  placeholder?: string;
+  multiline?: boolean;
+}
+
 export interface ExerciseData {
   id: string;
   title: string;
@@ -73,6 +101,7 @@ export interface ExerciseData {
   closurePrompt?: string;
   inputFieldKey?: string;
   inputPlaceholder?: string;
+  fields?: ExerciseField[];
 }
 
 export type PageContentType = 
@@ -93,7 +122,7 @@ export interface FootnoteData {
 }
 
 export interface EbookPageData {
-  pageNumber: number; // 1 to EBOOK_PAGES.length (26)
+  pageNumber: number; // 1 to EBOOK_PAGES.length (29)
   chapterId: number; // 0 for Intro/Bio, 1, 2, 3, 4, 5
   sectionTitle: string;
   pageTitle: string;
@@ -109,6 +138,8 @@ export interface EbookPageData {
   illustrationImage?: IllustrationData;
   iChingHexagram?: IChingHexagramData;
   iChingTrigrams?: TrigramData[];
+  hexagramFigure?: HexagramFigureData;
+  referenceTables?: ReferenceTable[];
   footnotes?: FootnoteData[];
   clippedPhoto?: ClippedPhoto;
 }

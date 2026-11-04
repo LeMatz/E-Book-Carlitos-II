@@ -41,17 +41,17 @@ export class ChaptersMetaData {
     {
       chapterId: 4,
       title: 'Capítulo 4 — El Oráculo del I Ching y la Mente Simbólica',
-      subtitle: 'El Libro de las Mutaciones, las tres monedas de bronce y los hexagramas espejo',
+      subtitle: 'El Libro de las Mutaciones, la consulta reflexiva y la decisión ética con la app',
       startPage: 18,
-      endPage: 22,
+      endPage: 25,
       iconName: 'grid',
     },
     {
       chapterId: 5,
       title: 'Capítulo 5 — Cuaderno de Trabajo & Bitácora Alquímica',
       subtitle: 'Protocolos de sueños, sincronías y el Juego del Tao',
-      startPage: 23,
-      endPage: 26,
+      startPage: 26,
+      endPage: 29,
       iconName: 'edit-3',
     },
   ];
@@ -581,221 +581,323 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CAPÍTULO 4 — EL ORÁCULO DEL I CHING (PÁGINAS 18 A 22)
+  // CAPÍTULO 4 — EL ORÁCULO DEL I CHING Y LA MENTE SIMBÓLICA (PÁGINAS 18 A 25)
   // ==========================================
   {
     pageNumber: 18,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'Carl Jung y el Libro de las Mutaciones',
-    subtitle: 'El encuentro con Richard Wilhelm y el prólogo histórico que consagró al oráculo en Occidente',
+    pageTitle: 'Jung y el Libro de las Mutaciones',
+    subtitle: 'El encuentro con Richard Wilhelm, el prólogo de 1949 y tres modos de comprender el oráculo',
     contentType: 'text',
-    keyTerms: ['I Ching', 'Richard Wilhelm', 'Libro de las Mutaciones', 'Prólogo Histórico 1949'],
+    keyTerms: ['Richard Wilhelm', 'Prólogo de 1949', 'Sincronicidad', 'Reencuadre Psicológico'],
     illustrationImage: {
-      src: '/src/assets/images/iching_bronze_coins_consultation_1790692401314.jpg',
-      alt: 'Monedas de bronce y manuscrito del I Ching',
-      caption: 'Las tres monedas de bronce y el Libro de las Mutaciones: el método milenario que Jung consultaba en su jardín de Küsnacht para dialogar con el momento presente.',
-      credit: 'Ilustración',
+      src: IMAGE_MANIFEST.ichingCoins,
+      alt: 'Monedas de consulta del I Ching',
+      caption: 'Las tres monedas para la consulta: el método que Jung empleó para interrogar la cualidad del momento.',
+      credit: 'Fotografía de archivo',
       aspect: 'landscape',
     },
     paragraphs: [
-      'En el verano de 1920, Carlitos conoció al célebre sinólogo y teólogo alemán *Richard Wilhelm*, quien había residido más de dos décadas en China traduciendo pacientemente los clásicos confucianos y taoístas bajo la guía de venerables sabios orientales como Lao Nai-hsüan.',
-      'El impacto de ese encuentro en Jung fue un rayo fulgurante. Wilhelm le presentó el *I Ching* (Yi Jing o *Libro de las Mutaciones*), una obra con más de tres mil años de antigüedad concebida no como un texto adivinatorio vulgar, sino como el más refinado mapa dinámico de las transformaciones de la energía universal.',
-      'Jung dedicó casi tres décadas a experimentar con el I Ching en el silencio de su jardín en Küsnacht. Colocaba los tallos secos de milenrama o arrojaba las tres monedas chinas de bronce para consultar sus propias dudas ante decisiones decisivas de su vida y verificar las correlaciones con los sueños de sus pacientes.',
-      'En 1949, cuando la traducción inglesa de Cary F. Baynes estaba por publicarse, Jung escribió uno de los prólogos más audaces y bellos de la literatura del siglo XX: decidió "entrevistar" al propio I Ching consultándole qué opinaba sobre su presentación ante el público occidental moderno. El resultado fue el célebre *Hexagrama 50, Ting (El Caldero)*, que simboliza el recipiente sagrado donde se nutre espiritualmente a la comunidad. El I Ching había respondido con una precisión conmovedora.'
+      'En la década de 1920, Carl Gustav Jung profundizó en la obra de Richard Wilhelm, sinólogo y teólogo alemán que residió más de dos décadas en China traduciendo pacientemente las fuentes clásicas bajo la guía de maestros orientales. Wilhelm le transmitió una comprensión viva del *I Ching* (*Yì Jīng*, o *Libro de las Mutaciones*), concebido no como adivinación vulgar, sino como un mapa dinámico del cambio, la polaridad y los ritmos del tiempo.',
+      'En su prólogo de 1949 para la traducción inglesa de Cary F. Baynes, Jung afirmó que llevaba más de treinta años experimentando con esta técnica. Para presentar la obra a Occidente, decidió consultar al libro sobre el sentido de su propia publicación. Obtuvo el hexagrama 50, *Dǐng* (*Ting*, El Caldero), la vasija ritual de transformación espiritual. Formuló luego una segunda pregunta sobre su posición, con otro resultado elocuente.',
+      /* [VERIFICAR: En el prólogo de 1949, la segunda consulta de Jung sobre su propia posición dio el Hexagrama 29 (K'an, El Abismo) con mutaciones, derivando al Hexagrama 59 (Huan, La Disolución). Conforme a la regla de contenido, no se mencionan números en el texto visible.] */
+      'Para comprender por qué funciona una consulta, existen tres posturas posibles: (a) la sincronicidad propuesta por Jung, como hipótesis de una conexión acausal entre la psique y el azar exterior; (b) el reencuadre psicológico, donde las imágenes del texto operan como estímulos estructurados que ordenan tus pensamientos; y (c) el azar puro sin significado intrínseco.',
+      'Para tu práctica cotidiana no necesitás decidir cuál de las tres posturas es la verdadera. El procedimiento funciona como un reencuadre estructurado que aclara tus decisiones, mientras que Jung sostenía la hipótesis sincrónica como una resonancia entre el estado interno y el instante en que caen las monedas.'
     ],
     carlitosCallout: {
-      id: 'carlitos-cap4-prologo',
-      title: 'Sobre el Prólogo de Jung al I Ching (1949):',
+      id: 'carlitos-cap4-18',
+      title: 'Carlitos dice junto al fuego:',
       variant: 'carlitos',
-      text: 'Para Jung, mientras la mente occidental se apoya en la causalidad, la tradición del I Ching parte de la sincronicidad: el cuadro de la totalidad que se hace visible en el momento exacto en que caen las monedas. El oráculo no pretende adivinar el porvenir, sino reflejar la cualidad psicológica del instante presente.'
+      text: 'No busques en el oráculo una certeza mágica que te ahorre pensar, che. El I Ching no te adivina el porvenir ni te da órdenes: te devuelve un espejo lúcido para que descubras qué estás sintiendo y decidas con responsabilidad.'
     }
   },
   {
     pageNumber: 19,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'La Anatomía del Hexagrama y las Tres Monedas',
-    subtitle: 'Líneas Yang y Yin, líneas mutantes y el ritual de lanzamiento de las tres piezas de bronce',
+    pageTitle: 'Antes de abrir la app: la pregunta',
+    subtitle: 'El arte de formular la consulta, las categorías operativas y el cuidado de no degradar el diálogo',
     contentType: 'text',
-    keyTerms: ['Hexagrama', 'Líneas Yang y Yin', 'Líneas Mutantes', 'Método de las Tres Monedas'],
-    clippedPhoto: {
-      imageUrl: IMAGE_MANIFEST.hexagram50Brush,
-      caption: 'Hexagrama: seis líneas trazadas con pincel y tinta china',
-      rotationDeg: -2.0,
-      side: 'right',
-      altText: 'Hexagrama del I Ching con líneas Yin y Yang en tinta china',
-      objectFit: 'contain',
-    },
+    keyTerms: ['Pregunta Abierta', 'Consulta Abierta', 'Hexagrama 4 (Méng)', 'Ética de Consulta'],
     paragraphs: [
-      'Para acercarnos al I Ching con hondura, lucidez y sin caer en supersticiones vacías, es indispensable comprender cómo se forma un *hexagrama* (*Kua*). Un hexagrama es una figura compuesta por seis líneas horizontales apiladas verticalmente, que se leen y construyen siempre *de abajo hacia arriba*, desde la línea 1 (la base o raíz en la tierra) hasta la línea 6 (la cima o cielo).',
-      'Cada una de las líneas puede ser de dos polaridades fundamentales: una línea continua (Yang, principio activo, luminoso, firme y consciente) o una línea quebrada (Yin, principio receptivo, oscuro, fértil e inconsciente). Al combinar seis líneas se obtienen exactamente las 64 configuraciones posibles que componen el libro.',
-      'El método más accesible y tradicional en Occidente para generar un hexagrama es el *lanzamiento de las tres monedas de bronce*. Se toman tres monedas idénticas (preferentemente réplicas de monedas chinas antiguas con un orificio cuadrado en el centro). Se asigna convencionalmente a cada cara el valor numérico 3 (Yang) y a cada cruz el valor 2 (Yin).',
-      'Al arrojar las tres monedas juntas, la suma de sus valores solo puede arrojar cuatro resultados posibles: **6** (tres cruces, 2+2+2): Yin mutante que se transformará en Yang; **7** (una cara y dos cruces, 3+2+2): Yang firme; **8** (dos caras y una cruz, 3+3+2): Yin receptivo; y **9** (tres caras, 3+3+3): Yang mutante que se transformará en Yin. Las líneas mutantes indican los puntos exactos de máxima tensión psíquica donde el presente está a punto de convertirse en su opuesto (*enantiodromía*).'
+      'La consulta no arranca cuando tocás la pantalla del celular, sino en la claridad con que formulás tu pregunta. El libro exige una sola pregunta por tirada, redactada de forma abierta: indagar *cómo* abordar un desafío o *qué actitud* conviene cultivar. Las preguntas cerradas de sí o no y los pedidos de predicción anulan la función reflexiva del símbolo.',
+      'Un ejemplo constructivo sería: «¿Qué actitud interior me conviene sostener ante esta renegociación laboral para cuidar mi vocación?». En cambio, una mala formulación busca predicción pasiva: «¿Me van a aumentar el sueldo el mes que viene?». La primera te devuelve la iniciativa y la madurez; la segunda delega tu responsabilidad en una respuesta mágica.',
+      'Para orientarte, la app de I Ching del curso organiza sugerencias en cuatro categorías: *Decisiones y Encrucijadas*, *Vínculos y Relaciones*, *Autoconocimiento y Procesos Internos*, y *Proyectos y Trabajo*. Si atravesás un momento difuso y no encontrás palabras exactas, podés recurrir al modo de *Consulta abierta*, donde el oráculo refleja la cualidad general de tu presente.',
+      'Una regla esencial: no repitas la consulta sobre el mismo asunto hasta que las circunstancias reales hayan cambiado. El hexagrama 4, *Méng* (La Necedad Juvenil), advierte que consultar una y otra vez lo mismo degrada la lectura y confunde el discernimiento. Quien insiste por ansiedad no busca claridad, sino escuchar lo que su ego quiere oír.'
     ],
     carlitosCallout: {
-      id: 'carlitos-cap4-monedas',
-      title: 'Carlitos dice con una sonrisa:',
-      text: 'Cuando tirás las tres monedas, tus dedos no están haciendo un truco de magia. En ese instante fugaz en que las monedas giran por el aire, tu mente inconsciente y la física del mundo están bailando la misma música. Por eso, para Jung, ese instante nunca es una casualidad vacía.'
+      id: 'carlitos-cap4-19',
+      title: 'Carlitos dice con el mate en la mano:',
+      variant: 'carlitos',
+      text: 'Si le preguntás tres veces lo mismo a un amigo sabio en diez minutos, te va a mirar con paciencia y te va a convidar un mate para que te calmes. Con el I Ching pasa igual: respetá la primera respuesta y date tiempo para digerirla.'
     }
   },
   {
     pageNumber: 20,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'Los Ocho Trigramas Fundamentales (Ba Gua)',
-    subtitle: 'La matriz elemental de la naturaleza y sus funciones arquetípicas en la psique',
+    pageTitle: 'Qué es un hexagrama y qué hace la app por vos',
+    subtitle: 'Estructura de seis líneas, polaridades de valor, líneas mutantes y la tirada en pantalla',
     contentType: 'table',
-    keyTerms: [
-      'Ba Gua / Trigramas',
-      'Cielo y Tierra',
-      'Correspondencia Psicológica†',
-      'Rey Wen',
-    ],
-    iChingTrigrams: [
+    keyTerms: ['Hexagrama', 'Trigrama Inferior y Superior', 'Líneas Mutantes', 'Valores 6, 7, 8, 9'],
+    hexagramFigure: {
+      lines: [8, 7, 8, 7, 8, 7],
+      annotate: 'both',
+      caption: 'Figura (a): Anatomía de un hexagrama. Seis líneas numeradas de abajo hacia arriba. Las tres inferiores forman el trigrama inferior (lo propio); las tres superiores, el trigrama superior (el entorno).',
+    },
+    referenceTables: [
       {
-        name: "Ch'ien",
-        chinese: "乾",
-        symbol: "☰",
-        element: "Cielo / Padre",
-        direction: "Noroeste",
-        archetypalQuality: "Fuerza creativa pura, luminosidad, voluntad inquebrantable, espíritu.",
-        psychologicalFunction: "Función Pensamiento / La soberanía del Yo alineado con el propósito superior.",
-      },
-      {
-        name: "K'un",
-        chinese: "坤",
-        symbol: "☷",
-        element: "Tierra / Madre",
-        direction: "Suroeste",
-        archetypalQuality: "Receptividad devota, contención nutricia, fertilidad silenciosa, entrega.",
-        psychologicalFunction: "El Inconsciente nutricio / Capacidad de sostener procesos sin forzarlos.",
-      },
-      {
-        name: "Chen",
-        chinese: "震",
-        symbol: "☳",
-        element: "Trueno / Hijo Mayor",
-        direction: "Este",
-        archetypalQuality: "Movimiento expansivo, conmoción que despierta, brote primaveral.",
-        psychologicalFunction: "Intuición que irrumpe / El chispazo que rompe la inercia de una vida dormida.",
-      },
-      {
-        name: "K'an",
-        chinese: "坎",
-        symbol: "☵",
-        element: "Agua / Hijo Medio",
-        direction: "Norte",
-        archetypalQuality: "El peligro fértil, las profundidades del abismo, fluidez insustancial.",
-        psychologicalFunction: "La Sombra y la Noche Oscura del Alma / El coraje de atravesar el abismo.",
-      },
-      {
-        name: "Ken",
-        chinese: "艮",
-        symbol: "☶",
-        element: "Montaña / Hijo Menor",
-        direction: "Noreste",
-        archetypalQuality: "Quietud, detención meditativa, límite protector, solidez inmutable.",
-        psychologicalFunction: "El Silencio de la Individuación / Saber detenerse antes de errar.",
-      },
-      {
-        name: "Sun",
-        chinese: "巽",
-        symbol: "☴",
-        element: "Viento / Hija Mayor",
-        direction: "Sureste",
-        archetypalQuality: "Penetración suave y constante, flexibilidad, influencia invisible.",
-        psychologicalFunction: "El Ánima mediadora / Transformación sutil que desgasta la rigidez.",
-      },
-      {
-        name: "Li",
-        chinese: "離",
-        symbol: "☲",
-        element: "Fuego / Hija Media",
-        direction: "Sur",
-        archetypalQuality: "Claridad lúcida, calor que une, iluminación intelectual, apego.",
-        psychologicalFunction: "La Luz de la Conciencia / Discernimiento claro sin fanatismo ciego.",
-      },
-      {
-        name: "Tui",
-        chinese: "兌",
-        symbol: "☱",
-        element: "Lago / Hija Menor",
-        direction: "Oeste",
-        archetypalQuality: "Alegría serena, celebración compartida, apertura comunicativa.",
-        psychologicalFunction: "La Celebración de la Completitud / La risa que cura la gravedad del ego.",
+        title: 'Figura (b): Tabla de valores de tirada y probabilidades',
+        headers: ['Suma', 'Tipo de línea', 'Cómo se ve en la app', 'Probabilidad'],
+        rows: [
+          [{ line: 6 }, 'Yin mutante (se vuelve yang)', 'Trazo partido con marca × central', '1/8 (12,5 %)'],
+          [{ line: 7 }, 'Yang fijo (permanece yang)', 'Trazo continuo firme', '3/8 (37,5 %)'],
+          [{ line: 8 }, 'Yin fijo (permanece yin)', 'Trazo partido abierto', '3/8 (37,5 %)'],
+          [{ line: 9 }, 'Yang mutante (se vuelve yin)', 'Trazo continuo con marca ○ central', '1/8 (12,5 %)'],
+        ],
+        footnote: 'Convención de la app: cara = 3 (yang) y cruz = 2 (yin). Sumas de tres monedas.',
       },
     ],
     paragraphs: [
-      'Todo hexagrama del I Ching está compuesto por la interacción viva de dos *trigramas* (*Ba Gua*): el trigrama inferior (la realidad interior, el estado psicológico oculto) y el trigrama superior (la manifestación exterior, la situación relacional o cósmica). Comprender los 8 trigramas elementales es dominar el alfabeto con el que el oráculo describe la condición humana. Nota: Las direcciones y correspondencias familiares corresponden a la secuencia del Cielo Posterior (Rey Wen).'
+      'Un hexagrama reúne seis líneas horizontales apiladas que se leen siempre de abajo hacia arriba, desde la base (línea 1) hasta la cima (línea 6). Cada línea es continua (yang) o partida (yin), totalizando 64 combinaciones. Las tres de abajo forman el trigrama inferior (lo propio) y las tres de arriba el superior (el entorno). Ver Figura (a).',
+      'La app simula el lanzamiento de tres monedas por cada una de las seis líneas. Al sumar los valores de cada tiro (cara = 3, cruz = 2), se producen los cuatro estados de la tabla. En promedio surgen 1,5 líneas mutantes por tirada y solo el 17,8 % de las tiradas no arroja ninguna; por lo tanto, tener mutantes es lo normal.',
+      'Una línea mutante es una energía llegada a su extremo que empieza a volverse su opuesto: al voltearla aparece un segundo hexagrama. En la app, la tirada línea por línea tocando *Tirar monedas* es el camino principal de atención; *Completar Rápido* funciona solo como un atajo práctico.',
+      'Nota sobre la tirada manual: sin la app para celular, la tirada tradicional requiere lanzar manualmente tres monedas seis veces consecutivas, registrando cada valor de abajo hacia arriba para trazar el hexagrama y calcular las mutaciones a mano.'
     ],
-    carlitosCallout: {
-      id: 'carlitos-cap4-trigramas',
-      title: 'Anotación de Carlitos:',
-      variant: 'alchemical',
-      text: 'Cuando el Agua (K\'an) está sobre el Fuego (Li), tenemos el hexagrama 63, Después de la Consumación: la marmita sobre el fuego, el orden logrado donde todo está en su sitio y por eso mismo hay que vigilar el inicio de la decadencia. Cuando el Fuego está sobre el Agua (hexagrama 64, Antes de la Consumación), el ciclo vuelve a abrirse. Los trigramas son los humores de la naturaleza viva dentro de vos.'
+    secondaryCallout: {
+      id: 'carlitos-cap4-20-der',
+      title: 'Figura (c): Principio de mutación y tendencia',
+      variant: 'context_note',
+      text: 'Cuando una línea alcanza el extremo de su polaridad (6 o 9), muta en su opuesto al voltearse. Esa transformación engendra un segundo hexagrama que señala la tendencia hacia donde gravita el presente.'
     }
   },
   {
     pageNumber: 21,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'Cuatro Hexagramas Espejo para el Viajero Interior',
-    subtitle: 'Ch\'ien, K\'un, Ting y Wei Chi: las cuatro estaciones del alma en la rueda de las mutaciones',
-    contentType: 'iching',
-    iChingHexagram: {
-      number: 50,
-      nameChinese: '鼎',
-      namePinYin: 'Tǐng',
-      nameSpanish: 'El Caldero (La Transformación Alquímica)',
-      upperTrigram: 'Li (Fuego)',
-      lowerTrigram: 'Sun (Viento / Madera)',
-      lines: ['yang', 'yin', 'yang', 'yang', 'yang', 'yin'],
-      judgment: 'El Caldero (trípode ritual): la madera alimenta el fuego; se cocina el alimento para ofrecer a lo sagrado y a los sabios. Fortuna y consolidación.',
-      image: 'Fuego sobre madera: la imagen del Caldero. Así el noble consolida su destino nutriendo a los sabios y honrando lo sagrado.',
-      psychologicalMeaning: 'El Hexagrama 50 simboliza la transformación alquímica en el caldero interior: los contenidos brutos de la vida cotidiana son transmutados por el fuego de la conciencia en alimento espiritual y sabiduría para la comunidad (como aquel vas Hermetis del que hablaba Carlitos).',
-      brushImage: '/src/assets/images/hexagram_50_ting_ink_brush_1790694984643.jpg',
-    },
+    pageTitle: 'Leer el resultado, pantalla por pantalla',
+    subtitle: 'Interpretación rápida, juicio, imagen, líneas del caso y calificaciones de conducta',
+    contentType: 'table',
+    keyTerms: ['Interpretación Rápida', 'Juicio e Imagen', 'Líneas Mutantes', 'Calificaciones Éticas'],
     paragraphs: [
-      'A lo largo de los 64 hexagramas, existen cuatro estaciones arquetípicas que todo viajero de la mente profunda se encontrará inevitablemente en su camino:',
-      '**1. Hexagrama 1 — Ch\'ien (Lo Creativo):** Seis líneas Yang puras. Simboliza el poder generador original, la semilla del Héroe que inicia una empresa. Su advertencia: el dragón que vuela demasiado alto (*línea superior mutante*) se estrella por soberbia. Requiere perseverancia inmaculada.',
-      '**2. Hexagrama 2 — K\'un (Lo Receptivo):** Seis líneas Yin puras. La entrega paciente de la Tierra. No busca tomar la delantera, sino dejarse guiar. Para el hombre moderno habituado al control ansioso, K\'un enseña la fuerza sanadora de esperar a que las cosas maduren por su propio peso.',
-      '**3. Hexagrama 50 — Ting (El Caldero):** El hexagrama que el I Ching le regaló a Jung en 1949. El fuego sobre la leña. Representa la vasija hermética de la terapia y el autoconocimiento: cocinar la propia sombra hasta que se vuelva sabiduría nutricia para la comunidad.',
-      '**4. Hexagrama 64 — Wei Chi (Antes de la Consumación):** Fuego sobre Agua. El último hexagrama del libro, recordándonos que el ciclo nunca termina en una meta estática. Como el zorro joven que cruza el río helado y moja su cola al final, la individuación es un recomenzar perpetuo.'
+      'Al completar la tirada, la app muestra primero la pantalla de *Interpretación Rápida*, dividida en tres bloques: *1. Tu Presente*, *2. Actitud Recomendada* y *3. ¿Hacia dónde evoluciona?*. Es tu punto de partida. Advertí que es una síntesis orientadora: el caso singular del lector está en el Juicio, la Imagen y las líneas mutantes.',
+      'Al avanzar, navegás las pestañas *Presente* y *Tendencia*. En el presente leés *El Juicio* (la estructura de la situación) y *La Imagen* (los elementos naturales puestos en relación, que culmina siempre en una conducta del noble). Debajo encontrás *Tus Líneas Mutantes*: son las líneas de tu caso particular y se leen de abajo hacia arriba, como etapas de un proceso que madura.',
+      'Al presionar *Ver Hexagrama Derivado*, examinás la tendencia de evolución, comparando qué cambia respecto del presente. Aclaración metodológica: la app puede mostrar una traducción con variantes de vocabulario respecto a otros libros; lo decisivo es interpretar siempre la estructura: el patrón arquetípico, la posición y la conducta sugerida.'
     ],
-    carlitosCallout: {
-      id: 'carlitos-cap4-hexagramas',
-      title: 'Carlitos dice con afecto:',
-      text: '¿Te fijaste que el I Ching no termina con el hexagrama 63 "Después de la Consumación", sino con el 64 "Antes de la Consumación"? El oráculo te recuerda que la vida nunca es una foto terminada colgada en la pared; es un río que siempre está empezando a fluir otra vez.'
-    }
+    referenceTables: [
+      {
+        title: 'Casos especiales de tirada',
+        headers: ['Condición de la tirada', 'Criterio operativo en la app'],
+        rows: [
+          ['Sin mutantes (Hexagrama Estable)', 'La situación muestra fijeza o madurez. Se leen exclusivamente El Juicio y La Imagen del hexagrama presente.'],
+          ['Seis mutantes', 'En hexagramas 1 y 2 rige la regla 用九 (yòng jiǔ) / 用六 (yòng liù). En los demás casos, se lee el Juicio del derivado como tendencia.'],
+        ],
+        footnote: 'Un hexagrama estable indica que la situación no exige cambios apresurados de posición.',
+      },
+      {
+        title: 'Calificaciones de conducta en el texto canónico',
+        headers: ['Término canónico', 'Qué indica para tu conducta'],
+        rows: [
+          ['Ventura', 'La actitud sintoniza con el orden del momento; avanzar con confianza serena.'],
+          ['Desventura', 'La acción planeada va a contramano de la situación; riesgo de tropiezo si insistís.'],
+          ['Sin falta', 'No hay error ético en tu postura ante la dificultad; mantener la rectitud interior.'],
+          ['Arrepentimiento', 'Señal de desvío temprano; momento propicio para rectificar el rumbo a tiempo.'],
+          ['Humillación', 'Pérdida momentánea de compostura o tropiezo menor; exige humildad y aprendizaje.'],
+          ['Propicio (Es propicio...)', 'El contexto acompaña la iniciativa (ej. «cruzar las grandes aguas»); actuar sin dudar.'],
+        ],
+        footnote: 'Estas valoraciones no son sentencias fatales sobre tu persona, sino calificaciones de la conducta sugerida.',
+      },
+    ],
   },
   {
     pageNumber: 22,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'El I Ching como Espejo Proyectivo en el Coaching',
-    subtitle: 'El arte de formular preguntas esenciales y el diálogo sin fatalismo supersticioso',
-    contentType: 'text',
-    keyTerms: ['Preguntas Esenciales', 'Espejo Proyectivo', 'Coaching Profundo', 'Ética de la Consulta'],
+    pageTitle: 'Dos lentes para profundizar: posiciones y trigramas',
+    subtitle: 'El sentido de los seis puestos y la dinámica de los ocho trigramas elementales',
+    contentType: 'table',
+    keyTerms: ['Puestos 1 a 6', 'Trigramas Ba Gua', 'Estructura de Trigramas', 'Hexagramas 63 y 64'],
     paragraphs: [
-      'Cuando aplicamos el I Ching en el ámbito del coaching, la mentoría y el autoconocimiento, la primera regla innegociable consiste en erradicar la adivinación pasiva o el fatalismo mágico. Podés hacer preguntas concretas sobre una encrucijada práctica o un conflicto vincular —Jung mismo le preguntó al oráculo sobre la publicación de su prólogo—; lo decisivo es no delegar en las monedas la responsabilidad de tu decisión ni esperar predicciones mágicas.',
-      'El I Ching opera como el más formidable *espejo proyectivo* que la humanidad haya concebido. Es una trampa de luz donde el inconsciente se refleja a sí mismo. Por consiguiente, la calidad de la respuesta dependerá enteramente de la profundidad ética de la pregunta formulada.',
-      'Al consultar sobre una situación concreta (por ejemplo, un cambio de trabajo o una conversación difícil), conviene enfocar la mirada en la actitud interior: "¿Cuál es la naturaleza de la encrucijada en la que me encuentro y qué energía debo cultivar para no actuar desde el miedo?". En lugar de buscar culpables afuera, nos preguntamos: "¿Qué parte de mi propia sombra estoy proyectando en este conflicto vincular?".',
-      'Al recibir el hexagrama, no te limites a leer las frases como un decreto dogmático: leelo como quien desmenuza un sueño lúcido. Escuchá la imagen del trigrama, mirá las líneas mutantes que señalan tu tensión viva, y tomá una decisión libre y consciente. El oráculo no decide por vos: te devuelve la mirada para que decidas con el corazón despierto.'
+      'Las posiciones de las líneas (de 1 a 6) no son equivalentes ni intercambiables. Cada puesto describe un grado de visibilidad, compromiso y madurez en el desarrollo de cualquier situación. Al leer tus líneas mutantes, contrastá su recomendación con el puesto que ocupan (remitite a la Figura a del folio 20 para ver su ubicación en la estructura).',
+      'La segunda lente radica en los ocho trigramas (*Ba Gua*), que la app despliega bajo la etiqueta *Estructura de Trigramas*. El trigrama inferior describe la situación propia o interna (tus emociones, recursos o disposición anímica), y el superior la externa o ambiental (las presiones, oportunidades o vínculos del entorno). Comprender su interacción aclara si tu impulso choca o fluye con el contexto.'
+    ],
+    referenceTables: [
+      {
+        title: 'Tabla 1: Significado de las seis posiciones (de 1 a 6)',
+        headers: ['Posición', 'Estadio psíquico y significado operativo'],
+        rows: [
+          ['Línea 1 (Base)', 'Inicio sin forma visible, raíz o germen. Conviene observar y prepararse sin exponerse.'],
+          ['Línea 2 (Centro interior)', 'Centro interno y ejecución; equilibrio de la emoción y rectitud en lo íntimo.'],
+          ['Línea 3 (Umbral)', 'Límite del mundo interno; transición crítica, riesgo y exigencia de prudencia.'],
+          ['Línea 4 (Cercanía al poder)', 'Ingreso al espacio público exterior; cercanía al poder, lealtad y adaptabilidad.'],
+          ['Línea 5 (Lugar del poder)', 'Lugar del poder y madurez plena; autoridad serena, visión de conjunto y justicia.'],
+          ['Línea 6 (Tope)', 'Exceso o final de ciclo; agotamiento de la fase, llamado al desapego o renacimiento.'],
+        ],
+        footnote: 'Las líneas 2 y 5 representan los centros armónicos de cada trigrama.',
+      },
+      {
+        title: 'Tabla 2: Figura (d) — Los ocho trigramas fundamentales (Ba Gua)',
+        headers: ['Trigrama', 'Nombre Pinyin (Wade-Giles)', 'Imagen natural', 'Cualidad', 'Movimiento'],
+        rows: [
+          [{ trigram: 'Qián' }, "Qián (Ch'ien) ☰", 'Cielo', 'Lo Creativo', 'Fuerza generadora, iniciativa pura'],
+          [{ trigram: 'Kūn' }, "Kūn (K'un) ☷", 'Tierra', 'Lo Receptivo', 'Entrega, sustento, docilidad fecunda'],
+          [{ trigram: 'Zhèn' }, 'Zhèn (Chen) ☳', 'Trueno', 'Lo Suscitante', 'Despertar, conmoción, impulso inicial'],
+          [{ trigram: 'Kǎn' }, "Kǎn (K'an) ☵", 'Agua', 'Lo Abismal', 'Peligro, profundidad, flujo constante'],
+          [{ trigram: 'Gèn' }, 'Gèn (Ken) ☶', 'Montaña', 'El Aquietamiento', 'Quietud, discernimiento del límite'],
+          [{ trigram: 'Xùn' }, 'Xùn (Sun) ☴', 'Viento / Madera', 'Lo Suave', 'Penetración sutil, constancia flexible'],
+          [{ trigram: 'Lí' }, 'Lí (Li) ☲', 'Fuego', 'Lo Adherente', 'Claridad, lucidez consciente'],
+          [{ trigram: 'Duì' }, 'Duì (Tui) ☱', 'Lago', 'Lo Sereno', 'Alegría compartida, apertura comunicativa'],
+        ],
+        footnote: 'En la app se consultan tocando la pestaña «Estructura de Trigramas».',
+      },
     ],
     carlitosCallout: {
-      id: 'carlitos-cap4-coaching',
-      title: 'Regla de Oro de Carlitos:',
-      variant: 'marginalia',
-      text: 'El oráculo no es un amo al que obedecer; es un anciano sabio al que consultas en la encrucijada del bosque. Si el anciano te dice que el puente está quebrado, no te está prohibiendo cruzar el río: te está advirtiendo que prepares tu balsa o aprendas a nadar.'
+      id: 'carlitos-cap4-22',
+      title: 'Contraste entre los Hexagramas 63 y 64:',
+      variant: 'alchemical',
+      text: 'Fijate en la danza de los trigramas: en el hexagrama 63 (Agua sobre Fuego, Después de la Consumación), la olla está al fuego y todo parece resuelto, pero ese equilibrio perfecto ya empieza a enfriarse. En el hexagrama 64 (Fuego sobre Agua, Antes de la Consumación), el fuego arde arriba y el agua fluye abajo: la tarea está pendiente y el viaje vuelve a empezar.'
     }
+  },
+  {
+    pageNumber: 23,
+    chapterId: 4,
+    sectionTitle: 'Capítulo 4 — El I Ching',
+    pageTitle: 'Una tirada completa: el caso del prólogo de Jung',
+    subtitle: 'Hexagrama 50 (El Caldero), mutación de líneas 2 y 3, y la tendencia hacia el Hexagrama 35',
+    contentType: 'iching',
+    keyTerms: ['Hexagrama 50 (Dǐng)', 'Hexagrama 35 (Jìn)', 'Líneas 2 y 3 Mutantes', 'Plantilla de Decisión'],
+    hexagramFigure: {
+      lines: [8, 9, 9, 7, 8, 7],
+      showDerived: true,
+      primaryName: '50. El Caldero (Dǐng / Ting)',
+      derivedName: '35. El Progreso (Jìn / Chin)',
+      highlightLines: [2, 3],
+      caption: 'Figura (e): Ejemplo trabajado del prólogo de Jung (1949). Hexagrama 50 (Dǐng / Ting) con líneas mutantes en las posiciones 2 y 3, transformándose en el hexagrama 35, El Progreso (Jìn / Chin).',
+    },
+    paragraphs: [
+      'Examinemos una tirada completa siguiendo las pantallas del folio 21 con el caso histórico del prólogo de Jung de 1949. Al preguntar qué opinaba el libro sobre presentarlo a Occidente, el presente fue el Hexagrama 50, El Caldero (*Dǐng* / *Ting*), con líneas mutantes en las posiciones 2 y 3, orientando su tendencia hacia el Hexagrama 35, El Progreso (*Jìn* / *Chin*).',
+      'En la pantalla del presente, el Juicio declara: «El Caldero. Suprema ventura. Éxito». La Imagen establece: «Fuego sobre madera: la imagen de El Caldero. Así el noble rectifica su posición consolidando su destino». El caldero es la vasija ritual donde los alimentos crudos se cocinan y consagran para nutrir a la comunidad: el libro mismo concebido como alimento espiritual para Occidente.',
+      'En *Tus Líneas Mutantes*, leemos de abajo hacia arriba:\nLínea 2 (nueve en el segundo puesto): «En el caldero hay alimento. Mis compañeros están envidiosos, pero no pueden perjudicarme. Ventura». Revela un valor auténtico que no sufre daño.\nLínea 3 (nueve en el tercer puesto): «El asa del caldero está rota. Se ve impedido en su marcha. La grasa del faisán no se come. Mas cae la lluvia que apaga el ardor: arrepentimiento se desvanece. Al final llega la ventura». Muestra el obstáculo inicial hasta que la situación madura.',
+      'En la pestaña *Tendencia*, el Hexagrama 35 anuncia el avance y expansión luminosa de la obra. Concluimos con la plantilla de tres partes (rotulada como lectura ilustrativa y vinculada a las secciones de Interpretación Rápida):\n*La situación es:* una obra con alimento espiritual valioso pero de difícil asimilación inicial.\n*El momento pide:* rectificar la posición interna con paciencia y sostener la tarea sin resentimiento.\n*El riesgo es:* apresurarse o frustrarse por el recelo inicial antes de que madure el progreso.'
+    ],
+    carlitosCallout: {
+      id: 'carlitos-cap4-23',
+      title: 'La vasija nutricia del Caldero:',
+      variant: 'alchemical',
+      text: 'El caldero es el corazón de la alquimia: no rechaza los ingredientes crudos ni la leña quemada, sino que los cocina a fuego lento. Jung vio en este hexagrama que el I Ching se ofrecía como una vasija nutricia para quienes buscan integrar su psique.'
+    }
+  },
+  {
+    pageNumber: 24,
+    chapterId: 4,
+    sectionTitle: 'Capítulo 4 — El I Ching',
+    pageTitle: 'Del texto a la decisión: usar sin abusar',
+    subtitle: 'Límites éticos de la consulta, uso metódico del historial y el contraste a tres semanas',
+    contentType: 'text',
+    keyTerms: ['Ética de Consulta', 'Historial de la App', 'Nota Personal', 'Contraste a Tres Semanas'],
+    paragraphs: [
+      'El uso del oráculo se sostiene sobre una ética de responsabilidad. La regla fundamental es no delegar la decisión: el I Ching reencuadra la escena y te ofrece un espejo simbólico, pero la elección y sus consecuencias son tuyas. Realizá una sola consulta por tema; repreguntar de inmediato para forzar una respuesta complaciente desvirtúa la lectura y genera ruido.',
+      'Asimismo, rigen límites estrictos: no consultar por terceros a sus espaldas vulnerando su autonomía; jamás sustituir con el oráculo diagnósticos médicos, asesoramiento legal ni decisiones financieras; y ante estados de angustia aguda o desborde emocional, no tirar monedas: detenerse, serenar el cuerpo y conversar con un profesional o una persona cercana.',
+      'Para el seguimiento, utilizá la sección *Historial* de la app, que conserva las últimas diez consultas y permite la opción *Proteger consulta* para que no se borren. Registrá en el campo *Nota personal* la frase de tres partes del folio 23. Realizá un contraste a tres semanas: releé tu nota antes de volver a consultar sobre esa situación.'
+    ],
+    carlitosCallout: {
+      id: 'carlitos-cap4-24',
+      title: 'El hexagrama 64 y la tarea inconclusa:',
+      variant: 'carlitos',
+      text: 'El I Ching concluye con el hexagrama 64, Wèi Jì (Antes de la Consumación), donde el zorro joven cruza el agua y moja su cola al final. El libro no promete un cierre definitivo ni una perfección estática: te recuerda que toda conclusión es el inicio de una nueva travesía.'
+    }
+  },
+  {
+    pageNumber: 25,
+    chapterId: 4,
+    sectionTitle: 'Capítulo 4 — El I Ching',
+    pageTitle: 'Práctica guiada: tu primera tirada',
+    subtitle: 'Protocolo paso a paso en siete estaciones y registro personal para tu bitácora',
+    contentType: 'exercise',
+    keyTerms: ['Protocolo de Tirada', 'Siete Estaciones', 'Registro de Bitácora', 'Fórmula de Tres Partes'],
+    paragraphs: [
+      'Esta práctica guiada reúne el método para consultar el oráculo con lucidez y criterio ético. Tomate diez minutos en silencio para recorrer cada una de las siete estaciones y registrar tu síntesis personal.'
+    ],
+    exerciseData: {
+      id: 'ex-primera-tirada-iching',
+      title: 'Práctica Guiada — Tu Primera Tirada de I Ching',
+      objective: 'Realizar una consulta completa con la app del curso, formular una pregunta abierta, registrar las pantallas de presente y tendencia, redactar la frase de tres partes y fijar la fecha de contraste a tres semanas.',
+      steps: [
+        {
+          stepNumber: 1,
+          title: 'Delimitar la situación',
+          instruction: 'Elegí un dilema actual personal o laboral donde tengas poder de decisión y necesites mayor perspectiva.',
+        },
+        {
+          stepNumber: 2,
+          title: 'Escribir la pregunta',
+          instruction: 'Redactá una pregunta abierta orientada a tu actitud («¿Qué actitud conviene cultivar ante...?») sin buscar predicciones ni sí/no.',
+        },
+        {
+          stepNumber: 3,
+          title: 'Abrir la app',
+          instruction: 'Entrá a la app de I Ching del curso y elegí una de las 4 categorías o seleccioná Consulta abierta.',
+        },
+        {
+          stepNumber: 4,
+          title: 'Tirar las monedas',
+          instruction: 'Pulsá Tirar monedas línea por línea seis veces consecutivas, prestando atención a cada valor generado.',
+        },
+        {
+          stepNumber: 5,
+          title: 'Leer en orden metódico',
+          instruction: 'Revisá la Interpretación Rápida, profundizá en El Juicio y La Imagen, y leé tus líneas mutantes de abajo hacia arriba.',
+        },
+        {
+          stepNumber: 6,
+          title: 'Redactar la frase y guardar',
+          instruction: 'Elaborá la síntesis («La situación es... / El momento pide... / El riesgo es...») y guardala en Nota personal de la app.',
+        },
+        {
+          stepNumber: 7,
+          title: 'Fijar fecha de contraste',
+          instruction: 'Marcá en tu calendario una fecha a tres semanas para revisar la nota y verificar cómo evolucionó tu decisión.',
+        },
+      ],
+      exampleLabel: 'Ejemplo ilustrativo:',
+      applicationExample: 'Pregunta: «¿Qué actitud conviene cultivar ante la propuesta de liderar este nuevo proyecto?». Presente: Hexagrama 50 con línea 2 mutante; Tendencia: Hexagrama 56. Frase registrada: «La situación es que cuento con los recursos para el rol; el momento pide humildad y sostén de mi centro; el riesgo es aislarme por temor al qué dirán». Contraste: agendado a los 21 días.',
+      fields: [
+        {
+          key: 'iching_pregunta_personal',
+          label: '1. Pregunta formulada (abierta y sin predicción):',
+          placeholder: '¿Qué actitud conviene cultivar ante...?',
+        },
+        {
+          key: 'iching_hex_presente',
+          label: '2. Hexagrama presente y líneas mutantes:',
+          placeholder: 'Ej. Hexagrama 50, línea 2 mutante',
+        },
+        {
+          key: 'iching_hex_tendencia',
+          label: '3. Hexagrama de tendencia:',
+          placeholder: 'Ej. Hexagrama 35, El Progreso',
+        },
+        {
+          key: 'iching_frase_sintesis',
+          label: '4. Frase de tres partes (La situación es... / El momento pide... / El riesgo es...):',
+          placeholder: 'La situación es... El momento pide... El riesgo es...',
+          multiline: true,
+        },
+        {
+          key: 'iching_fecha_contraste',
+          label: '5. Fecha de contraste a tres semanas:',
+          placeholder: 'Ej. 25 de noviembre',
+        },
+      ],
+    },
   },
 
   // ==========================================
-  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 23 A 26)
+  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 26 A 29)
   // ==========================================
   {
-    pageNumber: 23,
+    pageNumber: 26,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 1: Bitácora de Sueños en Cuatro Actos',
@@ -852,7 +954,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 24,
+    pageNumber: 27,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
@@ -902,7 +1004,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 25,
+    pageNumber: 28,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
@@ -954,7 +1056,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 26,
+    pageNumber: 29,
     chapterId: 5,
     sectionTitle: 'El Manifiesto de la Completitud',
     pageTitle: 'La Gran Coniunctio y el Compromiso Ético',
@@ -963,7 +1065,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     keyTerms: ['Ganzheit / Completitud', 'Coniunctio Oppositorum', 'Lapis Philosophorum', 'El Fuego y el Mate'],
     paragraphs: [
       'Hemos recorrido las páginas de este manual por el fascinante segundo territorio de la mente profunda y las enseñanzas de Carlitos. Hemos recorrido un panorama de la Sombra Dorada, el Ánima y el Ánimus, la tensión entre el viejo Senex y el muchacho Puer, y aprendido a escuchar el teatro de cuatro actos de nuestros sueños nocturnos.',
-      'Asimismo, nos atrevimos a abrir la ventana al escarabajo de la sincronicidad y arrojamos las tres monedas de bronce del I Ching para que el oráculo nos devolviera la verdad desnuda de nuestro corazón en el momento presente.',
+      'Asimismo, nos atrevimos a abrir la ventana al escarabajo de la sincronicidad y aprendimos a consultar el I Ching con lucidez ética: formular una pregunta auténtica, tirar las monedas, leer el presente y su tendencia, y tomar una decisión propia.',
       'Ahora, la puerta del estudio de Küsnacht vuelve a quedar en silencio. El fuego de la chimenea crepita suavemente en la penumbra. Carlitos toma su pipa de brezo, le da una última cebada al mate argentino y te mira a los ojos con esa intensidad serena que solo tienen aquellos que han mirado a la muerte y al alma sin pestañear.',
       '"Recordá siempre esto —te dice con voz tranquila—: la meta de tu existencia humana jamás fue la perfección. La perfección es una trampa estéril del ego que busca escapar del sufrimiento. Tu verdadera meta es la *completitud* (*Ganzheit*). Completitud significa abrazar tu luz y tu barro, sostener la tensión entre tus opuestos sin quebrarte, y tener el coraje de caminar tu propio mito con la cabeza erguida."',
       'El viaje no termina aquí; apenas está comenzando. Que los símbolos de tus sueños sean tus antorchas, que las sincronías sean las piedras de tu puente, y que el recuerdo de Carlitos sea ese compañero entrañable que te susurra en la noche: *Despertá, caminá y sé quien verdaderamente sos*.'

@@ -15,6 +15,8 @@ import {
 } from '../VintageSvgIcons';
 import { BookOpen, Layers, Edit3, HelpCircle } from 'lucide-react';
 
+import { HexagramFigure, LineSymbol, TrigramDrawing } from '../HexagramFigure';
+
 interface EbookPageProps {
   pageData: EbookPageData;
   fontSize?: 'sm' | 'md' | 'lg';
@@ -35,13 +37,7 @@ const SINGLE_FOLIO_CLOSINGS: Record<number, FolioIntegrationData> = {
     reflectionQuestion: '¿En cuál de las tres categorías de la matriz reconoces tus experiencias sincrónicas más potentes?',
     actionGuideline: 'Revisa tu historial personal y anota al menos un evento en cada fila de la matriz para verificar el patrón.',
   },
-  20: {
-    title: 'Brújula del Ba Gua • Integración de los Ocho Vientos',
-    quote: '«Quien domina los ocho trigramas en su propia psique no teme el movimiento de las estaciones ni el cambio del destino.»',
-    reflectionQuestion: '¿Cuál de las ocho funciones arquetípicas está más desatendida en tu vida cotidiana actual?',
-    actionGuideline: 'Identifica el trigrama complementario a tu tendencia habitual y formula una acción concreta para integrarlo esta semana.',
-  },
-  24: {
+  27: {
     title: 'Auditoría Sincrónica • Registro y Verificación',
     quote: '«La coincidencia no se busca con avidez; se recibe con la serenidad de quien sabe que el significado ya está allí.»',
     reflectionQuestion: '¿Qué sesgo de confirmación sueles proyectar sobre los eventos diarios y cómo puedes purificar tu registro?',
@@ -54,6 +50,27 @@ export const EbookPage: React.FC<EbookPageProps> = ({
   fontSize = 'md',
   fontFamily = 'old-standard',
 }) => {
+  const [workbookValues, setWorkbookValues] = React.useState<Record<string, string>>(() => {
+    try {
+      const saved = localStorage.getItem('ebook_carlitos_workbook');
+      return saved ? JSON.parse(saved) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  const handleFieldChange = (key: string, value: string) => {
+    setWorkbookValues((prev) => {
+      const next = { ...prev, [key]: value };
+      try {
+        localStorage.setItem('ebook_carlitos_workbook', JSON.stringify(next));
+      } catch {
+        // ignore storage errors
+      }
+      return next;
+    });
+  };
+
   const fontClassMap = {
     playfair: 'font-playfair',
     baskerville: 'font-baskerville',
@@ -504,7 +521,75 @@ export const EbookPage: React.FC<EbookPageProps> = ({
         </div>
       )}
 
-      {/* Exercise / Protocol (Folios 23, 24, 25) */}
+      {/* Hexagram Structural Figure (Folios 20, 23) */}
+      {pageData.hexagramFigure && (
+        <HexagramFigure
+          lines={pageData.hexagramFigure.lines}
+          showDerived={pageData.hexagramFigure.showDerived}
+          annotate={pageData.hexagramFigure.annotate}
+          caption={pageData.hexagramFigure.caption}
+          primaryName={pageData.hexagramFigure.primaryName}
+          derivedName={pageData.hexagramFigure.derivedName}
+          highlightLines={pageData.hexagramFigure.highlightLines}
+        />
+      )}
+
+      {/* Reference Structural Tables (Folios 20, 21, 22) */}
+      {pageData.referenceTables && pageData.referenceTables.map((tbl, tblIdx) => (
+        <div key={tblIdx} className="my-3 overflow-x-auto border-2 border-[#5a4022] bg-[#ebdcb8] shadow-md">
+          {tbl.title && (
+            <div className="bg-[#17120d] text-[#d4af37] px-3 py-1 font-playfair font-bold text-xs uppercase tracking-wider border-b border-[#aa8032]">
+              {tbl.title}
+            </div>
+          )}
+          <table className="w-full text-left font-old-standard text-xs border-collapse">
+            <thead>
+              <tr className="bg-[#231a12] text-[#ebdcb8] font-playfair uppercase tracking-wider text-[11px] border-b border-[#aa8032]">
+                {tbl.headers.map((h, hIdx) => (
+                  <th key={hIdx} className="p-2 border-r border-[#aa8032]/30 last:border-r-0">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {tbl.rows.map((row, rIdx) => (
+                <tr
+                  key={rIdx}
+                  className={`border-b border-[#5a4022]/30 ${
+                    rIdx % 2 === 0 ? 'bg-[#dfcea6]/40' : 'bg-[#ebdcb9]/60'
+                  }`}
+                >
+                  {row.map((cell, cIdx) => (
+                    <td key={cIdx} className="p-2 border-r border-[#5a4022]/30 last:border-r-0 align-middle">
+                      {typeof cell === 'string' ? (
+                        renderFormattedText(cell)
+                      ) : 'line' in cell ? (
+                        <div className="flex items-center gap-2">
+                          <LineSymbol val={cell.line} width={70} height={12} strokeWidth={4} />
+                          <span className="font-mono text-[10px] font-bold text-[#7a5820]">{cell.line}</span>
+                        </div>
+                      ) : 'trigram' in cell ? (
+                        <div className="flex items-center gap-2">
+                          <TrigramDrawing name={cell.trigram} width={36} height={22} />
+                          {cell.name && <span className="font-bold text-xs">{cell.name}</span>}
+                        </div>
+                      ) : null}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          {tbl.footnote && (
+            <div className="p-1.5 bg-[#dfcea6]/70 border-t border-[#5a4022]/30 font-old-standard italic text-[11px] text-[#3a281c]">
+              {renderFormattedText(tbl.footnote)}
+            </div>
+          )}
+        </div>
+      ))}
+
+      {/* Exercise / Protocol (Folios 25, 26, 27, 28) */}
       {pageData.exerciseData && (
         <div className="p-3.5 sm:p-4 bg-[#ebdcb8] border-2 border-[#5a4022] space-y-2.5 shadow-md rounded-xs">
           <div className="border-b border-[#5a4022]/30 pb-1.5 space-y-0.5">
@@ -555,6 +640,42 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               {pageData.exerciseData.applicationExample}
             </p>
           </div>
+
+          {/* Interactive Personal Recording Fields */}
+          {pageData.exerciseData.fields && pageData.exerciseData.fields.length > 0 && (
+            <div className="p-3 bg-[#fbf7ee] border border-[#8f6e28]/60 rounded-xs space-y-2 mt-2">
+              <div className="font-playfair font-bold text-xs uppercase tracking-wider text-[#17120d] border-b border-[#8f6e28]/30 pb-1 flex items-center justify-between">
+                <span>Espacio de Registro Personal:</span>
+                <span className="font-mono text-[9px] text-[#7a5820] font-normal">Se guarda automáticamente</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {pageData.exerciseData.fields.map((field) => (
+                  <div key={field.key} className={`space-y-0.5 ${field.multiline ? 'sm:col-span-2' : ''}`}>
+                    <label className="font-mono text-[10px] uppercase font-bold text-[#7a5820] block">
+                      {field.label}
+                    </label>
+                    {field.multiline ? (
+                      <textarea
+                        value={workbookValues[field.key] || ''}
+                        onChange={(e) => handleFieldChange(field.key, e.target.value)}
+                        placeholder={field.placeholder}
+                        rows={2}
+                        className="w-full p-1.5 text-xs font-old-standard bg-white border border-[#5a4022]/30 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                      />
+                    ) : (
+                      <input
+                        type="text"
+                        value={workbookValues[field.key] || ''}
+                        onChange={(e) => handleFieldChange(field.key, e.target.value)}
+                        placeholder={field.placeholder}
+                        className="w-full p-1.5 text-xs font-old-standard bg-white border border-[#5a4022]/30 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
 
