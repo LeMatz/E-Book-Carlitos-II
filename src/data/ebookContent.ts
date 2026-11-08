@@ -43,15 +43,15 @@ export class ChaptersMetaData {
       title: 'Capítulo 4 — El Oráculo del I Ching y la Mente Simbólica',
       subtitle: 'El Libro de las Mutaciones, la consulta reflexiva y la decisión ética con la app',
       startPage: 18,
-      endPage: 26,
+      endPage: 25,
       iconName: 'grid',
     },
     {
       chapterId: 5,
       title: 'Capítulo 5 — Cuaderno de Trabajo & Bitácora Alquímica',
       subtitle: 'Protocolos de sueños, sincronías y el Juego del Tao',
-      startPage: 27,
-      endPage: 30,
+      startPage: 26,
+      endPage: 29,
       iconName: 'edit-3',
     },
   ];
@@ -621,16 +621,16 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     contentType: 'text',
     keyTerms: ['Mapa Lineal', 'Seis Estaciones', 'De la Pregunta a la Decisión', 'Visión Panorámica'],
     paragraphs: [
-      'Consultar el I Ching no es un acto fragmentario ni adivinación pasiva: es una experiencia continua y rigurosa que une una inquietud viva en tu mente con una decisión ética en el mundo real. Comprender este trayecto de punta a punta antes de entrar en los detalles técnicos te permite captar la lógica viva que enlaza sus elementos cardinales: la pregunta reflexiva, la tirada de monedas, las seis líneas, los dos trigramas, el presente, las mutaciones y la tendencia final.',
-      'El viaje se abre con una **pregunta abierta** sobre qué actitud cultivar frente a una encrucijada real. Luego realizás la **tirada**: arrojás tres monedas seis veces consecutivas (o empleás la app incluida en el curso como accesorio práctico de cálculo). Cada tiro suma sus valores de abajo hacia arriba: si la suma es 7 u 8, la línea es fija (yang o yin); si es 9 o 6, la energía llega a su punto culminante y la línea muta, preparándose para transformarse en su opuesto.',
-      'Las seis líneas levantadas forman el **hexagrama presente**, dividido en dos trigramas: el inferior (tu disposición interna, emociones y recursos) y el superior (las presiones, oportunidades y vínculos del entorno). Para interpretarlo, examinás su **Juicio** (la arquitectura profunda de la situación) y su **Imagen** (la enseñanza de las fuerzas naturales para la conducta del noble). Si tu tirada arrojó **líneas mutantes**, leés sus advertencias específicas como los focos vivos de máxima tensión y aprendizaje ético en tu situación singular.',
-      'Al transmutar las líneas mutantes en sus polaridades contrarias, emerge un segundo hexagrama: la **tendencia** o cauce natural hacia donde evoluciona el momento (nunca un destino fatal ni predeterminado). El ciclo se completa integrando todo en una síntesis propia en tres partes: *la situación es*, *el momento pide* y *el riesgo es*, fijando un contraste a tres semanas en tu bitácora. De este modo, la consulta abandona cualquier velo supersticioso y se convierte en una herramienta concreta de discernimiento lúcido.'
+      'Consultar el I Ching no es un acto fragmentario ni una adivinación pasiva: es una experiencia continua y rigurosa que une una inquietud viva en tu mente con una decisión ética en el mundo real. Comprender este trayecto de punta a punta antes de entrar en los detalles técnicos te permite captar la lógica viva que enlaza sus seis estaciones: la pregunta reflexiva, la tirada de monedas, la lectura del presente, el examen de las mutaciones, la tendencia hacia el futuro y el cierre en la bitácora.',
+      'El viaje arranca en la intimidad de la **pregunta abierta**: delimitar qué actitud interior cultivar ante una encrucijada concreta. Luego pasás al **acto del lanzamiento**: arrojar tres monedas seis veces consecutivas (o utilizar la app del curso para realizar el cálculo). Cada tirada suma sus valores de abajo hacia arriba: los resultados 7 u 8 fijan líneas estables (yang o yin), mientras que los extremos 6 o 9 señalan energías en máxima tensión que se preparan para mutar en su polaridad opuesta.',
+      'Al completarse las seis líneas, contemplás la **fotografía del presente**: una configuración formada por un trigrama inferior (tu disposición anímica interior) y un trigrama superior (las presiones y oportunidades del entorno). En este punto reconocés las fuerzas activas en tu momento. Si surgieron líneas mutantes, identificás allí los focos precisos de conflicto o aprendizaje que reclaman tu discernimiento.',
+      'El arco se consuma al proyectar la **tendencia de cambio**: al voltear las líneas mutantes emerge el hexagrama derivado, que no profetiza un desenlace fatal sino el cauce hacia donde gravitan los acontecimientos. La experiencia concluye integrando todo en una **síntesis de tres partes** (*la situación es*, *el momento pide* y *el riesgo es*) y agendando un contraste a tres semanas en tu bitácora personal. Así, la consulta se consolida como un ejercicio lúcido de autogobierno.'
     ],
     secondaryCallout: {
       id: 'esquema-seis-estaciones',
       title: 'Las Seis Estaciones del Proceso de Consulta:',
       variant: 'context_note',
-      text: '1. Pregunta abierta sobre tu actitud interior. / 2. Tirada de tres monedas seis veces de base a cima. / 3. Hexagrama presente: Juicio (estructura) e Imagen (conducta). / 4. Examen de líneas mutantes como puntos de tensión activa. / 5. Hexagrama derivado: tendencia evolutiva del momento. / 6. Síntesis en tres partes y fecha de contraste a 21 días.'
+      text: '1. Pregunta abierta sobre tu actitud interior. / 2. Tirada de tres monedas seis veces de base a cima. / 3. Hexagrama presente: discernimiento de fuerzas y entorno. / 4. Examen de líneas mutantes como focos de tensión activa. / 5. Hexagrama derivado: tendencia evolutiva del momento. / 6. Síntesis en tres partes y fecha de contraste a 21 días.'
     },
     carlitosCallout: {
       id: 'carlitos-cap4-19-mapa',
@@ -728,32 +728,18 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'La estructura de la lectura: juicio, imagen y mutaciones',
-    subtitle: 'Componentes del texto canónico, líneas singulares y calificaciones éticas de conducta',
-    contentType: 'table',
-    keyTerms: ['Interpretación Rápida', 'Juicio e Imagen', 'Líneas Mutantes', 'Calificaciones Éticas'],
+    subtitle: 'Cómo decodificar los textos canónicos, las metáforas clásicas y las calificaciones de conducta',
+    contentType: 'text',
+    keyTerms: ['El Juicio (Tuàn)', 'La Imagen (Xiàng)', 'Metáforas Arcaicas', 'Calificaciones Éticas'],
     paragraphs: [
-      'Toda lectura clásica del I Ching se organiza en cuatro capas sucesivas. La primera es la visión panorámica: comprender el momento presente, la actitud sugerida y la dirección en la que gravita el cambio (lo que la app del curso sintetiza en su sección de *Interpretación Rápida* para una orientación ágil). Pero el núcleo del oráculo late en el texto canónico y en tus líneas singulares.',
-      'En el hexagrama presente encontrás dos pilares: *El Juicio* (la arquitectura profunda de la situación) y *La Imagen* (la lección moral de los elementos naturales, orientada a la conducta del noble). Debajo se examinan *Tus Líneas Mutantes*, leídas de abajo hacia arriba: son las etapas vivas de tu caso particular y los focos de tensión exacta que reclaman tu discernimiento.',
-      'Al transmutar esas líneas, surge el *Hexagrama Derivado*, que señala la tendencia de evolución de la situación. Aclaración metodológica: distintas ediciones usan traducciones variadas; lo decisivo es interpretar siempre la estructura: el patrón arquetípico, la posición y la conducta ética sugerida.'
-    ],
-    referenceTables: [
-      {
-        title: 'Calificaciones de conducta en el texto canónico',
-        headers: ['Término canónico', 'Qué indica para tu conducta'],
-        rows: [
-          ['Ventura', 'La actitud sintoniza con el orden del momento; avanzar con confianza serena.'],
-          ['Desventura', 'La acción planeada va a contramano de la situación; riesgo de tropiezo si insistís.'],
-          ['Sin falta', 'No hay error ético en tu postura ante la dificultad; mantener la rectitud interior.'],
-          ['Arrepentimiento', 'Señal de desvío temprano; momento propicio para rectificar el rumbo a tiempo.'],
-          ['Humillación', 'Pérdida momentánea de compostura o tropiezo menor; exige humildad y aprendizaje.'],
-          ['Propicio (Es propicio...)', 'El contexto acompaña la iniciativa (ej. «cruzar las grandes aguas»); actuar sin dudar.'],
-        ],
-        footnote: 'Estas valoraciones no son sentencias fatales sobre tu persona, sino calificaciones de la conducta sugerida.',
-      },
+      'El texto canónico que acompaña a cada hexagrama no es un bloque homogéneo de prosa, sino un tejido compuesto por estratos poéticos y filosóficos complementarios. Para no perderse en la lectura, el consultante debe distinguir qué función cumple cada elemento: el **Juicio** (*Tuàn*) diagnostica la arquitectura general de la época; la **Imagen** (*Xiàng*) deduce una pauta ética inspirada en los elementos de la naturaleza; y las **Líneas Mutantes** (*Yáo*) señalan advertencias puntuales para la posición exacta donde te encontrás.',
+      'El Juicio define el "clima" estructural del tiempo: te aclara si el momento favorece la perseverancia silenciosa, la audacia o la espera receptiva. La Imagen, por su parte, observa cómo interactúan los dos elementos naturales del hexagrama (el fuego que asciende, el agua que fluye, la montaña que aquieta) y deduce de esa danza cósmica la conducta que debe adoptar quien busca la nobleza interior. No te dice qué te va a pasar, sino qué actitud encarna la sabiduría ante ese paisaje.',
+      'Asimismo, el texto clásico emplea metáforas arcaicas que no deben tomarse al pie de la letra: fórmulas como «es propicio cruzar las grandes aguas» aluden a asumir un riesgo trascendente o iniciar un proyecto postergado; «ver al gran hombre» señala la conveniencia de consultar a alguien de mayor experiencia o escuchar la voz rectora del propio Self; y «el caballo extraviado» representa la confianza en que lo propio regresará sin forzarlo.',
+      'Aclaración sobre las traducciones: distintas ediciones canónicas (Wilhelm, Baynes o las versiones de la app del curso) pueden variar en su vocabulario literal, utilizando sinónimos más modernos o accesibles. Lo determinante no es memorizar una redacción fija, sino comprender la estructura invariante: la correlación entre el patrón del momento, la posición que ocupás y la conducta sugerida para actuar con rectitud y sobriedad ante las circunstancias.'
     ],
     carlitosCallout: {
       id: 'curiosidad-tiradas-extremas',
-      title: 'Curiosidad: Casos especiales de tirada',
+      title: 'Casos Especiales • Hexagramas sin Mutación o con Seis Mutantes',
       variant: 'context_note',
       text: 'Si no surge ninguna línea mutante (hexagrama estable), la situación muestra fijeza o madurez y se leen exclusivamente El Juicio y La Imagen del presente. Si llegaran a mutar las seis líneas, en los hexagramas 1 y 2 rige la regla tradicional 用九 (yòng jiǔ) / 用六 (yòng liù); en los demás casos, se lee El Juicio del hexagrama derivado como tendencia evolutiva.'
     }
@@ -840,26 +826,6 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     pageNumber: 25,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'Del texto a la decisión: usar sin abusar',
-    subtitle: 'Límites éticos de la consulta, uso metódico del historial y el contraste a tres semanas',
-    contentType: 'text',
-    keyTerms: ['Ética de Consulta', 'Historial de la App', 'Nota Personal', 'Contraste a Tres Semanas'],
-    paragraphs: [
-      'El uso del oráculo se sostiene sobre una ética de responsabilidad. La regla fundamental es no delegar la decisión: el I Ching reencuadra la escena y te ofrece un espejo simbólico, pero la elección y sus consecuencias son tuyas. Realizá una sola consulta por tema; repreguntar de inmediato para forzar una respuesta complaciente desvirtúa la lectura y genera ruido.',
-      'Asimismo, rigen límites estrictos: no consultar por terceros a sus espaldas vulnerando su autonomía; jamás sustituir con el oráculo diagnósticos médicos, asesoramiento legal ni decisiones financieras; y ante estados de angustia aguda o desborde emocional, no tirar monedas: detenerse, serenar el cuerpo y conversar con un profesional o una persona cercana.',
-      'Para el seguimiento, registrá en tu libreta o en el *Historial* de la app del curso (que guarda las últimas consultas y permite protegerlas) la frase de tres partes del folio 24 en el campo de notas personales. Realizá un contraste a tres semanas: releé tus conclusiones antes de volver a consultar sobre esa situación.'
-    ],
-    carlitosCallout: {
-      id: 'carlitos-cap4-25-consumacion',
-      title: 'El hexagrama 64 y la tarea inconclusa:',
-      variant: 'carlitos',
-      text: 'El I Ching concluye con el hexagrama 64, Wèi Jì (Antes de la Consumación), donde el zorro joven cruza el agua y moja su cola al final. El libro no promete un cierre definitivo ni una perfección estática: te recuerda que toda conclusión es el inicio de una nueva travesía.'
-    }
-  },
-  {
-    pageNumber: 26,
-    chapterId: 4,
-    sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Práctica guiada: tu primera tirada',
     subtitle: 'Protocolo paso a paso en siete estaciones y registro personal para tu bitácora',
     contentType: 'exercise',
@@ -942,10 +908,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 27 A 30)
+  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 26 A 29)
   // ==========================================
   {
-    pageNumber: 27,
+    pageNumber: 26,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 1: Bitácora de Sueños en Cuatro Actos',
@@ -1002,7 +968,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 28,
+    pageNumber: 27,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
@@ -1052,7 +1018,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 29,
+    pageNumber: 28,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
@@ -1104,7 +1070,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 30,
+    pageNumber: 29,
     chapterId: 5,
     sectionTitle: 'El Manifiesto de la Completitud',
     pageTitle: 'La Gran Coniunctio y el Compromiso Ético',

@@ -37,12 +37,11 @@ export const INDICE_TITULOS: Record<number, string> = {
   22: 'La estructura de la lectura: juicio, imagen y mutaciones',
   23: 'Dos lentes para profundizar: posiciones y trigramas',
   24: 'Una tirada completa: el caso del prólogo de Jung',
-  25: 'Del texto a la decisión: usar sin abusar',
-  26: 'Práctica guiada: tu primera tirada',
-  27: 'Protocolo 1: Bitácora de Sueños en Cuatro Actos',
-  28: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
-  29: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
-  30: 'La Gran Coniunctio y el Compromiso Ético',
+  25: 'Práctica guiada: tu primera tirada',
+  26: 'Protocolo 1: Bitácora de Sueños en Cuatro Actos',
+  27: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
+  28: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
+  29: 'La Gran Coniunctio y el Compromiso Ético',
 };
 
 /**
