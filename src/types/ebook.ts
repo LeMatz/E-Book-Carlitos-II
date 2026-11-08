@@ -1,6 +1,7 @@
 export interface CarlitosCallout {
   id: string;
   title?: string;
+  tagline?: string;
   text: string;
   variant?: 'carlitos' | 'historical_quote' | 'marginalia' | 'glossary' | 'alchemical' | 'context_note' | 'left_callout' | 'iching';
   position?: 'left' | 'right' | 'full';

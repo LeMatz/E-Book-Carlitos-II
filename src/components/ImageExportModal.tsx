@@ -32,7 +32,7 @@ export const ImageExportModal: React.FC<ImageExportModalProps> = ({
 
   if (!isOpen) return null;
 
-  // Build the complete list of 29 pages
+  // Build the complete list of ebook pages
   const allExportItems: PageExportItem[] = [
     {
       id: 'folio-portada',

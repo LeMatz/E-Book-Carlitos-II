@@ -43,15 +43,15 @@ export class ChaptersMetaData {
       title: 'Capítulo 4 — El Oráculo del I Ching y la Mente Simbólica',
       subtitle: 'El Libro de las Mutaciones, la consulta reflexiva y la decisión ética con la app',
       startPage: 18,
-      endPage: 25,
+      endPage: 26,
       iconName: 'grid',
     },
     {
       chapterId: 5,
       title: 'Capítulo 5 — Cuaderno de Trabajo & Bitácora Alquímica',
       subtitle: 'Protocolos de sueños, sincronías y el Juego del Tao',
-      startPage: 26,
-      endPage: 29,
+      startPage: 27,
+      endPage: 30,
       iconName: 'edit-3',
     },
   ];
@@ -84,8 +84,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-intro-1',
-      title: 'Carlitos dice junto al fuego:',
-      text: 'Quien entra al segundo territorio de la mente debe abandonar dos muletas: el escepticismo burlón de los que temen al asombro, y la credulidad infantil de los que confunden la magia con la evasión de la realidad. El alma es una realidad empírica rigurosa; tratala con el respeto que le tendrías a un océano.'
+      title: 'Criterio Epistemológico • Rigor y Apertura Simbólica',
+      text: 'El abordaje del inconsciente exige eludir dos trampas: el escepticismo reduccionista que niega lo numinoso y la credulidad ingenua que evade la realidad. La psique opera como un hecho empírico riguroso que debe investigarse con discernimiento crítico y respeto fenomenológico.'
     },
     secondaryCallout: {
       id: 'carlitos-intro-author-note',
@@ -150,8 +150,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-bio-bollingen',
-      title: 'Carlitos dice desde Bollingen:',
-      text: 'A veces me siento como un trozo de madera flotando en un río que no veo. Cuando amasás tu propio pan, encendés tu propio fuego y mirás las olas del lago sin un reloj en la muñeca, de pronto te das cuenta de que el alma nunca tuvo prisa por llegar a ninguna parte.'
+      title: 'Anotación Histórica • La Función Psíquica de Bollingen',
+      text: 'La edificación en piedra de Bollingen encarna la necesidad de desaceleración psicofísica para el trabajo analítico. Al prescindir de comodidades técnicas, Jung comprobó que la relación viva con las figuras arquetípicas exige silencio, lentitud y contacto elemental con la materia.'
     }
   },
   {
@@ -176,9 +176,9 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-bio-pauli',
-      title: 'Carlitos recuerda sus charlas con Pauli:',
+      title: 'Fundamento Epistolar • Entrelazamiento Psique-Materia',
       variant: 'carlitos',
-      text: 'Wolfgang me repetía a menudo que la física cuántica había llegado al mismo límite que nosotros: el observador y lo observado están entrelazados. La mente y la materia responden a un orden común que ninguna fórmula puramente mecánica puede agotar.'
+      text: 'El diálogo epistolar entre Jung y Wolfgang Pauli postuló que observador y observado están indisolublemente vinculados. Física cuántica y psicología profunda convergen en el reconocimiento de una base psicoide común que la causalidad mecanicista lineal no logra agotar.'
     }
   },
 
@@ -209,8 +209,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap1-sintesis',
-      title: 'Carlitos dice con una sonrisa serena:',
-      text: 'Los arquetipos son como corrientes profundas en un gran río: no podés pretender secar el río ni taparlo con las manos. Si no sabés nadar a la distancia adecuada, la corriente te arrastra; pero si aprendés a orientar la proa, la fuerza misma del agua te lleva a descubrir continentes enteros.'
+      title: 'Dinámica Arquetípica • Fuerzas del Inconsciente',
+      text: 'Los arquetipos son vectores autónomos de energía instintiva y numinosa. Intentar reprimirlos o someterlos provoca su irrupción descompensatoria; el trabajo de individuación consiste en orientar la proa consciente para navegar su caudal sin ser arrastrado por él.'
     }
   },
   {
@@ -256,8 +256,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap1-distancia',
-      title: 'Carlitos dice con gravedad:',
-      text: 'Tratar con un arquetipo es como pararse frente a una fogata en la noche del bosque. Si te quedás demasiado lejos proyectando tu calor en las sombras, te congelás de frío; pero si das un paso de más y te tirás de cabeza al fuego creyendo que sos la llama, te convertís en ceniza. La sabiduría consiste en sentarte a una distancia justa: la suficiente para abrigar tu alma sin quemar tu humanidad.'
+      title: 'Principio de Calibración • La Distancia Justa Yo-Arquetipo',
+      text: 'La relación con las imágenes numinosas exige una equidistancia precisa: la lejanía defensiva petrifica al Yo en la frialdad de la proyección, mientras que el acercamiento desmedido conduce a la inflación y a la pérdida de la voluntad soberana.'
     },
   },
   {
@@ -289,8 +289,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap1-inflacion',
-      title: 'Carlitos dice con picardía saludable:',
-      text: 'Cuando sientas la tentación irresistible de salvar al mundo entero antes de las cinco de la tarde, tomate una pausa, mirate los zapatos gastados y salí a regar las plantas del patio. El universo funcionó bastante bien millones de años antes de que nacieras, y se las arreglará sin que tengas que sostener el cielo con las manos.'
+      title: 'Función Homeostática • El Trickster contra la Inflación',
+      text: 'La inflación heroica del Yo —creerse el centro indispensable de la realidad— halla su correctivo natural en el humor y el tropiezo. El arquetipo del Trickster desmonta la grandilocuencia egóica recordándole a la conciencia su fragilidad y sus límites terrenales.'
     }
   },
   {
@@ -323,9 +323,9 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap1-psicoide',
-      title: 'Anotación de Archivo (Carlitos en Bollingen):',
+      title: 'Síntesis Conceptual • El Continuo Psicoide y Somático',
       variant: 'alchemical',
-      text: 'El arquetipo no es un pájaro encerrado en la jaula de tu cráneo. Es el aire que sostiene las alas del pájaro, la rama del árbol donde reposa y la roca donde ambos se posan al atardecer. Cuando aprendés a escuchar tu cuerpo con respeto, descubrís que la tierra entera piensa y sueña con vos.'
+      text: 'El arquetipo trasciende el confinamiento puramente mental: abarca tanto el polo superior del símbolo y el mito como el polo inferior del instinto biológico y la materia. Cuerpo y psique constituyen una unidad funcional en el tejido del Unus Mundus.'
     }
   },
   {
@@ -344,8 +344,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap1-self',
-      title: 'Carlitos dice con solemnidad:',
-      text: 'El Yo es el capitán del timón, pero el Self es el océano, el barco y la estrella del norte que marca el rumbo. No intentes mandar sobre el océano ni te tires por la borda: aprende a navegar sus corrientes con asombro, respeto y humildad.'
+      title: 'Estructura Arquetípica • El Eje Yo-Self y la Totalidad',
+      text: 'El Yo opera como el centro de la voluntad consciente, mientras que el Self constituye la matriz y la totalidad que lo contiene. El propósito de la individuación no es la soberanía aislada del intelecto, sino su reconciliación subordinada con el centro regulador de la psique.'
     }
   },
 
@@ -396,8 +396,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap2-diccionario',
-      title: 'Carlitos dice con picardía:',
-      text: 'Comprar un "diccionario de los sueños" para interpretar lo que tu alma te dice de noche es tan absurdo como usar una guía telefónica de Zúrich para declararle tu amor a una mujer. Te dará un montón de números, pero no sabrás cómo tocarle el corazón.'
+      title: 'Criterio Hermenéutico • La Polisemia Viva del Símbolo',
+      text: 'Los diccionarios oníricos prefijan significados estáticos que destruyen la naturaleza viva del símbolo. La interpretación rigurosa exige el método de amplificación: articular las asociaciones biográficas del soñador con los motivos míticos universales sin encasillarlos en fórmulas cerradas.'
     }
   },
   {
@@ -424,8 +424,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap2-estructura',
-      title: 'Consejo Práctico de Carlitos:',
-      text: 'Cuando anotes un sueño al despertar, no lo resumas con prisas. Separá en tu cuaderno: ¿Dónde empieza? ¿Cuál es el problema? ¿Dónde se complica todo? ¿Cómo termina? Si mirás la Lysis con atención, ahí está la tarea que la vida te pone para hoy.'
+      title: 'Guía Metódica • La Clave de la Lysis Onírica',
+      text: 'El desenlace o Lysis de un sueño contiene el núcleo del mensaje homeostático. Al registrar un sueño en cuatro actos, el análisis de cómo se resuelve o interrumpe la tensión dramática revela con exactitud la compensación que el inconsciente ofrece a la actitud diurna.'
     }
   },
   {
@@ -450,15 +450,15 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap2-imaginacion',
-      title: 'Nota de Advertencia de Carlitos:',
+      title: 'Ética de la Confrontación • Imaginación Activa',
       variant: 'alchemical',
-      text: 'La Imaginación Activa no es un juego de salón para pasar el rato. Si convocás a las figuras de tu abismo interior, hacelo con la seriedad con la que invitarías a un embajador extranjero a tu casa: con respeto absoluto, pero sin renunciar a tu soberanía.'
+      text: 'La Imaginación Activa no es fantasía recreativa: requiere convocar figuras autónomas del inconsciente y debatir con ellas sosteniendo con firmeza la posición ética del Yo despierto, sin someterse a sus demandas ni intentar manipular sus respuestas.'
     },
     secondaryCallout: {
       id: 'carlitos-prudencia-f13',
-      title: 'Nota de prudencia de Carlitos:',
+      title: 'Criterio Clínico y Deontológico:',
       variant: 'context_note',
-      text: 'Una aclaración ética indispensable: la imaginación activa, las sincronías y el oráculo son herramientas de autoconocimiento, jamás un sustituto de la psicoterapia o la atención médica. Si experimentás voces intrusivas, desrealización, disociación o pensamientos de daño, no te pongas a experimentar solo: consultá de inmediato a un profesional de la salud mental.'
+      text: 'Las técnicas de amplificación simbólica, sincronías y oráculo son herramientas de autoconocimiento, jamás un sustituto de la psicoterapia o la atención médica. Ante desrealización, disociación o angustia desbordante, debe suspenderse la autoexperimentación y acudir a un profesional de la salud mental.'
     }
   },
 
@@ -488,8 +488,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-escarabajo',
-      title: 'Carlitos dice recordando a la paciente:',
-      text: 'A veces el inconsciente es un maestro piadoso pero contundente: cuando ve que tus argumentos racionales te están ahogando en vida, golpea el vidrio de tu ventana con la fuerza de un milagro terrenal para obligarte a despertar.'
+      title: 'Función Clínica • Ruptura de la Coraza Intelectual',
+      text: 'El evento sincrónico de Küsnacht demuestra que la coincidencia acausal irrumpe con máxima eficacia cuando el aparato racional de la conciencia ha llegado a un callejón sin salida, abriendo un canal de afecto y sentido que destraba el proceso analítico.'
     }
   },
   {
@@ -536,8 +536,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-brujula',
-      title: 'Carlitos dice:',
-      text: 'No sé si el mundo responde; sé que vos respondés al mundo. Cuando estás alineado con lo profundo, cada coincidencia parece iluminar el camino; cuando te empecinás en forzar las cosas por vanidad, los tropiezos te recuerdan que frenes y vuelvas a mirar el mapa.'
+      title: 'Lectura de Campo • Sintonía y Umbral de Sentido',
+      text: 'La constelación de sincronicidades no responde a demandas voluntarias del ego, sino a umbrales de reorientación existencial. Funciona como un barómetro cualitativo que refleja si la conducta individual está alineada con el flujo integrador del Self.'
     }
   },
   {
@@ -574,23 +574,23 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-tabla',
-      title: 'Regla Metodológica de Carlitos:',
+      title: 'Criterio de Autenticidad • La Huella Numinosa',
       variant: 'marginalia',
-      text: 'Nunca fuerces una sincronicidad. Si tenés que retorcer la lógica para justificar que algo "es una señal", no lo es. La verdadera sincronicidad se reconoce por su huella numinosa: te deja mudo, con la piel de gallina y con la certeza íntima de que no estás solo en tu camino.'
+      text: 'Una genuina sincronicidad se distingue por su impacto afectivo inmediato y su resonancia de sentido ineludible. Si requiere justificaciones forzadas o gimnasia lógica, se trata de una proyección mental del deseo y no de una manifestación acausal del Unus Mundus.'
     }
   },
 
   // ==========================================
-  // CAPÍTULO 4 — EL ORÁCULO DEL I CHING Y LA MENTE SIMBÓLICA (PÁGINAS 18 A 25)
+  // CAPÍTULO 4 — EL ORÁCULO DEL I CHING Y LA MENTE SIMBÓLICA (PÁGINAS 18 A 26)
   // ==========================================
   {
     pageNumber: 18,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Jung y el Libro de las Mutaciones',
-    subtitle: 'El encuentro con Richard Wilhelm, el prólogo de 1949 y tres modos de comprender el oráculo',
+    subtitle: 'Richard Wilhelm, la sincronicidad y el oráculo como fotografía del tiempo cósmico',
     contentType: 'text',
-    keyTerms: ['Richard Wilhelm', 'Prólogo de 1949', 'Sincronicidad', 'Reencuadre Psicológico'],
+    keyTerms: ['Richard Wilhelm', 'Reloj del Universo', 'Fotografía de Fuerzas', 'Sincronicidad'],
     illustrationImage: {
       src: IMAGE_MANIFEST.ichingCoins,
       alt: 'Monedas de consulta del I Ching',
@@ -599,46 +599,97 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       aspect: 'landscape',
     },
     paragraphs: [
-      'En la década de 1920, Carl Gustav Jung profundizó en la obra de Richard Wilhelm, sinólogo y teólogo alemán que residió más de dos décadas en China traduciendo pacientemente las fuentes clásicas bajo la guía de maestros orientales. Wilhelm le transmitió una comprensión viva del *I Ching* (*Yì Jīng*, o *Libro de las Mutaciones*), concebido no como adivinación vulgar, sino como un mapa dinámico del cambio, la polaridad y los ritmos del tiempo.',
+      'En la década de 1920, Carl Gustav Jung profundizó en la obra de Richard Wilhelm, sinólogo y teólogo alemán que residió más de dos décadas en China traduciendo pacientemente las fuentes clásicas bajo la guía de maestros orientales. Wilhelm le transmitió una comprensión viva del *I Ching* (*Yì Jīng*, o *Libro de las Mutaciones*): no como una adivinación vulgar, sino como un mapa dinámico del cambio, la polaridad y los ritmos cualitativos de la naturaleza.',
+      'Para Jung, el I Ching opera como un **reloj del tiempo del universo** o una **fotografía instantánea que mide las fuerzas en juego**. Mientras la ciencia occidental mide el tiempo cuantitativamente (cuántos minutos u horas pasan), el pensamiento oriental lo comprende de forma cualitativa: cada instante posee una tonalidad psíquica y cósmica irrepetible. Al consultar el libro, la caída azarosa de las monedas captura un mapa de las energías activas en ese preciso segundo.',
       'En su prólogo de 1949 para la traducción inglesa de Cary F. Baynes, Jung afirmó que llevaba más de treinta años experimentando con esta técnica. Para presentar la obra a Occidente, decidió consultar al libro sobre el sentido de su propia publicación. Obtuvo el hexagrama 50, *Dǐng* (*Ting*, El Caldero), la vasija ritual de transformación espiritual. Formuló luego una segunda pregunta sobre su posición, con otro resultado elocuente.',
       /* [VERIFICAR: En el prólogo de 1949, la segunda consulta de Jung sobre su propia posición dio el Hexagrama 29 (K'an, El Abismo) con mutaciones, derivando al Hexagrama 59 (Huan, La Disolución). Conforme a la regla de contenido, no se mencionan números en el texto visible.] */
-      'Para comprender por qué funciona una consulta, existen tres posturas posibles: (a) la sincronicidad propuesta por Jung, como hipótesis de una conexión acausal entre la psique y el azar exterior; (b) el reencuadre psicológico, donde las imágenes del texto operan como estímulos estructurados que ordenan tus pensamientos; y (c) el azar puro sin significado intrínseco.',
-      'Para tu práctica cotidiana no necesitás decidir cuál de las tres posturas es la verdadera. El procedimiento funciona como un reencuadre estructurado que aclara tus decisiones, mientras que Jung sostenía la hipótesis sincrónica como una resonancia entre el estado interno y el instante en que caen las monedas.'
+      'Esta conexión descansa en la hipótesis de la **sincronicidad**: una coincidencia acausal y significativa entre la mente y los hechos exteriores. Existen tres formas de entenderlo: (a) la sincronicidad de Jung; (b) el reencuadre psicológico, donde los símbolos operan como espejos estructurados; y (c) el azar sin sentido. Para tu práctica no necesitás resolver la metafísica: el procedimiento funciona como una brújula lúcida para pensar y decidir.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap4-18',
-      title: 'Carlitos dice junto al fuego:',
+      title: 'Clave Conceptual • Sincronicidad y Tiempo Cualitativo',
       variant: 'carlitos',
-      text: 'No busques en el oráculo una certeza mágica que te ahorre pensar, che. El I Ching no te adivina el porvenir ni te da órdenes: te devuelve un espejo lúcido para que descubras qué estás sintiendo y decidas con responsabilidad.'
+      text: 'El I Ching no predice desenlaces fijos: opera como una fotografía instantánea del campo cósmico y psíquico. Mide la correlación acausal entre el estado interior del consultante y la constelación del momento presente, permitiendo reencuadrar la encrucijada con lucidez ética.'
     }
   },
   {
     pageNumber: 19,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'Antes de abrir la app: la pregunta',
-    subtitle: 'El arte de formular la consulta, las categorías operativas y el cuidado de no degradar el diálogo',
+    pageTitle: 'El mapa del viaje: la consulta de punta a punta',
+    subtitle: 'Narrativa lineal del proceso: de la pregunta interior a la lectura de las fuerzas y la decisión',
     contentType: 'text',
-    keyTerms: ['Pregunta Abierta', 'Consulta Abierta', 'Hexagrama 4 (Méng)', 'Ética de Consulta'],
+    keyTerms: ['Mapa Lineal', 'Seis Estaciones', 'De la Pregunta a la Decisión', 'Visión Panorámica'],
     paragraphs: [
-      'La consulta no arranca cuando tocás la pantalla del celular, sino en la claridad con que formulás tu pregunta. El libro exige una sola pregunta por tirada, redactada de forma abierta: indagar *cómo* abordar un desafío o *qué actitud* conviene cultivar. Las preguntas cerradas de sí o no y los pedidos de predicción anulan la función reflexiva del símbolo.',
-      'Un ejemplo constructivo sería: «¿Qué actitud interior me conviene sostener ante esta renegociación laboral para cuidar mi vocación?». En cambio, una mala formulación busca predicción pasiva: «¿Me van a aumentar el sueldo el mes que viene?». La primera te devuelve la iniciativa y la madurez; la segunda delega tu responsabilidad en una respuesta mágica.',
-      'Para orientarte, la app de I Ching del curso organiza sugerencias en cuatro categorías: *Decisiones y Encrucijadas*, *Vínculos y Relaciones*, *Autoconocimiento y Procesos Internos*, y *Proyectos y Trabajo*. Si atravesás un momento difuso y no encontrás palabras exactas, podés recurrir al modo de *Consulta abierta*, donde el oráculo refleja la cualidad general de tu presente.',
-      'Una regla esencial: no repitas la consulta sobre el mismo asunto hasta que las circunstancias reales hayan cambiado. El hexagrama 4, *Méng* (La Necedad Juvenil), advierte que consultar una y otra vez lo mismo degrada la lectura y confunde el discernimiento. Quien insiste por ansiedad no busca claridad, sino escuchar lo que su ego quiere oír.'
+      'Consultar el I Ching no es un acto fragmentario ni adivinación pasiva: es una experiencia continua y rigurosa que une una inquietud viva en tu mente con una decisión ética en el mundo real. Comprender este trayecto de punta a punta antes de entrar en los detalles técnicos te permite captar la lógica viva que enlaza sus elementos cardinales: la pregunta reflexiva, la tirada de monedas, las seis líneas, los dos trigramas, el presente, las mutaciones y la tendencia final.',
+      'El viaje se abre con una **pregunta abierta** sobre qué actitud cultivar frente a una encrucijada real. Luego realizás la **tirada**: arrojás tres monedas seis veces consecutivas (o empleás la app incluida en el curso como accesorio práctico de cálculo). Cada tiro suma sus valores de abajo hacia arriba: si la suma es 7 u 8, la línea es fija (yang o yin); si es 9 o 6, la energía llega a su punto culminante y la línea muta, preparándose para transformarse en su opuesto.',
+      'Las seis líneas levantadas forman el **hexagrama presente**, dividido en dos trigramas: el inferior (tu disposición interna, emociones y recursos) y el superior (las presiones, oportunidades y vínculos del entorno). Para interpretarlo, examinás su **Juicio** (la arquitectura profunda de la situación) y su **Imagen** (la enseñanza de las fuerzas naturales para la conducta del noble). Si tu tirada arrojó **líneas mutantes**, leés sus advertencias específicas como los focos vivos de máxima tensión y aprendizaje ético en tu situación singular.',
+      'Al transmutar las líneas mutantes en sus polaridades contrarias, emerge un segundo hexagrama: la **tendencia** o cauce natural hacia donde evoluciona el momento (nunca un destino fatal ni predeterminado). El ciclo se completa integrando todo en una síntesis propia en tres partes: *la situación es*, *el momento pide* y *el riesgo es*, fijando un contraste a tres semanas en tu bitácora. De este modo, la consulta abandona cualquier velo supersticioso y se convierte en una herramienta concreta de discernimiento lúcido.'
     ],
+    secondaryCallout: {
+      id: 'esquema-seis-estaciones',
+      title: 'Las Seis Estaciones del Proceso de Consulta:',
+      variant: 'context_note',
+      text: '1. Pregunta abierta sobre tu actitud interior. / 2. Tirada de tres monedas seis veces de base a cima. / 3. Hexagrama presente: Juicio (estructura) e Imagen (conducta). / 4. Examen de líneas mutantes como puntos de tensión activa. / 5. Hexagrama derivado: tendencia evolutiva del momento. / 6. Síntesis en tres partes y fecha de contraste a 21 días.'
+    },
     carlitosCallout: {
-      id: 'carlitos-cap4-19',
-      title: 'Carlitos dice con el mate en la mano:',
+      id: 'carlitos-cap4-19-mapa',
+      title: 'Síntesis Operativa • El Sentido del Arco Completo',
       variant: 'carlitos',
-      text: 'Si le preguntás tres veces lo mismo a un amigo sabio en diez minutos, te va a mirar con paciencia y te va a convidar un mate para que te calmes. Con el I Ching pasa igual: respetá la primera respuesta y date tiempo para digerirla.'
+      text: 'El circuito de consulta conecta dos polos: parte de la incertidumbre subjetiva y concluye en una decisión ética concreta. Cada estación intermedia (pregunta, monedas, trigramas, presente y tendencia) funciona como un filtro de discernimiento que purifica la intención del consultante.'
     }
   },
   {
     pageNumber: 20,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'Qué es un hexagrama y qué hace la app por vos',
-    subtitle: 'Estructura de seis líneas, polaridades de valor, líneas mutantes y la tirada en pantalla',
+    pageTitle: 'El arte de formular la pregunta',
+    subtitle: 'Claridad reflexiva, preguntas abiertas y el cuidado de no degradar el diálogo con el oráculo',
+    contentType: 'table',
+    keyTerms: ['Pregunta Abierta', 'Consulta Abierta', 'Hexagrama 4 (Méng)', 'Ética de Consulta'],
+    paragraphs: [
+      'La consulta no arranca cuando tirás las monedas o abrís una app, sino en la claridad y honestidad con que formulás tu pregunta. El oráculo exige una sola pregunta por tirada, redactada de forma abierta: indagar *cómo* abordar un desafío íntimo o *qué actitud interior* conviene cultivar ante una encrucijada. Las preguntas cerradas de sí o no y los reclamos de predicción pasiva anulan por completo la función reflexiva y psicológica del símbolo.',
+      'El I Ching no es una máquina de validar expectativas del ego ni un atajo para eludir la responsabilidad de elegir. Cuando preguntás desde el miedo al futuro, te situás como una víctima pasiva de los acontecimientos; en cambio, cuando preguntás qué postura ética adoptar, recuperás la iniciativa y el gobierno de tus actos. El oráculo te devuelve un espejo exacto de tus fuerzas en juego para que decidas con el corazón lúcido.',
+      'Una regla inviolable: jamás repitas la consulta sobre el mismo asunto hasta que las circunstancias reales hayan cambiado. El hexagrama 4, *Méng* (La Necedad Juvenil), advierte tajantemente: «La primera vez consulto; si insiste, es importunidad; al importuno no le respondo». Quien insiste por ansiedad o disconformidad no busca sabiduría, sino escuchar lo que su ego anhela, enturbiando su discernimiento y degradando el respeto sagrado hacia el oráculo.',
+      'Si atravesás un momento de confusión difusa y no lográs articular una frase precisa, no fuerces las palabras: podés recurrir a una **consulta abierta**, donde el libro captura la tonalidad general de tu momento. Asimismo, la app que acompaña el curso ofrece cuatro categorías de apoyo (*Decisiones*, *Vínculos*, *Autoconocimiento* y *Proyectos*) para ayudarte a ordenar tus pensamientos antes de arrojar las monedas al paño.'
+    ],
+    referenceTables: [
+      {
+        title: 'Matriz de Formulación: Del Control a la Claridad Reflexiva',
+        headers: ['Ámbito de vida', 'Pregunta Adivinatoria / Cerrada (Error)', 'Pregunta Abierta / Simbólica (Fructífera)'],
+        rows: [
+          [
+            'Trabajo y vocación',
+            '«¿Me van a ascender o me conviene renunciar ya?»',
+            '«¿Qué actitud interior me conviene cultivar ante esta tensión laboral para cuidar mi vocación?»'
+          ],
+          [
+            'Vínculos y relaciones',
+            '«¿Esta persona me conviene o me va a lastimar?»',
+            '«¿Qué aspecto de mi sombra estoy proyectando en este vínculo y cómo actuar con madurez?»'
+          ],
+          [
+            'Encrucijada personal',
+            '«¿Voy a tener éxito si inicio este proyecto?»',
+            '«¿Cuál es la naturaleza de las fuerzas en juego en este inicio y qué riesgo debo vigilar?»'
+          ],
+        ],
+        footnote: 'Una buena pregunta devuelve la responsabilidad al consultante y abre la escucha interior.',
+      },
+    ],
+    carlitosCallout: {
+      id: 'carlitos-cap4-20',
+      title: 'Principio Metodológico • La Regla de la Única Consulta',
+      variant: 'carlitos',
+      text: 'Repetir la tirada sobre el mismo asunto degrada la lectura porque introduce el ruido de la ansiedad egoica. El hexagrama 4 enseña que el oráculo ilumina la primera vez; insistir no busca claridad, sino forzar una respuesta complaciente que anula la función simbólica.'
+    }
+  },
+  {
+    pageNumber: 21,
+    chapterId: 4,
+    sectionTitle: 'Capítulo 4 — El I Ching',
+    pageTitle: 'Anatomía del hexagrama y aritmética de la tirada',
+    subtitle: 'Seis líneas, polaridades yin y yang, los valores 6, 7, 8 y 9, y la mecánica del cambio',
     contentType: 'table',
     keyTerms: ['Hexagrama', 'Trigrama Inferior y Superior', 'Líneas Mutantes', 'Valores 6, 7, 8, 9'],
     hexagramFigure: {
@@ -649,52 +700,43 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     referenceTables: [
       {
         title: 'Figura (b): Tabla de valores de tirada y probabilidades',
-        headers: ['Suma', 'Tipo de línea', 'Cómo se ve en la app', 'Probabilidad'],
+        headers: ['Suma', 'Tipo de línea', 'Trazo y símbolo', 'Probabilidad'],
         rows: [
           [{ line: 6 }, 'Yin mutante (se vuelve yang)', 'Trazo partido con marca × central', '1/8 (12,5 %)'],
           [{ line: 7 }, 'Yang fijo (permanece yang)', 'Trazo continuo firme', '3/8 (37,5 %)'],
           [{ line: 8 }, 'Yin fijo (permanece yin)', 'Trazo partido abierto', '3/8 (37,5 %)'],
           [{ line: 9 }, 'Yang mutante (se vuelve yin)', 'Trazo continuo con marca ○ central', '1/8 (12,5 %)'],
         ],
-        footnote: 'Convención de la app: cara = 3 (yang) y cruz = 2 (yin). Sumas de tres monedas.',
+        footnote: 'Convención tradicional de monedas: cara = 3 (yang) y cruz = 2 (yin). Sumas de tres monedas.',
       },
     ],
     paragraphs: [
       'Un hexagrama reúne seis líneas horizontales apiladas que se leen siempre de abajo hacia arriba, desde la base (línea 1) hasta la cima (línea 6). Cada línea es continua (yang) o partida (yin), totalizando 64 combinaciones. Las tres de abajo forman el trigrama inferior (lo propio) y las tres de arriba el superior (el entorno). Ver Figura (a).',
-      'La app simula el lanzamiento de tres monedas por cada una de las seis líneas. Al sumar los valores de cada tiro (cara = 3, cruz = 2), se producen los cuatro estados de la tabla. En promedio surgen 1,5 líneas mutantes por tirada y solo el 17,8 % de las tiradas no arroja ninguna; por lo tanto, tener mutantes es lo normal.',
-      'Una línea mutante es una energía llegada a su extremo que empieza a volverse su opuesto: al voltearla aparece un segundo hexagrama. En la app, la tirada línea por línea tocando *Tirar monedas* es el camino principal de atención; *Completar Rápido* funciona solo como un atajo práctico.',
-      'Nota sobre la tirada manual: sin la app para celular, la tirada tradicional requiere lanzar manualmente tres monedas seis veces consecutivas, registrando cada valor de abajo hacia arriba para trazar el hexagrama y calcular las mutaciones a mano.'
+      'La tirada clásica se realiza arrojando tres monedas seis veces consecutivas (o utilizando la app del curso, que simula este mismo cálculo matemático). Asignando cara = 3 (yang) y cruz = 2 (yin), la suma de cada tiro genera los cuatro estados de la tabla. En promedio surgen 1,5 líneas mutantes por tirada y solo el 17,8 % no arroja ninguna; tener mutantes es lo normal.',
+      'Una línea mutante es una energía que llegó a su extremo y comienza a volverse su opuesto: al voltearla aparece un segundo hexagrama. El valor de la consulta radica en seguir ese proceso línea por línea, con atención plena al diálogo entre el reposo y la mutación, ya sea anotando cada trazo a mano o empleando la app como apoyo.',
+      'Nota sobre el método: tirar tres monedas en una mesa limpia o tocar la pantalla del celular arrojan exactamente la misma probabilidad matemática. Lo determinante no es el soporte técnico, sino la presencia consciente y el respeto reflexivo con los que te disponés a interrogar la cualidad del momento.'
     ],
     secondaryCallout: {
-      id: 'carlitos-cap4-20-der',
+      id: 'carlitos-cap4-21-der',
       title: 'Figura (c): Principio de mutación y tendencia',
       variant: 'context_note',
       text: 'Cuando una línea alcanza el extremo de su polaridad (6 o 9), muta en su opuesto al voltearse. Esa transformación engendra un segundo hexagrama que señala la tendencia hacia donde gravita el presente.'
     }
   },
   {
-    pageNumber: 21,
+    pageNumber: 22,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
-    pageTitle: 'Leer el resultado, pantalla por pantalla',
-    subtitle: 'Interpretación rápida, juicio, imagen, líneas del caso y calificaciones de conducta',
+    pageTitle: 'La estructura de la lectura: juicio, imagen y mutaciones',
+    subtitle: 'Componentes del texto canónico, líneas singulares y calificaciones éticas de conducta',
     contentType: 'table',
     keyTerms: ['Interpretación Rápida', 'Juicio e Imagen', 'Líneas Mutantes', 'Calificaciones Éticas'],
     paragraphs: [
-      'Al completar la tirada, la app muestra primero la pantalla de *Interpretación Rápida*, dividida en tres bloques: *1. Tu Presente*, *2. Actitud Recomendada* y *3. ¿Hacia dónde evoluciona?*. Es tu punto de partida. Advertí que es una síntesis orientadora: el caso singular del lector está en el Juicio, la Imagen y las líneas mutantes.',
-      'Al avanzar, navegás las pestañas *Presente* y *Tendencia*. En el presente leés *El Juicio* (la estructura de la situación) y *La Imagen* (los elementos naturales puestos en relación, que culmina siempre en una conducta del noble). Debajo encontrás *Tus Líneas Mutantes*: son las líneas de tu caso particular y se leen de abajo hacia arriba, como etapas de un proceso que madura.',
-      'Al presionar *Ver Hexagrama Derivado*, examinás la tendencia de evolución, comparando qué cambia respecto del presente. Aclaración metodológica: la app puede mostrar una traducción con variantes de vocabulario respecto a otros libros; lo decisivo es interpretar siempre la estructura: el patrón arquetípico, la posición y la conducta sugerida.'
+      'Toda lectura clásica del I Ching se organiza en cuatro capas sucesivas. La primera es la visión panorámica: comprender el momento presente, la actitud sugerida y la dirección en la que gravita el cambio (lo que la app del curso sintetiza en su sección de *Interpretación Rápida* para una orientación ágil). Pero el núcleo del oráculo late en el texto canónico y en tus líneas singulares.',
+      'En el hexagrama presente encontrás dos pilares: *El Juicio* (la arquitectura profunda de la situación) y *La Imagen* (la lección moral de los elementos naturales, orientada a la conducta del noble). Debajo se examinan *Tus Líneas Mutantes*, leídas de abajo hacia arriba: son las etapas vivas de tu caso particular y los focos de tensión exacta que reclaman tu discernimiento.',
+      'Al transmutar esas líneas, surge el *Hexagrama Derivado*, que señala la tendencia de evolución de la situación. Aclaración metodológica: distintas ediciones usan traducciones variadas; lo decisivo es interpretar siempre la estructura: el patrón arquetípico, la posición y la conducta ética sugerida.'
     ],
     referenceTables: [
-      {
-        title: 'Casos especiales de tirada',
-        headers: ['Condición de la tirada', 'Criterio operativo en la app'],
-        rows: [
-          ['Sin mutantes (Hexagrama Estable)', 'La situación muestra fijeza o madurez. Se leen exclusivamente El Juicio y La Imagen del hexagrama presente.'],
-          ['Seis mutantes', 'En hexagramas 1 y 2 rige la regla 用九 (yòng jiǔ) / 用六 (yòng liù). En los demás casos, se lee el Juicio del derivado como tendencia.'],
-        ],
-        footnote: 'Un hexagrama estable indica que la situación no exige cambios apresurados de posición.',
-      },
       {
         title: 'Calificaciones de conducta en el texto canónico',
         headers: ['Término canónico', 'Qué indica para tu conducta'],
@@ -709,9 +751,15 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
         footnote: 'Estas valoraciones no son sentencias fatales sobre tu persona, sino calificaciones de la conducta sugerida.',
       },
     ],
+    carlitosCallout: {
+      id: 'curiosidad-tiradas-extremas',
+      title: 'Curiosidad: Casos especiales de tirada',
+      variant: 'context_note',
+      text: 'Si no surge ninguna línea mutante (hexagrama estable), la situación muestra fijeza o madurez y se leen exclusivamente El Juicio y La Imagen del presente. Si llegaran a mutar las seis líneas, en los hexagramas 1 y 2 rige la regla tradicional 用九 (yòng jiǔ) / 用六 (yòng liù); en los demás casos, se lee El Juicio del hexagrama derivado como tendencia evolutiva.'
+    }
   },
   {
-    pageNumber: 22,
+    pageNumber: 23,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Dos lentes para profundizar: posiciones y trigramas',
@@ -719,8 +767,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     contentType: 'table',
     keyTerms: ['Puestos 1 a 6', 'Trigramas Ba Gua', 'Estructura de Trigramas', 'Hexagramas 63 y 64'],
     paragraphs: [
-      'Las posiciones de las líneas (de 1 a 6) no son equivalentes ni intercambiables. Cada puesto describe un grado de visibilidad, compromiso y madurez en el desarrollo de cualquier situación. Al leer tus líneas mutantes, contrastá su recomendación con el puesto que ocupan (remitite a la Figura a del folio 20 para ver su ubicación en la estructura).',
-      'La segunda lente radica en los ocho trigramas (*Ba Gua*), que la app despliega bajo la etiqueta *Estructura de Trigramas*. El trigrama inferior describe la situación propia o interna (tus emociones, recursos o disposición anímica), y el superior la externa o ambiental (las presiones, oportunidades o vínculos del entorno). Comprender su interacción aclara si tu impulso choca o fluye con el contexto.'
+      'Las posiciones de las líneas (de 1 a 6) no son equivalentes ni intercambiables. Cada puesto describe un grado de visibilidad, compromiso y madurez en el desarrollo de cualquier situación. Al leer tus líneas mutantes, contrastá su recomendación con el puesto que ocupan (remitite a la Figura a del folio 21 para ver su ubicación en la estructura).',
+      'La segunda lente radica en los ocho trigramas (*Ba Gua*), las fuerzas elementales de la cosmología china (que en la app del curso podés consultar en la pestaña *Estructura de Trigramas*). El trigrama inferior describe la situación propia o interna (tus emociones, recursos o disposición anímica), y el superior la externa o ambiental (las presiones, oportunidades o vínculos del entorno). Comprender su interacción aclara si tu impulso choca o fluye con el contexto.'
     ],
     referenceTables: [
       {
@@ -749,18 +797,18 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
           [{ trigram: 'Lí' }, 'Lí (Li) ☲', 'Fuego', 'Lo Adherente', 'Claridad, lucidez consciente'],
           [{ trigram: 'Duì' }, 'Duì (Tui) ☱', 'Lago', 'Lo Sereno', 'Alegría compartida, apertura comunicativa'],
         ],
-        footnote: 'En la app se consultan tocando la pestaña «Estructura de Trigramas».',
+        footnote: 'Los ocho trigramas son las raíces del oráculo; en la app se consultan en «Estructura de Trigramas».',
       },
     ],
     carlitosCallout: {
-      id: 'carlitos-cap4-22',
-      title: 'Contraste entre los Hexagramas 63 y 64:',
+      id: 'carlitos-cap4-23-trigramas',
+      title: 'Dinámica de Polaridad • Hexagramas 63 y 64',
       variant: 'alchemical',
-      text: 'Fijate en la danza de los trigramas: en el hexagrama 63 (Agua sobre Fuego, Después de la Consumación), la olla está al fuego y todo parece resuelto, pero ese equilibrio perfecto ya empieza a enfriarse. En el hexagrama 64 (Fuego sobre Agua, Antes de la Consumación), el fuego arde arriba y el agua fluye abajo: la tarea está pendiente y el viaje vuelve a empezar.'
+      text: 'La interacción de trigramas revela el ciclo perenne: en el hexagrama 63 (Agua sobre Fuego, Después de la Consumación), el equilibrio perfecto alcanzado ya inicia su enfriamiento. En el hexagrama 64 (Fuego sobre Agua, Antes de la Consumación), las fuerzas divergen y renuevan la tarea abierta.'
     }
   },
   {
-    pageNumber: 23,
+    pageNumber: 24,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Una tirada completa: el caso del prólogo de Jung',
@@ -776,20 +824,20 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       caption: 'Figura (e): Ejemplo trabajado del prólogo de Jung (1949). Hexagrama 50 (Dǐng / Ting) con líneas mutantes en las posiciones 2 y 3, transformándose en el hexagrama 35, El Progreso (Jìn / Chin).',
     },
     paragraphs: [
-      'Examinemos una tirada completa siguiendo las pantallas del folio 21 con el caso histórico del prólogo de Jung de 1949. Al preguntar qué opinaba el libro sobre presentarlo a Occidente, el presente fue el Hexagrama 50, El Caldero (*Dǐng* / *Ting*), con líneas mutantes en las posiciones 2 y 3, orientando su tendencia hacia el Hexagrama 35, El Progreso (*Jìn* / *Chin*).',
+      'Examinemos una tirada completa siguiendo las capas de lectura del folio 22 con el caso histórico del prólogo de Jung de 1949. Al preguntar qué opinaba el libro sobre presentarlo a Occidente, el presente fue el Hexagrama 50, El Caldero (*Dǐng* / *Ting*), con líneas mutantes en las posiciones 2 y 3, orientando su tendencia hacia el Hexagrama 35, El Progreso (*Jìn* / *Chin*).',
       'En la pantalla del presente, el Juicio declara: «El Caldero. Suprema ventura. Éxito». La Imagen establece: «Fuego sobre madera: la imagen de El Caldero. Así el noble rectifica su posición consolidando su destino». El caldero es la vasija ritual donde los alimentos crudos se cocinan y consagran para nutrir a la comunidad: el libro mismo concebido como alimento espiritual para Occidente.',
       'En *Tus Líneas Mutantes*, leemos de abajo hacia arriba:\nLínea 2 (nueve en el segundo puesto): «En el caldero hay alimento. Mis compañeros están envidiosos, pero no pueden perjudicarme. Ventura». Revela un valor auténtico que no sufre daño.\nLínea 3 (nueve en el tercer puesto): «El asa del caldero está rota. Se ve impedido en su marcha. La grasa del faisán no se come. Mas cae la lluvia que apaga el ardor: arrepentimiento se desvanece. Al final llega la ventura». Muestra el obstáculo inicial hasta que la situación madura.',
-      'En la pestaña *Tendencia*, el Hexagrama 35 anuncia el avance y expansión luminosa de la obra. Concluimos con la plantilla de tres partes (rotulada como lectura ilustrativa y vinculada a las secciones de Interpretación Rápida):\n*La situación es:* una obra con alimento espiritual valioso pero de difícil asimilación inicial.\n*El momento pide:* rectificar la posición interna con paciencia y sostener la tarea sin resentimiento.\n*El riesgo es:* apresurarse o frustrarse por el recelo inicial antes de que madure el progreso.'
+      'En la tendencia, el Hexagrama 35 anuncia el avance y expansión luminosa de la obra. Concluimos con la plantilla de tres partes (rotulada como lectura ilustrativa y vinculada a la síntesis operativa):\n*La situación es:* una obra con alimento espiritual valioso pero de difícil asimilación inicial.\n*El momento pide:* rectificar la posición interna con paciencia y sostener la tarea sin resentimiento.\n*El riesgo es:* apresurarse o frustrarse por el recelo inicial antes de que madure el progreso.'
     ],
     carlitosCallout: {
-      id: 'carlitos-cap4-23',
+      id: 'carlitos-cap4-24-caldero',
       title: 'La vasija nutricia del Caldero:',
       variant: 'alchemical',
       text: 'El caldero es el corazón de la alquimia: no rechaza los ingredientes crudos ni la leña quemada, sino que los cocina a fuego lento. Jung vio en este hexagrama que el I Ching se ofrecía como una vasija nutricia para quienes buscan integrar su psique.'
     }
   },
   {
-    pageNumber: 24,
+    pageNumber: 25,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Del texto a la decisión: usar sin abusar',
@@ -799,17 +847,17 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     paragraphs: [
       'El uso del oráculo se sostiene sobre una ética de responsabilidad. La regla fundamental es no delegar la decisión: el I Ching reencuadra la escena y te ofrece un espejo simbólico, pero la elección y sus consecuencias son tuyas. Realizá una sola consulta por tema; repreguntar de inmediato para forzar una respuesta complaciente desvirtúa la lectura y genera ruido.',
       'Asimismo, rigen límites estrictos: no consultar por terceros a sus espaldas vulnerando su autonomía; jamás sustituir con el oráculo diagnósticos médicos, asesoramiento legal ni decisiones financieras; y ante estados de angustia aguda o desborde emocional, no tirar monedas: detenerse, serenar el cuerpo y conversar con un profesional o una persona cercana.',
-      'Para el seguimiento, utilizá la sección *Historial* de la app, que conserva las últimas diez consultas y permite la opción *Proteger consulta* para que no se borren. Registrá en el campo *Nota personal* la frase de tres partes del folio 23. Realizá un contraste a tres semanas: releé tu nota antes de volver a consultar sobre esa situación.'
+      'Para el seguimiento, registrá en tu libreta o en el *Historial* de la app del curso (que guarda las últimas consultas y permite protegerlas) la frase de tres partes del folio 24 en el campo de notas personales. Realizá un contraste a tres semanas: releé tus conclusiones antes de volver a consultar sobre esa situación.'
     ],
     carlitosCallout: {
-      id: 'carlitos-cap4-24',
+      id: 'carlitos-cap4-25-consumacion',
       title: 'El hexagrama 64 y la tarea inconclusa:',
       variant: 'carlitos',
       text: 'El I Ching concluye con el hexagrama 64, Wèi Jì (Antes de la Consumación), donde el zorro joven cruza el agua y moja su cola al final. El libro no promete un cierre definitivo ni una perfección estática: te recuerda que toda conclusión es el inicio de una nueva travesía.'
     }
   },
   {
-    pageNumber: 25,
+    pageNumber: 26,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Práctica guiada: tu primera tirada',
@@ -822,7 +870,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     exerciseData: {
       id: 'ex-primera-tirada-iching',
       title: 'Práctica Guiada — Tu Primera Tirada de I Ching',
-      objective: 'Realizar una consulta completa con la app del curso, formular una pregunta abierta, registrar las pantallas de presente y tendencia, redactar la frase de tres partes y fijar la fecha de contraste a tres semanas.',
+      objective: 'Realizar una consulta completa con tres monedas o con la app del curso, formular una pregunta abierta, registrar el presente y la tendencia, redactar la frase de tres partes y fijar la fecha de contraste a tres semanas.',
       steps: [
         {
           stepNumber: 1,
@@ -836,23 +884,23 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
         },
         {
           stepNumber: 3,
-          title: 'Abrir la app',
-          instruction: 'Entrá a la app de I Ching del curso y elegí una de las 4 categorías o seleccioná Consulta abierta.',
+          title: 'Elegir el método de tirada',
+          instruction: 'Podés arrojar tres monedas sobre una mesa limpia seis veces consecutivas o abrir la app del curso y seleccionar una de las 4 categorías o Consulta abierta.',
         },
         {
           stepNumber: 4,
-          title: 'Tirar las monedas',
-          instruction: 'Pulsá Tirar monedas línea por línea seis veces consecutivas, prestando atención a cada valor generado.',
+          title: 'Generar las seis líneas',
+          instruction: 'Lanzá las monedas o pulsá en la app línea por línea de abajo hacia arriba, anotando el valor numérico (6, 7, 8 o 9) de cada una.',
         },
         {
           stepNumber: 5,
           title: 'Leer en orden metódico',
-          instruction: 'Revisá la Interpretación Rápida, profundizá en El Juicio y La Imagen, y leé tus líneas mutantes de abajo hacia arriba.',
+          instruction: 'Revisá la visión general o Interpretación Rápida, profundizá en El Juicio y La Imagen, y leé tus líneas mutantes de abajo hacia arriba.',
         },
         {
           stepNumber: 6,
           title: 'Redactar la frase y guardar',
-          instruction: 'Elaborá la síntesis («La situación es... / El momento pide... / El riesgo es...») y guardala en Nota personal de la app.',
+          instruction: 'Elaborá la síntesis («La situación es... / El momento pide... / El riesgo es...») y guardala en tu cuaderno o en Nota personal de la app.',
         },
         {
           stepNumber: 7,
@@ -894,10 +942,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 26 A 29)
+  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 27 A 30)
   // ==========================================
   {
-    pageNumber: 26,
+    pageNumber: 27,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 1: Bitácora de Sueños en Cuatro Actos',
@@ -948,13 +996,13 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap5-suenos',
-      title: 'Carlitos dice con un mate en la mano:',
+      title: 'Criterio Clínico • El Lenguaje Jeroglífico del Sueño',
       variant: 'marginalia',
-      text: 'Tu inconsciente es el único consejero que no te cobra un solo centavo y que trabaja mientras dormís. El único problema es que no sabe hablar en prosa de oficina: tenele paciencia para aprender a leer sus jeroglíficos.'
+      text: 'El inconsciente no habla en prosa conceptual sino en imágenes míticas y paradojas dramáticas. Su propósito es compensar de forma autorregulada la actitud unilateral de la vigilia; la paciencia interpretativa es la clave metódica para descifrar su advertencia.'
     }
   },
   {
-    pageNumber: 27,
+    pageNumber: 28,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
@@ -998,13 +1046,13 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap5-radar',
-      title: 'Carlitos dice con mirada pícara:',
+      title: 'Principio de Verificación • El Anclaje Terrenal del Símbolo',
       variant: 'marginalia',
-      text: 'Cuando el escarabajo golpeó la ventana de mi consultorio, no me puse a aplaudir a los espíritus: abrí la ventana, lo agarré y se lo di a mi paciente para que sanara. La magia del mundo solo sirve si la convertís en medicina terrenal.'
+      text: 'El acontecimiento sincrónico no busca admiración mágica pasiva: adquiere legitimidad cuando se transforma en palanca terapéutica o ética. La numinosidad del símbolo solo cobra sentido pleno cuando se traduce en una acción concreta en la realidad compartida.'
     }
   },
   {
-    pageNumber: 28,
+    pageNumber: 29,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
@@ -1050,13 +1098,13 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
     carlitosCallout: {
       id: 'carlitos-cap5-tao',
-      title: 'Nota de Práctica de Carlitos:',
+      title: 'Principio Taoísta • El Wu Wei y la Renuncia al Control',
       variant: 'alchemical',
-      text: '¿Querés empujar el río para que corra más rápido, che? Te vas a cansar antes de que el agua llegue al lago. El Juego del Tao no es para que te creas un brujo que maneja los semáforos con el pensamiento; es para que te des cuenta de lo lindo que es caminar en sintonía con las cosas sin pretender mandonear al universo.'
+      text: 'El juego de la sintonía entrena la renuncia a forzar los acontecimientos exteriores. El principio del Wu Wei enseña que el orden acausal se percibe con mayor nitidez cuando el ego suspende su compulsión manipuladora y aprende a moverse al compás del entorno.'
     }
   },
   {
-    pageNumber: 29,
+    pageNumber: 30,
     chapterId: 5,
     sectionTitle: 'El Manifiesto de la Completitud',
     pageTitle: 'La Gran Coniunctio y el Compromiso Ético',
@@ -1078,9 +1126,9 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     },
     secondaryCallout: {
       id: 'carlitos-mate-final',
-      title: 'Dedicatoria de Carlitos:',
+      title: 'Cierre de Integración • El Compromiso Ético con la Acción',
       variant: 'carlitos',
-      text: 'Te dejo el mate servido, che. No dejes que se enfríe. La próxima charla la escribís vos con las decisiones que tomes a partir de mañana.'
+      text: 'El autoconocimiento simbólico se desvanece si queda confinado a la especulación abstracta. Cada arquetipo reconocido, cada sueño analizado y cada consulta de I Ching exigen su traducción práctica en decisiones cotidianas y responsabilidad moral ante el propio destino.'
     }
   }
 ];

@@ -37,7 +37,7 @@ const SINGLE_FOLIO_CLOSINGS: Record<number, FolioIntegrationData> = {
     reflectionQuestion: '¿En cuál de las tres categorías de la matriz reconoces tus experiencias sincrónicas más potentes?',
     actionGuideline: 'Revisa tu historial personal y anota al menos un evento en cada fila de la matriz para verificar el patrón.',
   },
-  27: {
+  28: {
     title: 'Auditoría Sincrónica • Registro y Verificación',
     quote: '«La coincidencia no se busca con avidez; se recibe con la serenidad de quien sabe que el significado ya está allí.»',
     reflectionQuestion: '¿Qué sesgo de confirmación sueles proyectar sobre los eventos diarios y cómo puedes purificar tu registro?',
@@ -276,7 +276,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
             <SolAndLunaIcon className="w-5 h-5 text-[#d4af37] shrink-0" />
             <div>
               <span className="font-signature text-base text-[#ffd700] block -mb-1">
-                Coniunctio & Misterio
+                {callout.tagline || 'Coniunctio & Misterio'}
               </span>
               <h3 className="font-playfair text-xs sm:text-sm font-bold text-white uppercase tracking-wider">
                 {callout.title || 'Paralelo Hermético & Alquímico:'}
@@ -284,7 +284,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
             </div>
           </div>
           <p className="font-cormorant italic text-base sm:text-lg text-white leading-relaxed">
-            "{renderFormattedText(callout.text)}"
+            {renderFormattedText(callout.text)}
           </p>
           <div className="mt-2 pt-1 text-[10px] font-mono text-right text-[#ffd700] border-t border-[#aa8032]/20">
             ✦ Mysterium Coniunctionis • C. G. Jung
@@ -312,7 +312,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
       );
     }
 
-    // Default 'carlitos' variant: the warm companion with Argentine Mate
+    // Default 'carlitos' variant: conceptual capsule & thoughtful companion
     return (
       <aside
         key={callout.id}
@@ -325,19 +325,19 @@ export const EbookPage: React.FC<EbookPageProps> = ({
             </div>
             <div>
               <span className="font-signature text-base text-[#7a5820] block -mb-1">
-                La Charla con el Amigo
+                {callout.tagline || 'Síntesis & Clave Conceptual'}
               </span>
               <h3 className="font-playfair text-xs sm:text-sm font-bold text-[#17120d] uppercase tracking-wider">
-                {callout.title || 'Carlitos dice junto al fuego:'}
+                {callout.title || 'Clave Conceptual'}
               </h3>
             </div>
           </div>
           <span className="font-mono text-[9px] uppercase tracking-widest text-[#8f6e28] hidden sm:inline">
-            Küsnacht • Zúrich
+            Archivo & Concepto
           </span>
         </div>
         <p className="font-cormorant italic text-base sm:text-[17px] text-[#17120d] leading-relaxed font-semibold">
-          "{renderFormattedText(callout.text)}"
+          {renderFormattedText(callout.text)}
         </p>
       </aside>
     );
