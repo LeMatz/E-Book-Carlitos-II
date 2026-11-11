@@ -17,42 +17,50 @@ export class ChaptersMetaData {
     {
       chapterId: 1,
       title: 'Capítulo 1 — Arquetipos II: Dinámicas Profundas',
-      subtitle: 'El Continuo Yo-Arquetipo, la Inflación y el Eje Yo-Self',
+      subtitle: 'El viaje de la individuación, la distancia Yo-arquetipo y el Eje Yo-Self',
       startPage: 5,
-      endPage: 7,
+      endPage: 8,
       iconName: 'layers',
     },
     {
       chapterId: 2,
       title: 'Capítulo 2 — Los Sueños y el Lenguaje del Alma',
-      subtitle: 'Función compensatoria, símbolos y la estructura en cuatro actos',
-      startPage: 8,
-      endPage: 10,
+      subtitle: 'Función compensatoria, símbolos, fases dramáticas y transición a la sincronicidad',
+      startPage: 9,
+      endPage: 12,
       iconName: 'compass',
     },
     {
       chapterId: 3,
       title: 'Capítulo 3 — Sincronicidad: El Principio Acausal',
-      subtitle: 'El escarabajo dorado, el tiempo cualitativo, la dimensión psicoide y las señales',
-      startPage: 11,
-      endPage: 15,
+      subtitle: 'El escarabajo dorado, el tiempo cualitativo, la dimensión psicoide y los límites del sentido',
+      startPage: 13,
+      endPage: 17,
       iconName: 'award',
     },
     {
       chapterId: 4,
       title: 'Capítulo 4 — El Oráculo del I Ching y la Mente Simbólica',
       subtitle: 'El Libro de las Mutaciones, la consulta reflexiva y la decisión ética',
-      startPage: 16,
-      endPage: 23,
+      startPage: 18,
+      endPage: 25,
       iconName: 'grid',
     },
     {
       chapterId: 5,
       title: 'Capítulo 5 — Cuaderno de Trabajo & Bitácora Alquímica',
-      subtitle: 'Protocolos de sueños, sincronías y el Juego del Tao',
-      startPage: 24,
-      endPage: 26,
+      subtitle: 'Protocolos de sueños, sincronicidades y el Juego del Tao',
+      startPage: 26,
+      endPage: 28,
       iconName: 'edit-3',
+    },
+    {
+      chapterId: 6,
+      title: 'Cierre — La Gran Coniunctio y el Manifiesto de la Completitud',
+      subtitle: 'La piedra filosofal, la reconciliación de los opuestos y la despedida de Carlitos junto al fuego',
+      startPage: 29,
+      endPage: 29,
+      iconName: 'sun',
     },
   ];
 }
@@ -178,10 +186,36 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CAPÍTULO 1 — ARQUETIPOS II: DINÁMICAS PROFUNDAS (PÁGINAS 5 A 7)
+  // CAPÍTULO 1 — ARQUETIPOS II: DINÁMICAS PROFUNDAS (PÁGINAS 5 A 8)
   // ==========================================
   {
     pageNumber: 5,
+    chapterId: 1,
+    sectionTitle: 'Capítulo 1 — Arquetipos II',
+    pageTitle: 'El Viaje de la Individuación: De los Arquetipos a la Totalidad',
+    subtitle: 'El itinerario dinámico de la psique: del despertar simbólico a la integración en espiral',
+    contentType: 'text',
+    keyTerms: [
+      'Individuación',
+      'Viaje en Espiral',
+      'Integración Arquetípica',
+      'Totalidad Dinámica',
+    ],
+    paragraphs: [
+      'El trabajo con los arquetipos no es un ejercicio intelectual ni una meta que se conquista de una vez y para siempre; es un movimiento vivo que compromete la existencia entera. Para orientarnos en este territorio, podemos concebir la individuación como un recorrido progresivo organizado en seis momentos formativos que describen cómo una persona madura en su relación con las fuerzas de lo inconsciente:',
+      '**1. El descubrimiento y el reconocimiento:** En primer lugar, la persona comienza a advertir que existen fuerzas, imágenes y patrones que influyen en sus decisiones, afectos y conflictos más allá de su voluntad consciente. Poco a poco, aprende a identificar las proyecciones y los complejos que antes atribuía de forma ingenua y exclusiva a los demás o a los azares del mundo exterior.',
+      '**2. La confrontación y la integración:** Al ingresar en este diálogo, descubre que relacionarse con la energía arquetípica encierra riesgos reales: perder la distancia necesaria, inflarse con mandatos grandiosos o quedar dominada por una figura fascinante. La madurez exige confrontar esas tensiones sin someterse a ellas, aprendiendo a dialogar con sus contradicciones íntimas para ensanchar la personalidad consciente.',
+      '**3. La individuación y el nuevo comienzo:** Con el tiempo, el Yo forja un vínculo más equilibrado con el Self, y la persona se vuelve más diferenciada, sobria y completa. Pero una integración nunca clausura la vida: la individuación no es una línea recta con una meta definitiva, sino un viaje en espiral donde cada ciclo superado constela nuevos desafíos, preguntas y dimensiones insospechadas de la psique.',
+      'Conviene subrayar que este recorrido constituye una síntesis pedagógica para ordenar la mirada, y no una secuencia rígida que todas las personas deban transitar de manera idéntica. Comprender esta espiral nos prepara para examinar, en las páginas que siguen, la escala de distancia que salva al Yo de la absorción.'
+    ],
+    carlitosCallout: {
+      id: 'carlitos-cap1-viaje-individua',
+      title: 'Dinámica de Proceso • La Espiral de la Individuación',
+      text: 'La individuación no persigue una perfección estática ni la eliminación de las contradicciones humanas. Opera como una espiral continua donde cada síntesis alcanzada abre paso a un nivel más hondo de discernimiento ético y autoconocimiento.'
+    }
+  },
+  {
+    pageNumber: 6,
     chapterId: 1,
     sectionTitle: 'Capítulo 1 — Arquetipos II',
     pageTitle: 'El Continuo de Pérdida de Distancia Yo-Arquetipo',
@@ -227,7 +261,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     },
   },
   {
-    pageNumber: 6,
+    pageNumber: 7,
     chapterId: 1,
     sectionTitle: 'Capítulo 1 — Arquetipos II',
     pageTitle: 'Anatomía de la Inflación y la Pérdida del Yo',
@@ -260,7 +294,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 7,
+    pageNumber: 8,
     chapterId: 1,
     sectionTitle: 'Capítulo 1 — Arquetipos II',
     pageTitle: 'El Self / Sí-Mismo y la Distancia Justa',
@@ -268,10 +302,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     contentType: 'text',
     keyTerms: ['Self / Sí-Mismo', 'Eje Yo-Self†', 'Distancia Justa'],
     paragraphs: [
-      'Llegamos a la cumbre integradora de este primer capítulo: el arquetipo del *Self* (el Sí-Mismo). Habiendo comprendido los riesgos de la inflación y la posesión, el Self aparece precisamente como la fuente y el custodio de la *distancia justa*. Para Carlitos, el Self no compite con el Yo ni busca anularlo; representa el centro coordinador, la brújula orientadora y la totalidad que abraza tanto nuestra luz consciente como nuestra noche profunda.',
-      'El drama de la cultura contemporánea ha sido la fractura del *Eje Yo-Self*. El ser humano moderno vive como si su pequeño intelecto fuera el dueño absoluto de la realidad. Cuando esta desconexión se agrava, sobreviene la neurosis, el vacío de propósito y la sensación de sequedad espiritual. El Self responde enviando síntomas, crisis de vida o sueños intensos para obligar al Yo a detener su carrera desenfrenada y reorientarse hacia lo esencial. Así como los arquetipos se expresan en vigilia a través del continuo que acabamos de recorrer, durante el reposo la psique recurre a otra vía de autorregulación: los sueños, que exploraremos en el capítulo siguiente. La individuación (el proceso de diferenciación e integración por el cual una persona llega a ser la totalidad que verdaderamente es) no exige disolver el Yo, sino educarlo éticamente.',
-      'En todas las tradiciones sapienciales, el Self se proyectó en imágenes de totalidad cuaternaria: el mandala circular con cuatro cuadrantes, la cruz de brazos iguales, la flor de loto o la *piedra filosofal* (*Lapis*) de los alquimistas, símbolo de aquello que resiste el fuego porque ha reconciliado los opuestos. Cuando en momentos de desconcierto dibujamos círculos o soñamos con recintos sagrados, es el Self recordándonos que el aparente desorden de la vida tiene un centro de calma.',
-      'La individuación no exige disolver el Yo, sino educarlo éticamente. Un Yo sano se sitúa en la distancia justa: ni inflado con soberbia ni disociado en el miedo. Se convierte en el piloto atento y respetuoso del Self, sabiendo cuándo actuar en el mundo cotidiano y cuándo guardar silencio para escuchar el rumbo que la totalidad le señala.'
+      'Llegamos a la cumbre integradora de este primer capítulo: comprender la relación entre el *Yo* y el *Self* (el Sí-Mismo). Para evitar confusiones, conviene distinguirlos con nitidez: el Yo es el centro de la conciencia, el punto focal con el que nos identificamos cada vez que decimos «yo pienso», «yo quiero» o «yo decido». El Self, en cambio, no es una entidad externa que da órdenes ni un Yo idealizado y moralmente perfecto: es la totalidad viva de la psique, que abraza tanto nuestros contenidos conscientes como los inconscientes, funcionando como el principio ordenador de esa totalidad.',
+      'Un ejemplo cotidiano ayuda a ver la diferencia: imaginemos a una persona empeñada en conseguir un ascenso laboral. Su Yo consciente está convencido de que ese puesto es indispensable: organiza minuciosamente su agenda, extiende sus jornadas y redobla el esfuerzo. Sin embargo, al cabo de unos meses empieza a padecer agotamiento severo, irritabilidad inexplicable y sueños reiterados en los que se encuentra encerrada en una oficina sin ventanas. Desde una mirada junguiana, esos síntomas no son fallas mecánicas, sino manifestaciones del Self que señalan dimensiones que la actitud consciente desatendió: la necesidad de descanso, el anhelo de libertad o una vocación postergada. El Yo decide, pero el Self contiene el cuadro completo.',
+      'El drama contemporáneo ha sido la fractura de este *Eje Yo-Self*. Al creerse dueño absoluto de la realidad psíquica, el intelecto cae en la neurosis y el vacío de sentido. Las tradiciones sapienciales representaron esta totalidad en mandalas de cuatro cuadrantes, cruces simétricas o en el *Lapis* alquímico: símbolos que recuerdan que la vida psíquica posee un centro regulador que trasciende la visión parcial de la conciencia.',
+      'La individuación (el proceso de diferenciación e integración por el cual una persona llega a ser la totalidad que verdaderamente es) no exige disolver el Yo, sino educarlo éticamente. Un Yo sano se sitúa en la distancia justa: ni inflado con soberbia ni disociado en el miedo. Se convierte en el piloto atento y respetuoso del Self, sabiendo cuándo actuar en el mundo cotidiano y cuándo guardar silencio para escuchar el rumbo que la totalidad le señala.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap1-self',
@@ -281,10 +315,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CAPÍTULO 2 — SUEÑOS Y EL LENGUAJE DEL ALMA (PÁGINAS 8 A 10)
+  // CAPÍTULO 2 — SUEÑOS Y EL LENGUAJE DEL ALMA (PÁGINAS 9 A 12)
   // ==========================================
   {
-    pageNumber: 8,
+    pageNumber: 9,
     chapterId: 2,
     sectionTitle: 'Capítulo 2 — Los Sueños',
     pageTitle: 'El Sueño como Mensajero Autónomo y Compensatorio',
@@ -312,7 +346,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 9,
+    pageNumber: 10,
     chapterId: 2,
     sectionTitle: 'Capítulo 2 — Los Sueños',
     pageTitle: 'Símbolos vs. Signos y el Error del Diccionario',
@@ -332,7 +366,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 10,
+    pageNumber: 11,
     chapterId: 2,
     sectionTitle: 'Capítulo 2 — Los Sueños',
     pageTitle: 'La Estructura Dramática del Sueño Junguiano',
@@ -347,8 +381,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       altText: 'Mandala alquímico del sueño',
     },
     paragraphs: [
-      'Al analizar miles de sueños a lo largo de seis décadas de práctica médica, Jung descubrió que buena parte de los relatos oníricos no son una mezcolanza caótica de fragmentos inconexos, sino un drama clásico rigurosamente estructurado en cuatro actos bien definidos, idénticos a los de una tragedia o comedia griega.',
-      '**1. Exposición / Planteamiento:** El sueño fija con precisión el tiempo, el espacio y los personajes involucrados. "Estoy en la casa de mi abuela de la infancia, pero es de noche y el río cercano está crecido". Esta escena inicial sitúa el punto de partida del conflicto psíquico actual del soñador.',
+      'Al observar el material onírico a lo largo de décadas de práctica clínica, Jung comprobó que muchos sueños pueden analizarse mediante una estructura dramática de cuatro fases, análoga a la de un drama clásico. No se trata de una fórmula universal ni de un molde rígido en el que todo sueño deba encajar a la fuerza: funciona más bien como una valiosa herramienta de observación para ordenar el relato e interpretar el movimiento de la psique.',
+      '**1. Exposición / Planteamiento:** El sueño suele fijar con precisión el tiempo, el espacio y los personajes involucrados. "Estoy en la casa de mi abuela de la infancia, pero es de noche y el río cercano está crecido". Esta escena inicial sitúa el punto de partida del conflicto psíquico actual del soñador.',
       '**2. Desarrollo / Nudo:** La trama se pone en movimiento y surge una complicación. "Entro a la cocina y descubro que todas las puertas están cerradas con candados antiguos; escucho pasos apresurados afuera". Aquí se revela la tensión entre la actitud consciente y el obstáculo que el Yo no quiere ver.',
       '**3. Culminación o Peripeteia:** Es el clímax o punto de inflexión donde ocurre un giro decisivo, a menudo inesperado o sobrecogedor. "Al forzar la ventana para escapar, un cuervo negro con una llave dorada en el pico entra volando y se posa sobre mi hombro". La energía psíquica alcanza su máxima tensión simbólica.',
       '**4. Desenlace o Lysis:** El desenlace del drama, que contiene la clave de la compensación. La lysis puede ser armónica (la llave abre el sótano), trágica (la casa se derrumba advirtiendo un peligro real) o abierta (el soñador despierta con una pregunta suspendida en el pecho). Registrar minuciosamente la lysis es descubrir qué pide la mente para reorientar el rumbo.'
@@ -356,15 +390,35 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     carlitosCallout: {
       id: 'carlitos-cap2-estructura',
       title: 'Guía Metódica • La Clave de la Lysis Onírica',
-      text: 'El desenlace o Lysis de un sueño contiene el núcleo del mensaje homeostático. Al registrar un sueño en cuatro actos, el análisis de cómo se resuelve o interrumpe la tensión dramática revela con exactitud la compensación que el inconsciente ofrece a la actitud diurna.'
+      text: 'El esquema en cuatro fases no es una plantilla que fuerce a todos los sueños, sino un método analítico de observación. Cuando el sueño presenta desenlace, el examen de su resolución dramática revela la compensación homeostática que el inconsciente ofrece a la vigilia.'
+    }
+  },
+  {
+    pageNumber: 12,
+    chapterId: 2,
+    sectionTitle: 'Capítulo 2 — Los Sueños',
+    pageTitle: 'Del Sueño a la Sincronicidad: Cuando el Sentido Encuentra al Mundo Exterior',
+    subtitle: 'El puente entre la escena interior y el acontecimiento objetivo',
+    contentType: 'text',
+    keyTerms: ['Escena Interior', 'Mundo Exterior', 'Sentido Compartido', 'Puente Simbólico'],
+    paragraphs: [
+      'Los sueños son una manifestación espontánea y autónoma de la actividad inconsciente. Hablan a través de un lenguaje puramente interior: imágenes nocturnas, metáforas afectivas y dramas simbólicos que no dependen de la voluntad consciente. Trabajar con ellos nos permite escuchar aquello que la actitud diurna suele pasar por alto, ampliando el conocimiento sobre nuestras motivaciones más íntimas.',
+      'Sin embargo, cuando aprendemos a prestar atención al sentido simbólico, surge una pregunta que trasciende los confines del descanso nocturno: ¿qué sucede cuando un estado interior cargado de significado coincide en el tiempo con un acontecimiento del mundo físico exterior, sin que medie ningún lazo de causa y efecto conocido? Aquí es donde el camino nos conduce desde la escena onírica hacia la *sincronicidad*.',
+      'Es fundamental no confundir ambos fenómenos ni tratarlos como idénticos. El sueño se despliega íntegramente dentro de la geografía anímica personal; la sincronicidad, en cambio, entrelaza esa experiencia interna con hechos materiales y objetivos del entorno. Lo que comparten es que ninguno de los dos debe degradarse a profecía mágica o mandato literal: ambos exigen una actitud madura de observación, discernimiento y prudencia hermenéutica.',
+      '¿Qué ocurre, entonces, cuando el significado que brota en el silencio de nuestra experiencia interior parece encontrar un correlato inesperado e incontestable en el mundo exterior? Esa es la inquietud acausal que abre el capítulo siguiente.'
+    ],
+    carlitosCallout: {
+      id: 'carlitos-cap2-puente-sincro',
+      title: 'Transición Conceptual • De Adentro hacia Afuera',
+      text: 'El sueño nos confronta con el lenguaje autónomo de nuestra intimidad psíquica; la sincronicidad nos plantea la resonancia de ese significado en el mundo fáctico. Reconocer la diferencia entre ambos preserva la sobriedad del trabajo analítico.'
     }
   },
 
   // ==========================================
-  // CAPÍTULO 3 — SINCRONICIDAD: EL PRINCIPIO ACAUSAL (PÁGINAS 11 A 15)
+  // CAPÍTULO 3 — SINCRONICIDAD: EL PRINCIPIO ACAUSAL (PÁGINAS 13 A 17)
   // ==========================================
   {
-    pageNumber: 11,
+    pageNumber: 13,
     chapterId: 3,
     sectionTitle: 'Capítulo 3 — Sincronicidad',
     pageTitle: 'El Escarabajo Dorado de Küsnacht',
@@ -392,7 +446,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 12,
+    pageNumber: 14,
     chapterId: 3,
     sectionTitle: 'Capítulo 3 — Sincronicidad',
     pageTitle: 'Causalidad vs. Sincronicidad: El Tiempo Cualitativo',
@@ -413,7 +467,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 13,
+    pageNumber: 15,
     chapterId: 3,
     sectionTitle: 'Capítulo 3 — Sincronicidad',
     pageTitle: 'Los Arquetipos Psicoides: El Puente entre mente y Materia',
@@ -421,41 +475,39 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     contentType: 'text',
     keyTerms: [
       'Arquetipo Psicoide',
-      'Espectro instinto–imagen',
-      'Instinto Biológico',
       'Unus Mundus',
-      'Raíz de la Sincronía',
+      'Límite Psique-Materia',
+      'Wolfgang Pauli',
+      'Hipótesis Filosófica',
     ],
     clippedPhoto: {
       imageUrl: IMAGE_MANIFEST.goldenScarab,
-      caption: 'Reliquia del escarabajo dorado: cuando el arquetipo toma cuerpo físico',
+      caption: 'Reliquia del escarabajo dorado: cuando el arquetipo resuena en la experiencia',
       rotationDeg: 2.6,
       side: 'right',
       altText: 'Escarabajo dorado sobre manuscrito antiguo',
     },
     paragraphs: [
-      'Para comprender por qué un estado interior puede coincidir con un hecho exterior sin causa mecánica, tenemos que volver a la naturaleza misma del arquetipo.',
-      'Uno de los errores más comunes consiste en imaginar que los arquetipos son meras "ideas en la cabeza", fantasías poéticas o esquemas abstractos guardados en los lóbulos cerebrales. En sus años de madurez —y gracias al fecundo diálogo que mantuvo con el físico cuántico Wolfgang Pauli—, Jung propuso que el arquetipo en su raíz más honda no es puramente mental: posee una naturaleza *psicoide* (*psychoid*).',
-      '¿Qué significa exactamente que sea "psicoide"? El término alude a una realidad que es "semejante al alma", pero que trasciende los límites de lo psíquico consciente e inconsciente. El arquetipo se comporta como un espectro lumínico continuo con dos polos inseparables: en su extremo superior (el polo imaginativo y espiritual), el arquetipo se viste de metáforas, relatos míticos, sueños numinosos y anhelos de sentido. Pero en su extremo inferior (el polo somático y físico), el arquetipo se ancla de forma directa en los procesos biológicos, el instinto animal, la química celular y la materia inorgánica.',
-      'Carlitos habría dicho que basta observar la naturaleza para encontrar analogías vivas de este orden: las aves migratorias que recorren continentes sin compás ni mapas de papel, las colonias de hormigas que construyen ciudades ventiladas sin un ingeniero a cargo, o el latido cardíaco que se organiza en el cuerpo en formación. Para él, estas dinámicas ilustran cómo ciertos patrones ordenadores parecen operar en el tejido biológico mucho antes de que intervenga la razón consciente.',
-      'Esta naturaleza psicoide es el cimiento silencioso sobre el cual reposa el fenómeno de la *Sincronicidad*. Cuando un estado interior cargado de significado coincide de forma asombrosa con un hecho físico exterior (como aquel célebre escarabajo dorado que golpeó la ventana del consultorio de Küsnacht), no es que la mente haya movido la materia por telequinesis. Lo que ocurre es que mente y materia son dos caras de una misma moneda arquetípica activada simultáneamente en el tejido del *Unus Mundus*.',
-      'Comprender la dimensión psicoide nos rescata de dos trampas: el materialismo reduccionista que niega el significado del cosmos, y la superstición mágica que cree controlar el mundo con el pensamiento. La naturaleza y el alma respiran al unísono.'
+      'Para comprender por qué un estado psíquico interior puede coincidir significativamente con un hecho físico exterior sin una causa mecánica que los ligue, tenemos que profundizar en la naturaleza del arquetipo. Un error habitual consiste en confundir el arquetipo con una imagen mental concreta o con una idea almacenada en los lóbulos cerebrales.',
+      'En sus años de madurez —y a raíz del intenso intercambio epistolar y conceptual que mantuvo con el físico Wolfgang Pauli—, Jung acuñó el término *psicoide* (*psychoid*) para señalar una dimensión de la realidad que no puede describirse completamente como un fenómeno psíquico en el sentido convencional. El arquetipo en sí mismo no es directamente accesible a la conciencia: aquello que conocemos son sus manifestaciones a través de imágenes, símbolos, metáforas y conductas.',
+      'El concepto de lo psicoide permite explorar el límite sutil entre lo psíquico y lo fisiológico, y reflexionar sobre la relación entre psique y materia. En este marco, Jung recuperó la antigua noción alquímica y filosófica del *Unus Mundus* (el mundo uno): la hipótesis conceptual de que mente y materia podrían constituir dos aspectos complementarios de una realidad subyacente más honda. Conviene subrayar que se trata de una hipótesis filosófica y hermenéutica, no de una ley física comprobada en laboratorio ni de una equivalencia directa con la mecánica cuántica.',
+      'Jung buscaba pensar una realidad más profunda que la rígida separación cartesiana entre mente y materia, sin postular en ningún momento que los pensamientos muevan objetos físicos o controlen el mundo material. Psique y naturaleza comparten un trasfondo común de orden, sin que la conciencia ejerza omnipotencia alguna sobre los hechos.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap1-psicoide',
-      title: 'Síntesis Conceptual • El Continuo Psicoide y Somático',
+      title: 'Síntesis Conceptual • La Naturaleza Psicoide',
       variant: 'alchemical',
-      text: 'El arquetipo trasciende el confinamiento puramente mental: abarca tanto el polo superior del símbolo y el mito como el polo inferior del instinto biológico y la materia. Cuerpo y mente constituyen una unidad funcional en el tejido del Unus Mundus.'
+      text: 'El término psicoide nombra la raíz del arquetipo que trasciende la conciencia subjetiva. No afirma que la mente controle la materia, sino que sugiere, como hipótesis filosófica afín al Unus Mundus, una base común donde lo psíquico y lo fáctico convergen en significado.'
     }
   },
   {
-    pageNumber: 14,
+    pageNumber: 16,
     chapterId: 3,
     sectionTitle: 'Capítulo 3 — Sincronicidad',
     pageTitle: 'La Brújula del Destino: Señales en la Vida Cotidiana',
     subtitle: 'Cómo y cuándo se constelan las sincronías en los umbrales de transformación personal',
     contentType: 'text',
-    keyTerms: ['Constelación Sincrónica', 'Umbrales Existenciales', 'Lectura de Señales', 'Coaching Profundo'],
+    keyTerms: ['Coincidencia Significativa', 'Carga Afectiva', 'Umbral de Cambio', 'Reflexión Psicológica'],
     clippedPhoto: {
       imageUrl: '/src/assets/images/golden_scarab_alchemical_relic_1790692388946.jpg',
       caption: 'Amuleto del escarabajo dorado sobre el manuscrito de notas',
@@ -464,62 +516,43 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       altText: 'Escarabajo dorado de la sincronicidad',
     },
     paragraphs: [
-      'Entendida la raíz, la pregunta es práctica: ¿cuándo aparecen las sincronicidades en la vida cotidiana? No se presentan de forma caprichosa ni constante; se constelan (se activan y se agrupan) prioritariamente en momentos de máxima turbulencia psíquica: durante una crisis vocacional profunda, en el duelo por la pérdida de un ser amado, al inicio de un enamoramiento apasionado, o durante la llamada "crisis del ecuador de la vida" (los 40 años), cuando el mapa del ego ya no sirve para transitar la segunda mitad de la existencia.',
-      'En esos instantes límite, Jung observaba que estas coincidencias se agrupan en momentos de fuerte carga afectiva y de encrucijada existencial. De pronto, un libro cae de una estantería abriéndose exactamente en la página que resuelve una duda crucial; te cruzás en la parada de un colectivo con una persona que no veías hace diez años y que te ofrece el trabajo que necesitabas; o un sueño nocturno se refleja al día siguiente en una noticia inesperada.',
-      'En el coaching y el autoconocimiento, aprender a registrar las sincronicidades no tiene nada que ver con delegar la responsabilidad de tus decisiones en "el universo" (en el capítulo 5 veremos un protocolo de auditoría crítica para no confundir coincidencias casuales con sincronías verdaderas). Muy por el contrario: la sincronicidad es un *espejo amplificador* del Self. Te indica si estás caminando en consonancia con tu proceso de individuación o si estás forzando una puerta falsa por pura terquedad del ego.',
-      'La clave ética para trabajar con las sincronicidades consiste en guardar silencio, abstenerse de inflarse creyéndose "un elegido del destino" y preguntarse: "¿Qué acción concreta y valiente me está exigiendo esta coincidencia en mi vida de hoy?".'
+      '¿En qué circunstancias suelen advertirse las sincronicidades en la vida cotidiana? La experiencia clínica de Jung revela que las coincidencias significativas no se presentan de forma constante ni programada; tienden a constelarse en momentos de intensa carga emocional o encrucijada vital: durante una crisis de vocación, un duelo, el comienzo de un vínculo apasionado o la transición del ecuador de la vida.',
+      'Sin embargo, es esencial evitar malentendidos: las sincronicidades no aparecen únicamente durante crisis extremas, no constituyen señales que indiquen un destino obligatorio ni representan instrucciones cósmicas que estemos compelidos a obedecer. Que una coincidencia resulte conmovedora para quien la vive no la transforma en una prueba científica objetiva de que el universo le envía un mandato exterior.',
+      'Su auténtico valor psicológico reside en la reflexión que despierta y en las asociaciones personales que permite explorar. En lugar de imaginar la sincronicidad como una brújula infalible que traza el futuro, es más fecundo entenderla como una ocasión privilegiada para observar nuestra propia situación desde otra perspectiva.',
+      'Ante una coincidencia significativa, las preguntas pertinentes no buscan predecir sino discernir: ¿por qué este acontecimiento adquirió tanta relevancia íntima para mí? ¿Qué estaba sintiendo o pensando cuando ocurrió? ¿Qué asociaciones me despierta y qué aspecto de mi dilema me ayuda a reconsiderar? ¿Estoy interpretando con libertad o forzando el sentido para confirmar algo que ya deseaba creer?'
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-brujula',
-      title: 'Lectura de Campo • Sintonía y Umbral de Sentido',
-      text: 'La constelación de sincronicidades no responde a demandas voluntarias del ego, sino a umbrales de reorientación existencial. Funciona como un barómetro cualitativo que refleja si la conducta individual está alineada con el flujo integrador del Self.'
+      title: 'Criterio Hermenéutico • Ocasión de Perspectiva',
+      text: 'Una coincidencia de sentido no es una orden exterior ni una prueba mágica del destino. Su fecundidad radica en invitar a la conciencia a detenerse, revisar sus supuestos y observar la encrucijada personal desde un ángulo más amplio.'
     }
   },
   {
-    pageNumber: 15,
+    pageNumber: 17,
     chapterId: 3,
     sectionTitle: 'Capítulo 3 — Sincronicidad',
-    pageTitle: 'Tabla Comparativa de Sincronicidades Cotidianas',
-    subtitle: 'Patrones frecuentes (clasificación del autor)',
-    contentType: 'table',
-    tableData: [
-      {
-        archetype: 'El Escarabajo / Aparición Animal Inesperada',
-        symbols: 'Insectos dorados, aves en ventanas, encuentros con animales salvajes en momentos de dolor o decisión.',
-        distortion: 'Superstición fóbica ("es mala suerte") o inflación mágica. La integración requiere preguntar qué instinto vital o renacimiento representa ese animal.',
-      },
-      {
-        archetype: 'El Encuentro Fortuito en la Encrucijada',
-        symbols: 'Toparse casualmente con la persona exacta necesaria para destrabar un proyecto o vínculo tras años de silencio.',
-        distortion: 'Atribuir a la otra persona una cualidad divina infalible. Reconocer que el vínculo es el vehículo de un arquetipo que pide maduración.',
-      },
-      {
-        archetype: 'El Objeto Perdido o Hallazgo Extraño',
-        symbols: 'Encontrar una joya antigua, una carta olvidada o un libro que se abre solo en una frase determinante.',
-        distortion: 'Fijación obsesiva con el objeto físico. El objeto es un puntero hacia un contenido de la Sombra o del Ánima que necesita ser recuperado.',
-      },
-      {
-        archetype: 'La Falla Sincrónica de Aparatos / Reloj Detenido',
-        symbols: 'Relojes que se frenan en la hora de una partida, interferencias en dispositivos durante una revelación emocional.',
-        distortion: 'Pánico conspirativo. Carlitos lo entendía como una perturbación psico-física del campo por una descarga afectiva de máxima tensión.',
-      },
-    ],
+    pageTitle: 'Sentido No Es Destino: Alcances y Límites de la Sincronicidad',
+    subtitle: 'El discernimiento entre el hecho fáctico, la resonancia subjetiva y la tentación determinista',
+    contentType: 'text',
+    keyTerms: ['Hecho vs Interpretación', 'Límites Epistemológicos', 'Numens y Subjetividad', 'Puente al I Ching'],
     paragraphs: [
-      'Esta tabla resume cuatro patrones frecuentes de fenómenos sincrónicos (clasificación del autor) y de la práctica de acompañamiento personal. Cada evento reúne una perturbación interior, un hecho físico exterior coincidente y un llamado ético a la transformación. Hasta aquí vimos cómo la sincronicidad se presenta espontáneamente. En el capítulo siguiente veremos cómo una tradición milenaria aprendió a interrogar deliberadamente ese mismo principio.'
+      'Para trabajar con la sincronicidad sin extraviarnos en el pensamiento mágico ni en el escepticismo ciego, necesitamos deslindar con sobriedad sus cinco componentes estructurales:\n1. **El acontecimiento exterior:** el hecho fáctico y verificable que ocurre en el mundo físico.\n2. **El estado psíquico interior:** el pensamiento, emoción, sueño o inquietud que ocupaba a la persona.\n3. **La coincidencia temporal:** el enlace acausal entre ambos sucesos en un mismo tiempo cualitativo.\n4. **La interpretación:** el significado íntimo que la persona atribuye a ese cruce, el cual requiere examen crítico.\n5. **Los límites de validez:** la frontera ética que impide confundir una coincidencia de sentido con una causa física o un mandato del destino.',
+      'Un ejemplo cotidiano ayuda a distinguir el hecho de su lectura: imaginemos a una persona que piensa con intensidad y nostalgia en un amigo de la juventud al que no ve desde hace años. Minutos después, suena su teléfono y es precisamente ese amigo. El hecho objetivo es la llamada entrante. La coincidencia es su sincronía temporal con el pensamiento previo. El significado subjetivo puede ser profundo y conmovedor, pero esa intensidad afectiva no demuestra que el pensamiento haya generado la llamada ni que exista una fuerza cósmica ordenando el reencuentro.',
+      'El impacto emocional o la sensación de numinosidad son indicios valiosos de la relevancia personal de una experiencia, pero no constituyen una demostración de su carácter acausal objetivo ni una garantía de verdad exterior. Cuando la persona olvida este límite, cae fácilmente en asociaciones forzadas o en la proyección de sus propios anhelos sobre el entorno.',
+      'Esta comprensión lúcida nos sitúa ante la puerta del siguiente capítulo: el *I Ching* permite explorar deliberadamente una relación simbólica con el momento presente. Pero al igual que ocurre con la sincronicidad espontánea, su consulta no debe confundirse jamás con una garantía de predicción ni con un mecanismo para controlar el porvenir.'
     ],
     carlitosCallout: {
-      id: 'carlitos-cap3-tabla',
-      title: 'Criterio de Autenticidad • La Huella Numinosa',
-      variant: 'marginalia',
-      text: 'Una genuina sincronicidad se distingue por su impacto afectivo inmediato y su resonancia de sentido ineludible. Si requiere justificaciones forzadas o gimnasia lógica, se trata de una proyección mental del deseo y no de una manifestación acausal del Unus Mundus. Reconocer ese orden abre la puerta a dialogar con él, como veremos con el I Ching.'
+      id: 'carlitos-cap3-sentido-no-destino',
+      title: 'Distinción Metódica • La Frontera del Sentido',
+      text: 'El sentido atribuido a una coincidencia es una construcción del sujeto frente a lo vivido, no una propiedad física del hecho exterior. Distinguir el acontecimiento de su interpretación es la garantía ética que protege al autoconocimiento de la superstición.'
     }
   },
 
   // ==========================================
-  // CAPÍTULO 4 — EL ORÁCULO DEL I CHING Y LA MENTE SIMBÓLICA (PÁGINAS 16 A 23)
+  // CAPÍTULO 4 — EL ORÁCULO DEL I CHING Y LA MENTE SIMBÓLICA (PÁGINAS 18 A 25)
   // ==========================================
   {
-    pageNumber: 16,
+    pageNumber: 18,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Jung y el Libro de las Mutaciones',
@@ -548,7 +581,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 17,
+    pageNumber: 19,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'El mapa del viaje: la consulta de punta a punta',
@@ -575,7 +608,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 18,
+    pageNumber: 20,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'El arte de formular la pregunta',
@@ -620,7 +653,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 19,
+    pageNumber: 21,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Anatomía del hexagrama y aritmética de la tirada',
@@ -661,7 +694,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     ],
   },
   {
-    pageNumber: 20,
+    pageNumber: 22,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'La estructura de la lectura: juicio, imagen y mutaciones',
@@ -682,7 +715,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 21,
+    pageNumber: 23,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Dos lentes para profundizar: posiciones y trigramas',
@@ -690,7 +723,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     contentType: 'table',
     keyTerms: ['Puestos 1 a 6', 'Trigramas Ba Gua', 'Trigrama inferior y superior', 'Hexagramas 63 y 64'],
     paragraphs: [
-      'Las posiciones de las líneas (de 1 a 6) no son equivalentes ni intercambiables. Cada puesto describe un grado de visibilidad, compromiso y madurez en el desarrollo de cualquier situación. Al leer tus líneas mutantes, contrastá su recomendación con el puesto que ocupan (remitite a la Figura a del folio 19 para ver su ubicación en la estructura).',
+      'Las posiciones de las líneas (de 1 a 6) no son equivalentes ni intercambiables. Cada puesto describe un grado de visibilidad, compromiso y madurez en el desarrollo de cualquier situación. Al leer tus líneas mutantes, contrastá su recomendación con el puesto que ocupan (remitite a la Figura a del folio 21 para ver su ubicación en la estructura).',
       'La segunda lente radica en los ocho trigramas (*Ba Gua*), las fuerzas elementales de la cosmología china. El trigrama inferior describe la situación propia o interna (tus emociones, recursos o disposición anímica), y el superior la externa o ambiental (las presiones, oportunidades o vínculos del entorno). Para leer su interacción, fijate en el movimiento de cada uno: si se encuentran o se alejan, tu impulso fluye o choca con el contexto.'
     ],
     referenceTables: [
@@ -737,7 +770,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 22,
+    pageNumber: 24,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Una tirada completa: el caso del prólogo de Jung',
@@ -753,7 +786,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       caption: 'Figura (e): Ejemplo trabajado del prólogo de Jung (1949). Hexagrama 50 (Dǐng / Ting) con líneas mutantes en las posiciones 2 y 3, transformándose en el hexagrama 35, El Progreso (Jìn / Chin).',
     },
     paragraphs: [
-      'Examinemos una tirada completa siguiendo las capas de lectura del folio 20 con el caso histórico del prólogo de Jung de 1949. Al preguntar qué opinaba el libro sobre presentarlo a Occidente, el presente fue el Hexagrama 50, El Caldero (*Dǐng* / *Ting*), con líneas mutantes en las posiciones 2 y 3, orientando su tendencia hacia el Hexagrama 35, El Progreso (*Jìn* / *Chin*).',
+      'Examinemos una tirada completa siguiendo las capas de lectura del folio 22 con el caso histórico del prólogo de Jung de 1949. Al preguntar qué opinaba el libro sobre presentarlo a Occidente, el presente fue el Hexagrama 50, El Caldero (*Dǐng* / *Ting*), con líneas mutantes en las posiciones 2 y 3, orientando su tendencia hacia el Hexagrama 35, El Progreso (*Jìn* / *Chin*).',
       'En el hexagrama presente, el Juicio declara: «El Caldero. Suprema ventura. Éxito». La Imagen establece: «Fuego sobre madera: la imagen de El Caldero. Así el noble rectifica su posición consolidando su destino». El caldero es la vasija ritual donde los alimentos crudos se cocinan y consagran para nutrir a la comunidad: el libro mismo concebido como alimento espiritual para Occidente.',
       'En las líneas mutantes, leemos de abajo hacia arriba:\nLínea 2 (nueve en el segundo lugar): «En el caldero hay alimento. Mis compañeros están envidiosos, pero no pueden perjudicarme. Ventura». Revela un valor auténtico que no sufre daño.\nLínea 3 (nueve en el tercer lugar): «Las asas del caldero están alteradas; se obstruye su camino. No se come la grasa del faisán. Cuando caiga la lluvia, el pesar se disipa; al final, ventura». Muestra una obstrucción que se disuelve con el tiempo.',
       'El derivado, el 35 (El Progreso), se lee por contraste: el trigrama inferior, lo propio, pasa de Viento/Madera (influencia gradual) a Tierra (receptividad), mientras el Fuego superior, el entorno, no cambia. Lo propio se vuelve receptivo bajo un entorno que ilumina, y la situación apunta hacia el progreso.'
@@ -773,7 +806,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 23,
+    pageNumber: 25,
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Práctica guiada: tu primera tirada',
@@ -876,10 +909,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 24 A 26)
+  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 26 A 28)
   // ==========================================
   {
-    pageNumber: 24,
+    pageNumber: 26,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 1: Bitácora de Sueños en Cuatro Actos',
@@ -926,7 +959,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       applicationExample: 'Escena ilustrativa (personaje compuesto): Mateo soñó que conducía a 200 km/h por una autopista lujosa pero sin frenos (Exposición/Desarrollo). En el último segundo, un viejo guardabosques con farol (Senex, el Anciano sabio) le cortaba el paso con una rama verde y el auto se apagaba (Peripeteia/Lysis). Comprendió que su sobreexigencia laboral estaba al borde de provocarle un agotamiento severo. Su acción concreta fue cancelar dos compromisos innecesarios y tomarse una tarde de caminata en silencio.',
     },
     paragraphs: [
-      'El trabajo con los sueños es la piedra angular del autoconocimiento y la escucha interior. Dedicarle veinte minutos a la semana a este protocolo te otorga una lucidez sobre tus verdaderas motivaciones que ningún libro teórico puede reemplazar. Este protocolo lleva a la práctica la estructura dramática que vimos en el folio 10.'
+      'El trabajo con los sueños es la piedra angular del autoconocimiento y la escucha interior. Dedicarle veinte minutos a la semana a este protocolo te otorga una lucidez sobre tus verdaderas motivaciones que ningún libro teórico puede reemplazar. Este protocolo lleva a la práctica la estructura dramática que vimos en el folio 11.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap5-suenos',
@@ -942,7 +975,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 25,
+    pageNumber: 27,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
@@ -992,7 +1025,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 26,
+    pageNumber: 28,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
@@ -1046,17 +1079,22 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       text: 'El juego de la sintonía entrena la renuncia a forzar los acontecimientos exteriores. El principio del Wu Wei enseña que el orden acausal se percibe con mayor nitidez cuando el ego suspende su compulsión manipuladora y aprende a moverse al compás del entorno.'
     }
   },
+
+  // ==========================================
+  // CIERRE — LA GRAN CONIUNCTIO Y EL MANIFIESTO DE LA COMPLETITUD (PÁGINA 29)
+  // ==========================================
   {
-    pageNumber: 27,
-    chapterId: 5,
+    pageNumber: 29,
+    chapterId: 6,
     sectionTitle: 'El Manifiesto de la Completitud',
-    pageTitle: 'La Gran Coniunctio y el Compromiso Ético',
+    pageTitle: 'La Gran Coniunctio y el Manifiesto de la Completitud',
     subtitle: 'La piedra filosofal, la reconciliación de los opuestos y la despedida de Carlitos junto al fuego',
     contentType: 'conclusion',
     keyTerms: ['Ganzheit / Completitud', 'Coniunctio Oppositorum', 'Lapis Philosophorum', 'El Fuego y el Mate'],
     paragraphs: [
       'Hemos recorrido las páginas de este manual por el fascinante segundo territorio de la mente profunda y las enseñanzas de Carlitos. Hemos aprendido a cuidar la distancia justa frente a los arquetipos y a escuchar el teatro de cuatro actos de nuestros sueños nocturnos.',
       'Asimismo, nos atrevimos a abrir la ventana al escarabajo de la sincronicidad y aprendimos a consultar el I Ching con lucidez ética: formular una pregunta auténtica, tirar las monedas, leer el presente y su tendencia, y tomar una decisión propia.',
+      'Este viaje alquímico converge en tres conceptos esenciales que articulan la madurez interior: la **completitud** (*Ganzheit*), entendida no como una perfección idealizada ni la eliminación de contradicciones, sino como la integración viva de todas las dimensiones psíquicas; la **unión de los opuestos** (*coniunctio oppositorum*), el arte de reconciliar la luz consciente con la sombra inconsciente sosteniendo la tensión sin quebrarse; y la **piedra filosofal** (*lapis philosophorum*), que en la psicología profunda no alude a un oro material, sino al fruto incorruptible de esa integración: un centro ético capaz de orientar la vida cotidiana con sabiduría y templanza.',
       'Ahora, la puerta del estudio de Küsnacht vuelve a quedar en silencio. El fuego de la chimenea crepita suavemente en la penumbra. Carlitos toma su pipa de brezo, le da una última cebada al mate argentino y te mira a los ojos con esa intensidad serena que solo tienen aquellos que han mirado a la muerte y al alma sin pestañear.',
       '"Recordá siempre esto —te dice con voz tranquila—: la meta de tu existencia humana jamás fue la perfección. La perfección es una trampa estéril del ego que busca escapar del sufrimiento. Tu verdadera meta es la *completitud* (*Ganzheit*). Completitud significa abrazar tu luz y tu barro, sostener la tensión entre tus opuestos sin quebrarte, y tener el coraje de caminar tu propio mito con la cabeza erguida."',
       'El viaje no termina aquí; apenas está comenzando. Que los símbolos de tus sueños sean tus antorchas, que las sincronías sean las piedras de tu puente, y que el recuerdo de Carlitos sea ese compañero entrañable que te susurra en la noche: *Despertá, caminá y sé quien verdaderamente sos*.'

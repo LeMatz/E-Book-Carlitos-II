@@ -31,13 +31,7 @@ interface FolioIntegrationData {
 }
 
 const SINGLE_FOLIO_CLOSINGS: Record<number, FolioIntegrationData> = {
-  15: {
-    title: 'Síntesis de Archivo • Clave de Lectura de la Tabla',
-    quote: '«El evento sincrónico no es un milagro fortuito: es la irrupción momentánea del orden psicofísico fundamental.»',
-    reflectionQuestion: '¿En cuál de las tres categorías de la matriz reconoces tus experiencias sincrónicas más potentes?',
-    actionGuideline: 'Revisa tu historial personal y anota al menos un evento en cada fila de la matriz para verificar el patrón.',
-  },
-  25: {
+  27: {
     title: 'Auditoría Sincrónica • Registro y Verificación',
     quote: '«La coincidencia no se busca con avidez; se recibe con la serenidad de quien sabe que el significado ya está allí.»',
     reflectionQuestion: '¿Qué sesgo de confirmación sueles proyectar sobre los eventos diarios y cómo puedes purificar tu registro?',

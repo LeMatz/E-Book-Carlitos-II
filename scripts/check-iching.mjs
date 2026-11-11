@@ -101,8 +101,8 @@ async function run() {
   const ch4Meta = ChaptersMetaData.chapters.find((c) => c.chapterId === 4);
   if (!ch4Meta) {
     error('ChaptersMetaData does not contain chapter 4');
-  } else if (ch4Meta.startPage !== 16 || ch4Meta.endPage !== 23) {
-    error(`Chapter 4 in ChaptersMetaData has range ${ch4Meta.startPage}-${ch4Meta.endPage}, expected 16-23`);
+  } else if (ch4Meta.startPage !== 18 || ch4Meta.endPage !== 25) {
+    error(`Chapter 4 in ChaptersMetaData has range ${ch4Meta.startPage}-${ch4Meta.endPage}, expected 18-25`);
   } else {
     success(`ChaptersMetaData Chapter 4 range verified (${ch4Meta.startPage}-${ch4Meta.endPage})`);
   }
@@ -115,17 +115,17 @@ async function run() {
     l1: {
       prefix: "      'Para Jung, el I Ching opera",
       expected: '3401b8b5c725f78b',
-      label: "Folio 16 paragraph 2 ('Para Jung, el I Ching opera...)",
+      label: "Folio 18 paragraph 2 ('Para Jung, el I Ching opera...)",
     },
     l2: {
       prefix: "      'Esta conexión descansa",
       expected: '50b4190d777709da',
-      label: "Folio 16 paragraph 4 ('Esta conexión descansa...)",
+      label: "Folio 18 paragraph 4 ('Esta conexión descansa...)",
     },
     l3: {
       prefix: "      text: 'El I Ching no predice desenlaces fijos",
       expected: '632a99b7118b0fa3',
-      label: "Folio 16 callout text ('El I Ching no predice desenlaces fijos...)",
+      label: "Folio 18 callout text ('El I Ching no predice desenlaces fijos...)",
     },
   };
 
@@ -181,8 +181,8 @@ async function run() {
   }
 
   // 4. Forbidden strings check in Chapter 4 folios (excluding frozen folio block)
-  const ch4StartPage = ch4Meta ? ch4Meta.startPage : 16;
-  const ch4EndPage = ch4Meta ? ch4Meta.endPage : 23;
+  const ch4StartPage = ch4Meta ? ch4Meta.startPage : 18;
+  const ch4EndPage = ch4Meta ? ch4Meta.endPage : 25;
 
   const startIdxCh4 = lines.findIndex((l) => l.trim() === `pageNumber: ${ch4StartPage},`);
   const endIdxCh4 = lines.findIndex((l) => l.trim() === `pageNumber: ${ch4EndPage + 1},`);
