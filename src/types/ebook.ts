@@ -123,7 +123,7 @@ export interface FootnoteData {
 }
 
 export interface EbookPageData {
-  pageNumber: number; // 1 to EBOOK_PAGES.length (29)
+  pageNumber: number; // 1 to EBOOK_PAGES.length (27)
   chapterId: number; // 0 for Intro/Bio, 1, 2, 3, 4, 5
   sectionTitle: string;
   pageTitle: string;
