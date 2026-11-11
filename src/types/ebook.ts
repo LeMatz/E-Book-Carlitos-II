@@ -140,6 +140,7 @@ export interface EbookPageData {
   iChingHexagram?: IChingHexagramData;
   iChingTrigrams?: TrigramData[];
   hexagramFigure?: HexagramFigureData;
+  extraFigures?: HexagramFigureData[];
   referenceTables?: ReferenceTable[];
   footnotes?: FootnoteData[];
   clippedPhoto?: ClippedPhoto;

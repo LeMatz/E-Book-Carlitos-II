@@ -150,9 +150,10 @@ export const EbookPage: React.FC<EbookPageProps> = ({
   const renderDropCapParagraph = (text: string, key: string) => {
     if (!text) return null;
     const match = text.match(/^([«"“*]*\s*)([A-ZÁÉÍÓÚÑ])(.*)$/s);
+    const preLineClass = text.includes('\n') ? 'whitespace-pre-line ' : '';
     if (!match) {
       return (
-        <p key={key} className="text-justify leading-relaxed">
+        <p key={key} className={`${preLineClass}text-justify leading-relaxed`}>
           {renderFormattedText(text)}
         </p>
       );
@@ -161,7 +162,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
     const [, leadingSymbols, firstLetter, restOfText] = match;
 
     return (
-      <p key={key} className="text-justify leading-relaxed">
+      <p key={key} className={`${preLineClass}text-justify leading-relaxed`}>
         {leadingSymbols}
         <span className="font-playfair float-left text-[2.8rem] sm:text-[3.2rem] leading-[0.82] pt-0.5 pr-2.5 pb-0 font-black text-[#17120d] select-none inline-block drop-shadow-xs">
           {firstLetter}
@@ -534,6 +535,21 @@ export const EbookPage: React.FC<EbookPageProps> = ({
         />
       )}
 
+      {/* Extra Hexagram Figures (e.g. Figura c en Folio 21) */}
+      {pageData.extraFigures &&
+        pageData.extraFigures.map((fig, idx) => (
+          <HexagramFigure
+            key={idx}
+            lines={fig.lines}
+            showDerived={fig.showDerived}
+            annotate={fig.annotate}
+            caption={fig.caption}
+            primaryName={fig.primaryName}
+            derivedName={fig.derivedName}
+            highlightLines={fig.highlightLines}
+          />
+        ))}
+
       {/* Reference Structural Tables (Folios 20, 21, 22) */}
       {pageData.referenceTables && pageData.referenceTables.map((tbl, tblIdx) => (
         <div key={tblIdx} className="my-3 overflow-x-auto border-2 border-[#5a4022] bg-[#ebdcb8] shadow-md">
@@ -756,7 +772,7 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               {idx === 0 ? (
                 renderDropCapParagraph(pText, `dropcap-${idx}`)
               ) : (
-                <p className="text-justify leading-relaxed">
+                <p className={`${pText.includes('\n') ? 'whitespace-pre-line ' : ''}text-justify leading-relaxed`}>
                   {renderFormattedText(pText)}
                 </p>
               )}

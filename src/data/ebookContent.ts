@@ -41,7 +41,7 @@ export class ChaptersMetaData {
     {
       chapterId: 4,
       title: 'Capítulo 4 — El Oráculo del I Ching y la Mente Simbólica',
-      subtitle: 'El Libro de las Mutaciones, la consulta reflexiva y la decisión ética con la app',
+      subtitle: 'El Libro de las Mutaciones, la consulta reflexiva y la decisión ética',
       startPage: 18,
       endPage: 25,
       iconName: 'grid',
@@ -78,21 +78,15 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     },
     paragraphs: [
       'Entrar en el segundo volumen de esta travesía es cruzar un umbral mucho más íntimo y desafiante. En el primer tomo ordenamos el mapa de superficie: las diferencias entre Freud y Jung, la arquitectura elemental de la máscara y la sombra, y los conceptos fundacionales que nos permitieron dejar de temerle al inconsciente. Pero Carlitos no escribió miles de páginas para que nos quedáramos cómodamente sentados en la orilla describiendo el mar desde lejos.',
-      'Imaginate por un instante entrar a su estudio a orillas del lago de Zúrich en Küsnacht. Hay olor a madera de roble, tabaco aromático de pipa y papel de lino envejecido por décadas de estudio. En una pequeña mesa de té, al lado de los manuscritos del *Liber Novus*, humea un mate argentino con su bombilla de plata brillante. Carlitos me mira por encima de sus anteojos redondos, sonríe con esa ironía bondadosa que desarmaba a los intelectuales más arrogantes de Europa, y me dice: "Bueno, che... ya terminamos con los preliminares. Ahora decime con qué soñaste anoche y qué coincidencia inexplicable te dio un escalofrío esta semana".',
-      'Este manual está dedicado a recorrer un panorama integrador de los Arquetipos avanzados en su danza de relaciones (la Sombra Dorada, el Ánima y el Ánimus en el amor, el conflicto entre el viejo sabio Senex y el eterno muchacho Puer Aeternus), la mecánica viva de los sueños como brújula compensatoria, la sincronicidad como puente entre la mente y la materia, y el milenario oráculo chino del *I Ching*, al que Jung dedicó décadas de estudio.',
+      'Imaginate por un instante entrar a su estudio a orillas del lago de Zúrich en Küsnacht. Hay olor a madera de roble, tabaco aromático de pipa y papel de lino envejecido por décadas de estudio. En una pequeña mesa de té, al lado de los manuscritos del *Libro Rojo*, humea un mate con su bombilla de plata brillante. Carlitos me mira por encima de sus anteojos redondos, sonríe con esa ironía bondadosa que desarmaba a los intelectuales más arrogantes de Europa, y me dice: "Tenías razón, desayunar con esta bebida llamada mate es lo mejor que me pasó en esta etapa de mi vida". Por dentro pienso que Carlitos me recuerda un poco a Dumbledore',
+      'Este manual está dedicado a recorrer un panorama integrador de los Arquetipos avanzados en su danza de relaciones, la mecánica viva de los sueños como brújula compensatoria, la sincronicidad como puente entre la mente y la materia, y el milenario oráculo chino del *I Ching*, al que Jung dedicó décadas de estudio.',
       'No leas este libro como quien estudia para rendir un examen. Leelo como quien descifra una carta escrita con tinta invisible que sólo se revela ante el calor del fuego interior. Si estás dispuesto a sostener la mirada de tus propios símbolos, Carlitos ya tiene el mate servido para empezar a charlar.'
     ],
     carlitosCallout: {
       id: 'carlitos-intro-1',
       title: 'Criterio Epistemológico • Rigor y Apertura Simbólica',
-      text: 'El abordaje del inconsciente exige eludir dos trampas: el escepticismo reduccionista que niega lo numinoso y la credulidad ingenua que evade la realidad. La psique opera como un hecho empírico riguroso que debe investigarse con discernimiento crítico y respeto fenomenológico.'
+      text: 'El abordaje del inconsciente exige esquivar dos trampas: el clásico pensamiento lógico que niega lo numinoso y la credulidad ingenua que evade la realidad. La mente opera como un hecho que debe investigarse con discernimiento crítico y respeto fenomenológico.'
     },
-    secondaryCallout: {
-      id: 'carlitos-intro-author-note',
-      title: 'Nota del autor:',
-      variant: 'context_note',
-      text: 'Carlitos es un personaje literario y las charlas narradas son imaginadas con fines de divulgación y coaching. Los textos expresamente rotulados como «Cita» pertenecen a la obra histórica de C. G. Jung y cuentan con fuente verificable; el resto constituye una lectura e interpretación del autor.',
-    }
   },
   {
     pageNumber: 2,
@@ -101,7 +95,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     pageTitle: 'La Realidad Psíquica y el Unus Mundus',
     subtitle: 'El puente sagrado donde la materia y la mente se tocan',
     contentType: 'introduction',
-    keyTerms: ['Realidad Psíquica', 'Unus Mundus', 'Materia y Psique', 'Microcosmos'],
+    keyTerms: ['Realidad Psíquica', 'Unus Mundus', 'Materia y mente', 'Microcosmos'],
     clippedPhoto: {
       imageUrl: IMAGE_MANIFEST.mateJournal,
       caption: 'El mate y el cuaderno de notas en Küsnacht',
@@ -110,10 +104,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       altText: 'Mate y cuaderno de notas de Carlitos',
     },
     paragraphs: [
-      'Uno de los aportes más revolucionarios y menos comprendidos de Carl Gustav Jung es el concepto de *realidad psíquica* (*psychische Realität*). Para el hombre contemporáneo, educado en el materialismo científico, sólo "existe" aquello que puede pesarse en una balanza, medirse con una regla o fotografiarse con una lente óptica. Si algo ocurre en el interior del ser humano —un terror súbito, una intuición certera, un sueño premonitorio—, la ciencia reduccionista se apresura a etiquetarlo como "pura imaginación", "ilusión" o un mero desbalance neuroquímico.',
-      'Carlitos invertía por completo esa soberbia metodológica. Una idea que mueve a una persona a arriesgar su vida, un símbolo que transforma una depresión paralizante en una obra de arte, o un complejo inconsciente que sabotea sistemáticamente una vocación, son hechos con un peso y una eficacia causal tan tangibles como una roca en el camino. Para la experiencia humana, la psique es la única realidad inmediata: todo lo que sabemos del mundo físico exterior entra filtrado a través de nuestra conciencia psíquica.',
-      'Avanzando en su madurez, Jung rescató de la alquimia renacentista (Gerhard Dorn) el concepto de *Unus Mundus* ("Mundo Uno"). El Unus Mundus plantea que en el estrato más profundo de la existencia, por debajo del velo de las apariencias sensibles, la materia física y la energía psíquica no son dos sustancias separadas y antagónicas, sino dos aspectos complementarios de una misma realidad unitaria.',
-      'Cuando un suceso exterior (como la aparición de un animal o el encuentro casual con una persona clave) coincide de forma asombrosa con un estado interior cargado de significado, no estamos ante una causalidad física ni ante una simple fantasía: Jung lo pensó como una manifestación del *Unus Mundus*, donde el orden físico y el anímico se muestran como dos aspectos complementarios de una misma realidad profunda.'
+      'Uno de los aportes más revolucionarios y menos comprendidos de Carl Gustav Jung es el concepto de *realidad psíquica* (*psychische Realität*). Para el hombre contemporáneo, educado en las ciencias lógicas, sólo "existe" aquello que puede pesarse en una balanza, medirse con una regla o fotografiarse con una lente óptica. Si algo ocurre en el interior del ser humano (un terror súbito, una intuición, un sueño premonitorio), la ciencia se apresura a etiquetarlo como "pura imaginación", "ilusión" o un mero desbalance neuroquímico.',
+      'Carlitos invertía por completo esa soberbia. Una idea que mueve a una persona a arriesgar su vida, un símbolo que transforma una depresión paralizante en una obra de arte, o un miedo inconsciente que sabotea sistemáticamente una vocación, son hechos con un peso y una causa tan reales como una roca en el camino. Para la experiencia humana, la mente es la única realidad inmediata: todo lo que sabemos del mundo exterior entra filtrado a través de nuestros sesgados sentidos.',
+      'Avanzando en su madurez, Jung rescató de la alquimia renacentista el concepto de *Unus Mundus* ("Mundo Uno"). El Unus Mundus plantea que en el estrato más profundo de la existencia, por debajo del velo de la materia, los elementos físicos y la energía mental no son dos sustancias separadas y antagónicas, sino dos aspectos complementarios de una misma realidad que es una sola. Hoy en día esta idea tiene similitudes con la conocida Teoría de Cuerdas',
+      'Cuando un suceso exterior (como la aparición de un animal o el encuentro casual con una persona clave) coincide de forma asombrosa con un estado interior cargado de significado, no estamos ante una simple fantasía: Jung lo pensó como una manifestación del *Unus Mundus*, donde el orden físico y el anímico se muestran como dos aspectos complementarios de una misma realidad profunda.'
     ],
     carlitosCallout: {
       id: 'carlitos-intro-2',
@@ -165,18 +159,18 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     historicalNotes: [
       '1932: Wolfgang Pauli acude en crisis anímica a consultar a Jung en Zúrich; Jung analiza más de 400 sueños de Pauli.',
       '1945: Pauli recibe el Premio Nobel de Física por el descubrimiento del Principio de Exclusión.',
-      '1952: Publican juntos el libro conjunto: La interpretación de la naturaleza y la psique (Naturerklärung und Psyche).',
+      '1952: Publican juntos el libro conjunto: La interpretación de la naturaleza y la mente (Naturerklärung und Psyche).',
       '1958: Fallecimiento de Pauli; el archivo epistolar confirma una de las colaboraciones interdisciplinarias más brillantes del siglo XX.'
     ],
     paragraphs: [
-      'Uno de los argumentos más repetidos por los detractores de Jung consiste en acusarlo de "esoterismo" o "misticismo acientífico". Nada derriba con mayor contundencia esa calumnia que examinar la profunda amistad intelectual de más de veinticinco años que unió a Carlitos con *Wolfgang Pauli*, uno de los padres indiscutidos de la mecánica cuántica y Premio Nobel de Física.',
+      'Uno de los argumentos más repetidos por los detractores de Jung consiste en acusarlo de "esoterismo" o "misticismo". Carlitos es en lo profundo un hombre de ciencias y ha expresado en varias ocasiones que le da culpa enseñar ideas que nunca se van a poder comprobar científicamente, pero al menos ha tenido amistades con científicos como Wolfgang Pauli (Premio Nobel de física y padre de la mecánica cuántica).',
       'Pauli llegó a la consulta de Jung en 1932, atravesando un severo colapso nervioso tras un divorcio traumático y una crisis de sentido científico. Jung intuyó de inmediato la extraordinaria potencia intelectual de su paciente y derivó su análisis cotidiano a su discípula Erna Rosenbaum, reservándose la supervisión general. A lo largo de los años, Jung recopiló y analizó minuciosamente más de 400 sueños y visiones de Pauli (que posteriormente constituyeron el material clínico central de su monumental obra *Psicología y alquimia*).',
       'El intercambio epistolar entre ambos fue un auténtico laboratorio donde colisionaron los dos extremos del conocimiento humano: Pauli aportaba el rigor matemático, la física atómica y la noción de complementariedad de Niels Bohr; Jung aportaba la fenomenología arquetípica, la alquimia y el inconsciente colectivo.',
-      'De esta colaboración titánica nació la formulación de la *Sincronicidad*: la hipótesis de que el universo no sólo se rige por la causalidad lineal (A empuja a B en el espacio-tiempo), sino también por un principio acausal de conexión por sentido o significado. Pauli y Jung exploraron la convergencia entre la física cuántica y la psicología profunda.'
+      'De esta colaboración titánica nació la formulación de la *Sincronicidad*: la hipótesis de que el universo no sólo se rige por la causalidad lineal (A empuja a B en el espacio-tiempo), sino también por un *principio acausal* de conexión por sentido o significado. Pauli y Jung exploraron la convergencia entre la física cuántica y la psicología profunda.'
     ],
     carlitosCallout: {
       id: 'carlitos-bio-pauli',
-      title: 'Fundamento Epistolar • Entrelazamiento Psique-Materia',
+      title: 'Fundamento Epistolar • Entrelazamiento mente-Materia',
       variant: 'carlitos',
       text: 'El diálogo epistolar entre Jung y Wolfgang Pauli postuló que observador y observado están indisolublemente vinculados. Física cuántica y psicología profunda convergen en el reconocimiento de una base psicoide común que la causalidad mecanicista lineal no logra agotar.'
     }
@@ -225,8 +219,6 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       'Proyección',
       'Identificación / Inflación',
       'Posesión',
-      'Disociación',
-      'Literalización',
     ],
     clippedPhoto: {
       imageUrl: IMAGE_MANIFEST.mateJournal,
@@ -237,16 +229,16 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     },
     paragraphs: [
       'Uno de los mapas más reveladores y prácticos que Carlitos nos legó para entender qué nos ocurre cuando una fuerza profunda nos conmueve es el *continuo de pérdida de distancia Yo-arquetipo*. Frente a la energía viva de un arquetipo, nuestro Yo no se queda quieto: se mueve a lo largo de una escala según cuánta distancia y lucidez logre sostener. Este continuo se organiza en torno a tres puntos de referencia fundamentales:',
-      '**1. Proyección (Distancia máxima):** En este primer punto de referencia, el contenido se deposita afuera; el Yo queda intacto. Vemos la cualidad arquetípica encarnada en otra persona o circunstancia (el líder perfecto, el rival monstruoso, el salvador providencial o el amor idealizado). Aunque nuestra percepción del otro queda teñida por esa imagen, nuestro Yo conserva su capacidad de pensar y su identidad habitual separada.',
+      '**1. Proyección (Distancia máxima):** En este primer punto, el contenido se deposita afuera; el Yo queda intacto. Vemos la cualidad arquetípica encarnada en otra persona o circunstancia (el líder perfecto, el rival monstruoso, el salvador o el amor idealizado). Aunque nuestra percepción del otro queda teñida por esa imagen, nuestro Yo conserva su capacidad de pensar y su identidad habitual separada.',
       '**2. Identificación / Inflación (Pérdida intermedia de distancia):** Aquí el contenido se funde con el Yo, colapsando en un solo bloque lo que antes eran dos fenómenos separados. Al identificarse con el arquetipo, el Yo se atribuye a su pequeña persona facultades, dones o misiones grandiosas (creerse el Salvador indispensable, el Sabio supremo o el Mártir incomprendido). Se borra la frontera entre nuestra imperfección humana y la magnitud del arquetipo, gestando una embriaguez de grandeza que anticipa el colapso.',
-      '**3. Posesión (Colapso total de distancia):** Es el punto extremo del camino. En la posesión, el Yo pierde por completo la función decisoria; el arquetipo opera sin mediación alguna. La voluntad consciente queda a un costado o anulada. Ya no decidimos nosotros: somos hablados y actuados por la fuerza arquetípica que nos tomó por asalto, desde los fanatismos colectivos hasta los arranques viscerales donde "no éramos nosotros mismos".',
+      '**3. Posesión (Colapso total de distancia):** Es el punto extremo del camino. En la posesión, el Yo pierde por completo la capacidad de razonar; el arquetipo tiene el control de nosotros. La voluntad consciente queda a un costado o anulada. Ya no decidimos nosotros: somos hablados y actuados por la fuerza arquetípica que nos tomó por asalto, desde los fanatismos colectivos hasta el arrepentimiento porque en una situación "no éramos yo mismo".',
       'Para cuidar nuestro equilibrio y crecer en sabiduría, necesitamos reconocer en qué punto de este continuo nos encontramos ante cada crisis, evitando tanto la disociación [1] como la literalización [2] del símbolo vivo. En los momentos de mayor soberbia o inflación heroica, figuras como el *Trickster* (el Embaucador) irrumpen oportunamente con un tropiezo, un fallo cómico o una ironía de la vida para desarmar la fusión antes de que sea tarde.'
     ],
     footnotes: [
       {
         number: 1,
         term: 'Disociación',
-        note: 'Respuesta defensiva en la que, al verse desbordada la mente frente a una emoción o fuerza arquetípica desmedida, la psique se fractura en partes autónomas que operan a escondidas del Yo consciente.',
+        note: 'Respuesta defensiva en la que, al verse desbordada la mente frente a una emoción o fuerza arquetípica desmedida, la mente se fractura en partes autónomas que operan a escondidas del Yo consciente.',
       },
       {
         number: 2,
@@ -297,7 +289,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     pageNumber: 8,
     chapterId: 1,
     sectionTitle: 'Capítulo 1 — Arquetipos II',
-    pageTitle: 'Los Arquetipos Psicoides: El Puente entre Psique y Materia',
+    pageTitle: 'Los Arquetipos Psicoides: El Puente entre mente y Materia',
     subtitle: 'Cuando la fuerza arquetípica traspasa las fronteras del cerebro y resuena en la naturaleza física',
     contentType: 'text',
     keyTerms: [
@@ -318,14 +310,14 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       'Uno de los errores más comunes consiste en imaginar que los arquetipos son meras "ideas en la cabeza", fantasías poéticas o esquemas abstractos guardados en los lóbulos cerebrales. En sus años de madurez —y gracias al fecundo diálogo que mantuvo con el físico cuántico Wolfgang Pauli—, Jung propuso que el arquetipo en su raíz más honda no es puramente mental: posee una naturaleza *psicoide* (*psychoid*).',
       '¿Qué significa exactamente que sea "psicoide"? El término alude a una realidad que es "semejante al alma", pero que trasciende los límites de lo psíquico consciente e inconsciente. El arquetipo se comporta como un espectro lumínico continuo con dos polos inseparables: en su extremo superior (el polo imaginativo y espiritual), el arquetipo se viste de metáforas, relatos míticos, sueños numinosos y anhelos de sentido. Pero en su extremo inferior (el polo somático y físico), el arquetipo se ancla de forma directa en los procesos biológicos, el instinto animal, la química celular y la materia inorgánica.',
       'Carlitos habría dicho que basta observar la naturaleza para encontrar analogías vivas de este orden: las aves migratorias que recorren continentes sin compás ni mapas de papel, las colonias de hormigas que construyen ciudades ventiladas sin un ingeniero a cargo, o el latido cardíaco que se organiza en el cuerpo en formación. Para él, estas dinámicas ilustran cómo ciertos patrones ordenadores parecen operar en el tejido biológico mucho antes de que intervenga la razón consciente.',
-      'Esta naturaleza psicoide es el cimiento silencioso sobre el cual reposa el fenómeno de la *Sincronicidad*. Cuando un estado interior cargado de significado coincide de forma asombrosa con un hecho físico exterior (como aquel célebre escarabajo dorado que golpeó la ventana del consultorio de Küsnacht), no es que la mente haya movido la materia por telequinesis. Lo que ocurre es que psique y materia son dos caras de una misma moneda arquetípica activada simultáneamente en el tejido del *Unus Mundus*.',
+      'Esta naturaleza psicoide es el cimiento silencioso sobre el cual reposa el fenómeno de la *Sincronicidad*. Cuando un estado interior cargado de significado coincide de forma asombrosa con un hecho físico exterior (como aquel célebre escarabajo dorado que golpeó la ventana del consultorio de Küsnacht), no es que la mente haya movido la materia por telequinesis. Lo que ocurre es que mente y materia son dos caras de una misma moneda arquetípica activada simultáneamente en el tejido del *Unus Mundus*.',
       'Comprender la dimensión psicoide nos rescata de dos trampas: el materialismo reduccionista que niega el significado del cosmos, y la superstición mágica que cree controlar el mundo con el pensamiento. La naturaleza y el alma respiran al unísono.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap1-psicoide',
       title: 'Síntesis Conceptual • El Continuo Psicoide y Somático',
       variant: 'alchemical',
-      text: 'El arquetipo trasciende el confinamiento puramente mental: abarca tanto el polo superior del símbolo y el mito como el polo inferior del instinto biológico y la materia. Cuerpo y psique constituyen una unidad funcional en el tejido del Unus Mundus.'
+      text: 'El arquetipo trasciende el confinamiento puramente mental: abarca tanto el polo superior del símbolo y el mito como el polo inferior del instinto biológico y la materia. Cuerpo y mente constituyen una unidad funcional en el tejido del Unus Mundus.'
     }
   },
   {
@@ -345,7 +337,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     carlitosCallout: {
       id: 'carlitos-cap1-self',
       title: 'Estructura Arquetípica • El Eje Yo-Self y la Totalidad',
-      text: 'El Yo opera como el centro de la voluntad consciente, mientras que el Self constituye la matriz y la totalidad que lo contiene. El propósito de la individuación no es la soberanía aislada del intelecto, sino su reconciliación subordinada con el centro regulador de la psique.'
+      text: 'El Yo opera como el centro de la voluntad consciente, mientras que el Self constituye la matriz y la totalidad que lo contiene. El propósito de la individuación no es la soberanía aislada del intelecto, sino su reconciliación subordinada con el centro regulador de la mente.'
     }
   },
 
@@ -369,7 +361,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     },
     paragraphs: [
       'Pocas intuiciones distanciaron tanto a Carlitos del psicoanálisis clásico vienés como su concepción sobre la naturaleza de los sueños. Para Freud, el sueño era una fachada astuta destinada a disfrazar impulsos inconfesables mediante un mecanismo de censura. Para Jung, por el contrario, *el sueño no disfraza nada*: habla el único lenguaje natural que posee el inconsciente, que es el jeroglífico del símbolo vivo.',
-      'La premisa fundamental de Carlitos es que la psique es un *sistema autorregulado*, exactamente idéntico al organismo biológico. Si tu cuerpo se recalienta por el esfuerzo o la fiebre, las glándulas sudoríparas producen sudor para restablecer el equilibrio homeostático. Del mismo modo, si tu mente consciente adopta durante el día una actitud unilateral —por ejemplo, un orgullo desmedido, una frialdad hiperracional o un sacrificio complaciente que borra tus límites—, la mente profunda genera por la noche un sueño para empujar la balanza en la dirección opuesta.',
+      'La premisa fundamental de Carlitos es que la mente es un *sistema autorregulado*, exactamente idéntico al organismo biológico. Si tu cuerpo se recalienta por el esfuerzo o la fiebre, las glándulas sudoríparas producen sudor para restablecer el equilibrio homeostático. Del mismo modo, si tu mente consciente adopta durante el día una actitud unilateral —por ejemplo, un orgullo desmedido, una frialdad hiperracional o un sacrificio complaciente que borra tus límites—, la mente profunda genera por la noche un sueño para empujar la balanza en la dirección opuesta.',
       'Esta es la *función compensatoria* del sueño. El sueño de una persona que se siente infalible y todopoderosa suele situarla caminando al borde de un precipicio resbaloso o descalza en un lodazal; el sueño de alguien apocado y lleno de culpa puede revelarle un león dorado rugiendo en su sala de estar. No son castigos ni profecías mágicas: son correcciones homeostáticas indispensables.',
       'Asimismo, los sueños poseen una dimensión *teleológica* (orientada a un propósito futuro): no se limitan a indicar de dónde venimos o qué traumas infantiles arrastramos, sino hacia dónde busca fluir la energía psíquica para completar nuestra individuación.'
     ],
@@ -377,7 +369,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       id: 'carlitos-cap2-compensacion',
       title: 'Cita Histórica de C. G. Jung (Obras Completas, vol. 10, §304):',
       variant: 'historical_quote',
-      text: 'El sueño es la pequeña puerta escondida en el santuario más íntimo y secreto del alma, que se abre hacia esa noche cósmica que era psique mucho antes de que existiera el Yo consciente, y que seguirá siendo psique mucho después de que este haya desaparecido.'
+      text: 'El sueño es la pequeña puerta escondida en el santuario más íntimo y secreto del alma, que se abre hacia esa noche cósmica que era mente mucho antes de que existiera el Yo consciente, y que seguirá siendo mente mucho después de que este haya desaparecido.'
     }
   },
   {
@@ -410,7 +402,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     keyTerms: ['Estructura Dramática', 'Exposición', 'Desarrollo', 'Peripeteia', 'Lysis'],
     clippedPhoto: {
       imageUrl: '/src/assets/images/alchemical_dreams_mandala_1790692414590.jpg',
-      caption: 'Mandala onírico del inconsciente y los cuatro cuadrantes de la psique',
+      caption: 'Mandala onírico del inconsciente y los cuatro cuadrantes de la mente',
       rotationDeg: -1.8,
       side: 'right',
       altText: 'Mandala alquímico del sueño',
@@ -581,7 +573,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CAPÍTULO 4 — EL ORÁCULO DEL I CHING Y LA MENTE SIMBÓLICA (PÁGINAS 18 A 26)
+  // CAPÍTULO 4 — EL ORÁCULO DEL I CHING Y LA MENTE SIMBÓLICA (PÁGINAS 18 A 25)
   // ==========================================
   {
     pageNumber: 18,
@@ -595,14 +587,14 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       src: IMAGE_MANIFEST.ichingCoins,
       alt: 'Monedas de consulta del I Ching',
       caption: 'Las tres monedas para la consulta: el método que Jung empleó para interrogar la cualidad del momento.',
-      credit: 'Fotografía de archivo',
+      credit: 'Ilustración',
       aspect: 'landscape',
     },
     paragraphs: [
-      'En la década de 1920, Carl Gustav Jung profundizó en la obra de Richard Wilhelm, sinólogo y teólogo alemán que residió más de dos décadas en China traduciendo pacientemente las fuentes clásicas bajo la guía de maestros orientales. Wilhelm le transmitió una comprensión viva del *I Ching* (*Yì Jīng*, o *Libro de las Mutaciones*): no como una adivinación vulgar, sino como un mapa dinámico del cambio, la polaridad y los ritmos cualitativos de la naturaleza.',
+      'Carl Gustav Jung afirmó en su prólogo de 1949 que llevaba más de treinta años experimentando con el *I Ching* (*Yì Jīng*, o *Libro de las Mutaciones*). Ese prólogo presentaba la traducción de Richard Wilhelm, el sinólogo alemán que residió más de dos décadas en China traduciendo los clásicos bajo la guía de maestros orientales. Nacido como manual de adivinación, el libro fue sumando con los siglos capas filosóficas que lo volvieron un mapa dinámico del cambio, la polaridad y los ritmos cualitativos de la naturaleza.',
       'Para Jung, el I Ching opera como un **reloj del tiempo del universo** o una **fotografía instantánea que mide las fuerzas en juego**. Mientras la ciencia occidental mide el tiempo cuantitativamente (cuántos minutos u horas pasan), el pensamiento oriental lo comprende de forma cualitativa: cada instante posee una tonalidad psíquica y cósmica irrepetible. Al consultar el libro, la caída azarosa de las monedas captura un mapa de las energías activas en ese preciso segundo.',
-      'En su prólogo de 1949 para la traducción inglesa de Cary F. Baynes, Jung afirmó que llevaba más de treinta años experimentando con esta técnica. Para presentar la obra a Occidente, decidió consultar al libro sobre el sentido de su propia publicación. Obtuvo el hexagrama 50, *Dǐng* (*Ting*, El Caldero), la vasija ritual de transformación espiritual. Formuló luego una segunda pregunta sobre su posición, con otro resultado elocuente.',
-      /* [VERIFICAR: En el prólogo de 1949, la segunda consulta de Jung sobre su propia posición dio el Hexagrama 29 (K'an, El Abismo) con mutaciones, derivando al Hexagrama 59 (Huan, La Disolución). Conforme a la regla de contenido, no se mencionan números en el texto visible.] */
+      'En ese prólogo, escrito para la traducción inglesa de Cary F. Baynes, Jung cuenta que consultó al propio libro sobre su intención de presentarlo a Occidente. Obtuvo el hexagrama 50, *Dǐng* (*Ting*, El Caldero), la vasija ritual de transformación espiritual. Formuló luego una segunda pregunta sobre su posición, con otro resultado elocuente.',
+      /* [VERIFICAR contra el prólogo: la segunda consulta de Jung dio, según dos fuentes secundarias, 29 → 48 (Jǐng, El Pozo), y no 29 → 59. No poner números en el texto visible.] */
       'Esta conexión descansa en la hipótesis de la **sincronicidad**: una coincidencia acausal y significativa entre la mente y los hechos exteriores. Existen tres formas de entenderlo: (a) la sincronicidad de Jung; (b) el reencuadre psicológico, donde los símbolos operan como espejos estructurados; y (c) el azar sin sentido. Para tu práctica no necesitás resolver la metafísica: el procedimiento funciona como una brújula lúcida para pensar y decidir.'
     ],
     carlitosCallout: {
@@ -624,13 +616,13 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       'Consultar el I Ching no es un acto fragmentario ni una adivinación pasiva: es una experiencia continua y rigurosa que une una inquietud viva en tu mente con una decisión ética en el mundo real. Comprender este trayecto de punta a punta antes de entrar en los detalles técnicos te permite captar la lógica viva que enlaza sus seis estaciones: la pregunta reflexiva, la tirada de monedas, la lectura del presente, el examen de las mutaciones, la tendencia hacia el futuro y el cierre en la bitácora.',
       'El viaje arranca en la intimidad de la **pregunta abierta**: delimitar qué actitud interior cultivar ante una encrucijada concreta. Luego pasás al **acto del lanzamiento**: arrojar tres monedas seis veces consecutivas (o utilizar la app del curso para realizar el cálculo). Cada tirada suma sus valores de abajo hacia arriba: los resultados 7 u 8 fijan líneas estables (yang o yin), mientras que los extremos 6 o 9 señalan energías en máxima tensión que se preparan para mutar en su polaridad opuesta.',
       'Al completarse las seis líneas, contemplás la **fotografía del presente**: una configuración formada por un trigrama inferior (tu disposición anímica interior) y un trigrama superior (las presiones y oportunidades del entorno). En este punto reconocés las fuerzas activas en tu momento. Si surgieron líneas mutantes, identificás allí los focos precisos de conflicto o aprendizaje que reclaman tu discernimiento.',
-      'El arco se consuma al proyectar la **tendencia de cambio**: al voltear las líneas mutantes emerge el hexagrama derivado, que no profetiza un desenlace fatal sino el cauce hacia donde gravitan los acontecimientos. La experiencia concluye integrando todo en una **síntesis de tres partes** (*la situación es*, *el momento pide* y *el riesgo es*) y agendando un contraste a tres semanas en tu bitácora personal. Así, la consulta se consolida como un ejercicio lúcido de autogobierno.'
+      'El arco se consuma al proyectar la **tendencia de cambio**: al voltear las líneas mutantes emerge el hexagrama derivado, que no profetiza un resultado sino la dirección hacia la que se inclina la situación si ese cambio se completa. La experiencia concluye integrando todo en una **síntesis de cuatro partes** (*la situación es*, *el momento pide*, *el riesgo es* y *la tendencia apunta a*) y fijando un contraste a tres semanas.'
     ],
     secondaryCallout: {
       id: 'esquema-seis-estaciones',
       title: 'Las Seis Estaciones del Proceso de Consulta:',
       variant: 'context_note',
-      text: '1. Pregunta abierta sobre tu actitud interior. / 2. Tirada de tres monedas seis veces de base a cima. / 3. Hexagrama presente: discernimiento de fuerzas y entorno. / 4. Examen de líneas mutantes como focos de tensión activa. / 5. Hexagrama derivado: tendencia evolutiva del momento. / 6. Síntesis en tres partes y fecha de contraste a 21 días.'
+      text: '1. Pregunta abierta sobre actitud interior. 2. Tirada de monedas de base a cima. 3. Hexagrama presente: fuerzas y entorno. 4. Examen de líneas mutantes. 5. Hexagrama derivado: tendencia evolutiva. 6. Síntesis de cuatro partes y fecha de contraste a tres semanas.'
     },
     carlitosCallout: {
       id: 'carlitos-cap4-19-mapa',
@@ -648,10 +640,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     contentType: 'table',
     keyTerms: ['Pregunta Abierta', 'Consulta Abierta', 'Hexagrama 4 (Méng)', 'Ética de Consulta'],
     paragraphs: [
-      'La consulta no arranca cuando tirás las monedas o abrís una app, sino en la claridad y honestidad con que formulás tu pregunta. El oráculo exige una sola pregunta por tirada, redactada de forma abierta: indagar *cómo* abordar un desafío íntimo o *qué actitud interior* conviene cultivar ante una encrucijada. Las preguntas cerradas de sí o no y los reclamos de predicción pasiva anulan por completo la función reflexiva y psicológica del símbolo.',
-      'El I Ching no es una máquina de validar expectativas del ego ni un atajo para eludir la responsabilidad de elegir. Cuando preguntás desde el miedo al futuro, te situás como una víctima pasiva de los acontecimientos; en cambio, cuando preguntás qué postura ética adoptar, recuperás la iniciativa y el gobierno de tus actos. El oráculo te devuelve un espejo exacto de tus fuerzas en juego para que decidas con el corazón lúcido.',
-      'Una regla inviolable: jamás repitas la consulta sobre el mismo asunto hasta que las circunstancias reales hayan cambiado. El hexagrama 4, *Méng* (La Necedad Juvenil), advierte tajantemente: «La primera vez consulto; si insiste, es importunidad; al importuno no le respondo». Quien insiste por ansiedad o disconformidad no busca sabiduría, sino escuchar lo que su ego anhela, enturbiando su discernimiento y degradando el respeto sagrado hacia el oráculo.',
-      'Si atravesás un momento de confusión difusa y no lográs articular una frase precisa, no fuerces las palabras: podés recurrir a una **consulta abierta**, donde el libro captura la tonalidad general de tu momento. Asimismo, la app que acompaña el curso ofrece cuatro categorías de apoyo (*Decisiones*, *Vínculos*, *Autoconocimiento* y *Proyectos*) para ayudarte a ordenar tus pensamientos antes de arrojar las monedas al paño.'
+      'La consulta no arranca cuando tirás las monedas, sino en la claridad y honestidad con que formulás tu pregunta. El oráculo exige una sola pregunta por tirada, redactada de forma abierta: indagar *cómo* abordar un desafío íntimo o *qué actitud interior* conviene cultivar ante una encrucijada. Las preguntas cerradas de sí o no y los reclamos de predicción pasiva anulan por completo la función reflexiva y psicológica del símbolo.',
+      'El I Ching no valida expectativas ni reemplaza la decisión. Una pregunta que parte de qué actitud adoptar devuelve la iniciativa al consultante; una que exige un veredicto la delega en el libro. Por eso conviene preguntar por la propia conducta y por las fuerzas en juego, no por lo que "va a pasar".',
+      'Una regla básica: no repitas la consulta sobre el mismo asunto hasta que las circunstancias hayan cambiado. El hexagrama 4, *Méng* (La Necedad Juvenil), lo plantea con el oráculo en el lugar del maestro: responde la primera vez; si el consultante insiste dos o tres veces, es importunidad, y al importuno no se le responde. Quien repite por ansiedad no busca claridad sino la respuesta que desea, y eso enturbia la lectura.',
+      'Si no lográs articular una pregunta precisa, podés hacer una **consulta abierta**, donde se interroga por la tonalidad general del momento. La consulta tiene además límites: no reemplaza el consejo médico, legal ni financiero; no se hace por terceros a sus espaldas; y ante una angustia intensa conviene no tirar, frenar y hablar con una persona de confianza o con un profesional.'
     ],
     referenceTables: [
       {
@@ -665,8 +657,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
           ],
           [
             'Vínculos y relaciones',
-            '«¿Esta persona me conviene o me va a lastimar?»',
-            '«¿Qué aspecto de mi sombra estoy proyectando en este vínculo y cómo actuar con madurez?»'
+            '«¿Mi pareja me va a ser fiel?»',
+            '«¿Qué actitud me conviene sostener en este vínculo y qué debo observar con claridad?»'
           ],
           [
             'Encrucijada personal',
@@ -707,21 +699,23 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
           [{ line: 8 }, 'Yin fijo (permanece yin)', 'Trazo partido abierto', '3/8 (37,5 %)'],
           [{ line: 9 }, 'Yang mutante (se vuelve yin)', 'Trazo continuo con marca ○ central', '1/8 (12,5 %)'],
         ],
-        footnote: 'Convención tradicional de monedas: cara = 3 (yang) y cruz = 2 (yin). Sumas de tres monedas.',
+        footnote: 'Convención de este libro: cara = 3 (yang) y cruz = 2 (yin). Algunas fuentes asignan los valores al revés; las probabilidades no cambian.',
+      },
+    ],
+    extraFigures: [
+      {
+        lines: [7, 6, 8, 9, 7, 8],
+        showDerived: true,
+        highlightLines: [2, 4],
+        caption: 'Figura (c): principio de mutación. A la izquierda, la tirada con sus líneas mutantes marcadas (× yin que pasa a yang, ○ yang que pasa a yin); a la derecha, el hexagrama que resulta al voltearlas: la tendencia.',
       },
     ],
     paragraphs: [
       'Un hexagrama reúne seis líneas horizontales apiladas que se leen siempre de abajo hacia arriba, desde la base (línea 1) hasta la cima (línea 6). Cada línea es continua (yang) o partida (yin), totalizando 64 combinaciones. Las tres de abajo forman el trigrama inferior (lo propio) y las tres de arriba el superior (el entorno). Ver Figura (a).',
-      'La tirada clásica se realiza arrojando tres monedas seis veces consecutivas (o utilizando la app del curso, que simula este mismo cálculo matemático). Asignando cara = 3 (yang) y cruz = 2 (yin), la suma de cada tiro genera los cuatro estados de la tabla. En promedio surgen 1,5 líneas mutantes por tirada y solo el 17,8 % no arroja ninguna; tener mutantes es lo normal.',
-      'Una línea mutante es una energía que llegó a su extremo y comienza a volverse su opuesto: al voltearla aparece un segundo hexagrama. El valor de la consulta radica en seguir ese proceso línea por línea, con atención plena al diálogo entre el reposo y la mutación, ya sea anotando cada trazo a mano o empleando la app como apoyo.',
-      'Nota sobre el método: tirar tres monedas en una mesa limpia o tocar la pantalla del celular arrojan exactamente la misma probabilidad matemática. Lo determinante no es el soporte técnico, sino la presencia consciente y el respeto reflexivo con los que te disponés a interrogar la cualidad del momento.'
+      'La tirada clásica se realiza arrojando tres monedas seis veces consecutivas (o con la app del curso, que simula el mismo cálculo). Asignando cara = 3 (yang) y cruz = 2 (yin), la suma de cada tiro genera los cuatro estados de la tabla. En promedio surgen 1,5 líneas mutantes por tirada y solo el 17,8 % no arroja ninguna; tener mutantes es lo normal.',
+      'Una línea mutante (6 o 9) es la parte de tu situación que está en movimiento: una postura que llegó a su extremo y empieza a volverse su opuesta. Por eso, de todo el texto del hexagrama, las líneas mutantes son las que describen tu caso particular. Si salen varias, leelas de abajo hacia arriba, como etapas de un mismo proceso. Al voltearlas aparece un segundo hexagrama, la tendencia.',
+      'El hexagrama derivado se lee por contraste con el presente: mirá qué trigrama cambió, qué cualidad se pierde y cuál aparece. Si cambia el inferior (lo propio), el movimiento es interno; si cambia el superior (el entorno), viene del contexto. Es una tendencia condicional: señala hacia dónde se inclina la situación si el cambio se completa, y no es un resultado ni una predicción.'
     ],
-    secondaryCallout: {
-      id: 'carlitos-cap4-21-der',
-      title: 'Figura (c): Principio de mutación y tendencia',
-      variant: 'context_note',
-      text: 'Cuando una línea alcanza el extremo de su polaridad (6 o 9), muta en su opuesto al voltearse. Esa transformación engendra un segundo hexagrama que señala la tendencia hacia donde gravita el presente.'
-    }
   },
   {
     pageNumber: 22,
@@ -751,10 +745,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     pageTitle: 'Dos lentes para profundizar: posiciones y trigramas',
     subtitle: 'El sentido de los seis puestos y la dinámica de los ocho trigramas elementales',
     contentType: 'table',
-    keyTerms: ['Puestos 1 a 6', 'Trigramas Ba Gua', 'Estructura de Trigramas', 'Hexagramas 63 y 64'],
+    keyTerms: ['Puestos 1 a 6', 'Trigramas Ba Gua', 'Trigrama inferior y superior', 'Hexagramas 63 y 64'],
     paragraphs: [
       'Las posiciones de las líneas (de 1 a 6) no son equivalentes ni intercambiables. Cada puesto describe un grado de visibilidad, compromiso y madurez en el desarrollo de cualquier situación. Al leer tus líneas mutantes, contrastá su recomendación con el puesto que ocupan (remitite a la Figura a del folio 21 para ver su ubicación en la estructura).',
-      'La segunda lente radica en los ocho trigramas (*Ba Gua*), las fuerzas elementales de la cosmología china (que en la app del curso podés consultar en la pestaña *Estructura de Trigramas*). El trigrama inferior describe la situación propia o interna (tus emociones, recursos o disposición anímica), y el superior la externa o ambiental (las presiones, oportunidades o vínculos del entorno). Comprender su interacción aclara si tu impulso choca o fluye con el contexto.'
+      'La segunda lente radica en los ocho trigramas (*Ba Gua*), las fuerzas elementales de la cosmología china. El trigrama inferior describe la situación propia o interna (tus emociones, recursos o disposición anímica), y el superior la externa o ambiental (las presiones, oportunidades o vínculos del entorno). Para leer su interacción, fijate en el movimiento de cada uno: si se encuentran o se alejan, tu impulso fluye o choca con el contexto.'
     ],
     referenceTables: [
       {
@@ -774,23 +768,29 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
         title: 'Tabla 2: Figura (d) — Los ocho trigramas fundamentales (Ba Gua)',
         headers: ['Trigrama', 'Nombre Pinyin (Wade-Giles)', 'Imagen natural', 'Cualidad', 'Movimiento'],
         rows: [
-          [{ trigram: 'Qián' }, "Qián (Ch'ien) ☰", 'Cielo', 'Lo Creativo', 'Fuerza generadora, iniciativa pura'],
-          [{ trigram: 'Kūn' }, "Kūn (K'un) ☷", 'Tierra', 'Lo Receptivo', 'Entrega, sustento, docilidad fecunda'],
-          [{ trigram: 'Zhèn' }, 'Zhèn (Chen) ☳', 'Trueno', 'Lo Suscitante', 'Despertar, conmoción, impulso inicial'],
-          [{ trigram: 'Kǎn' }, "Kǎn (K'an) ☵", 'Agua', 'Lo Abismal', 'Peligro, profundidad, flujo constante'],
-          [{ trigram: 'Gèn' }, 'Gèn (Ken) ☶', 'Montaña', 'El Aquietamiento', 'Quietud, discernimiento del límite'],
-          [{ trigram: 'Xùn' }, 'Xùn (Sun) ☴', 'Viento / Madera', 'Lo Suave', 'Penetración sutil, constancia flexible'],
-          [{ trigram: 'Lí' }, 'Lí (Li) ☲', 'Fuego', 'Lo Adherente', 'Claridad, lucidez consciente'],
-          [{ trigram: 'Duì' }, 'Duì (Tui) ☱', 'Lago', 'Lo Sereno', 'Alegría compartida, apertura comunicativa'],
+          [{ trigram: 'Qián' }, "Qián (Ch'ien) ☰", 'Cielo', 'Lo Creativo: firmeza e iniciativa', 'Asciende'],
+          [{ trigram: 'Kūn' }, "Kūn (K'un) ☷", 'Tierra', 'Lo Receptivo: receptividad y sostén', 'Desciende'],
+          [{ trigram: 'Zhèn' }, 'Zhèn (Chen) ☳', 'Trueno', 'Lo Suscitante: arranque que irrumpe', 'Surge desde abajo'],
+          [{ trigram: 'Kǎn' }, "Kǎn (K'an) ☵", 'Agua', 'Lo Abismal: riesgo y profundidad', 'Desciende'],
+          [{ trigram: 'Gèn' }, 'Gèn (Ken) ☶', 'Montaña', 'El Aquietamiento: detención y límite', 'Permanece quieto'],
+          [{ trigram: 'Xùn' }, 'Xùn (Sun) ☴', 'Viento / Madera', 'Lo Suave: influencia gradual', 'Penetra'],
+          [{ trigram: 'Lí' }, 'Lí (Li) ☲', 'Fuego', 'Lo Adherente: claridad y adhesión', 'Asciende'],
+          [{ trigram: 'Duì' }, 'Duì (Tui) ☱', 'Lago', 'Lo Sereno: apertura y alegría', 'Se asienta'],
         ],
-        footnote: 'Los ocho trigramas son las raíces del oráculo; en la app se consultan en «Estructura de Trigramas».',
+        footnote: 'Los ocho trigramas son las raíces del oráculo: cada hexagrama combina dos.',
       },
     ],
     carlitosCallout: {
       id: 'carlitos-cap4-23-trigramas',
       title: 'Dinámica de Polaridad • Hexagramas 63 y 64',
       variant: 'alchemical',
-      text: 'La interacción de trigramas revela el ciclo perenne: en el hexagrama 63 (Agua sobre Fuego, Después de la Consumación), el equilibrio perfecto alcanzado ya inicia su enfriamiento. En el hexagrama 64 (Fuego sobre Agua, Antes de la Consumación), las fuerzas divergen y renuevan la tarea abierta.'
+      text: 'En el 63 el Agua está arriba (desciende) y el Fuego abajo (asciende): se encuentran y la olla hierve. En el 64 ocurre lo inverso: el Fuego arriba sube y el Agua abajo baja, se alejan, y la tarea queda abierta.'
+    },
+    secondaryCallout: {
+      id: 'traducir-texto-situacion',
+      title: 'Para traducir un texto a tu situación',
+      variant: 'context_note',
+      text: 'Ante cada texto de línea, preguntate: ¿en qué fase está mi situación (la posición lo indica)? ¿Quién empuja y quién cede, lo propio o el entorno? ¿Qué conducta pide: esperar, avanzar, ceder o retirarse?'
     }
   },
   {
@@ -811,15 +811,22 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     },
     paragraphs: [
       'Examinemos una tirada completa siguiendo las capas de lectura del folio 22 con el caso histórico del prólogo de Jung de 1949. Al preguntar qué opinaba el libro sobre presentarlo a Occidente, el presente fue el Hexagrama 50, El Caldero (*Dǐng* / *Ting*), con líneas mutantes en las posiciones 2 y 3, orientando su tendencia hacia el Hexagrama 35, El Progreso (*Jìn* / *Chin*).',
-      'En la pantalla del presente, el Juicio declara: «El Caldero. Suprema ventura. Éxito». La Imagen establece: «Fuego sobre madera: la imagen de El Caldero. Así el noble rectifica su posición consolidando su destino». El caldero es la vasija ritual donde los alimentos crudos se cocinan y consagran para nutrir a la comunidad: el libro mismo concebido como alimento espiritual para Occidente.',
-      'En *Tus Líneas Mutantes*, leemos de abajo hacia arriba:\nLínea 2 (nueve en el segundo puesto): «En el caldero hay alimento. Mis compañeros están envidiosos, pero no pueden perjudicarme. Ventura». Revela un valor auténtico que no sufre daño.\nLínea 3 (nueve en el tercer puesto): «El asa del caldero está rota. Se ve impedido en su marcha. La grasa del faisán no se come. Mas cae la lluvia que apaga el ardor: arrepentimiento se desvanece. Al final llega la ventura». Muestra el obstáculo inicial hasta que la situación madura.',
-      'En la tendencia, el Hexagrama 35 anuncia el avance y expansión luminosa de la obra. Concluimos con la plantilla de tres partes (rotulada como lectura ilustrativa y vinculada a la síntesis operativa):\n*La situación es:* una obra con alimento espiritual valioso pero de difícil asimilación inicial.\n*El momento pide:* rectificar la posición interna con paciencia y sostener la tarea sin resentimiento.\n*El riesgo es:* apresurarse o frustrarse por el recelo inicial antes de que madure el progreso.'
+      'En el hexagrama presente, el Juicio declara: «El Caldero. Suprema ventura. Éxito». La Imagen establece: «Fuego sobre madera: la imagen de El Caldero. Así el noble rectifica su posición consolidando su destino». El caldero es la vasija ritual donde los alimentos crudos se cocinan y consagran para nutrir a la comunidad: el libro mismo concebido como alimento espiritual para Occidente.',
+      'En las líneas mutantes, leemos de abajo hacia arriba:\nLínea 2 (nueve en el segundo lugar): «En el caldero hay alimento. Mis compañeros están envidiosos, pero no pueden perjudicarme. Ventura». Revela un valor auténtico que no sufre daño.\nLínea 3 (nueve en el tercer lugar): «Las asas del caldero están alteradas; se obstruye su camino. No se come la grasa del faisán. Cuando caiga la lluvia, el pesar se disipa; al final, ventura». Muestra una obstrucción que se disuelve con el tiempo.',
+      'El derivado, el 35 (El Progreso), se lee por contraste: el trigrama inferior, lo propio, pasa de Viento/Madera (influencia gradual) a Tierra (receptividad), mientras el Fuego superior, el entorno, no cambia. Lo propio se vuelve receptivo bajo un entorno que ilumina, y la situación apunta hacia el progreso.'
     ],
+    /* [VERIFICAR contra el prólogo: lectura de Jung sobre el Hexagrama 50 como vasija espiritual del propio libro] */
     carlitosCallout: {
       id: 'carlitos-cap4-24-caldero',
-      title: 'La vasija nutricia del Caldero:',
+      title: 'El Caldero como Vasija Nutricia:',
       variant: 'alchemical',
-      text: 'El caldero es el corazón de la alquimia: no rechaza los ingredientes crudos ni la leña quemada, sino que los cocina a fuego lento. Jung vio en este hexagrama que el I Ching se ofrecía como una vasija nutricia para quienes buscan integrar su psique.'
+      text: 'El caldero es la vasija donde lo crudo se cocina y se vuelve alimento. Jung leyó en este hexagrama una imagen del propio libro: un recipiente que nutre espiritualmente a quien lo consulta.'
+    },
+    secondaryCallout: {
+      id: 'lectura-ilustrativa-sintesis-4-partes',
+      title: 'Lectura ilustrativa: síntesis de cuatro partes',
+      variant: 'context_note',
+      text: 'La situación es una obra con alimento espiritual valioso pero de difícil asimilación inicial. El momento pide rectificar la posición interna con paciencia y sostener la tarea sin resentimiento. El riesgo es apresurarse o frustrarse por el recelo antes de que madure. La tendencia apunta a un progreso receptivo, que se despliega a la luz.'
     }
   },
   {
@@ -827,16 +834,33 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     chapterId: 4,
     sectionTitle: 'Capítulo 4 — El I Ching',
     pageTitle: 'Práctica guiada: tu primera tirada',
-    subtitle: 'Protocolo paso a paso en siete estaciones y registro personal para tu bitácora',
+    subtitle: 'Protocolo paso a paso en siete pasos y registro personal para tu bitácora',
     contentType: 'exercise',
-    keyTerms: ['Protocolo de Tirada', 'Siete Estaciones', 'Registro de Bitácora', 'Fórmula de Tres Partes'],
+    keyTerms: ['Protocolo de Tirada', 'Siete Pasos', 'Registro de Bitácora', 'Síntesis de Cuatro Partes'],
     paragraphs: [
-      'Esta práctica guiada reúne el método para consultar el oráculo con lucidez y criterio ético. Tomate diez minutos en silencio para recorrer cada una de las siete estaciones y registrar tu síntesis personal.'
+      'Esta práctica guiada reúne el método para consultar el oráculo con lucidez y criterio ético. Tomate diez minutos en silencio para recorrer cada uno de los siete pasos y registrar tu síntesis personal.'
+    ],
+    referenceTables: [
+      {
+        title: 'Vocabulario mínimo para leer los textos',
+        headers: ['Palabra', 'Qué indica'],
+        rows: [
+          ['Ventura', 'La conducta indicada se corresponde con el momento; a veces esa conducta es esperar o retirarse, no necesariamente avanzar.'],
+          ['Desventura', 'Esa conducta va a contramano del momento.'],
+          ['Sin falta', 'No hay culpa si se actúa con cuidado; el riesgo existe pero es evitable.'],
+          ['Arrepentimiento', 'Un desvío leve que todavía se puede corregir.'],
+          ['Humillación', 'Error que se agrava por obstinación o por no rectificar a tiempo.'],
+          ['Propicio', 'Es oportuno emprender esa acción.'],
+          ['Éxito', 'El proceso puede desplegarse; se abre camino.'],
+          ['Perseverancia', 'Sostener el rumbo con constancia es lo adecuado; si el texto dice que no es propicia, no conviene insistir.'],
+        ],
+        footnote: 'Estas palabras califican la conducta, no predicen el resultado.',
+      },
     ],
     exerciseData: {
       id: 'ex-primera-tirada-iching',
       title: 'Práctica Guiada — Tu Primera Tirada de I Ching',
-      objective: 'Realizar una consulta completa con tres monedas o con la app del curso, formular una pregunta abierta, registrar el presente y la tendencia, redactar la frase de tres partes y fijar la fecha de contraste a tres semanas.',
+      objective: 'Realizar una consulta completa con tres monedas (o con la app del curso), formular una pregunta abierta, registrar el presente y la tendencia, redactar la síntesis de cuatro partes y fijar la fecha de contraste a tres semanas.',
       steps: [
         {
           stepNumber: 1,
@@ -851,22 +875,23 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
         {
           stepNumber: 3,
           title: 'Elegir el método de tirada',
-          instruction: 'Podés arrojar tres monedas sobre una mesa limpia seis veces consecutivas o abrir la app del curso y seleccionar una de las 4 categorías o Consulta abierta.',
+          instruction: 'Arrojá tres monedas sobre una mesa limpia seis veces consecutivas, o usá la app del curso si la tenés a mano.',
         },
         {
           stepNumber: 4,
           title: 'Generar las seis líneas',
-          instruction: 'Lanzá las monedas o pulsá en la app línea por línea de abajo hacia arriba, anotando el valor numérico (6, 7, 8 o 9) de cada una.',
+          instruction: 'Lanzá las monedas línea por línea de abajo hacia arriba, anotando el valor (6, 7, 8 o 9) de cada una.',
         },
         {
           stepNumber: 5,
-          title: 'Leer en orden metódico',
-          instruction: 'Revisá la visión general o Interpretación Rápida, profundizá en El Juicio y La Imagen, y leé tus líneas mutantes de abajo hacia arriba.',
+          title: 'Identificar y leer en orden',
+          /* [VERIFICAR: Las ediciones tradicionales de Wilhelm/Baynes incluyen la tabla de búsqueda por trigramas para identificar los hexagramas.] */
+          instruction: 'Identificá tu hexagrama presente y el derivado en la app o en una tabla de búsqueda (las ediciones tradicionales la incluyen). Leé El Juicio y La Imagen, y después tus líneas mutantes de abajo hacia arriba.',
         },
         {
           stepNumber: 6,
-          title: 'Redactar la frase y guardar',
-          instruction: 'Elaborá la síntesis («La situación es... / El momento pide... / El riesgo es...») y guardala en tu cuaderno o en Nota personal de la app.',
+          title: 'Redactar la síntesis y guardar',
+          instruction: 'Elaborá la síntesis de cuatro partes («La situación es… El momento pide… El riesgo es… La tendencia apunta a…») y guardala en tu cuaderno.',
         },
         {
           stepNumber: 7,
@@ -875,7 +900,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
         },
       ],
       exampleLabel: 'Ejemplo ilustrativo:',
-      applicationExample: 'Pregunta: «¿Qué actitud conviene cultivar ante la propuesta de liderar este nuevo proyecto?». Presente: Hexagrama 50 con línea 2 mutante; Tendencia: Hexagrama 56. Frase registrada: «La situación es que cuento con los recursos para el rol; el momento pide humildad y sostén de mi centro; el riesgo es aislarme por temor al qué dirán». Contraste: agendado a los 21 días.',
+      applicationExample: 'Pregunta: «¿Qué actitud conviene cultivar ante la propuesta de liderar este nuevo proyecto?». Presente: hexagrama 50, línea 2 mutante. Tendencia: hexagrama 56. Síntesis: «La situación es que cuento con los recursos para el rol; el momento pide humildad y sostén de mi centro; el riesgo es aislarme por temor al qué dirán; la tendencia apunta a moverme como quien llega a un territorio nuevo, con cautela.» Contraste: agendado a los 21 días.',
       fields: [
         {
           key: 'iching_pregunta_personal',
@@ -890,12 +915,12 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
         {
           key: 'iching_hex_tendencia',
           label: '3. Hexagrama de tendencia:',
-          placeholder: 'Ej. Hexagrama 35, El Progreso',
+          placeholder: 'Ej. Hexagrama 56, El Caminante',
         },
         {
           key: 'iching_frase_sintesis',
-          label: '4. Frase de tres partes (La situación es... / El momento pide... / El riesgo es...):',
-          placeholder: 'La situación es... El momento pide... El riesgo es...',
+          label: 'Síntesis de cuatro partes',
+          placeholder: 'La situación es… El momento pide… El riesgo es… La tendencia apunta a…',
           multiline: true,
         },
         {
