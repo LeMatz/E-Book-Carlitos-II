@@ -235,29 +235,17 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       altText: 'Apuntes de Carlitos sobre la distancia arquetípica',
     },
     paragraphs: [
-      'Habiendo cartografiado las figuras arquetípicas en el primer tomo (la Sombra, el Ánima y el Ánimus, el Senex y el Puer), la pregunta que abre este segundo volumen no es quiénes son, sino a qué distancia nos paramos frente a ellas.',
+      'Ya teniendo una noción de las figuras arquetípicas en el primer tomo (Arquetipos de estructura y de contenido), la pregunta que abre este segundo volumen no es quiénes son, sino a qué distancia nos paramos frente a ellas.',
       'Uno de los mapas más reveladores y prácticos que Carlitos nos legó para entender qué nos ocurre cuando una fuerza profunda nos conmueve es el *continuo de pérdida de distancia Yo-arquetipo*. Frente a la energía viva de un arquetipo, nuestro Yo no se queda quieto: se mueve a lo largo de una escala según cuánta distancia y lucidez logre sostener. Este continuo se organiza en torno a tres puntos de referencia fundamentales:',
       '**1. Proyección (Distancia máxima):** En este primer punto, el contenido se deposita afuera; el Yo queda intacto. Vemos la cualidad arquetípica encarnada en otra persona o circunstancia (el líder perfecto, el rival monstruoso, el salvador o el amor idealizado). Aunque nuestra percepción del otro queda teñida por esa imagen, nuestro Yo conserva su capacidad de pensar y su identidad habitual separada.',
       '**2. Identificación / Inflación (Pérdida intermedia de distancia):** Aquí el contenido se funde con el Yo, colapsando en un solo bloque lo que antes eran dos fenómenos separados. Al identificarse con el arquetipo, el Yo se atribuye a su pequeña persona facultades, dones o misiones grandiosas (creerse el Salvador indispensable, el Sabio supremo o el Mártir incomprendido). Se borra la frontera entre nuestra imperfección humana y la magnitud del arquetipo, gestando una embriaguez de grandeza que anticipa el colapso.',
       '**3. Posesión (Colapso total de distancia):** Es el punto extremo del camino. En la posesión, el Yo pierde por completo la capacidad de razonar; el arquetipo tiene el control de nosotros. La voluntad consciente queda a un costado o anulada. Ya no decidimos nosotros: somos hablados y actuados por la fuerza arquetípica que nos tomó por asalto, desde los fanatismos colectivos hasta el arrepentimiento porque en una situación no era yo mismo.',
-      'Para cuidar nuestro equilibrio y crecer en sabiduría, necesitamos reconocer en qué punto de este continuo nos encontramos ante cada crisis, evitando tanto la disociación [1] como la literalización [2] del símbolo vivo. En los momentos de mayor soberbia o inflación heroica, figuras como el *Trickster* (el Embaucador) irrumpen oportunamente con un tropiezo, un fallo cómico o una ironía de la vida para desarmar la fusión antes de que sea tarde.'
+      'Para cuidar nuestro equilibrio y crecer en sabiduría, necesitamos reconocer en qué punto de este continuo nos encontramos ante cada crisis, evitando tanto la disociación como la literalización del símbolo vivo. En los momentos de mayor soberbia o inflación heroica, figuras como el *Trickster* (el Embaucador) irrumpen oportunamente con un tropiezo, un fallo cómico o una ironía de la vida para desarmar la fusión antes de que sea tarde.'
     ],
-    footnotes: [
-      {
-        number: 1,
-        term: 'Disociación',
-        note: 'Respuesta defensiva en la que, al verse desbordada la mente frente a una emoción o fuerza arquetípica desmedida, la mente se fractura en partes autónomas que operan a escondidas del Yo consciente.',
-      },
-      {
-        number: 2,
-        term: 'Literalización',
-        note: 'Error de perspectiva consistente en degradar la metáfora y el símbolo vivo a un hecho puramente literal, material o físico. Al tomar la imagen al pie de la letra, cancelamos su sabiduría profunda y caemos en el dogmatismo ciego o en el malestar somático.',
-      },
-    ],
-    carlitosCallout: {
-      id: 'carlitos-cap1-distancia',
-      title: 'Principio de Calibración • La Distancia Justa Yo-Arquetipo',
-      text: 'La relación con las imágenes numinosas exige una equidistancia precisa: la lejanía defensiva petrifica al Yo en la frialdad de la proyección, mientras que el acercamiento desmedido conduce a la inflación y a la pérdida de la voluntad soberana.'
+    placeholderImage: {
+      label: 'Imagen Placeholder — Continuo Yo-Arquetipo',
+      caption: 'Espacio reservado para ilustración o esquema visual del continuo de pérdida de distancia.',
+      aspect: '16:9 / Horizontal',
     },
   },
   {

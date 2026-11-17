@@ -13,7 +13,7 @@ import {
   CompassStarIcon,
   VintageClippedPhoto,
 } from '../VintageSvgIcons';
-import { BookOpen, Layers, Edit3, HelpCircle } from 'lucide-react';
+import { BookOpen, Layers, Edit3, HelpCircle, Image as ImageIcon } from 'lucide-react';
 
 import { HexagramFigure, LineSymbol, TrigramDrawing } from '../HexagramFigure';
 
@@ -854,6 +854,40 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               ))}
             </div>
           </div>
+        )}
+
+        {pageData.placeholderImage && (
+          <figure className="my-3 p-3 bg-[#ebdcb8]/60 border-2 border-dashed border-[#8f6e28]/70 rounded-xs shadow-inner">
+            <div className="relative w-full h-[210px] sm:h-[230px] print:h-[175px] bg-[#dfcea6]/55 border border-[#5a4022]/30 flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+              <svg
+                className="absolute inset-0 w-full h-full text-[#8f6e28]/20 pointer-events-none"
+                preserveAspectRatio="none"
+                viewBox="0 0 100 100"
+                aria-hidden="true"
+              >
+                <line x1="0" y1="0" x2="100" y2="100" stroke="currentColor" strokeWidth="0.4" strokeDasharray="2 2" />
+                <line x1="100" y1="0" x2="0" y2="100" stroke="currentColor" strokeWidth="0.4" strokeDasharray="2 2" />
+              </svg>
+              <div className="relative z-10 flex flex-col items-center gap-2">
+                <div className="p-2.5 rounded-full bg-[#ebdcb8] border border-[#8f6e28]/60 text-[#7a5820] shadow-xs">
+                  <ImageIcon className="w-6 h-6" />
+                </div>
+                <span className="font-playfair font-bold text-xs sm:text-sm uppercase tracking-wider text-[#3a281c]">
+                  {pageData.placeholderImage.label}
+                </span>
+                {pageData.placeholderImage.aspect && (
+                  <span className="font-mono text-[10px] uppercase tracking-widest text-[#7a5820] bg-[#ebdcb8]/90 px-2 py-0.5 border border-[#8f6e28]/40 rounded-xs">
+                    Formato sugerido: {pageData.placeholderImage.aspect}
+                  </span>
+                )}
+              </div>
+            </div>
+            {pageData.placeholderImage.caption && (
+              <figcaption className="mt-2 font-cormorant italic text-xs sm:text-sm text-[#5a4022] text-center font-semibold">
+                {pageData.placeholderImage.caption}
+              </figcaption>
+            )}
+          </figure>
         )}
 
         {pageData.keyTerms?.some((k) => k.includes('†')) && (

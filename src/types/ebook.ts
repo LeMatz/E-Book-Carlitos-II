@@ -144,6 +144,11 @@ export interface EbookPageData {
   referenceTables?: ReferenceTable[];
   footnotes?: FootnoteData[];
   clippedPhoto?: ClippedPhoto;
+  placeholderImage?: {
+    label: string;
+    caption?: string;
+    aspect?: string;
+  };
 }
 
 export interface ChapterMeta {
