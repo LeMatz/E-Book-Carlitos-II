@@ -31,7 +31,7 @@ interface FolioIntegrationData {
 }
 
 const SINGLE_FOLIO_CLOSINGS: Record<number, FolioIntegrationData> = {
-  27: {
+  30: {
     title: 'Auditoría Sincrónica • Registro y Verificación',
     quote: '«La coincidencia no se busca con avidez; se recibe con la serenidad de quien sabe que el significado ya está allí.»',
     reflectionQuestion: '¿Qué sesgo de confirmación sueles proyectar sobre los eventos diarios y cómo puedes purificar tu registro?',
