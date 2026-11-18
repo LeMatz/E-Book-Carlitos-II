@@ -33,7 +33,7 @@ export class ChaptersMetaData {
     {
       chapterId: 3,
       title: 'Capítulo 3 — Sincronicidad: El Principio Acausal',
-      subtitle: 'El escarabajo dorado, el tiempo cualitativo, la dimensión psicoide y los límites del sentido',
+      subtitle: 'El escarabajo dorado, la cuaternidad, la dimensión psicoide y la lectura cotidiana',
       startPage: 16,
       endPage: 20,
       iconName: 'award',
@@ -519,6 +519,26 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     pageNumber: 18,
     chapterId: 3,
     sectionTitle: 'Capítulo 3 — Sincronicidad',
+    pageTitle: 'El Esquema de la Cuaternidad: El Gráfico de Jung',
+    subtitle: 'Una cruz de cuatro puntas que ubica la sincronicidad junto a las leyes de la física',
+    contentType: 'text',
+    keyTerms: ['Cuaternidad (1952)', 'Causalidad ↔ Sincronicidad', 'Energía ↔ Espacio-Tiempo', 'Complementariedad'],
+    paragraphs: [
+      'En 1952, Jung dibujó una cruz sencilla de cuatro puntas para mostrar dónde encaja la sincronicidad dentro de la ciencia. La física clásica ya usaba tres piezas para explicar el mundo: el **espacio**, el **tiempo** y la **causalidad**. Jung agregó una cuarta pieza —la **sincronicidad**— porque para él, recién cuando reunís cuatro elementos el mapa queda completo y equilibrado.',
+      'El gráfico cruza dos líneas fáciles de leer. La **línea horizontal** muestra dos formas de conectar hechos: a un lado está la **causalidad** (A provoca B paso a paso, como una ficha de dominó que empuja a otra) y al otro la **sincronicidad** (A y B coinciden por su significado, sin que uno cause al otro). La **línea vertical** marca el marco físico: arriba está la **energía indestructible** (lo que se conserva y se transfiere) y abajo el **espacio-tiempo** (el dónde y el cuándo ocurre cada evento).',
+      'Estos extremos no se contradicen ni se excluyen: se necesitan entre sí para dar cuenta de la realidad completa. Jung no buscaba reemplazar la causalidad, sino completarla. Si mirás el gráfico en diagonal, la relación es concreta: la **causalidad** se asocia con la **energía** (las explicaciones mecánicas de causa y efecto), mientras que la **sincronicidad** se vincula con el **espacio-tiempo** (conexiones de sentido que no dependen de la distancia ni de una secuencia temporal).',
+      'La idea central del dibujo es directa: hay acontecimientos que la causa y el efecto no alcanzan a explicar porque lo que los une es el **sentido**. Para leer el gráfico, llevá la vista al **centro donde se cruzan los dos ejes**: ese punto de encuentro representa la experiencia sincrónica real, integrada dentro de un orden más amplio.'
+    ],
+    placeholderImage: {
+      label: 'Gráfico Placeholder — Esquema de la Cuaternidad de Jung (1952)',
+      caption: 'Espacio reservado para colocar el gráfico real de la cuaternidad: eje vertical (Energía indestructible ↔ Espacio-tiempo) y eje horizontal (Causalidad ↔ Sincronicidad).',
+      aspect: '1:1 / Cuadrado',
+    },
+  },
+  {
+    pageNumber: 19,
+    chapterId: 3,
+    sectionTitle: 'Capítulo 3 — Sincronicidad',
     pageTitle: 'Los Arquetipos Psicoides: El Puente entre mente y Materia',
     subtitle: 'El arquetipo en sí, el espectro infrarrojo-ultravioleta y la hipótesis del Unus Mundus',
     contentType: 'text',
@@ -550,7 +570,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     }
   },
   {
-    pageNumber: 19,
+    pageNumber: 20,
     chapterId: 3,
     sectionTitle: 'Capítulo 3 — Sincronicidad',
     pageTitle: 'La Brújula del Destino: Señales en la Vida Cotidiana',
@@ -568,32 +588,13 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       '¿En qué circunstancias suelen advertirse las sincronicidades en la vida cotidiana? La experiencia clínica de Jung revela que las coincidencias significativas no se presentan de forma constante ni programada; tienden a activarse en momentos de intensa carga emocional o encrucijada vital: durante una crisis de vocación, un duelo, el comienzo de un vínculo apasionado o la transición del ecuador de la vida.',
       'Sin embargo, es esencial evitar malentendidos: las sincronicidades no aparecen únicamente durante crisis extremas, no constituyen señales que indiquen un destino obligatorio ni representan instrucciones cósmicas que estamos obligados a obedecer. Que una coincidencia resulte conmovedora para quien la vive no la transforma en una prueba científica objetiva de que el universo le envía un mandato exterior.',
       'Su auténtico valor reside en la reflexión que despierta y en las asociaciones personales que permite explorar. En lugar de imaginar la sincronicidad como una brújula infalible que traza el futuro, es más fecundo entenderla como una ocasión privilegiada para observar nuestra propia situación desde otra perspectiva.',
-      'Ante una coincidencia significativa, las preguntas pertinentes no buscan predecir sino discernir: ¿por qué este acontecimiento adquirió tanta relevancia íntima para mí? ¿Qué estaba sintiendo o pensando cuando ocurrió? ¿Qué asociaciones me despierta y qué aspecto de mi dilema me ayuda a reconsiderar? ¿Estoy interpretando con libertad o forzando el sentido para confirmar algo que ya deseaba creer?'
+      'Ante una coincidencia significativa, las preguntas pertinentes no buscan predecir sino discernir: ¿por qué este acontecimiento adquirió tanta relevancia íntima para mí? ¿Qué estaba sintiendo o pensando cuando ocurrió? ¿Qué asociaciones me despierta y qué aspecto de mi dilema me ayuda a reconsiderar? ¿Estoy interpretando con libertad o forzando el sentido para confirmar algo que ya deseaba creer?',
+      'Esta mirada lúcida nos prepara para dar el paso hacia el próximo capítulo. Así como la sincronicidad irrumpe de forma espontánea en la vida diaria, el *I Ching* ofrece un camino deliberado para interrogar simbólicamente el momento presente; pero, al igual que ante cualquier coincidencia significativa, su consulta no busca adivinar el futuro ni delegar decisiones, sino abrir un espacio sereno de reflexión.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap3-brujula',
       title: 'Criterio Hermenéutico • Ocasión de Perspectiva',
       text: 'Una coincidencia de sentido no es una orden exterior ni una prueba mágica del destino. Su fecundidad radica en invitar a la conciencia a detenerse, revisar sus supuestos y observar la encrucijada personal desde un ángulo más amplio.'
-    }
-  },
-  {
-    pageNumber: 20,
-    chapterId: 3,
-    sectionTitle: 'Capítulo 3 — Sincronicidad',
-    pageTitle: 'Sentido No Es Destino: Alcances y Límites de la Sincronicidad',
-    subtitle: 'El discernimiento entre el hecho fáctico, la resonancia subjetiva y la tentación determinista',
-    contentType: 'text',
-    keyTerms: ['Hecho vs Interpretación', 'Límites Epistemológicos', 'Numens y Subjetividad', 'Puente al I Ching'],
-    paragraphs: [
-      'Para trabajar con la sincronicidad sin extraviarnos en el pensamiento mágico ni en el escepticismo ciego, necesitamos deslindar con sobriedad sus cinco componentes estructurales:\n1. **El acontecimiento exterior:** el hecho fáctico y verificable que ocurre en el mundo físico.\n2. **El estado psíquico interior:** el pensamiento, emoción, sueño o inquietud que ocupaba a la persona.\n3. **La coincidencia temporal:** el enlace acausal entre ambos sucesos en un mismo tiempo cualitativo.\n4. **La interpretación:** el significado íntimo que la persona atribuye a ese cruce, el cual requiere examen crítico.\n5. **Los límites de validez:** la frontera ética que impide confundir una coincidencia de sentido con una causa física o un mandato del destino.',
-      'Un ejemplo cotidiano ayuda a distinguir el hecho de su lectura: imaginemos a una persona que piensa con intensidad y nostalgia en un amigo de la juventud al que no ve desde hace años. Minutos después, suena su teléfono y es precisamente ese amigo. El hecho objetivo es la llamada entrante. La coincidencia es su sincronía temporal con el pensamiento previo. El significado subjetivo puede ser profundo y conmovedor, pero esa intensidad afectiva no demuestra que el pensamiento haya generado la llamada ni que exista una fuerza cósmica ordenando el reencuentro.',
-      'El impacto emocional o la sensación de numinosidad son indicios valiosos de la relevancia personal de una experiencia, pero no constituyen una demostración de su carácter acausal objetivo ni una garantía de verdad exterior. Cuando la persona olvida este límite, cae fácilmente en asociaciones forzadas o en la proyección de sus propios anhelos sobre el entorno.',
-      'Esta comprensión lúcida nos sitúa ante la puerta del siguiente capítulo: el *I Ching* permite explorar deliberadamente una relación simbólica con el momento presente. Pero al igual que ocurre con la sincronicidad espontánea, su consulta no debe confundirse jamás con una garantía de predicción ni con un mecanismo para controlar el porvenir.'
-    ],
-    carlitosCallout: {
-      id: 'carlitos-cap3-sentido-no-destino',
-      title: 'Distinción Metódica • La Frontera del Sentido',
-      text: 'El sentido atribuido a una coincidencia es una construcción del sujeto frente a lo vivido, no una propiedad física del hecho exterior. Distinguir el acontecimiento de su interpretación es la garantía ética que protege al autoconocimiento de la superstición.'
     }
   },
 
@@ -616,11 +617,11 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       aspect: 'landscape',
     },
     paragraphs: [
-      'Carl Gustav Jung afirmó en su prólogo de 1949 que llevaba más de treinta años experimentando con el *I Ching* (*Yì Jīng*, o *Libro de las Mutaciones*). Ese prólogo presentaba la traducción de Richard Wilhelm, el sinólogo alemán que residió más de dos décadas en China traduciendo los clásicos bajo la guía de maestros orientales. Nacido como manual de adivinación, el libro fue sumando con los siglos capas filosóficas que lo volvieron un mapa dinámico del cambio, la polaridad y los ritmos cualitativos de la naturaleza.',
+      'Carl Gustav Jung escribió el prólogo de la versión mas influyente del I Ching, y menciona que llevaba más de treinta años experimentando con el *I Ching* (*Yì Jīng*, o *Libro de las Mutaciones*). Ese prólogo presentaba la traducción de Richard Wilhelm, el sinólogo alemán que residió más de dos décadas en China traduciendo los clásicos bajo la guía de maestros orientales. Nacido como manual de adivinación, el libro fue sumando con los siglos capas filosóficas que lo volvieron un mapa dinámico del cambio, la polaridad y los ritmos cualitativos de la naturaleza.',
       'Para Jung, el I Ching opera como un **reloj del tiempo del universo** o una **fotografía instantánea que mide las fuerzas en juego**. Mientras la ciencia occidental mide el tiempo cuantitativamente (cuántos minutos u horas pasan), el pensamiento oriental lo comprende de forma cualitativa: cada instante posee una tonalidad psíquica y cósmica irrepetible. Al consultar el libro, la caída azarosa de las monedas captura un mapa de las energías activas en ese preciso segundo.',
-      'En ese prólogo, escrito para la traducción inglesa de Cary F. Baynes, Jung cuenta que consultó al propio libro sobre su intención de presentarlo a Occidente. Obtuvo el hexagrama 50, *Dǐng* (*Ting*, El Caldero), la vasija ritual de transformación espiritual. Formuló luego una segunda pregunta sobre su posición, con otro resultado elocuente.',
+      'En ese prólogo Jung cuenta que consultó al propio libro sobre su intención de escribir dicho prólogo. Obtuvo el hexagrama 50, *Dǐng* (El Caldero), la vasija ritual de transformación espiritual.',
       /* [VERIFICAR contra el prólogo: la segunda consulta de Jung dio, según dos fuentes secundarias, 29 → 48 (Jǐng, El Pozo), y no 29 → 59. No poner números en el texto visible.] */
-      'Esta conexión descansa en la hipótesis de la **sincronicidad**: una coincidencia acausal y significativa entre la mente y los hechos exteriores. Existen tres formas de entenderlo: (a) la sincronicidad de Jung; (b) el reencuadre psicológico, donde los símbolos operan como espejos estructurados; y (c) el azar sin sentido. Para tu práctica no necesitás resolver la metafísica: el procedimiento funciona como una brújula lúcida para pensar y decidir.'
+      'Su funcionamiento descansa en la hipótesis de la **sincronicidad**: una coincidencia acausal y significativa entre la mente y los hechos exteriores. Existen tres formas de entenderlo: (a) la sincronicidad de Jung; (b) el reencuadre psicológico, donde los símbolos operan como espejos estructurados; y (c) el azar sin sentido. Para tu práctica no necesitás resolver la metafísica: el procedimiento funciona como una brújula lúcida para pensar y decidir.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap4-18',
@@ -638,10 +639,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     contentType: 'text',
     keyTerms: ['Mapa Lineal', 'Seis Estaciones', 'De la Pregunta a la Decisión', 'Visión Panorámica'],
     paragraphs: [
-      'Consultar el I Ching no es un acto fragmentario ni una adivinación pasiva: es una experiencia continua y rigurosa que une una inquietud viva en tu mente con una decisión ética en el mundo real. Comprender este trayecto de punta a punta antes de entrar en los detalles técnicos te permite captar la lógica viva que enlaza sus seis estaciones: la pregunta reflexiva, la tirada de monedas, la lectura del presente, el examen de las mutaciones, la tendencia hacia el futuro y el cierre en la bitácora.',
-      'El viaje arranca en la intimidad de la **pregunta abierta**: delimitar qué actitud interior cultivar ante una encrucijada concreta. Luego pasás al **acto del lanzamiento**: arrojar tres monedas seis veces consecutivas (o utilizar la app del curso para realizar el cálculo). Cada tirada suma sus valores de abajo hacia arriba: los resultados 7 u 8 fijan líneas estables (yang o yin), mientras que los extremos 6 o 9 señalan energías en máxima tensión que se preparan para mutar en su polaridad opuesta.',
-      'Al completarse las seis líneas, contemplás la **fotografía del presente**: una configuración formada por un trigrama inferior (tu disposición anímica interior) y un trigrama superior (las presiones y oportunidades del entorno). En este punto reconocés las fuerzas activas en tu momento. Si surgieron líneas mutantes, identificás allí los focos precisos de conflicto o aprendizaje que reclaman tu discernimiento.',
-      'El arco se consuma al proyectar la **tendencia de cambio**: al voltear las líneas mutantes emerge el hexagrama derivado, que no profetiza un resultado sino la dirección hacia la que se inclina la situación si ese cambio se completa. La experiencia concluye integrando todo en una **síntesis de cuatro partes** (*la situación es*, *el momento pide*, *el riesgo es* y *la tendencia apunta a*) y fijando un contraste a tres semanas.'
+      'Consultar el I Ching no es un acto de adivinación pasiva, sino un recorrido continuo que empieza mucho antes de tocar las monedas. Imaginá que atravesás una duda real y decidís sentarte en calma con tu cuaderno. El viaje arranca cuando ordenás lo que sentís y formulás una **pregunta reflexiva**: en vez de exigirle al libro qué va a pasar, le preguntás qué actitud te conviene cultivar frente a esa situación.',
+      'Con la pregunta escrita, pasás a la **tirada de monedas**: lanzás tres monedas seis veces seguidas (o usás la app del curso para generar el dibujo). Así, línea por línea de abajo hacia arriba, se arma una figura de seis trazos que funciona como una fotografía del **presente**. Al leer ese primer hexagrama, mirás el clima de tu momento actual: qué fuerzas están en juego hoy entre lo que sentís por dentro y lo que ocurre alrededor.',
+      'A veces algunas líneas de ese dibujo están en plena transformación, como si mostraran el punto exacto donde algo empieza a cambiar. Ahí entra el **examen de las mutaciones**: leés esos puntos activos para entender qué te pide el momento. Luego, al dar vuelta esas líneas, aparece una segunda figura que señala la **tendencia hacia el futuro**: no predice un destino cerrado, sino hacia dónde se inclina la situación si ese cambio avanza.',
+      'Finalmente, el recorrido vuelve a tus manos con el **cierre en la bitácora**. Antes de cerrar el cuaderno, pasás en limpio lo que comprendiste en cuatro frases breves —qué está pasando, qué pide el momento, qué riesgo evitar y hacia dónde apunta la tendencia— y anotás una fecha dentro de tres semanas para volver a leerlo. De principio a fin, el método te devuelve a la vida cotidiana con una decisión propia.'
     ],
     secondaryCallout: {
       id: 'esquema-seis-estaciones',
@@ -751,7 +752,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     contentType: 'text',
     keyTerms: ['El Juicio (Tuàn)', 'La Imagen (Xiàng)', 'Metáforas Arcaicas', 'Calificaciones Éticas'],
     paragraphs: [
-      'El texto canónico que acompaña a cada hexagrama no es un bloque homogéneo de prosa, sino un tejido compuesto por estratos poéticos y filosóficos complementarios. Para no perderse en la lectura, el consultante debe distinguir qué función cumple cada elemento: el **Juicio** (*Tuàn*) diagnostica la arquitectura general de la época; la **Imagen** (*Xiàng*) deduce una pauta ética inspirada en los elementos de la naturaleza; y las **Líneas Mutantes** (*Yáo*) señalan advertencias puntuales para la posición exacta donde te encontrás.',
+      'El texto canónico que acompaña a cada hexagrama no es un bloque sencillo de entender, sino un tejido compuesto por estratos poéticos y filosóficos complementarios. Para no perderse en la lectura, el consultante debe distinguir qué función cumple cada elemento: el **Juicio** (*Tuàn*) diagnostica la arquitectura general del momento; la **Imagen** (*Xiàng*) deduce una relación inspirada en los elementos de la naturaleza; y las **Líneas Mutantes** (*Yáo*) señalan advertencias puntuales para la posición exacta donde te encontrás.',
       'El Juicio define el "clima" estructural del tiempo: te aclara si el momento favorece la perseverancia silenciosa, la audacia o la espera receptiva. La Imagen, por su parte, observa cómo interactúan los dos elementos naturales del hexagrama (el fuego que asciende, el agua que fluye, la montaña que aquieta) y deduce de esa danza cósmica la conducta que debe adoptar quien busca la nobleza interior. No te dice qué te va a pasar, sino qué actitud encarna la sabiduría ante ese paisaje.',
       'Asimismo, el texto clásico emplea metáforas arcaicas que no deben tomarse al pie de la letra: fórmulas como «es propicio cruzar las grandes aguas» aluden a asumir un riesgo trascendente o iniciar un proyecto postergado; «ver al gran hombre» señala la conveniencia de consultar a alguien de mayor experiencia o escuchar la voz rectora del propio Self; y «el caballo extraviado» representa la confianza en que lo propio regresará sin forzarlo.',
       'Aclaración sobre las traducciones: distintas ediciones canónicas (Wilhelm, Baynes o las versiones de la app del curso) pueden variar en su vocabulario literal, utilizando sinónimos más modernos o accesibles. Lo determinante no es memorizar una redacción fija, sino comprender la estructura invariante: la correlación entre el patrón del momento, la posición que ocupás y la conducta sugerida para actuar con rectitud y sobriedad ante las circunstancias.'
@@ -1005,7 +1006,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
           instruction: 'El sueño muere si se queda en el papel. Definí una acción material mínima para las próximas 24 horas (una carta, una conversación, un cambio de hábito, un dibujo) que ancle la lección en la realidad.',
         },
       ],
-      applicationExample: 'Escena ilustrativa (personaje compuesto): Mateo soñó que conducía a 200 km/h por una autopista lujosa pero sin frenos (Exposición/Desarrollo). En el último segundo, un viejo guardabosques con farol (Senex, el Anciano sabio) le cortaba el paso con una rama verde y el auto se apagaba (Peripeteia/Lysis). Comprendió que su sobreexigencia laboral estaba al borde de provocarle un agotamiento severo. Su acción concreta fue cancelar dos compromisos innecesarios y tomarse una tarde de caminata en silencio.',
+      exampleLabel: 'Profundización Opcional • Imaginación Activa y Amplificación Simbólica:',
+      applicationExample: 'Cuando alguna imagen o fase de la estructura dramática presenta un significado profundo que las asociaciones iniciales no terminan de aclarar, o cuando el sueño se interrumpe antes de completar su desenlace, conviene ampliar el trabajo mediante la amplificación simbólica y la imaginación activa (como abordamos en el folio 15). La amplificación rodea el símbolo enigmático con motivos paralelos míticos o culturales para captar su resonancia, y la imaginación activa retoma en vigilia la escena detenida para darle continuidad autónoma; recordá que los ejercicios completos y sus resguardos paso a paso se encuentran en el primer manual.',
     },
     paragraphs: [
       'El trabajo con los sueños es la piedra angular del autoconocimiento y la escucha interior. Dedicarle veinte minutos a la semana a este protocolo te otorga una lucidez sobre tus verdaderas motivaciones que ningún libro teórico puede reemplazar. Este protocolo lleva a la práctica la estructura dramática que vimos en el folio 13.'

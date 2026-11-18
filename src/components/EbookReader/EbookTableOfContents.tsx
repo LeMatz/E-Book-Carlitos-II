@@ -46,7 +46,9 @@ export const EbookTableOfContents: React.FC = () => {
 
         {/* Chapters Table - Classic Static Dot-Leader Style */}
         <div className="space-y-2 sm:space-y-2.5 my-1">
-          {ChaptersMetaData.chapters.map((chapter) => {
+          {ChaptersMetaData.chapters
+            .filter((chapter) => chapter.chapterId !== 6)
+            .map((chapter) => {
             const chapterPages = EBOOK_PAGES.filter(
               (p) => p.pageNumber >= chapter.startPage && p.pageNumber <= chapter.endPage
             );
