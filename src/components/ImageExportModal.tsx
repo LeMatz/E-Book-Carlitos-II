@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Download, Image, Archive, Loader2, CheckCircle2, Sparkles } from 'lucide-react';
+import { X, Download, Image, Archive, Loader2, CheckCircle2, Sparkles, AlertCircle } from 'lucide-react';
 import { EBOOK_PAGES } from '../data/ebookContent';
 import {
   ImageFormat,
@@ -24,6 +24,7 @@ export const ImageExportModal: React.FC<ImageExportModalProps> = ({
   const [quality, setQuality] = useState<ImageQuality>('high');
   const [selectedPageId, setSelectedPageId] = useState<string>('folio-1');
   const [isProcessing, setIsProcessing] = useState(false);
+  const [exportError, setExportError] = useState<string | null>(null);
   const [progress, setProgress] = useState<{
     current: number;
     total: number;
@@ -68,6 +69,7 @@ export const ImageExportModal: React.FC<ImageExportModalProps> = ({
     const item = allExportItems.find((p) => p.id === selectedPageId);
     if (!item) return;
 
+    setExportError(null);
     setIsProcessing(true);
     setProgress({ current: 1, total: 1, message: `Generando ${item.title}...` });
 
@@ -79,13 +81,14 @@ export const ImageExportModal: React.FC<ImageExportModalProps> = ({
       }, 700);
     } catch (error) {
       console.error('Error al exportar página:', error);
-      alert('Ocurrió un error al generar la imagen. Por favor intenta de nuevo.');
+      setExportError('Ocurrió un error al generar la imagen. Por favor intenta de nuevo.');
       setIsProcessing(false);
       setProgress(null);
     }
   };
 
   const handleDownloadAllZip = async () => {
+    setExportError(null);
     setIsProcessing(true);
     setProgress({
       current: 0,
@@ -110,7 +113,7 @@ export const ImageExportModal: React.FC<ImageExportModalProps> = ({
       }, 1200);
     } catch (error) {
       console.error('Error al exportar todas las imágenes en ZIP:', error);
-      alert('Ocurrió un error al exportar las imágenes. Por favor intenta de nuevo.');
+      setExportError('Ocurrió un error al exportar las imágenes. Por favor intenta de nuevo.');
       setIsProcessing(false);
       setProgress(null);
     }
@@ -233,6 +236,14 @@ export const ImageExportModal: React.FC<ImageExportModalProps> = ({
             <span className="text-[10px] font-mono text-[#ebdcb8]/70 block">
               Capturando páginas en alta fidelidad fotográfica. Por favor espera...
             </span>
+          </div>
+        )}
+
+        {/* Error Message */}
+        {exportError && !isProcessing && (
+          <div className="mb-4 p-3 bg-[#3d1818] border border-[#b94a48] rounded-xs flex items-start gap-2.5 text-xs font-mono text-[#f8d7da]">
+            <AlertCircle className="w-4 h-4 text-[#f59e9e] shrink-0 mt-0.5" />
+            <span>{exportError}</span>
           </div>
         )}
 

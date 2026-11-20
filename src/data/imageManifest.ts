@@ -11,6 +11,9 @@ import ichingCoinsImg from '../assets/images/iching_bronze_coins_consultation_17
 import hexagram50BrushImg from '../assets/images/hexagram_50_ting_ink_brush_1790694984643.jpg';
 import fourHexagramsPlateImg from '../assets/images/four_hexagrams_ink_brush_plate_1790695005198.jpg';
 import authorPortraitImg from '../assets/images/author_portrait_1786398073343.jpg';
+import backCoverPortraitImg from '../assets/images/author_portrait_matias.jpg';
+import lineaFusionImg from '../assets/images/linea_fusion_yo_arquetipo.jpg';
+import cuaternidadJungImg from '../assets/images/cuaternidad_jung_pergamino.jpg';
 
 export const IMAGE_MANIFEST = {
   studyLibrary: studyLibraryImg,
@@ -23,6 +26,9 @@ export const IMAGE_MANIFEST = {
   hexagram50Brush: hexagram50BrushImg,
   fourHexagramsPlate: fourHexagramsPlateImg,
   authorPortrait: authorPortraitImg,
+  backCoverPortrait: backCoverPortraitImg,
+  lineaFusion: lineaFusionImg,
+  cuaternidadJung: cuaternidadJungImg,
 } as const;
 
 export type ImageManifestKey = keyof typeof IMAGE_MANIFEST;

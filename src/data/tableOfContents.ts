@@ -42,9 +42,10 @@ export const INDICE_TITULOS: Record<number, string> = {
   27: 'Una tirada completa: el caso del prólogo de Jung',
   28: 'Práctica guiada: tu primera tirada',
   29: 'Protocolo 1: Bitácora de Sueños en Cuatro Actos',
-  30: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
-  31: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
-  32: 'La Gran Coniunctio y el Manifiesto de la Completitud',
+  30: 'Protocolo 2: Tres Tristes Tricksters',
+  31: 'Protocolo 2: Tres Tristes Tricksters',
+  32: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
+  33: 'La Gran Coniunctio y el Manifiesto de la Completitud',
 };
 
 /**

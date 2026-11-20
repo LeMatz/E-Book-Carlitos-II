@@ -2,6 +2,7 @@ import React from 'react';
 import { OrnamentalDivider } from '../OrnamentalDivider';
 import { OrnamentalCorner } from '../VintageSvgIcons';
 import { Globe, Mail, Instagram, MessageCircle, BookOpen } from 'lucide-react';
+import { IMAGE_MANIFEST } from '../../data/imageManifest';
 
 export const EbookBackCover: React.FC = () => {
   return (
@@ -67,13 +68,8 @@ export const EbookBackCover: React.FC = () => {
           <div className="shrink-0 flex flex-col items-center gap-2">
             <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-xs border-2 border-[#5a4022] p-1 bg-[#ebdcb8] shadow-md overflow-hidden relative">
               <img
-                src="/src/assets/images/author_portrait_1786398073343.jpg"
+                src={IMAGE_MANIFEST.backCoverPortrait}
                 alt="Matías P. Rojas"
-                referrerPolicy="no-referrer"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    'https://lh3.googleusercontent.com/d/1mMO9kM0h_YtKzRgVQDOk-T7TstyIpgjZ';
-                }}
                 className="w-full h-full object-cover sepia-vintage rounded-xs"
               />
             </div>
@@ -94,7 +90,7 @@ export const EbookBackCover: React.FC = () => {
                 </span>
               </div>
               <p className="font-old-standard text-xs sm:text-sm text-[#2b1f16] leading-relaxed pt-2 text-justify">
-                Trainer y Master Coach en Programación Neurolingüística, docente y divulgador especializado en mitología comparada, arquetipos junguianos y diseño de vida con propósito. Fascinado por el diálogo entre la psicología profunda de Carl Jung y el Viaje del Héroe de Joseph Campbell, Matías acompaña a personas y equipos a traducir los símbolos de su inconsciente en acciones concretas de madurez y soberanía interior.
+                 Coach y Trainer en Programación Neurolingüística, docente y divulgador especializado en mitología personal, entrenamientos personales de alto rendimiento y diseño de habilidades. Fascinado por el diálogo entre la psicología profunda de Carl Jung y el Viaje del Héroe de Joseph Campbell, Matías acompaña a personas y equipos a traducir los símbolos de su inconsciente en acciones concretas de madurez y soberanía interior.
               </p>
             </div>
 

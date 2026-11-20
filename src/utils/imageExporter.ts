@@ -1,4 +1,4 @@
-import html2canvas from 'html2canvas';
+import { domToBlob, type Options as ModernScreenshotOptions } from 'modern-screenshot';
 import JSZip from 'jszip';
 
 export type ImageFormat = 'png' | 'jpg';
@@ -10,32 +10,140 @@ export interface PageExportItem {
   title: string;
 }
 
-/**
- * Prepares the canvas for export, adding a background if saving to JPG to avoid black transparency
- */
-function prepareCanvasForFormat(
-  sourceCanvas: HTMLCanvasElement,
+let warmedUpCapture = false;
+
+async function waitForFontsAndImages(targetElement: HTMLElement): Promise<void> {
+  if (document.fonts && document.fonts.ready) {
+    await document.fonts.ready;
+  }
+
+  const images = Array.from(targetElement.querySelectorAll('img'));
+  await Promise.all(
+    images.map(async (img) => {
+      if (!img.complete) {
+        await new Promise<void>((resolve) => {
+          img.addEventListener('load', () => resolve(), { once: true });
+          img.addEventListener('error', () => resolve(), { once: true });
+          setTimeout(resolve, 4000);
+        });
+      }
+      if (typeof img.decode === 'function') {
+        await img.decode().catch(() => {});
+      }
+    })
+  );
+}
+
+function syncFormValuesOnClone(sourceRoot: HTMLElement, clonedNode: Node): void {
+  if (!(clonedNode instanceof HTMLElement)) return;
+
+  const sourceInputs = sourceRoot.querySelectorAll('input, textarea');
+  const clonedInputs = clonedNode.querySelectorAll('input, textarea');
+
+  sourceInputs.forEach((srcEl, index) => {
+    const cloneEl = clonedInputs[index];
+    if (!cloneEl) return;
+
+    if (srcEl instanceof HTMLInputElement && cloneEl instanceof HTMLInputElement) {
+      cloneEl.setAttribute('value', srcEl.value);
+      cloneEl.value = srcEl.value;
+    } else if (srcEl instanceof HTMLTextAreaElement && cloneEl instanceof HTMLTextAreaElement) {
+      cloneEl.textContent = srcEl.value;
+      cloneEl.value = srcEl.value;
+    }
+  });
+}
+
+function buildCaptureOptions(
+  targetElement: HTMLElement,
   elementId: string,
-  format: ImageFormat
-): HTMLCanvasElement {
-  if (format === 'png') {
-    return sourceCanvas;
-  }
-
-  // JPG requires a solid background because it has no alpha channel
+  format: ImageFormat,
+  quality: ImageQuality
+): ModernScreenshotOptions {
   const isDark = elementId.includes('portada') || elementId.includes('contraportada');
-  const outCanvas = document.createElement('canvas');
-  outCanvas.width = sourceCanvas.width;
-  outCanvas.height = sourceCanvas.height;
-  const ctx = outCanvas.getContext('2d');
+  const rect = targetElement.getBoundingClientRect();
 
-  if (ctx) {
-    ctx.fillStyle = isDark ? '#1c150f' : '#dfcea6';
-    ctx.fillRect(0, 0, outCanvas.width, outCanvas.height);
-    ctx.drawImage(sourceCanvas, 0, 0);
+  return {
+    scale: quality === 'high' ? 2 : 1,
+    width: Math.ceil(rect.width),
+    height: Math.ceil(rect.height),
+    type: format === 'jpg' ? 'image/jpeg' : 'image/png',
+    quality: format === 'jpg' ? 0.95 : 1,
+    backgroundColor: format === 'jpg' ? (isDark ? '#1c150f' : '#dfcea6') : null,
+    style: {
+      margin: '0',
+      boxShadow: 'none',
+    },
+    features: {
+      fixSvgXmlDecode: true,
+    },
+    fetch: {
+      requestInit: {
+        cache: 'force-cache',
+      },
+    },
+    filter: (node: Node) => {
+      if (node instanceof Element) {
+        return (
+          !node.classList.contains('export-exclude') &&
+          !node.classList.contains('no-print')
+        );
+      }
+      return true;
+    },
+    onCloneNode: (cloned) => {
+      syncFormValuesOnClone(targetElement, cloned);
+    },
+  };
+}
+
+async function captureElementBlob(
+  targetElement: HTMLElement,
+  elementId: string,
+  format: ImageFormat,
+  quality: ImageQuality
+): Promise<Blob> {
+  await waitForFontsAndImages(targetElement);
+
+  const options = buildCaptureOptions(targetElement, elementId, format, quality);
+
+  // Warm-up discarded pass so webfont embedding settles cleanly before the real capture
+  if (!warmedUpCapture) {
+    await domToBlob(targetElement, { ...options, scale: 1 }).catch(() => null);
+    warmedUpCapture = true;
   }
 
-  return outCanvas;
+  const blob = await domToBlob(targetElement, options);
+  if (!blob || blob.size === 0) {
+    throw new Error('No se pudo generar la imagen a partir de la lámina');
+  }
+
+  return blob;
+}
+
+function resolveTargetElement(elementId: string): HTMLElement {
+  const container = document.getElementById(elementId);
+  if (!container) {
+    throw new Error(`No se encontró el elemento con ID: ${elementId}`);
+  }
+
+  return (
+    (container.querySelector('.print-page-sheet') as HTMLElement) ||
+    (container.querySelector('.legal-sheet') as HTMLElement) ||
+    container
+  );
+}
+
+function triggerDownload(blob: Blob, filename: string): void {
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement('a');
+  anchor.href = url;
+  anchor.download = filename;
+  document.body.appendChild(anchor);
+  anchor.click();
+  document.body.removeChild(anchor);
+
+  setTimeout(() => URL.revokeObjectURL(url), 2500);
 }
 
 /**
@@ -47,55 +155,14 @@ export async function exportPageToImage(
   format: ImageFormat = 'png',
   quality: ImageQuality = 'high'
 ): Promise<void> {
-  const container = document.getElementById(elementId);
-  if (!container) {
-    throw new Error(`No se encontró el elemento con ID: ${elementId}`);
-  }
-
-  // Target the inner page sheet if available, or fallback to the container
-  const targetElement =
-    (container.querySelector('.print-page-sheet') as HTMLElement) ||
-    (container.querySelector('.legal-sheet') as HTMLElement) ||
-    container;
-
-  const scale = quality === 'high' ? 2 : 1;
-
-  const rawCanvas = await html2canvas(targetElement, {
-    scale,
-    useCORS: true,
-    allowTaint: true,
-    logging: false,
-    backgroundColor: null,
-    ignoreElements: (element) =>
-      element.classList.contains('export-exclude') ||
-      element.classList.contains('no-print'),
-  });
-
-  const finalCanvas = prepareCanvasForFormat(rawCanvas, elementId, format);
-  const mimeType = format === 'png' ? 'image/png' : 'image/jpeg';
-  const qualityVal = format === 'jpg' ? 0.95 : undefined;
-
-  const blob = await new Promise<Blob | null>((resolve) => {
-    finalCanvas.toBlob((b) => resolve(b), mimeType, qualityVal);
-  });
-
-  if (!blob) {
-    throw new Error('No se pudo generar la imagen a partir del lienzo');
-  }
+  const targetElement = resolveTargetElement(elementId);
+  const blob = await captureElementBlob(targetElement, elementId, format, quality);
 
   const cleanFilename = baseFilename.endsWith(`.${format}`)
     ? baseFilename
     : `${baseFilename}.${format}`;
 
-  const url = URL.createObjectURL(blob);
-  const anchor = document.createElement('a');
-  anchor.href = url;
-  anchor.download = cleanFilename;
-  document.body.appendChild(anchor);
-  anchor.click();
-  document.body.removeChild(anchor);
-
-  setTimeout(() => URL.revokeObjectURL(url), 2500);
+  triggerDownload(blob, cleanFilename);
 }
 
 /**
@@ -110,15 +177,17 @@ export async function exportAllPagesToZip(
   const zip = new JSZip();
   const folderName = `mi-amigo-carlitos-ii-${format.toUpperCase()}`;
   const folder = zip.folder(folderName) || zip;
-  const scale = quality === 'high' ? 2 : 1;
   const total = pages.length;
+
+  // Reset warm-up per batch so fonts are freshly bound for the whole archive
+  warmedUpCapture = false;
 
   for (let i = 0; i < total; i++) {
     const page = pages[i];
     onProgress?.(i + 1, total, `Renderizando página ${i + 1} de ${total}: ${page.title}...`);
 
-    // Let the UI render the progress update
-    await new Promise((resolve) => setTimeout(resolve, 60));
+    // Allow progress bar UI to paint before heavy rendering
+    await new Promise((resolve) => setTimeout(resolve, 40));
 
     const container = document.getElementById(page.id);
     if (!container) {
@@ -131,39 +200,24 @@ export async function exportAllPagesToZip(
       (container.querySelector('.legal-sheet') as HTMLElement) ||
       container;
 
-    const rawCanvas = await html2canvas(targetElement, {
-      scale,
-      useCORS: true,
-      allowTaint: true,
-      logging: false,
-      backgroundColor: null,
-      ignoreElements: (element) =>
-        element.classList.contains('export-exclude') ||
-        element.classList.contains('no-print'),
-    });
-
-    const finalCanvas = prepareCanvasForFormat(rawCanvas, page.id, format);
-    const mimeType = format === 'png' ? 'image/png' : 'image/jpeg';
-    const qualityVal = format === 'jpg' ? 0.95 : undefined;
-
-    const blob = await new Promise<Blob | null>((resolve) => {
-      finalCanvas.toBlob((b) => resolve(b), mimeType, qualityVal);
-    });
+    let blob: Blob | null = await captureElementBlob(targetElement, page.id, format, quality);
 
     if (blob) {
       const cleanFilename = page.filename.endsWith(`.${format}`)
         ? page.filename
         : `${page.filename}.${format}`;
       folder.file(cleanFilename, blob);
+      blob = null;
     }
   }
 
   onProgress?.(total, total, `Empaquetando ${total} imágenes en archivo ZIP...`);
-  await new Promise((resolve) => setTimeout(resolve, 80));
+  await new Promise((resolve) => setTimeout(resolve, 60));
 
   const zipBlob = await zip.generateAsync(
     {
       type: 'blob',
+      streamFiles: true,
       compression: 'DEFLATE',
       compressionOptions: { level: 6 },
     },
@@ -177,13 +231,5 @@ export async function exportAllPagesToZip(
   );
 
   const zipFilename = `mi-amigo-carlitos-ii-paginas-${format}.zip`;
-  const url = URL.createObjectURL(zipBlob);
-  const anchor = document.createElement('a');
-  anchor.href = url;
-  anchor.download = zipFilename;
-  document.body.appendChild(anchor);
-  anchor.click();
-  document.body.removeChild(anchor);
-
-  setTimeout(() => URL.revokeObjectURL(url), 3000);
+  triggerDownload(zipBlob, zipFilename);
 }

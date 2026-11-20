@@ -122,8 +122,69 @@ export interface FootnoteData {
   note: string;
 }
 
+export interface TrickstersModelRow {
+  trickster: string;
+  attitude: string;
+  operation: string;
+  question: string;
+  explanation: string;
+}
+
+export interface TrickstersModelData {
+  imageSection: {
+    heading: string;
+    text: string;
+  };
+  purposeSection: {
+    heading: string;
+    text: string;
+  };
+  carnivalSection: {
+    heading: string;
+    text: string;
+  };
+  tableHeading: string;
+  rows: TrickstersModelRow[];
+  authorshipNote: string;
+}
+
+export interface TrickstersStepByStepData {
+  dailySection: {
+    heading: string;
+    instruction: string;
+  };
+  sessionHeading: string;
+  step1: string;
+  step2: {
+    heading: string;
+    aOfficial: string;
+    bMinimal: string;
+    cComment: string;
+    dDiscomfortIntro: string;
+    dResults: { result: string; action: string }[];
+    eHypothesis: string;
+  };
+  step3: {
+    heading: string;
+    questions: { question: string; label: string }[];
+  };
+  step4: {
+    heading: string;
+    lossRehearsal: string;
+    dismissalDecree: string;
+  };
+  step5: {
+    heading: string;
+    text: string;
+  };
+  safetyNote: {
+    heading: string;
+    text: string;
+  };
+}
+
 export interface EbookPageData {
-  pageNumber: number; // 1 to EBOOK_PAGES.length (32)
+  pageNumber: number; // 1 to EBOOK_PAGES.length (33)
   chapterId: number; // 0 for Intro/Bio, 1, 2, 3, 4, 5, 6
   sectionTitle: string;
   pageTitle: string;
@@ -134,9 +195,12 @@ export interface EbookPageData {
   secondaryCallout?: CarlitosCallout;
   tableData?: ArchetypeTableRow[];
   exerciseData?: ExerciseData;
+  trickstersModelData?: TrickstersModelData;
+  trickstersStepByStepData?: TrickstersStepByStepData;
   keyTerms?: string[];
   historicalNotes?: string[];
   illustrationImage?: IllustrationData;
+  bottomImage?: IllustrationData;
   iChingHexagram?: IChingHexagramData;
   iChingTrigrams?: TrigramData[];
   hexagramFigure?: HexagramFigureData;

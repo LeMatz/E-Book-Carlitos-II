@@ -30,14 +30,7 @@ interface FolioIntegrationData {
   actionGuideline: string;
 }
 
-const SINGLE_FOLIO_CLOSINGS: Record<number, FolioIntegrationData> = {
-  30: {
-    title: 'Auditoría Sincrónica • Registro y Verificación',
-    quote: '«La coincidencia no se busca con avidez; se recibe con la serenidad de quien sabe que el significado ya está allí.»',
-    reflectionQuestion: '¿Qué sesgo de confirmación sueles proyectar sobre los eventos diarios y cómo puedes purificar tu registro?',
-    actionGuideline: 'Aplica el protocolo durante 7 días continuos antes de sacar conclusiones definitivas sobre tus sincronicidades.',
-  },
-};
+const SINGLE_FOLIO_CLOSINGS: Record<number, FolioIntegrationData> = {};
 
 export const EbookPage: React.FC<EbookPageProps> = ({
   pageData,
@@ -633,9 +626,11 @@ export const EbookPage: React.FC<EbookPageProps> = ({
                     <h4 className="font-playfair font-bold text-[#17120d] text-xs leading-tight">
                       {step.title}
                     </h4>
-                    <p className="text-[#2b1f16] text-[11px] leading-relaxed mt-0.5">
-                      {step.instruction}
-                    </p>
+                    {step.instruction && (
+                      <p className="text-[#2b1f16] text-[11px] leading-relaxed mt-0.5">
+                        {step.instruction}
+                      </p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -686,6 +681,305 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               </div>
             </div>
           )}
+        </div>
+      )}
+
+      {/* Protocol 2 Folio 1: Tres Tristes Tricksters — Bases del Modelo (Folio 30) */}
+      {pageData.trickstersModelData && (
+        <div className={`space-y-3.5 ${selectedFontClass} ${selectedTextSizeClass} text-[#17120d]`}>
+          <section className="space-y-1">
+            <h2 className="font-playfair font-bold text-sm sm:text-base uppercase tracking-wider text-[#17120d] border-b border-[#5a4022]/30 pb-0.5">
+              {pageData.trickstersModelData.imageSection.heading}
+            </h2>
+            <p className="text-justify leading-relaxed">
+              {pageData.trickstersModelData.imageSection.text}
+            </p>
+          </section>
+
+          <section className="space-y-1">
+            <h2 className="font-playfair font-bold text-sm sm:text-base uppercase tracking-wider text-[#17120d] border-b border-[#5a4022]/30 pb-0.5">
+              {pageData.trickstersModelData.purposeSection.heading}
+            </h2>
+            <p className="text-justify leading-relaxed">
+              {pageData.trickstersModelData.purposeSection.text}
+            </p>
+          </section>
+
+          <section className="space-y-1">
+            <h2 className="font-playfair font-bold text-sm sm:text-base uppercase tracking-wider text-[#17120d] border-b border-[#5a4022]/30 pb-0.5">
+              {pageData.trickstersModelData.carnivalSection.heading}
+            </h2>
+            <p className="text-justify leading-relaxed">
+              {pageData.trickstersModelData.carnivalSection.text}
+            </p>
+          </section>
+
+          <section className="space-y-2.5">
+            <h2 className="font-playfair font-bold text-sm sm:text-base uppercase tracking-wider text-[#17120d] border-b border-[#5a4022]/30 pb-0.5">
+              {pageData.trickstersModelData.tableHeading}
+            </h2>
+
+            <div className="overflow-x-auto border-2 border-[#5a4022] bg-[#ebdcb8] shadow-md">
+              <table className="w-full text-left font-old-standard text-xs border-collapse">
+                <thead>
+                  <tr className="bg-[#17120d] text-[#ebdcb8] font-playfair uppercase tracking-wider text-[11px] border-b border-[#aa8032]">
+                    <th className="p-2 border-r border-[#aa8032]/30">Trickster</th>
+                    <th className="p-2 border-r border-[#aa8032]/30">Actitud</th>
+                    <th className="p-2 border-r border-[#aa8032]/30">Operación</th>
+                    <th className="p-2">Pregunta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {pageData.trickstersModelData.rows.map((row, idx) => (
+                    <tr
+                      key={row.trickster}
+                      className={`border-b border-[#5a4022]/30 last:border-b-0 ${
+                        idx % 2 === 0 ? 'bg-[#dfcea6]/40' : 'bg-[#ebdcb9]/60'
+                      }`}
+                    >
+                      <td className="p-2 font-bold font-playfair text-[#17120d] border-r border-[#5a4022]/30 align-top">
+                        {row.trickster}
+                      </td>
+                      <td className="p-2 border-r border-[#5a4022]/30 align-top text-[#17120d]">
+                        {row.attitude}
+                      </td>
+                      <td className="p-2 border-r border-[#5a4022]/30 align-top font-mono text-[11px] font-bold text-[#7a5820]">
+                        {row.operation}
+                      </td>
+                      <td className="p-2 align-top italic text-[#17120d]">
+                        {row.question}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="space-y-1.5 pt-0.5">
+              {pageData.trickstersModelData.rows.map((row) => (
+                <p key={row.trickster} className="text-xs sm:text-sm leading-relaxed text-[#17120d]">
+                  <strong className="font-playfair font-bold">{row.trickster}:</strong>{' '}
+                  {row.explanation.replace(new RegExp(`^${row.trickster}\\s+`), '')}
+                </p>
+              ))}
+            </div>
+          </section>
+
+          <aside className="p-3 bg-[#d8c399]/60 border-l-4 border-[#8f6e28] rounded-xs text-xs text-[#17120d] leading-relaxed">
+            {pageData.trickstersModelData.authorshipNote}
+          </aside>
+        </div>
+      )}
+
+      {/* Protocol 2 Folio 2: Tres Tristes Tricksters — Paso a Paso (Folio 31) */}
+      {pageData.trickstersStepByStepData && (
+        <div className="space-y-1 text-[#17120d] font-old-standard">
+          {/* A. Todos los días (Astucia) */}
+          <div className="px-2.5 py-1.5 bg-[#ebdcb8] border border-[#5a4022] rounded-xs space-y-1">
+            <h2 className="font-playfair font-bold text-[13px] sm:text-sm uppercase tracking-wider text-[#17120d] border-b border-[#5a4022]/30 pb-0.5">
+              {pageData.trickstersStepByStepData.dailySection.heading}
+            </h2>
+            <p className="text-xs sm:text-[12.5px] leading-[1.28] text-[#17120d]">
+              {pageData.trickstersStepByStepData.dailySection.instruction}
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-4 gap-1 pt-0.5">
+              <input
+                type="text"
+                value={workbookValues['ttt_diario_hecho'] || ''}
+                onChange={(e) => handleFieldChange('ttt_diario_hecho', e.target.value)}
+                placeholder="Registro diario (una línea): qué pasó"
+                className="sm:col-span-3 px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+              />
+              <input
+                type="text"
+                value={workbookValues['ttt_diario_peso'] || ''}
+                onChange={(e) => handleFieldChange('ttt_diario_peso', e.target.value)}
+                placeholder="Peso (0 a 10)"
+                className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+              />
+            </div>
+          </div>
+
+          {/* B. Sesión en frío */}
+          <div className="px-2.5 py-1.5 bg-[#ebdcb8] border-2 border-[#5a4022] rounded-xs space-y-1">
+            <h2 className="font-playfair font-bold text-[13px] sm:text-sm uppercase tracking-wider text-[#17120d] border-b border-[#5a4022]/30 pb-0.5">
+              {pageData.trickstersStepByStepData.sessionHeading}
+            </h2>
+
+            {/* 1 */}
+            <p className="text-xs sm:text-[12.5px] leading-[1.28]">
+              <strong className="font-playfair">{pageData.trickstersStepByStepData.step1.slice(0, 2)}</strong>
+              {pageData.trickstersStepByStepData.step1.slice(2)}
+            </p>
+
+            {/* 2. Ironía en cinco pasos */}
+            <div className="space-y-0.5 border-t border-[#5a4022]/25 pt-1">
+              <h3 className="font-playfair font-bold text-xs sm:text-[13px] uppercase tracking-wide text-[#17120d]">
+                {pageData.trickstersStepByStepData.step2.heading}
+              </h3>
+              <ul className="space-y-0.5 text-xs sm:text-[12.5px] leading-[1.26]">
+                <li>{pageData.trickstersStepByStepData.step2.aOfficial}</li>
+                <li>{pageData.trickstersStepByStepData.step2.bMinimal}</li>
+                <li>{pageData.trickstersStepByStepData.step2.cComment}</li>
+                <li>{pageData.trickstersStepByStepData.step2.dDiscomfortIntro}</li>
+              </ul>
+
+              <div className="overflow-x-auto border border-[#5a4022] bg-[#f4ead2] my-0.5">
+                <table className="w-full text-left text-[11.5px] leading-tight border-collapse">
+                  <thead>
+                    <tr className="bg-[#17120d] text-[#ebdcb8] font-playfair uppercase tracking-wider text-[10px]">
+                      <th className="px-2 py-0.5 border-r border-[#aa8032]/30 w-1/3">Señal observada</th>
+                      <th className="px-2 py-0.5">Resultado y paso siguiente</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {pageData.trickstersStepByStepData.step2.dResults.map((row, idx) => (
+                      <tr
+                        key={row.result}
+                        className={`border-b border-[#5a4022]/25 last:border-b-0 ${
+                          idx % 2 === 0 ? 'bg-[#dfcea6]/35' : 'bg-[#ebdcb9]/50'
+                        }`}
+                      >
+                        <td className="px-2 py-0.5 font-bold border-r border-[#5a4022]/25 align-top">
+                          {row.result}
+                        </td>
+                        <td className="px-2 py-0.5 align-top">{row.action}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <p className="text-xs sm:text-[12.5px] leading-[1.26]">
+                {pageData.trickstersStepByStepData.step2.eHypothesis}
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 pt-0.5">
+                <input
+                  type="text"
+                  value={workbookValues['ttt_version_oficial'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_version_oficial', e.target.value)}
+                  placeholder="a) Versión oficial..."
+                  className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+                <input
+                  type="text"
+                  value={workbookValues['ttt_accion_minima'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_accion_minima', e.target.value)}
+                  placeholder="b) Acción mínima (cámara, sin adjetivos)..."
+                  className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+                <input
+                  type="text"
+                  value={workbookValues['ttt_comentario'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_comentario', e.target.value)}
+                  placeholder="c) Comentario: [título solemne] + [acción mínima] (≤ 15 palabras)"
+                  className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+                <input
+                  type="text"
+                  value={workbookValues['ttt_titulo_hipotesis'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_titulo_hipotesis', e.target.value)}
+                  placeholder="e) Título como hipótesis de rol..."
+                  className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+              </div>
+            </div>
+
+            {/* 3. Clasifica con una pregunta */}
+            <div className="space-y-0.5 border-t border-[#5a4022]/25 pt-1">
+              <h3 className="font-playfair font-bold text-xs sm:text-[13px] uppercase tracking-wide text-[#17120d]">
+                {pageData.trickstersStepByStepData.step3.heading}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-0.5 text-xs sm:text-[12.5px] leading-[1.26]">
+                {pageData.trickstersStepByStepData.step3.questions.map((item) => (
+                  <p key={item.label}>
+                    {item.question}{' '}
+                    <span className="font-mono text-[10.5px] font-bold text-[#7a5820]">
+                      ({item.label})
+                    </span>
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            {/* 4. Caos, en dos ejercicios */}
+            <div className="space-y-0.5 border-t border-[#5a4022]/25 pt-1">
+              <h3 className="font-playfair font-bold text-xs sm:text-[13px] uppercase tracking-wide text-[#17120d]">
+                {pageData.trickstersStepByStepData.step4.heading}
+              </h3>
+              <p className="text-xs sm:text-[12.5px] leading-[1.26]">
+                {pageData.trickstersStepByStepData.step4.lossRehearsal}
+              </p>
+              <p className="text-xs sm:text-[12.5px] leading-[1.26]">
+                {pageData.trickstersStepByStepData.step4.dismissalDecree}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-4 gap-1 pt-0.5">
+                <input
+                  type="text"
+                  value={workbookValues['ttt_ensayo_perdida'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_ensayo_perdida', e.target.value)}
+                  placeholder="Sin el título de [X], queda..."
+                  className="sm:col-span-3 px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+                <input
+                  type="text"
+                  value={workbookValues['ttt_amenaza'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_amenaza', e.target.value)}
+                  placeholder="Amenaza (0–10)"
+                  className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+                <input
+                  type="text"
+                  value={workbookValues['ttt_decreto'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_decreto', e.target.value)}
+                  placeholder="Decreto: Se destituye al [título] del cargo que se asignó en [situación]; queda en funciones [necesidad concreta]"
+                  className="sm:col-span-4 px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+              </div>
+            </div>
+
+            {/* 5. Cierre */}
+            <div className="space-y-0.5 border-t border-[#5a4022]/25 pt-1">
+              <h3 className="font-playfair font-bold text-xs sm:text-[13px] uppercase tracking-wide text-[#17120d]">
+                {pageData.trickstersStepByStepData.step5.heading}
+              </h3>
+              <p className="text-xs sm:text-[12.5px] leading-[1.26]">
+                {pageData.trickstersStepByStepData.step5.text}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-1 pt-0.5">
+                <input
+                  type="text"
+                  value={workbookValues['ttt_ficha_disparador'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_ficha_disparador', e.target.value)}
+                  placeholder="Ficha — Disparador"
+                  className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+                <input
+                  type="text"
+                  value={workbookValues['ttt_ficha_titulo'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_ficha_titulo', e.target.value)}
+                  placeholder="Ficha — Título"
+                  className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+                <input
+                  type="text"
+                  value={workbookValues['ttt_ficha_accion'] || ''}
+                  onChange={(e) => handleFieldChange('ttt_ficha_accion', e.target.value)}
+                  placeholder="Ficha — Acción verificable (24–72 h)"
+                  className="px-1.5 py-0.5 text-[11px] leading-tight font-old-standard bg-white border border-[#5a4022]/35 rounded-xs text-[#17120d] focus:outline-none focus:border-[#8f6e28]"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Nota sobre seguridad */}
+          <aside className="px-2.5 py-1.5 bg-[#d8c399]/65 border-l-4 border-[#8f6e28] rounded-xs text-xs sm:text-[12.5px] leading-[1.26] text-[#17120d]">
+            <strong className="font-playfair uppercase tracking-wider text-[11.5px] mr-1">
+              {pageData.trickstersStepByStepData.safetyNote.heading}:
+            </strong>
+            {pageData.trickstersStepByStepData.safetyNote.text}
+          </aside>
         </div>
       )}
 
@@ -854,6 +1148,28 @@ export const EbookPage: React.FC<EbookPageProps> = ({
               ))}
             </div>
           </div>
+        )}
+
+        {pageData.bottomImage && (
+          <figure className="my-3 p-2 bg-[#231a12] text-white border-2 border-[#aa8032] shadow-md rounded-xs text-center">
+            <div className="overflow-hidden border border-[#aa8032]/60 bg-[#17120d] relative">
+              <img
+                src={pageData.bottomImage.src}
+                alt={pageData.bottomImage.alt}
+                className="w-full h-auto max-h-[340px] object-contain mx-auto block diagram-image"
+              />
+            </div>
+            <figcaption className="mt-1.5 text-center space-y-0.5 px-2">
+              <p className="font-cormorant italic text-xs sm:text-sm text-white leading-tight font-semibold">
+                {pageData.bottomImage.caption}
+              </p>
+              {pageData.bottomImage.credit && (
+                <span className="text-[9px] font-mono uppercase tracking-widest text-[#ffd700] block">
+                  {pageData.bottomImage.credit}
+                </span>
+              )}
+            </figcaption>
+          </figure>
         )}
 
         {pageData.placeholderImage && (

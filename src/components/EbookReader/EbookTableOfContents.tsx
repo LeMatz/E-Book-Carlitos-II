@@ -50,7 +50,10 @@ export const EbookTableOfContents: React.FC = () => {
             .filter((chapter) => chapter.chapterId !== 6)
             .map((chapter) => {
             const chapterPages = EBOOK_PAGES.filter(
-              (p) => p.pageNumber >= chapter.startPage && p.pageNumber <= chapter.endPage
+              (p) =>
+                p.pageNumber >= chapter.startPage &&
+                p.pageNumber <= chapter.endPage &&
+                p.pageNumber !== 31
             );
 
             return (

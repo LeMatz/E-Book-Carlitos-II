@@ -49,17 +49,17 @@ export class ChaptersMetaData {
     {
       chapterId: 5,
       title: 'Capítulo 5 — Cuaderno de Trabajo & Bitácora Alquímica',
-      subtitle: 'Protocolos de sueños, sincronicidades y el Juego del Tao',
+      subtitle: 'Protocolo de sueños, Tres Tristes Tricksters y el Juego del Tao',
       startPage: 29,
-      endPage: 31,
+      endPage: 32,
       iconName: 'edit-3',
     },
     {
       chapterId: 6,
       title: 'Cierre — La Gran Coniunctio y el Manifiesto de la Completitud',
       subtitle: 'La piedra filosofal, la reconciliación de los opuestos y la despedida de Carlitos junto al fuego',
-      startPage: 32,
-      endPage: 32,
+      startPage: 33,
+      endPage: 33,
       iconName: 'sun',
     },
   ];
@@ -235,10 +235,12 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       '**3. Posesión (Colapso total de distancia):** Es el punto extremo del camino. En la posesión, el Yo pierde por completo la capacidad de razonar; el arquetipo tiene el control de nosotros. La voluntad consciente queda a un costado o anulada. Ya no decidimos nosotros: somos hablados y actuados por la fuerza arquetípica que nos tomó por asalto, desde los fanatismos colectivos hasta el arrepentimiento porque en una situación no era yo mismo.',
       'Para cuidar nuestro equilibrio y crecer en sabiduría, necesitamos reconocer en qué punto de esta línea nos encontramos ante cada crisis, evitando tanto la disociación como la literalización del símbolo vivo. En los momentos de mayor soberbia o inflación heroica, figuras como el *Trickster* (el Embaucador) irrumpen oportunamente con un tropiezo, un fallo cómico o una ironía de la vida para desarmar la fusión antes de que sea tarde.'
     ],
-    placeholderImage: {
-      label: 'Imagen Placeholder — Línea de Fusión Yo-Arquetipo',
-      caption: 'Espacio reservado para ilustración o esquema visual de la línea de fusión Yo-arquetipo.',
-      aspect: '16:9 / Horizontal',
+    bottomImage: {
+      src: IMAGE_MANIFEST.lineaFusion,
+      alt: 'Esquema visual de la Línea de Fusión Yo-Arquetipo: Yo, Proyección, Inflación, Posesión y Arquetipo',
+      caption: 'Línea de Fusión Yo–Arquetipo: escala de distancia entre la conciencia separada y la absorción por la fuerza arquetípica.',
+      credit: 'Esquema Ilustrado • Capítulo 1',
+      aspect: 'landscape',
     },
   },
   {
@@ -529,10 +531,12 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       'Estos extremos no se contradicen ni se excluyen: se necesitan entre sí para dar cuenta de la realidad completa. Jung no buscaba reemplazar la causalidad, sino completarla. Si mirás el gráfico en diagonal, la relación es concreta: la **causalidad** se asocia con la **energía** (las explicaciones mecánicas de causa y efecto), mientras que la **sincronicidad** se vincula con el **espacio-tiempo** (conexiones de sentido que no dependen de la distancia ni de una secuencia temporal).',
       'La idea central del dibujo es directa: hay acontecimientos que la causa y el efecto no alcanzan a explicar porque lo que los une es el **sentido**. Para leer el gráfico, llevá la vista al **centro donde se cruzan los dos ejes**: ese punto de encuentro representa la experiencia sincrónica real, integrada dentro de un orden más amplio.'
     ],
-    placeholderImage: {
-      label: 'Gráfico Placeholder — Esquema de la Cuaternidad de Jung (1952)',
-      caption: 'Espacio reservado para colocar el gráfico real de la cuaternidad: eje vertical (Energía indestructible ↔ Espacio-tiempo) y eje horizontal (Causalidad ↔ Sincronicidad).',
-      aspect: '1:1 / Cuadrado',
+    bottomImage: {
+      src: IMAGE_MANIFEST.cuaternidadJung,
+      alt: 'Esquema de la Cuaternidad de Jung (1952): eje vertical Energía ↔ Espacio-Tiempo y eje horizontal Causalidad ↔ Sincronicidad',
+      caption: 'La Cuaternidad de Jung (1952): integración de la sincronicidad junto a causalidad, energía indestructible y espacio-tiempo.',
+      credit: 'Esquema Ilustrado • Capítulo 3',
+      aspect: 'landscape',
     },
   },
   {
@@ -959,7 +963,7 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 29 A 31)
+  // CAPÍTULO 5 — CUADERNO DE TRABAJO & BITÁCORA ALQUÍMICA (PÁGINAS 29 A 32)
   // ==========================================
   {
     pageNumber: 29,
@@ -1029,54 +1033,140 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
     pageNumber: 30,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
-    pageTitle: 'Protocolo 2: Registro y Auditoría de Sincronicidades',
-    subtitle: 'El radar de Kairos: cómo atrapar y documentar las coincidencias con sentido en tu vida',
+    pageTitle: 'Protocolo 2: Tres Tristes Tricksters',
+    subtitle: 'Bases del modelo',
     contentType: 'exercise',
-    exerciseData: {
-      id: 'ex-synchronicity-audit',
-      title: 'Protocolo 2 — Registro de Sincronicidades Cotidianas',
-      objective: 'Entrenar el ojo para reconocer, documentar y descifrar las coincidencias acausales que se constelan a tu alrededor, evitando tanto la ceguera escéptica como la paranoia mágica.',
-      steps: [
+    paragraphs: [],
+    trickstersModelData: {
+      imageSection: {
+        heading: '1. La imagen',
+        text: 'El yo es un rey y tiene tres tricksters. En la corte de los reyes, ese papel lo cumplían los bufones: eran de los pocos autorizados a decirle la verdad al rey a la cara, porque el rey les concedía licencia previa y porque la verdad llegaba en forma de humor. El yo identificado con un rol es el rey al que nadie contradice; los tricksters son tres actitudes que el yo cultiva para dejar que algo le diga la verdad. El rey sigue decidiendo qué hacer con lo que oye.',
+      },
+      purposeSection: {
+        heading: '2. Finalidad',
+        text: 'Notar cuándo y dónde opera una proyección (atribuir afuera algo propio), una inflación (confundir tu tamaño con el del arquetipo) o una posesión (dejar que un personaje hable o actúe por ti), y volver al yo con su tamaño real: un yo no identificado con el rol, no una esencia «auténtica», que sería otra identificación.',
+      },
+      carnivalSection: {
+        heading: '3. El carnaval',
+        text: 'Festividad en la que la jerarquía se suspende por un tiempo acotado: se corona a un rey falso y luego se lo destrona, se usan máscaras, el mundo queda al revés, y la fiesta termina y el orden vuelve. Su rasgo central es la alegre relatividad: ningún título ni autoridad es definitivo. Caos no es una cualidad como la astucia o la ironía: es el trickster que representa esa cualidad.',
+      },
+      tableHeading: '4. Los tres tricksters',
+      rows: [
         {
-          stepNumber: 1,
-          title: 'Paso 1: El Estado Interior (La Carga Afectiva)',
-          instruction: 'Anotá con precisión qué estabas sintiendo, rumiando o soñando en las últimas 48 horas. ¿Estabas angustiado por una decisión? ¿Pensando intensamente en alguien? ¿Atravesando un duelo?',
+          trickster: 'Astucia',
+          attitude: 'chispazo ante la carga desproporcionada',
+          operation: 'notar',
+          question: '¿esto pesa más de lo que debería?',
+          explanation:
+            'Astucia registra el exceso de carga corporal o verbal en el momento sin interpretarlo ni bromear: solo deja anotado el hecho para revisarlo después en frío.',
         },
         {
-          stepNumber: 2,
-          title: 'Paso 2: El Suceso Físico Exterior (El Hecho Material)',
-          instruction: 'Describí con sobriedad el hecho fáctico que ocurrió: el libro que cayó, la llamada que entró en ese minuto, el animal que apareció, la frase exacta que alguien dijo al pasar.',
+          trickster: 'Ironía',
+          attitude: 'comentario de doble sentido con regla fija',
+          operation: 'verificar',
+          question: '¿qué título solemne encaja con lo que hice?',
+          explanation:
+            'Ironía coloca tu acción mínima bajo un título grandilocuente mediante una regla fija, usando tu incomodidad física como señal para verificar si el rol estaba activo.',
         },
         {
-          stepNumber: 3,
-          title: 'Paso 3: El Puente de Significado (La Chispa)',
-          instruction: '¿Cuál es el significado invisible que conecta el estado interior con el hecho exterior? ¿Por qué te generó un escalofrío o sensación de numinosidad? Anotá el símbolo central.',
-        },
-        {
-          stepNumber: 4,
-          title: 'Paso 4: Auditoría Crítica (Filtro Anti-ilusión)',
-          instruction: 'Aplicá tres criterios de auditoría: 1) ¿Habrías notado este suceso sin el estado emocional previo? 2) ¿Existe una explicación causal trivial o inmediata? 3) ¿Cuántas veces pensaste en algo similar sin que ocurriera nada exterior? Si tras este filtro el impacto de sentido se sostiene, pasá al paso 5.',
-        },
-        {
-          stepNumber: 5,
-          title: 'Paso 5: La Respuesta Ética',
-          instruction: '¿Qué actitud o reflexión pide este acontecimiento? Regla fundamental: jamás tomes decisiones irreversibles basadas únicamente en una sincronía. Esperá a que baje la marea emocional y conversá lo ocurrido con alguien de confianza antes de actuar.',
+          trickster: 'Caos',
+          attitude: 'relatividad jovial',
+          operation: 'soltar',
+          question: '¿qué cambia si este título es provisional?',
+          explanation:
+            'Caos aplica la alegre relatividad del carnaval para destituir el cargo que te asignaste y dejar visible a la persona concreta con su necesidad debajo del título.',
         },
       ],
-      applicationExample: 'Escena ilustrativa (personaje compuesto): Clara dudaba entre permanecer en una rutina bancaria o explorar su vocación por el arte. Mientras caminaba por una plaza preguntándose si estaba loca, una anciana desconocida se sentó a su lado, abrió un sobre manchado y le pidió que le leyera una carta porque no tenía sus anteojos. La carta comenzaba: "Nunca temas a empezar de nuevo cuando el arte es la sangre de tus venas". Clara se anotó en un taller nocturno de restauración para explorar el camino paso a paso.',
+      authorshipNote:
+        'Nota de autoría: la división en tres tricksters (Astucia, Ironía y Caos), las actitudes y los ejercicios son un diseño propio del autor, inspirado en esas fuentes; no pertenecen a Carl Gustav Jung.',
     },
-    paragraphs: [
-      'Llevar un cuaderno de sincronías es como afinar un instrumento de cuerda: al principio parece que el universo está callado, pero a medida que afinás tu atención, comenzás a escuchar la sinfonía de conexiones en la que estás inmerso.'
-    ],
-    carlitosCallout: {
-      id: 'carlitos-cap5-radar',
-      title: 'Principio de Verificación • El Anclaje Terrenal del Símbolo',
-      variant: 'marginalia',
-      text: 'El acontecimiento sincrónico no busca admiración mágica pasiva: adquiere legitimidad cuando se transforma en palanca terapéutica o ética. La numinosidad del símbolo solo cobra sentido pleno cuando se traduce en una acción concreta en la realidad compartida.'
-    }
   },
   {
     pageNumber: 31,
+    chapterId: 5,
+    sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
+    pageTitle: 'Protocolo 2: Tres Tristes Tricksters',
+    subtitle: 'Paso a paso',
+    contentType: 'exercise',
+    paragraphs: [],
+    trickstersStepByStepData: {
+      dailySection: {
+        heading: 'A. Todos los días (Astucia)',
+        instruction:
+          'Cuando algo pese más de lo que debería (tensión o calor en el cuerpo, lenguaje absoluto como «siempre» o «nadie», impulso de corregir, defender o justificarte, o extrañeza posterior), no lo interpretes ni bromees en el momento. Más tarde, anótalo en una línea: qué pasó y cuánto pesó, de 0 a 10. Con 8 o más en el momento, solo pausa.',
+      },
+      sessionHeading: 'B. Sesión en frío, 15 a 20 minutos',
+      step1:
+        '1. Elige del registro el episodio de mayor peso o el que se repite. Si al recordarlo la carga supera 3 sobre 10, no uses humor: escribe el hecho sin ironía y deja la sesión para otro día.',
+      step2: {
+        heading: '2. Ironía, en cinco pasos',
+        aOfficial:
+          'a) Versión oficial: una frase con lo que dirías que hacías. Ej.: «Solo quería ayudar».',
+        bMinimal:
+          'b) Acción mínima: lo que registraría una cámara, sin adjetivos. Ej.: «Corregí una coma en el grupo».',
+        cComment:
+          'c) Comentario: [título solemne] + [acción mínima], hasta 15 palabras. Incluye un hecho del episodio (si valdría para otro episodio, reescríbelo) y el sujeto es el título, nunca tú (prohibido «soy + adjetivo»). La malicia va en lo solemne del título. Ej.: «El Defensor de la Verdad corrige una coma en el grupo de WhatsApp.»',
+        dDiscomfortIntro:
+          'd) Mide la incomodidad: léelo en voz baja y observa 10 segundos. Cuenta como incomodidad al menos una de estas señales: la risa se corta o sale corta; aparece el impulso de aclarar o justificar («no, pero...»); sientes calor, presión en pecho o mandíbula, o ganas de cambiar de tema.',
+        dResults: [
+          {
+            result: 'Incomodidad leve',
+            action: 'Pegó, sigue.',
+          },
+          {
+            result: 'Risa limpia sin ninguna señal',
+            action:
+              'Probable evasión: reescribe una sola vez con un detalle más concreto; si vuelve la risa limpia, descarta la hipótesis.',
+          },
+          {
+            result: 'Enojo con el comentario o ganas de abandonar',
+            action:
+              'Suspende el humor, escribe el hecho sin ironía y difiere la sesión.',
+          },
+        ],
+        eHypothesis:
+          'e) Anota el título como hipótesis de rol. Es un patrón cuando aparece en tres episodios distintos. Que el comentario pegue no prueba que haya un arquetipo.',
+      },
+      step3: {
+        heading: '3. Clasifica con una pregunta',
+        questions: [
+          {
+            question: '¿Dónde tengo yo esa cualidad que me carga en el otro?',
+            label: 'proyección',
+          },
+          {
+            question: '¿Qué tamaño tenía el papel que me asigné?',
+            label: 'inflación',
+          },
+          {
+            question: '¿Qué protagonismo me daba ser el peor?',
+            label: 'inflación negativa',
+          },
+          {
+            question: '¿Quién habló, yo o el personaje?',
+            label: 'posesión',
+          },
+        ],
+      },
+      step4: {
+        heading: '4. Caos, en dos ejercicios',
+        lossRehearsal:
+          'Ensayo de pérdida (1 minuto): completa por escrito «Sin el título de [X], queda ___» con algo concreto y humano. Mide la amenaza de 0 a 10; con 7 o más, detente y repite otro día.',
+        dismissalDecree:
+          'Decreto de destitución (2 minutos): una oración: «Se destituye al [título] del cargo que se asignó en [situación]; queda en funciones [la persona con su necesidad concreta]». Ej.: «Se destituye al Defensor de la Verdad del cargo que se asignó en el grupo de WhatsApp; queda en funciones alguien que necesitaba que lo reconocieran.»',
+      },
+      step5: {
+        heading: '5. Cierre',
+        text: 'Di «fin del carnaval». Pregunta de control: ¿qué dijo algún trickster que el rey no quería oír? Si nada, un trickster está capturado: repite su paso. Define una conducta verificable en 24 a 72 horas ante el mismo disparador y anota la ficha: disparador, título, acción.',
+      },
+      safetyNote: {
+        heading: 'Nota sobre seguridad',
+        text: 'Pide a un tercero que revise una muestra semanal de tus fichas y que tenga permiso para contradecirte. Suspende el ejercicio si durante tres semanas hay más chistes que cambios de conducta. Si aparece autocondena persistente, pérdida de control o daño a terceros, consulta a un profesional.',
+      },
+    },
+  },
+  {
+    pageNumber: 32,
     chapterId: 5,
     sectionTitle: 'Capítulo 5 — Cuaderno de Trabajo',
     pageTitle: 'Protocolo 3: El Juego del Tao y la Sintonía Azarosa',
@@ -1104,13 +1194,8 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
         },
         {
           stepNumber: 4,
-          title: 'Paso 4: Observación del Desenlace sin Apego ni Juicio',
-          instruction: 'Llegó el momento del chequeo: ¿el semáforo abrió el paso en verde? ¿El agua estaba a 75°–80°C para cebar el mate? Si los hechos se alinearon con asombrosa precisión, disfrutá la caricia de fluidez y sintonía con el entorno sin inflarte de orgullo. Si el semáforo se puso rojo o el agua requirió más tiempo, sonreí con igual calma: el azar sigue su ley y el cosmos no trabaja como sirviente de tus caprichos.',
-        },
-        {
-          stepNumber: 5,
-          title: 'Paso 5: Registro Breve en la Bitácora',
-          instruction: 'Anotá en tu cuaderno qué evento elegiste, qué grado de tensión o soltura experimentaste en la espera y qué sentiste con el desenlace. ¿Descubriste qué tan a menudo vivís intentando empujar el río? Con la práctica reiterada, este ejercicio te devuelve una agudeza perceptiva sutil para reconocer cuándo la vida te invita a avanzar y cuándo te pide esperar.',
+          title: 'Paso 4: Sonríe',
+          instruction: 'Sonríe y agradece el momento presente',
         },
       ],
       exampleLabel: 'Bitácora de Matías (Ejemplo Real):',
@@ -1121,7 +1206,6 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
       'En el taoísmo, *Wu Wei* no significa inacción ni pasividad, sino «no-forzamiento»: actuar en armonía con el curso natural de las cosas, sin imponer la voluntad del ego contra la corriente. Jung profundizó en este principio a través de su amistad con Richard Wilhelm y su estudio de los textos taoístas clásicos, viendo en el Wu Wei una actitud psicológica afín a la escucha del inconsciente.',
       'El Tao no se impone: se atiende. En la tradición oriental que tanto cautivó a Carlitos Jung y a Richard Wilhelm, el sabio no forcejea contra las circunstancias; contempla la corriente y se acomoda a su pulso. El "Juego del Tao" no pretende convertirte en un hacedor de prodigios ni busca fabricar coincidencias artificiales: es una gimnasia cotidiana de la conciencia para aprender a notar cómo se ordenan los acontecimientos fortuitos cuando aflojás la obsesión de control.',
       'Al quitarle al azar la carga de la superstición y al ego la ilusión de omnipotencia, la mente se vuelve receptiva y porosa. De repente, el mundo exterior deja de ser un obstáculo mecánico para convertirse en un paisaje vivo donde cada suceso —desde un semáforo que abre el paso justo al apoyar el pie en la calle hasta el agua del mate— te recuerda la silenciosa alineación que Jung llamó Unus Mundus.',
-      'Aclaración: este ejercicio es una propuesta lúdica de los autores para entrenar la atención, no una técnica descrita por Jung.'
     ],
     carlitosCallout: {
       id: 'carlitos-cap5-tao',
@@ -1132,10 +1216,10 @@ const RAW_EBOOK_PAGES: EbookPageData[] = [
   },
 
   // ==========================================
-  // CIERRE — LA GRAN CONIUNCTIO Y EL MANIFIESTO DE LA COMPLETITUD (PÁGINA 32)
+  // CIERRE — LA GRAN CONIUNCTIO Y EL MANIFIESTO DE LA COMPLETITUD (PÁGINA 33)
   // ==========================================
   {
-    pageNumber: 32,
+    pageNumber: 33,
     chapterId: 6,
     sectionTitle: 'El Manifiesto de la Completitud',
     pageTitle: 'La Gran Coniunctio y el Manifiesto de la Completitud',

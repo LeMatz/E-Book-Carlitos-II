@@ -11,16 +11,17 @@
     "lint": "tsc --noEmit",
     "check:iching": "node scripts/check-iching.mjs",
     "images": "node scripts/optimize-images.mjs",
+    "images:export": "node scripts/export-images.mjs",
     "pdf": "node scripts/export-pdf.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
     "@types/jszip": "^3.4.1",
     "@vitejs/plugin-react": "^5.0.4",
-    "html2canvas": "^1.4.1",
     "jspdf": "^4.2.1",
     "jszip": "^3.10.2",
     "lucide-react": "^0.546.0",
+    "modern-screenshot": "^4.7.0",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
     "vite": "^6.2.3"
